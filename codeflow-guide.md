@@ -1,3 +1,9 @@
+---
+layout: default
+title: CodeFlow Guide
+permalink: /codeflow-guide/
+---
+
 # CodeFlow Guide
 
 ## Introduction
