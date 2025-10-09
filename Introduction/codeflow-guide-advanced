@@ -1,8 +1,6 @@
-# CodeFlow Feature Guide: Real-Time Collaboration
+# Getting started 
 
-## Introduction
-
-Real-time collaboration in CodeFlow lets you and your teammates work on the same code simultaneously. No more waiting for someone to finish their edits or dealing with merge conflicts after the fact. You see changes as they happen, know where everyone's working, and resolve any conflicts right away.
+Real-time collaboration in CodeFlow lets you and your teammates work on the same code simultaneously. No more waiting for someone to finish their edits or dealing with merge conflicts after the fact. You see changes as they happen, know where everyone's working, and resolve any conflicts right away. 
 
 ---
 
@@ -20,7 +18,7 @@ Before you start collaborating, you need to set up your project for sharing.
 
 ---
 
-## Working Together in Real Time
+## Working together
 
 Once your session is active, you'll see colored cursors showing where each person is working. Changes appear on your screen as teammates type them. Small dots next to filenames show which files people are viewing, and the collaboration panel shows who's currently in the session.
 
@@ -30,7 +28,7 @@ The built-in chat keeps conversations connected to your code, and the activity f
 
 ---
 
-## Handling Conflicts
+## Handling conflicts
 
 Sometimes you and a teammate will edit the same code at the same time. Here's how to handle it:
 
@@ -72,13 +70,3 @@ Use this checklist to make sure you're set up for successful collaboration:
 - [ ] Auto-save is enabled in settings
 - [ ] You know how to resolve conflicts if they appear
 - [ ] Everyone understands how to end the session when finished
-
----
-
-## Troubleshooting
-
-**Can't see teammate's cursor?** Check that they're actually in the same file, refresh your CodeFlow window, or verify the collaboration session is still active.
-
-**Changes not appearing?** Check your internet connection, make sure you're both working on the latest version, or try leaving and rejoining the session.
-
-**Session keeps disconnecting?** Unstable internet can cause this. Use a wired connection if possible, check CodeFlow's server status page, or restart CodeFlow and rejoin the session.
