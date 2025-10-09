@@ -10,7 +10,8 @@ Welcome to the CodeFlow documentation site. This site contains comprehensive gui
 
 ## Available Documentation
 
-- [CodeFlow Guide](/codeflow-guide/) - Complete guide to using CodeFlow IDE
+- [CodeFlow Guide](/codeflow-guide-basics/) - An introduction to what CodeFlow is.
+- [CodeFlow Getting started](/codeflow-guide/advanced/) - Getting started with the software.
 
 ## About
 
