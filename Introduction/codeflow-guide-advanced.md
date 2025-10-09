@@ -1,3 +1,9 @@
+---
+layout: default
+title: CodeFlow Getting started
+permalink: /codeflow-guide/advanced/
+---
+
 # Setting up collaboration 
 
 Collaboration in CodeFlow lets you and your teammates work on the same code simultaneously. You see changes as they happen, know where everyone's working and resolve any conflicts right away. 
