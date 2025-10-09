@@ -1,1 +1,84 @@
+# CodeFlow Feature Guide: Real-Time Collaboration
 
+## Introduction
+
+Real-time collaboration in CodeFlow lets you and your teammates work on the same code simultaneously. No more waiting for someone to finish their edits or dealing with merge conflicts after the fact. You see changes as they happen, know where everyone's working, and resolve any conflicts right away.
+
+---
+
+## Setting Up Collaboration
+
+Before you start collaborating, you need to set up your project for sharing.
+
+1. Open your project in CodeFlow
+2. Click the **Share** button in the top right corner
+3. Choose your sharing permissions (edit access, view access, or comment access)
+4. Generate a sharing link or invite people by email
+5. Click **Start Collaboration Session**
+
+> **Note**: Make sure everyone on your team has CodeFlow installed and is signed in before you share the link.
+
+---
+
+## Working Together in Real Time
+
+Once your session is active, you'll see colored cursors showing where each person is working. Changes appear on your screen as teammates type them. Small dots next to filenames show which files people are viewing, and the collaboration panel shows who's currently in the session.
+
+The built-in chat keeps conversations connected to your code, and the activity feed shows what's changing in real time. CodeFlow auto-saves your work, but manual saves create clearer checkpoints for your team.
+
+> **Warning**: If two people edit the exact same line at the same time, CodeFlow will pause and ask you to resolve the conflict. This only takes a few seconds, but it's easier to avoid by coordinating which sections you're each working on.
+
+---
+
+## Handling Conflicts
+
+Sometimes you and a teammate will edit the same code at the same time. Here's how to handle it:
+
+1. CodeFlow will highlight the conflicting section in yellow
+2. You'll see both versions of the code (yours and your teammate's)
+3. Choose which version to keep, or combine them manually
+4. Click **Resolve** to confirm your choice
+5. The conflict disappears and everyone sees the resolved version
+
+In my experience, most conflicts happen because people aren't watching the activity feed. Keep an eye on what's changing and you'll avoid most issues. Common scenarios include two people renaming the same variable differently, someone deleting a function while another person edits it, or multiple people reformatting the same section.
+
+---
+
+## Ending Your Session
+
+When you're done collaborating:
+
+1. Click the **Share** button again
+2. Select **End Collaboration Session**
+3. All participants will be notified the session has ended
+4. Your changes are saved and the project returns to single-user mode
+
+> **Note**: Ending the session doesn't kick people out of the project. It just stops the real-time syncing. They can still access the files if they have repository access.
+
+---
+
+## Collaboration Checklist
+
+Use this checklist to make sure you're set up for successful collaboration:
+
+- [ ] Project is open in CodeFlow
+- [ ] Sharing permissions are configured correctly
+- [ ] All team members have received the collaboration link
+- [ ] Everyone has CodeFlow installed and is signed in
+- [ ] Collaboration session is active (check for colored cursors)
+- [ ] Chat panel is visible for team communication
+- [ ] Activity feed is open to monitor changes
+- [ ] Team has discussed which files each person will work on
+- [ ] Auto-save is enabled in settings
+- [ ] You know how to resolve conflicts if they appear
+- [ ] Everyone understands how to end the session when finished
+
+---
+
+## Troubleshooting
+
+**Can't see teammate's cursor?** Check that they're actually in the same file, refresh your CodeFlow window, or verify the collaboration session is still active.
+
+**Changes not appearing?** Check your internet connection, make sure you're both working on the latest version, or try leaving and rejoining the session.
+
+**Session keeps disconnecting?** Unstable internet can cause this. Use a wired connection if possible, check CodeFlow's server status page, or restart CodeFlow and rejoin the session.
