@@ -4,9 +4,9 @@ title: CodeFlow Guide
 permalink: /codeflow-guide/
 ---
 
-# CodeFlow Guide
+# Welcome to CodeFlow
 
-## Introduction
+## What is CodeFlow?
 
 CodeFlow is an integrated development environment (IDE) that brings code editing, real-time collaboration and debugging tools together in one place. If you're a developer, CodeFlow gives you what you need to write, test and ship your apps without switching between multiple tools. It works for both personal projects that are small and large established enterprise projects. CodeFlow is essential to help you work faster and write better code, no matter your experience level.
 
