@@ -1,10 +1,10 @@
-# Getting started 
+# Setting up collaboration 
 
-Real-time collaboration in CodeFlow lets you and your teammates work on the same code simultaneously. No more waiting for someone to finish their edits or dealing with merge conflicts after the fact. You see changes as they happen, know where everyone's working, and resolve any conflicts right away. 
+Collaboration in CodeFlow lets you and your teammates work on the same code simultaneously. You see changes as they happen, know where everyone's working and resolve any conflicts right away. 
 
 ---
 
-## Setting Up Collaboration
+## Set up
 
 Before you start collaborating, you need to set up your project for sharing.
 
@@ -12,61 +12,61 @@ Before you start collaborating, you need to set up your project for sharing.
 2. Click the **Share** button in the top right corner
 3. Choose your sharing permissions (edit access, view access, or comment access)
 4. Generate a sharing link or invite people by email
-5. Click **Start Collaboration Session**
+5. Click **Start collaboration session**
 
 > **Note**: Make sure everyone on your team has CodeFlow installed and is signed in before you share the link.
 
 ---
 
-## Working together
+## Active session
 
-Once your session is active, you'll see colored cursors showing where each person is working. Changes appear on your screen as teammates type them. Small dots next to filenames show which files people are viewing, and the collaboration panel shows who's currently in the session.
+When your session is active, you see cursors showing where each person is working. Changes appear on the screen as teammates type them. Small dots next to filenames show which files people are viewing. The collaboration panel shows who's currently in the session.
 
-The built-in chat keeps conversations connected to your code, and the activity feed shows what's changing in real time. CodeFlow auto-saves your work, but manual saves create clearer checkpoints for your team.
+The chat keeps conversations connected to your code and the activity feed shows what's changing in real time. CodeFlow auto saves your work, but manual saves create clear checkpoints for your team.
 
 > **Warning**: If two people edit the exact same line at the same time, CodeFlow will pause and ask you to resolve the conflict. This only takes a few seconds, but it's easier to avoid by coordinating which sections you're each working on.
 
 ---
 
-## Handling conflicts
+## Code conflicts
 
 Sometimes you and a teammate will edit the same code at the same time. Here's how to handle it:
 
 1. CodeFlow will highlight the conflicting section in yellow
-2. You'll see both versions of the code (yours and your teammate's)
+2. Both versions of the code are shown 
 3. Choose which version to keep, or combine them manually
 4. Click **Resolve** to confirm your choice
 5. The conflict disappears and everyone sees the resolved version
 
-In my experience, most conflicts happen because people aren't watching the activity feed. Keep an eye on what's changing and you'll avoid most issues. Common scenarios include two people renaming the same variable differently, someone deleting a function while another person edits it, or multiple people reformatting the same section.
+Most conflicts happen when the activity feed is not being monitored. Common scenarios include two people renaming the same variable differently or multiple people reformatting the same section.
 
 ---
 
-## Ending Your Session
+## Closing the session
 
 When you're done collaborating:
 
 1. Click the **Share** button again
-2. Select **End Collaboration Session**
+2. Select **End collaboration session**
 3. All participants will be notified the session has ended
-4. Your changes are saved and the project returns to single-user mode
+4. Changes are saved and the project returns to single user mode
 
-> **Note**: Ending the session doesn't kick people out of the project. It just stops the real-time syncing. They can still access the files if they have repository access.
+> **Note**: Ending the session does not remove people from the project. Files can be accessed through the repo. 
 
 ---
 
-## Collaboration Checklist
+## Team set up
 
-Use this checklist to make sure you're set up for successful collaboration:
+Use this checklist for team set up. 
 
 - [ ] Project is open in CodeFlow
 - [ ] Sharing permissions are configured correctly
 - [ ] All team members have received the collaboration link
 - [ ] Everyone has CodeFlow installed and is signed in
-- [ ] Collaboration session is active (check for colored cursors)
+- [ ] Collaboration session is active
 - [ ] Chat panel is visible for team communication
 - [ ] Activity feed is open to monitor changes
 - [ ] Team has discussed which files each person will work on
-- [ ] Auto-save is enabled in settings
-- [ ] You know how to resolve conflicts if they appear
-- [ ] Everyone understands how to end the session when finished
+- [ ] Auto save is enabled in settings
+- [ ] A plan to resolve conflicts is established 
+- [ ] Someone assigned to end the session 
