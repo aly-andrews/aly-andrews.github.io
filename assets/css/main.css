@@ -768,6 +768,130 @@ body {
   z-index: 1;
 }
 
+/* Video Showcase Section */
+.video-showcase {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-color) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-showcase::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(201, 169, 107, 0.1), transparent);
+  border-radius: 50%;
+}
+
+.video-section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.video-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.video-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.video-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  background-color: var(--bg-accent);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  border: 3px solid var(--border-color);
+}
+
+.video-embed,
+.video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 16px;
+}
+
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-accent), var(--bg-light));
+  border-radius: 16px;
+}
+
+.video-placeholder-content {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-light);
+}
+
+.video-placeholder-content svg {
+  margin: 0 auto 1.5rem;
+  color: var(--accent-green);
+  opacity: 0.6;
+}
+
+.video-placeholder-content p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.video-placeholder-content .placeholder-hint {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+/* Show video when iframe src doesn't contain VIDEO_ID placeholder */
+.video-wrapper iframe:not([src*="VIDEO_ID"]) {
+  display: block !important;
+  z-index: 2;
+}
+
+.video-wrapper iframe:not([src*="VIDEO_ID"]) ~ .video-placeholder {
+  display: none;
+}
+
+/* Show video when video element is present */
+.video-wrapper video {
+  display: block !important;
+  z-index: 2;
+}
+
+.video-wrapper video ~ .video-placeholder {
+  display: none;
+}
+
 /* Visual Intro Section */
 .intro-visual {
   padding: 6rem 0;

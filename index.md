@@ -27,6 +27,56 @@ permalink: /
   </div>
 </section>
 
+<section class="video-showcase">
+  <div class="container">
+    <div class="video-section-header">
+      <h2 class="video-title">Watch me in action</h2>
+      <p class="video-subtitle">See me hosting educational content and bringing complex topics to life</p>
+    </div>
+    <div class="video-container">
+      <div class="video-wrapper">
+        <!-- 
+        OPTION 1: YouTube/Vimeo Embed (Recommended)
+        Replace VIDEO_ID below with your actual video ID, or paste your full embed code
+        Example YouTube: https://www.youtube.com/embed/YOUR_VIDEO_ID
+        Example Vimeo: https://player.vimeo.com/video/YOUR_VIDEO_ID
+        -->
+        <iframe 
+          src="https://www.youtube.com/embed/VIDEO_ID" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          class="video-embed"
+          style="display: none;">
+        </iframe>
+        
+        <!-- 
+        OPTION 2: Direct Video File
+        Uncomment the video tag below and upload your video to assets/videos/host-video.mp4
+        -->
+        <!--
+        <video controls class="video-player" style="display: none;">
+          <source src="{{ '/assets/videos/host-video.mp4' | relative_url }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        -->
+        
+        <!-- Placeholder - will hide automatically when video is added -->
+        <div class="video-placeholder">
+          <div class="video-placeholder-content">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <p>Add your video here</p>
+            <p class="placeholder-hint">To add a YouTube video: Replace VIDEO_ID in the iframe above with your video ID</p>
+            <p class="placeholder-hint">To add a direct video: Uncomment the video tag and upload to assets/videos/host-video.mp4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="intro-visual">
   <div class="container">
     <div class="intro-grid">
