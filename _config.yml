@@ -1,3 +1,28 @@
-theme: jekyll-theme-minimal
-title: CodeFlow Documentation
-description: Developing Technical Documentation 
+title: Aly Andrews - Portfolio
+description: Senior Education Content Producer | Technical Writer | Video Producer
+email: hello.alyanne@gmail.com
+phone: +613-223-2720
+location: Ottawa, Ontario
+
+# Site settings
+baseurl: ""
+url: "https://aly-andrews.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Work
+    url: /work
+  - title: Experience
+    url: /experience
+  - title: Contact
+    url: /contact
