@@ -18,11 +18,10 @@ permalink: /
   </div>
   <div class="hero-content">
     <h1 class="hero-title">Aly Andrews</h1>
-    <p class="hero-subtitle">Senior Education Content Producer</p>
-    <div class="hero-cta">
-      <a href="/work" class="btn btn-primary">View my work</a>
-      <a href="/about" class="btn btn-secondary">About me</a>
-    </div>
+    <p class="hero-description">Creating accessible, engaging educational content that helps people learn and succeed</p>
+  </div>
+  <div class="hero-photo">
+    <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none';">
   </div>
 </section>
 
@@ -117,25 +116,6 @@ permalink: /
             <p class="placeholder-hint">To add a direct video: Uncomment the video tag and upload to assets/videos/host-video.mp4</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="intro-visual">
-  <div class="container">
-    <div class="intro-grid">
-      <div class="intro-image">
-        <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="image-placeholder" style="display: none;">
-          <p>Add your photo here</p>
-          <p class="placeholder-hint">Upload to: assets/images/about/profile.jpg</p>
-        </div>
-      </div>
-      <div class="intro-content">
-        <h2>Welcome</h2>
-        <p>I'm a Senior Education Content Producer with 8 years of experience creating educational content at Shopify. I specialize in video production, technical writing, and developing scalable content systems that make complex information accessible.</p>
-        <p>Currently pursuing a Technical Writing Graduate Certificate at Algonquin College, I'm passionate about bridging the gap between technical expertise and user understanding through clear, engaging content.</p>
       </div>
     </div>
   </div>

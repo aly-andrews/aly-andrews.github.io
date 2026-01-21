@@ -13,7 +13,9 @@ permalink: /about
 <section class="about-content">
   <div class="container">
     <div class="about-intro">
-      <p>I'm a Senior Education Content Producer with 8 years of experience creating educational content at Shopify. I specialize in making complex information accessible through video production, technical writing, and scalable content systems.</p>
+      <h2>Welcome</h2>
+      <p>I'm a Senior Education Content Producer with 8 years of experience creating educational content at Shopify. I specialize in video production, technical writing, and developing scalable content systems that make complex information accessible.</p>
+      <p>Currently pursuing a Technical Writing Graduate Certificate at Algonquin College, I'm passionate about bridging the gap between technical expertise and user understanding through clear, engaging content.</p>
     </div>
 
     <div class="about-section">
