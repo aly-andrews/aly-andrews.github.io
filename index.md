@@ -19,10 +19,9 @@ permalink: /
   <div class="hero-content">
     <h1 class="hero-title">Aly Andrews</h1>
     <p class="hero-subtitle">Senior Education Content Producer</p>
-    <p class="hero-description">Creating accessible, engaging educational content that helps people learn and succeed</p>
     <div class="hero-cta">
       <a href="/work" class="btn btn-primary">View my work</a>
-      <a href="/about" class="btn btn-secondary">Learn more</a>
+      <a href="/about" class="btn btn-secondary">About me</a>
     </div>
   </div>
 </section>
