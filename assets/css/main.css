@@ -41,7 +41,7 @@ body {
   background: linear-gradient(135deg, var(--accent-green), var(--accent-teal));
   color: white;
   padding: 0.75rem 0;
-  text-align: left;
+  text-align: center;
   font-size: 0.9rem;
 }
 
@@ -80,10 +80,22 @@ body {
 }
 
 .site-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 40px;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.logo-placeholder {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary-color);
-  text-decoration: none;
 }
 
 .nav-links {

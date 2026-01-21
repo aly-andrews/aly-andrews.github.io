@@ -11,7 +11,10 @@
   <header class="site-header">
     <div class="container">
       <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}" class="site-logo">{{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}" class="site-logo">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Aly Andrews" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="logo-placeholder" style="display: none;">Logo</span>
+        </a>
         <ul class="nav-links">
           {% for item in site.navigation %}
           <li>

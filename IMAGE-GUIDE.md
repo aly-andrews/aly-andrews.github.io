@@ -2,6 +2,12 @@
 
 ## Where to Upload Images
 
+### Logo
+1. **Site Logo**: `assets/images/logo.png`
+   - Recommended: 200-300px wide
+   - Transparent background preferred
+   - PNG format recommended
+
 ### Homepage Images
 1. **Profile Photo**: `assets/images/about/profile.jpg`
    - Square image (1:1 ratio)
