@@ -35,19 +35,13 @@ permalink: /
     </div>
     <div class="video-container">
       <div class="video-wrapper">
-        <!-- 
-        OPTION 1: YouTube/Vimeo Embed (Recommended)
-        Replace VIDEO_ID below with your actual video ID, or paste your full embed code
-        Example YouTube: https://www.youtube.com/embed/YOUR_VIDEO_ID
-        Example Vimeo: https://player.vimeo.com/video/YOUR_VIDEO_ID
-        -->
+        <!-- YouTube Video Embed -->
         <iframe 
-          src="https://www.youtube.com/embed/VIDEO_ID" 
+          src="https://www.youtube.com/embed/wM-NT6hcw48" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen
-          class="video-embed"
-          style="display: none;">
+          class="video-embed">
         </iframe>
         
         <!-- 
