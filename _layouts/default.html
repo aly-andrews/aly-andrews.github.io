@@ -31,11 +31,16 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-      <p class="footer-links">
-        <a href="mailto:{{ site.email }}">Email</a> |
-        <a href="https://linkedin.com/in/aly-andrews" target="_blank">LinkedIn</a>
-      </p>
+      <div class="footer-main">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+        <p class="footer-links">
+          <a href="mailto:{{ site.email }}">Email</a> |
+          <a href="https://linkedin.com/in/aly-andrews" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+      <div class="footer-built">
+        <p>This static site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
+      </div>
     </div>
   </footer>
 </body>

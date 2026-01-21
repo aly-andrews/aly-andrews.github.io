@@ -36,6 +36,31 @@ body {
   padding: 0 var(--spacing-unit);
 }
 
+/* Site Credits Banner */
+.site-credits {
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-teal));
+  color: white;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.credits-text {
+  margin: 0;
+  opacity: 0.95;
+}
+
+.credits-text a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.credits-text a:hover {
+  opacity: 0.8;
+}
+
 /* Header */
 .site-header {
   background-color: var(--bg-color);
@@ -569,9 +594,15 @@ body {
 .site-footer {
   background-color: var(--bg-accent);
   color: var(--text-color);
-  padding: 2rem 0;
+  padding: 3rem 0 2rem;
   text-align: center;
   border-top: 1px solid var(--border-color);
+}
+
+.footer-main {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .site-footer p {
@@ -590,6 +621,29 @@ body {
 
 .footer-links a:hover {
   color: var(--accent-color);
+}
+
+.footer-built {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.footer-built p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.footer-built a {
+  color: var(--accent-green);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-built a:hover {
+  color: var(--accent-teal);
+  text-decoration: underline;
 }
 
 /* Responsive design */

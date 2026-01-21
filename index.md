@@ -4,6 +4,12 @@ title: Home
 permalink: /
 ---
 
+<section class="site-credits">
+  <div class="container">
+    <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
+  </div>
+</section>
+
 <section class="hero-creative">
   <div class="hero-shapes">
     <div class="shape shape-1"></div>
