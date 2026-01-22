@@ -83,39 +83,72 @@ permalink: /
       <h2 class="video-title">Watch me in action</h2>
       <p class="video-subtitle">See me hosting educational content and bringing complex topics to life</p>
     </div>
-    <div class="video-container">
-      <div class="video-wrapper">
-        <!-- YouTube Video Embed -->
-        <iframe 
-          src="https://www.youtube.com/embed/wM-NT6hcw48" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen
-          class="video-embed">
-        </iframe>
-        
-        <!-- 
-        OPTION 2: Direct Video File
-        Uncomment the video tag below and upload your video to assets/videos/host-video.mp4
-        -->
-        <!--
-        <video controls class="video-player" style="display: none;">
-          <source src="{{ '/assets/videos/host-video.mp4' | relative_url }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        -->
-        
-        <!-- Placeholder - will hide automatically when video is added -->
-        <div class="video-placeholder">
-          <div class="video-placeholder-content">
-            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="5 3 19 12 5 21 5 3"></polygon>
-            </svg>
-            <p>Add your video here</p>
-            <p class="placeholder-hint">To add a YouTube video: Replace VIDEO_ID in the iframe above with your video ID</p>
-            <p class="placeholder-hint">To add a direct video: Uncomment the video tag and upload to assets/videos/host-video.mp4</p>
+    <div class="video-carousel-container">
+      <div class="video-carousel">
+        <div class="video-slide active">
+          <div class="video-wrapper">
+            <iframe 
+              src="https://www.youtube.com/embed/wM-NT6hcw48" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              class="video-embed">
+            </iframe>
           </div>
         </div>
+        <div class="video-slide">
+          <div class="video-wrapper">
+            <!-- Add your second video ID here -->
+            <iframe 
+              src="https://www.youtube.com/embed/VIDEO_ID_2" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              class="video-embed">
+            </iframe>
+            <div class="video-placeholder">
+              <div class="video-placeholder-content">
+                <p>Add your second video</p>
+                <p class="placeholder-hint">Replace VIDEO_ID_2 with your YouTube video ID</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-slide">
+          <div class="video-wrapper">
+            <!-- Add your third video ID here -->
+            <iframe 
+              src="https://www.youtube.com/embed/VIDEO_ID_3" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen
+              class="video-embed">
+            </iframe>
+            <div class="video-placeholder">
+              <div class="video-placeholder-content">
+                <p>Add your third video</p>
+                <p class="placeholder-hint">Replace VIDEO_ID_3 with your YouTube video ID</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn carousel-prev" aria-label="Previous video">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="carousel-btn carousel-next" aria-label="Next video">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+      <div class="carousel-dots">
+        <button class="carousel-dot active" data-slide="0" aria-label="Go to video 1"></button>
+        <button class="carousel-dot" data-slide="1" aria-label="Go to video 2"></button>
+        <button class="carousel-dot" data-slide="2" aria-label="Go to video 3"></button>
       </div>
     </div>
   </div>

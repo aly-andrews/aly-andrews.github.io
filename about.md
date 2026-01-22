@@ -80,7 +80,7 @@ permalink: /about
 
     <div class="about-section">
       <h2>Beyond work</h2>
-      <p>When I'm not creating content, I'm usually behind a camera. I run a photography business (Aly Anne Photography) where I capture portraits and special moments. Photography gives me a creative outlet and helps me stay connected to the craft of visual storytelling.</p>
+      <p>When I'm not creating content, I'm usually behind a camera. I run a photography business (<a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a>) where I capture portraits and special moments. Photography gives me a creative outlet and helps me stay connected to the craft of visual storytelling.</p>
       <p>I'm also passionate about continuous learning. Whether it's exploring new technical writing techniques, diving into healthcare documentation opportunities, or experimenting with AI tools, I'm always looking for ways to grow and improve my craft.</p>
     </div>
   </div>
