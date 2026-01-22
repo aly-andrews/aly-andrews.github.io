@@ -21,7 +21,11 @@ permalink: /
     <p class="hero-description">Creating accessible, engaging educational content that helps people learn and succeed</p>
   </div>
   <div class="hero-photo">
-    <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none';">
+    <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="hero-photo-placeholder" style="display: none;">
+      <p>Add your photo</p>
+      <p class="placeholder-hint">Upload to: assets/images/about/profile.jpg</p>
+    </div>
   </div>
 </section>
 
