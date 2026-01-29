@@ -95,6 +95,7 @@ permalink: /
             <video 
               controls 
               class="video-embed"
+              poster="{{ '/assets/videos/what is shopify.jpg' | relative_url }}"
               preload="metadata">
               <source src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
               Your browser does not support the video tag.
@@ -106,6 +107,7 @@ permalink: /
             <video 
               controls 
               class="video-embed"
+              poster="{{ '/assets/videos/BFCM.jpg' | relative_url }}"
               preload="metadata">
               <source src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
               Your browser does not support the video tag.
@@ -117,6 +119,7 @@ permalink: /
             <video 
               controls 
               class="video-embed"
+              poster="{{ '/assets/videos/what is shop.jpg' | relative_url }}"
               preload="metadata">
               <source src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
               Your browser does not support the video tag.
@@ -128,6 +131,7 @@ permalink: /
             <video 
               controls 
               class="video-embed"
+              poster="{{ '/assets/videos/store policies.jpg' | relative_url }}"
               preload="metadata">
               <source src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
               Your browser does not support the video tag.
