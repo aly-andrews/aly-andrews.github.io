@@ -6,7 +6,7 @@ permalink: /
 
 <section class="site-credits">
   <div class="container">
-    <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
+    <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages. <a href="https://github.com/aly-andrews/aly-andrews.github.io" target="_blank" rel="noopener">View source on GitHub</a></p>
   </div>
 </section>
 
@@ -18,7 +18,7 @@ permalink: /
   </div>
   <div class="hero-content">
     <h1 class="hero-title">Aly Andrews</h1>
-    <p class="hero-description">Creating accessible, engaging educational content that helps people learn and succeed</p>
+    <p class="hero-description">Technical writer and content creator specializing in accessible, engaging educational content that helps people learn and succeed</p>
   </div>
   <div class="hero-photo">
     <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
