@@ -42,9 +42,10 @@ permalink: /
           </div>
         </div>
         <div class="work-content">
-          <h3>Skio documentation</h3>
-          <p>Created comprehensive help center articles and video scripts for subscription management platform. Work included developing both written documentation and video content to help merchants understand and use subscription features effectively.</p>
-          <a href="/work#skio" class="work-link">View work samples →</a>
+          <h3>Getting started with Shopify</h3>
+          <p class="work-subtitle">5 essential setup tasks before going live</p>
+          <p>Comprehensive documentation and guides to help new merchants set up their Shopify store successfully. Step-by-step instructions covering essential configuration, settings, and best practices for launching your online store.</p>
+          <a href="/work#shopify" class="work-link">View documentation →</a>
         </div>
       </div>
       
@@ -85,55 +86,52 @@ permalink: /
   <div class="container">
     <div class="video-section-header">
       <h2 class="video-title">Watch me in action</h2>
-      <p class="video-subtitle">See me hosting educational content and bringing complex topics to life</p>
+      <p class="video-subtitle">Watch videos I created from concept to completion—researching ideas, developing concepts based on support data, writing scripts and filming. I handled editing for many of these projects, bringing complex topics to life through engaging content</p>
     </div>
     <div class="video-carousel-container">
       <div class="video-carousel">
         <div class="video-slide active">
           <div class="video-wrapper">
-            <iframe 
-              src="https://www.youtube.com/embed/wM-NT6hcw48" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen
-              class="video-embed">
-            </iframe>
+            <video 
+              controls 
+              class="video-embed"
+              preload="metadata">
+              <source src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
         <div class="video-slide">
           <div class="video-wrapper">
-            <!-- Add your second video ID here -->
-            <iframe 
-              src="https://www.youtube.com/embed/VIDEO_ID_2" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen
-              class="video-embed">
-            </iframe>
-            <div class="video-placeholder">
-              <div class="video-placeholder-content">
-                <p>Add your second video</p>
-                <p class="placeholder-hint">Replace VIDEO_ID_2 with your YouTube video ID</p>
-              </div>
-            </div>
+            <video 
+              controls 
+              class="video-embed"
+              preload="metadata">
+              <source src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
         <div class="video-slide">
           <div class="video-wrapper">
-            <!-- Add your third video ID here -->
-            <iframe 
-              src="https://www.youtube.com/embed/VIDEO_ID_3" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen
-              class="video-embed">
-            </iframe>
-            <div class="video-placeholder">
-              <div class="video-placeholder-content">
-                <p>Add your third video</p>
-                <p class="placeholder-hint">Replace VIDEO_ID_3 with your YouTube video ID</p>
-              </div>
-            </div>
+            <video 
+              controls 
+              class="video-embed"
+              preload="metadata">
+              <source src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="video-slide">
+          <div class="video-wrapper">
+            <video 
+              controls 
+              class="video-embed"
+              preload="metadata">
+              <source src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
@@ -153,6 +151,7 @@ permalink: /
         <button class="carousel-dot active" data-slide="0" aria-label="Go to video 1"></button>
         <button class="carousel-dot" data-slide="1" aria-label="Go to video 2"></button>
         <button class="carousel-dot" data-slide="2" aria-label="Go to video 3"></button>
+        <button class="carousel-dot" data-slide="3" aria-label="Go to video 4"></button>
       </div>
     </div>
   </div>

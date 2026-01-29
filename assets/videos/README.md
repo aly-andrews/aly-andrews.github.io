@@ -1,40 +1,46 @@
-# Videos Directory
+# Video Files
 
-Upload your video files here if you prefer to host them directly instead of using YouTube/Vimeo embeds.
+Upload your video files here to display them on the landing page.
+
+## File Structure
+
+- `video1.mp4` - First video in carousel (required)
+- `video2.mp4` - Second video in carousel (optional)
+- `video3.mp4` - Third video in carousel (optional)
+- `video1-poster.jpg` - Thumbnail/poster image for video1 (optional)
+- `video2-poster.jpg` - Thumbnail/poster image for video2 (optional)
+- `video3-poster.jpg` - Thumbnail/poster image for video3 (optional)
 
 ## Supported Formats
 
-- MP4 (recommended)
-- WebM
-- OGG
-
-## File Location
-
-Upload your hosting video to: `assets/videos/host-video.mp4`
-
-## How to Use
-
-1. **Option 1: YouTube/Vimeo Embed (Recommended)**
-   - Get your video embed code from YouTube or Vimeo
-   - Replace the iframe in `index.md` with your embed code
-   - The placeholder will automatically hide
-
-2. **Option 2: Direct Video File**
-   - Upload your video to this folder
-   - Uncomment the `<video>` tag in `index.md`
-   - Comment out or remove the iframe
-   - The video will play directly on the site
+- **MP4** (recommended) - Best browser compatibility
+- **WebM** - Alternative format for better compression
 
 ## Video Recommendations
 
-- **Format**: MP4 (H.264 codec)
-- **Resolution**: 1920x1080 (1080p) or higher
-- **Aspect Ratio**: 16:9 (standard widescreen)
-- **File Size**: Keep under 50MB if possible (or use video compression)
-- **Duration**: 2-5 minutes works well for portfolio showcases
+- **Resolution**: 1920x1080 (1080p) or 1280x720 (720p)
+- **Aspect Ratio**: 16:9
+- **File Size**: Keep under 50MB per video for faster loading
+- **Codec**: H.264 for MP4
+- **Duration**: 2-5 minutes recommended for portfolio showcase
 
-## Tips
+## How to Add Videos
 
-- YouTube/Vimeo embeds are recommended as they handle streaming and compression automatically
-- If hosting directly, consider compressing the video to reduce file size
-- Ensure good lighting and audio quality for professional presentation
+1. Export your video as MP4 format
+2. Name it `video1.mp4`, `video2.mp4`, or `video3.mp4`
+3. Upload to this directory (`assets/videos/`)
+4. (Optional) Create a poster image (thumbnail) and name it `video1-poster.jpg`, etc.
+5. The video will automatically appear in the carousel
+
+## Compression Tips
+
+To reduce file size:
+- Use HandBrake or similar tool to compress
+- Target bitrate: 2-5 Mbps for 1080p
+- Use two-pass encoding for better quality
+
+## Notes
+
+- Videos are loaded on-demand (preload="metadata")
+- Placeholder will show until video file is uploaded
+- Multiple format support: MP4 (primary) and WebM (fallback)

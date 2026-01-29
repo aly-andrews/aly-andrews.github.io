@@ -13,6 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Function to show a specific slide
   function showSlide(index) {
+    // Pause all videos in current slide
+    slides[currentSlide].querySelectorAll('video').forEach(video => {
+      video.pause();
+    });
+    
     // Remove active class from all slides and dots
     slides.forEach(slide => slide.classList.remove('active'));
     dots.forEach(dot => dot.classList.remove('active'));
