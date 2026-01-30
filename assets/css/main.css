@@ -521,7 +521,6 @@ body {
 
 .photography-grid-item {
   position: relative;
-  aspect-ratio: 1;
   border-radius: 12px;
   overflow: hidden;
   background: var(--bg-accent);
@@ -530,9 +529,9 @@ body {
 
 .photography-grid-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
+  vertical-align: middle;
 }
 
 .photography-grid-item .photography-placeholder {
@@ -1520,9 +1519,22 @@ body {
   text-align: left;
 }
 
+.video-header-with-plaque {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
 .video-section-header {
+  flex: 1;
+  min-width: 280px;
   text-align: left;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   position: relative;
   z-index: 1;
 }
@@ -1540,12 +1552,13 @@ body {
   margin: 0;
 }
 
-/* YouTube plaque – near video section */
+/* YouTube plaque – to the right of video header, slightly angled */
 .youtube-plaque-wrap {
-  max-width: 320px;
-  margin: 0 auto 2.5rem;
+  flex-shrink: 0;
+  max-width: 280px;
   position: relative;
   z-index: 1;
+  transform: rotate(4deg);
 }
 
 .youtube-plaque-image {
@@ -1695,19 +1708,39 @@ body {
   border-radius: 6px;
 }
 
-/* Responsive carousel */
+/* Responsive carousel and video header */
 @media (max-width: 768px) {
+  .video-header-with-plaque {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .video-section-header {
+    text-align: center;
+  }
+
+  .video-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .youtube-plaque-wrap {
+    transform: rotate(3deg);
+    margin: 0 auto;
+  }
+
   .carousel-btn {
     width: 40px;
     height: 40px;
     margin: 0 0.5rem;
   }
-  
+
   .carousel-btn svg {
     width: 16px;
     height: 16px;
   }
-  
+
   .carousel-dots {
     margin-top: 1.5rem;
     gap: 0.75rem;

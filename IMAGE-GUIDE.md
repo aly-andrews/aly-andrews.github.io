@@ -3,7 +3,7 @@
 ## Where to Upload Images
 
 ### Logo
-1. **Site Logo**: `assets/images/alyandrews.png`
+1. **Site Logo**: `assets/images/alyandrews2.png`
    - Recommended: 200-300px wide
    - Transparent background preferred
    - PNG format recommended
