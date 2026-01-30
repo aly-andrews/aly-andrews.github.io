@@ -539,6 +539,31 @@ body {
   padding: 4rem 0;
 }
 
+.resume-intro {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.resume-intro a {
+  color: var(--accent-teal);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.resume-intro a:hover {
+  opacity: 0.85;
+}
+
+.resume-pdf {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 .experience-item {
   margin-bottom: 4rem;
   padding-bottom: 4rem;
