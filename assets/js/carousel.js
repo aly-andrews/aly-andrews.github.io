@@ -8,6 +8,28 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (!carousel || slides.length === 0) return;
   
+  // Play overlay: click to play video, hide overlay while playing
+  document.querySelectorAll('.video-wrapper').forEach(function(wrapper) {
+    const video = wrapper.querySelector('video');
+    const overlay = wrapper.querySelector('.video-play-overlay');
+    if (!video || !overlay) return;
+    
+    overlay.addEventListener('click', function() {
+      video.play();
+      wrapper.classList.add('playing');
+    });
+    
+    video.addEventListener('play', function() {
+      wrapper.classList.add('playing');
+    });
+    video.addEventListener('pause', function() {
+      wrapper.classList.remove('playing');
+    });
+    video.addEventListener('ended', function() {
+      wrapper.classList.remove('playing');
+    });
+  });
+  
   let currentSlide = 0;
   const totalSlides = slides.length;
   
