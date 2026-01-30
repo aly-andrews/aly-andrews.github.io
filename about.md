@@ -4,18 +4,25 @@ title: About
 permalink: /about
 ---
 
-<section class="page-header">
+<section class="page-header-creative about-page-header">
   <div class="container">
     <h1>About me</h1>
+    <p class="page-subtitle">Technical writer, content creator, and photographer</p>
   </div>
 </section>
 
-<section class="about-content">
+<section class="about-content about-content-creative">
   <div class="container">
     <div class="about-intro">
       <h2>Welcome</h2>
-      <p>I'm a Senior Education Content Producer with 8 years of experience creating educational content at Shopify. I specialize in video production, technical writing, and developing scalable content systems that make complex information accessible.</p>
+      <p>I'm a Senior Education Content Producer with 8 years of experience creating educational content at Shopify. I specialize in video production, technical writing and developing scalable content systems that make complex information accessible.</p>
       <p>Currently pursuing a Technical Writing Graduate Certificate at Algonquin College, I'm passionate about bridging the gap between technical expertise and user understanding through clear, engaging content.</p>
+    </div>
+
+    <div class="about-section">
+      <h2>My unique skillset</h2>
+      <p>I have a sharp mix of technical and creative skills, enriched by my technical writing journey. My hard skills include expertise of the Adobe Creative Suite for photo and video, data analysis and harnessing LLM to create custom workflows.</p>
+      <p>My soft skills shine in stakeholder management, process development and simplifying complex information. I excel at presenting and directing on-camera talent, while my technical writing background ensures precise, reusable content structures. This blend lets me adapt to new tech and audiences, delivering impactful, brand-consistent results.</p>
     </div>
 
     <div class="about-section">
@@ -78,10 +85,47 @@ permalink: /about
       </div>
     </div>
 
-    <div class="about-section">
-      <h2>Beyond work</h2>
-      <p>When I'm not creating content, I'm usually behind a camera. I run a photography business (<a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a>) where I capture portraits and special moments. Photography gives me a creative outlet and helps me stay connected to the craft of visual storytelling.</p>
-      <p>I'm also passionate about continuous learning. Whether it's exploring new technical writing techniques, diving into healthcare documentation opportunities, or experimenting with AI tools, I'm always looking for ways to grow and improve my craft.</p>
+    <div class="about-section about-section-photography">
+      <h2>Things I love</h2>
+      <p>I've always been someone who needs to have a passion hobby outside of my work. A few years ago it was cooking and then I discovered my love of photography during the pandemic. What started out as a few portraits of friends and family, grew into an entire business with regular clients and sold out mini sessions with waitlists.</p>
+      <p>Not only did I prove again that I can create scalable business frameworks, I created a new source of income for my family and found a way to express myself creatively. After starting my Technical Writing program, I've since put a pause in my photography business, but still take a few clients throughout the year for creative joy.</p>
+      <p>You can see my work at <a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a>. I'm also passionate about continuous learning—exploring new technical writing techniques, diving into healthcare documentation opportunities, and experimenting with AI tools.</p>
+
+      <h3 class="photography-grid-title">Photography work</h3>
+      <div class="photography-grid">
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/Aly.jpg' | relative_url }}" alt="Aly portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/Aly Portrait-3.jpg' | relative_url }}" alt="Aly portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ \"/assets/images/photography/Mother's Day Full Gallery-27.jpg\" | relative_url }}" alt="Mother's Day gallery" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ \"/assets/images/photography/Mother's Day-10.jpg\" | relative_url }}" alt="Mother's Day" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ \"/assets/images/photography/Mother's Day-14.jpg\" | relative_url }}" alt="Mother's Day" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/Painterly Collection 2bb.png' | relative_url }}" alt="Painterly collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/saxxy puddles-5.jpg' | relative_url }}" alt="Saxxy puddles" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/self-portrait-3.jpg' | relative_url }}" alt="Self portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

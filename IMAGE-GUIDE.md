@@ -18,6 +18,16 @@
    - `assets/images/portfolio/style-guides.jpg` - Style guides project  
    - `assets/images/portfolio/video.jpg` - Video production project
 
+3. **YouTube Plaque** (near video section):
+   - `assets/images/landing/youtube-plaque.jpg` - Photo of your YouTube Silver Plaque
+   - Recommended: square or portrait, max-width ~320px on site
+
+### About Page – Photography Grid
+Upload to `assets/images/photography/`:
+- `photo-1.jpg` through `photo-6.jpg` - Your photography work (portraits, sessions, etc.)
+- Grid displays 3 columns on desktop, 2 on tablet, 1 on mobile
+- Square or near-square images work best (they display in 1:1 aspect ratio)
+
 ### Work Page Images
 Upload to `assets/images/portfolio/`:
 
