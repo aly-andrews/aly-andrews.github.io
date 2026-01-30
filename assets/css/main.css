@@ -754,47 +754,83 @@ body {
   font-weight: bold;
 }
 
-/* Accomplishment/results tables */
+/* Accomplishment/results tables – flow-aligned with page, dynamic */
 .experience-highlights .accomplishment-table {
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   border-collapse: collapse;
   font-size: 1rem;
-  background: linear-gradient(135deg, rgba(139, 115, 85, 0.06) 0%, rgba(201, 169, 107, 0.04) 100%);
+  line-height: 1.75;
+  position: relative;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border-color);
+  /* Left gradient bar matching experience page accent */
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-accent) 100%),
+    linear-gradient(180deg, var(--accent-green), var(--accent-teal), var(--accent-blue), var(--accent-gold));
+  background-size: 100% 100%, 5px 100%;
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .experience-highlights .accomplishment-table thead {
-  background: rgba(139, 115, 85, 0.12);
+  background: linear-gradient(90deg, var(--accent-green) 0%, var(--accent-teal) 40%, var(--accent-blue) 100%);
+  color: white;
 }
 
 .experience-highlights .accomplishment-table th {
   text-align: left;
   padding: 0.75rem 1.25rem;
   font-weight: 600;
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border-bottom: none;
 }
 
 .experience-highlights .accomplishment-table th:first-child {
-  border-right: 1px solid var(--border-color);
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .experience-highlights .accomplishment-table td {
   padding: 0.875rem 1.25rem;
   color: var(--text-light);
-  line-height: 1.7;
-  border-bottom: 1px solid rgba(139, 115, 85, 0.12);
+  line-height: 1.75;
+  border-bottom: 1px solid var(--border-color);
   vertical-align: top;
+  transition: background 0.2s ease;
+}
+
+.experience-highlights .accomplishment-table tbody tr:hover td {
+  background: rgba(139, 115, 85, 0.04);
+}
+
+.experience-highlights .accomplishment-table tbody tr {
+  opacity: 0;
+  animation: accomplishmentRowFade 0.4s ease forwards;
+}
+
+.experience-highlights .accomplishment-table tbody tr:nth-child(1) { animation-delay: 0.05s; }
+.experience-highlights .accomplishment-table tbody tr:nth-child(2) { animation-delay: 0.1s; }
+.experience-highlights .accomplishment-table tbody tr:nth-child(3) { animation-delay: 0.15s; }
+.experience-highlights .accomplishment-table tbody tr:nth-child(4) { animation-delay: 0.2s; }
+.experience-highlights .accomplishment-table tbody tr:nth-child(5) { animation-delay: 0.25s; }
+
+@keyframes accomplishmentRowFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .experience-highlights .accomplishment-table td:first-child {
-  border-right: 1px solid rgba(139, 115, 85, 0.15);
+  border-right: 1px solid var(--border-color);
   font-weight: 500;
   color: var(--text-color);
+  border-left: 3px solid var(--accent-green);
 }
+
+.experience-highlights .accomplishment-table tbody tr:nth-child(2) td:first-child { border-left-color: var(--accent-teal); }
+.experience-highlights .accomplishment-table tbody tr:nth-child(3) td:first-child { border-left-color: var(--accent-gold); }
+.experience-highlights .accomplishment-table tbody tr:nth-child(4) td:first-child { border-left-color: var(--accent-teal); }
+.experience-highlights .accomplishment-table tbody tr:nth-child(5) td:first-child { border-left-color: var(--accent-green); }
 
 .experience-highlights .accomplishment-table tbody tr:last-child td {
   border-bottom: none;
