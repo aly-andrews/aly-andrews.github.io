@@ -754,6 +754,118 @@ body {
   font-weight: bold;
 }
 
+/* Accomplishment/results lists: no extra arrow (→ in text), distinct block styling */
+.experience-highlights ul.accomplishment-list {
+  margin-top: 1rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  background: linear-gradient(135deg, rgba(139, 115, 85, 0.06) 0%, rgba(201, 169, 107, 0.04) 100%);
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 0 8px 8px 0;
+}
+
+.experience-highlights ul.accomplishment-list li {
+  padding-left: 0;
+}
+
+.experience-highlights ul.accomplishment-list li::before {
+  content: none;
+}
+
+.experience-highlights ul.accomplishment-list li {
+  border-bottom: 1px solid rgba(139, 115, 85, 0.12);
+}
+
+.experience-highlights ul.accomplishment-list li:last-child {
+  border-bottom: none;
+}
+
+/* Experience page header and content wrapper */
+.experience-page-header {
+  padding: 2.5rem 2rem 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience-page-header h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.35rem;
+}
+
+.experience-page-subtitle {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.experience-content-inner {
+  padding: 2rem 2rem 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item-last {
+  border-bottom: none;
+  padding-bottom: 2rem;
+}
+
+.experience-header h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.experience-section {
+  padding: 3rem 0 2rem;
+  border-top: 2px solid var(--border-color);
+  max-width: 720px;
+  margin: 0 auto 0;
+}
+
+.experience-section h2 {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 1.25rem;
+}
+
+.experience-section p {
+  font-size: 1.05rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.experience-section p:last-child {
+  margin-bottom: 0;
+}
+
+.experience-section-skills {
+  padding-top: 2.5rem;
+}
+
+.experience-section-beyond {
+  padding-bottom: 0;
+}
+
+.experience-resume-download {
+  padding: 1.5rem 2rem 0;
+  margin-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.experience-resume-download .btn {
+  font-size: 0.95rem;
+}
+
 /* Contact page */
 .contact-content {
   padding: 4rem 0;
@@ -2026,6 +2138,35 @@ body {
 
   .experience-resume-page {
     padding: 2rem 0 3rem;
+  }
+
+  .experience-page-header {
+    padding: 1.5rem 1rem 0;
+  }
+
+  .experience-page-header h1 {
+    font-size: 2rem;
+  }
+
+  .experience-content-inner {
+    padding: 1.5rem 1rem 1rem;
+  }
+
+  .experience-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .experience-highlights ul.accomplishment-list {
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+
+  .experience-section {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .experience-resume-download {
+    padding: 1rem 1rem 0;
   }
 
   .resume-pages {
