@@ -754,28 +754,49 @@ body {
   font-weight: bold;
 }
 
-/* Accomplishment/results lists: no extra arrow (→ in text), distinct block styling */
-.experience-highlights ul.accomplishment-list {
+/* Accomplishment/results tables */
+.experience-highlights .accomplishment-table {
+  width: 100%;
   margin-top: 1rem;
-  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  border-collapse: collapse;
+  font-size: 1rem;
   background: linear-gradient(135deg, rgba(139, 115, 85, 0.06) 0%, rgba(201, 169, 107, 0.04) 100%);
-  border-left: 4px solid var(--secondary-color);
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
 }
 
-.experience-highlights ul.accomplishment-list li {
-  padding-left: 0;
+.experience-highlights .accomplishment-table thead {
+  background: rgba(139, 115, 85, 0.12);
 }
 
-.experience-highlights ul.accomplishment-list li::before {
-  content: none;
+.experience-highlights .accomplishment-table th {
+  text-align: left;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
-.experience-highlights ul.accomplishment-list li {
+.experience-highlights .accomplishment-table th:first-child {
+  border-right: 1px solid var(--border-color);
+}
+
+.experience-highlights .accomplishment-table td {
+  padding: 0.875rem 1.25rem;
+  color: var(--text-light);
+  line-height: 1.7;
   border-bottom: 1px solid rgba(139, 115, 85, 0.12);
+  vertical-align: top;
 }
 
-.experience-highlights ul.accomplishment-list li:last-child {
+.experience-highlights .accomplishment-table td:first-child {
+  border-right: 1px solid rgba(139, 115, 85, 0.15);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.experience-highlights .accomplishment-table tbody tr:last-child td {
   border-bottom: none;
 }
 
@@ -2157,8 +2178,10 @@ body {
     padding-bottom: 2.5rem;
   }
 
-  .experience-highlights ul.accomplishment-list {
-    padding: 1rem 1rem 1rem 1.25rem;
+  .experience-highlights .accomplishment-table th,
+  .experience-highlights .accomplishment-table td {
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
   }
 
   .experience-section {

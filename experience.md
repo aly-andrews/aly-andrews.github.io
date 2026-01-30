@@ -32,11 +32,16 @@ permalink: /experience
         </div>
         <div class="experience-highlights">
           <h3>Accomplishments & Results</h3>
-          <ul class="accomplishment-list">
-            <li>Created custom Shopify Academy LLM style guides used to train Claude-based script-writing agents adopted across teams → Reduce pre-production from 5 days to 1, including script revision cycles</li>
-            <li>Onboarded Education team to new Reprise demo course for merchants → Maintained an 80% audience retention rate since Q1 launch; average 87% completion rate when compared to taking head video</li>
-            <li>Migration of 100+ educational videos between video hosting platforms, implemented structured customized onboarding documentation → Video content was always live and accessible for viewers, Shopify staff had little disruption to workflow with zero downtime; data captured and segmented immediately</li>
-          </ul>
+          <table class="accomplishment-table">
+            <thead>
+              <tr><th>Accomplishment</th><th>Result</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Created custom Shopify Academy LLM style guides used to train Claude-based script-writing agents adopted across teams</td><td>Reduce pre-production from 5 days to 1, including script revision cycles</td></tr>
+              <tr><td>Onboarded Education team to new Reprise demo course for merchants</td><td>Maintained an 80% audience retention rate since Q1 launch; average 87% completion rate when compared to taking head video</td></tr>
+              <tr><td>Migration of 100+ educational videos between video hosting platforms, implemented structured customized onboarding documentation</td><td>Video content was always live and accessible for viewers, Shopify staff had little disruption to workflow with zero downtime; data captured and segmented immediately</td></tr>
+            </tbody>
+          </table>
           <h3>Content Strategy & Development</h3>
           <ul>
             <li>Writing articles and producing videos for structured learning tracks</li>
@@ -65,11 +70,16 @@ permalink: /experience
         </div>
         <div class="experience-highlights">
           <h3>Accomplishments & Results</h3>
-          <ul class="accomplishment-list">
-            <li>Created comprehensive technical onboarding for producers priming the video team → New staff were equipped to self-serve their onboarding needs for their specific role, freeing up time for the remaining staff to continue producing</li>
-            <li>Introduced webinar modality to video content offerings → Real-time data collection during live Q&A and business case created to secure headcount for webinar-specific role</li>
-            <li>Developed educational content roadmaps based on support data and learning opportunities aligned with Shopify quarterly goals → Video content was based on real-support queries, meaning viewers were actively seeking the content instead of contacting support. It saved Shopify money through deflection and organically improved Google search rankings through keyword topics</li>
-          </ul>
+          <table class="accomplishment-table">
+            <thead>
+              <tr><th>Accomplishment</th><th>Result</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Created comprehensive technical onboarding for producers priming the video team</td><td>New staff were equipped to self-serve their onboarding needs for their specific role, freeing up time for the remaining staff to continue producing</td></tr>
+              <tr><td>Introduced webinar modality to video content offerings</td><td>Real-time data collection during live Q&A and business case created to secure headcount for webinar-specific role</td></tr>
+              <tr><td>Developed educational content roadmaps based on support data and learning opportunities aligned with Shopify quarterly goals</td><td>Video content was based on real-support queries, meaning viewers were actively seeking the content instead of contacting support. It saved Shopify money through deflection and organically improved Google search rankings through keyword topics</td></tr>
+            </tbody>
+          </table>
           <h3>Team Building & Documentation</h3>
           <ul>
             <li>Designed end-to-end hiring process including role definitions, interview frameworks, and candidate evaluation criteria</li>
@@ -103,13 +113,18 @@ permalink: /experience
         </div>
         <div class="experience-highlights">
           <h3>Accomplishments & Results</h3>
-          <ul class="accomplishment-list">
-            <li>Launched 25-video POS series including script writing, SME training and cross-team coordination in film → Influential POS hardware sales; 20k deflection savings first week of launch (tracked through coupons to 10 per series)</li>
-            <li>2020 stats: Hours watched +70% (8,338 to 14,228), Views +48% (241,670 to 356,223), Total subscribers +130% (42,000 to 96,800)</li>
-            <li>Improved English YouTube SEO ranking from C+ to A- in Google search results, videos surfaced as recommendations in YouTube algorithm</li>
-            <li>Independently grew YouTube channel through organic traffic from 40,000 to 100,000+ subscribers within the first two years, earning Silver Plaque recognition</li>
-            <li>Independently produced 92 videos (62 English, 30 international) within two years</li>
-          </ul>
+          <table class="accomplishment-table">
+            <thead>
+              <tr><th>Accomplishment</th><th>Result</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Launched 25-video POS series including script writing, SME training and cross-team coordination in film</td><td>Influential POS hardware sales; 20k deflection savings first week of launch (tracked through coupons to 10 per series)</td></tr>
+              <tr><td>2020 stats</td><td>Hours watched +70% (to 14,228), Views +48% (to 356,223), Total subscribers to 96,800 (+130%)</td></tr>
+              <tr><td>Improved English YouTube SEO ranking from C+ to A- in Google search results</td><td>Videos surfaced as recommendations in YouTube algorithm</td></tr>
+              <tr><td>Grew YouTube channel through organic traffic within the first two years</td><td>To 100,000+ subscribers, earning Silver Plaque recognition</td></tr>
+              <tr><td>Independently produced 92 videos (62 English, 30 international) within two years</td><td>—</td></tr>
+            </tbody>
+          </table>
           <h3>International Expansion & Localization</h3>
           <ul>
             <li>Coordinated localization of 30+ videos through Videolocalize partnership</li>
