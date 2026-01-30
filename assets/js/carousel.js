@@ -1,3 +1,33 @@
+// Mobile Navigation Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (navToggle && navLinks) {
+    navToggle.addEventListener('click', function() {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      navLinks.classList.toggle('nav-open');
+    });
+
+    // Close menu when clicking a link
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function() {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('nav-open');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('nav-open');
+      }
+    });
+  }
+});
+
 // Video Carousel Functionality
 document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.video-carousel');

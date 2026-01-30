@@ -94,39 +94,39 @@ permalink: /about
       <h3 class="photography-grid-title">Photography work</h3>
       <div class="photography-grid">
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
         <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Photography work" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
           <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
         </div>
       </div>

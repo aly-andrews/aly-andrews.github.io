@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/favicon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script src="{{ '/assets/js/carousel.js' | relative_url }}" defer></script>
 </head>
 <body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header class="site-header">
     <div class="container">
-      <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}" class="site-logo">
-          <img src="{{ '/assets/images/alyandrews2.png' | relative_url }}" alt="Aly Andrews" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="Aly Andrews - Home">
+          <img src="{{ '/assets/images/alyandrews2.png' | relative_url }}" alt="Aly Andrews logo" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <span class="logo-placeholder" style="display: none;">Aly Andrews</span>
         </a>
-        <ul class="nav-links">
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="nav-toggle-icon"></span>
+        </button>
+        <ul class="nav-links" role="menubar">
           {% for item in site.navigation %}
-          <li>
-            <a href="{{ item.url | relative_url }}" {% if page.url == item.url %}class="active"{% endif %}>
+          <li role="none">
+            <a href="{{ item.url | relative_url }}" role="menuitem" {% if page.url == item.url %}class="active" aria-current="page"{% endif %}>
               {{ item.title }}
             </a>
           </li>
@@ -29,7 +37,7 @@
     </div>
   </header>
 
-  <main class="site-main">
+  <main id="main-content" class="site-main">
     {{ content }}
   </main>
 
