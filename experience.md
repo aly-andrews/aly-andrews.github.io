@@ -10,9 +10,13 @@ permalink: /experience
   </div>
 </section>
 
-<section class="experience-content">
-  <div class="container">
-    <p class="resume-intro">View my resume below or <a href="{{ '/assets/documents/resume.pdf' | relative_url }}" download>download the PDF</a>.</p>
-    <iframe src="{{ '/assets/documents/resume.pdf' | relative_url }}#toolbar=1" class="resume-pdf" title="Aly Andrews Resume"></iframe>
+<div class="experience-resume-banner" aria-hidden="true"></div>
+
+<section class="experience-content experience-resume-section">
+  <div class="container experience-resume-container">
+    <div id="resume-pages" class="resume-pages" data-pdf-url="{{ '/assets/documents/resume.pdf' | relative_url }}">
+      <p class="resume-loading" id="resume-loading">Loading resume…</p>
+    </div>
   </div>
+  <div class="experience-resume-banner-bottom" aria-hidden="true"></div>
 </section>

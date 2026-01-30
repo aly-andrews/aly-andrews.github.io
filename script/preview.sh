@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 # Preview Jekyll site locally. Run from repo root or pass repo path.
-# Logs to workspace debug.log for diagnostics.
+# Logs for diagnostics (writes to repo _preview_debug.log so we can read even from Cursor).
 # Requires Ruby 3.0+ (Jekyll 4.x and dependencies like ffi need Ruby 3+).
 
 LOG="/Users/alysaandrews/Documents/docs/.cursor/debug.log"
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+PREVIEW_LOG="$REPO_DIR/_preview_debug.log"
 cd "$REPO_DIR"
 
 # #region agent log
-echo "{\"timestamp\":$(date +%s)000,\"message\":\"preview_script_start\",\"data\":{\"cwd\":\"$REPO_DIR\",\"ruby\":\"$(ruby -v 2>/dev/null || echo 'none')\"},\"hypothesisId\":\"H4\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}" >> "$LOG"
+_log() { echo "$1" >> "$LOG" 2>/dev/null; echo "$1" >> "$PREVIEW_LOG" 2>/dev/null; }
+_log "{\"timestamp\":$(date +%s)000,\"message\":\"preview_script_start\",\"data\":{\"cwd\":\"$REPO_DIR\",\"ruby\":\"$(ruby -v 2>/dev/null || echo 'none')\",\"brewInPath\":$(command -v brew >/dev/null 2>&1 && echo true || echo false),\"pathPreview\":\"${PATH:0:200}\"},\"hypothesisId\":\"H4\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}"
 # #endregion
 
 # Require Ruby 3.0+ (ffi and Jekyll 4.x deps need it)
@@ -38,7 +40,7 @@ if [ "$MAJOR" -lt 3 ] 2>/dev/null; then
     echo "Then restart your terminal so 'ruby' points to the new version, and run this script again."
   fi
   # #region agent log
-  echo "{\"timestamp\":$(date +%s)000,\"message\":\"ruby_version_too_old\",\"data\":{\"rubyVersion\":\"$RUBY_V\",\"required\":\"3.0+\",\"brewFound\":$(command -v brew >/dev/null 2>&1 && echo true || echo false)},\"hypothesisId\":\"H5\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}" >> "$LOG"
+  _log "{\"timestamp\":$(date +%s)000,\"message\":\"ruby_version_too_old\",\"data\":{\"rubyVersion\":\"$RUBY_V\",\"required\":\"3.0+\",\"brewFound\":$(command -v brew >/dev/null 2>&1 && echo true || echo false)},\"hypothesisId\":\"H5\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}"
   # #endregion
   exit 1
 fi
@@ -50,7 +52,7 @@ EXIT_INSTALL=$?
 BUNDLE_TAIL=$(echo "$BUNDLE_OUTPUT" | tail -30 | tr '\n' ' ' | sed 's/"/\\"/g')
 
 # #region agent log
-echo "{\"timestamp\":$(date +%s)000,\"message\":\"bundle_install_done\",\"data\":{\"exitCode\":$EXIT_INSTALL,\"outputTail\":\"$BUNDLE_TAIL\"},\"hypothesisId\":\"H1\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}" >> "$LOG"
+_log "{\"timestamp\":$(date +%s)000,\"message\":\"bundle_install_done\",\"data\":{\"exitCode\":$EXIT_INSTALL,\"outputTail\":\"$BUNDLE_TAIL\"},\"hypothesisId\":\"H1\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}"
 # #endregion
 
 if [ $EXIT_INSTALL -ne 0 ]; then
@@ -59,7 +61,13 @@ if [ $EXIT_INSTALL -ne 0 ]; then
 fi
 
 # #region agent log
-echo "{\"timestamp\":$(date +%s)000,\"message\":\"jekyll_serve_start\",\"data\":{},\"hypothesisId\":\"H5\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}" >> "$LOG"
+_log "{\"timestamp\":$(date +%s)000,\"message\":\"jekyll_serve_start\",\"data\":{},\"hypothesisId\":\"H5\",\"sessionId\":\"debug-session\",\"runId\":\"run1\"}"
 # #endregion
 
-exec bundle exec jekyll serve
+# Prefer binstub to avoid Bundler 4 exec issues; fallback to bundle exec
+JEKYLL_BIN=$(find "$REPO_DIR/vendor/bundle/ruby" -type f -name jekyll -path '*/bin/*' 2>/dev/null | head -1)
+if [ -n "$JEKYLL_BIN" ] && [ -x "$JEKYLL_BIN" ]; then
+  exec "$JEKYLL_BIN" serve
+else
+  exec bundle exec jekyll serve
+fi
