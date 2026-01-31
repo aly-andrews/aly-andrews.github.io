@@ -4,6 +4,23 @@ A collection of reusable workflow prompts for common tasks. These live in the we
 
 ## Quick Reference
 
+### Command index (start here)
+- **[@COMMAND-INDEX.md](COMMAND-INDEX.md)** - Copy friendly command list (slash command feel)
+
+### Site build workflows
+- **[@site-build/new-page.md](site-build/new-page.md)** - Create a new page + add to navigation
+- **[@site-build/new-section.md](site-build/new-section.md)** - Add a new section using existing patterns
+- **[@site-build/component-patterns.md](site-build/component-patterns.md)** - Reusable section patterns (cards, callouts, testimonials)
+- **[@site-build/mobile-ux-pass.md](site-build/mobile-ux-pass.md)** - Quick mobile UX polish pass
+- **[@site-build/add-image-and-alt-text.md](site-build/add-image-and-alt-text.md)** - Add images with correct paths and alt text
+- **[@site-build/preview-locally.md](site-build/preview-locally.md)** - Preview commands + what to verify
+
+### Templates
+- **[@templates/jekyll-page-frontmatter.md](templates/jekyll-page-frontmatter.md)** - Page starter template
+- **[@templates/hero-section.html](templates/hero-section.html)** - Hero section template
+- **[@templates/portfolio-card.html](templates/portfolio-card.html)** - Portfolio card template
+- **[@templates/testimonial-blockquote.html](templates/testimonial-blockquote.html)** - Testimonial blockquote template
+
 ### Deploy Workflows
 - **[@deploy/deploy-to-production.md](deploy/deploy-to-production.md)** - Commit, push to main, deploy to GitHub Pages
 - **[@deploy/create-and-deploy-branch.md](deploy/create-and-deploy-branch.md)** - Create new branch, make changes, deploy

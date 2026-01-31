@@ -1,0 +1,26 @@
+<section class="hero hero-creative">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">Your headline</h1>
+      <p class="hero-subtitle">Short subtitle that clarifies your role</p>
+      <p class="hero-description">One to two sentences that describe what you do and who you help.</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="{{ '/work' | relative_url }}">View my work</a>
+        <a class="btn btn-secondary" href="{{ '/contact' | relative_url }}">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img
+        src="{{ '/assets/images/about/profile.jpg' | relative_url }}"
+        alt="Portrait photo"
+        class="hero-profile-image"
+        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="image-placeholder hero-image-placeholder" style="display:none;">
+        <p>Upload a hero image</p>
+      </div>
+    </div>
+  </div>
+</section>
+
