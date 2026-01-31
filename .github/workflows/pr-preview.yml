@@ -35,13 +35,13 @@ jobs:
       # This ensures all links and assets work correctly in the preview subdirectory
       - name: Build Jekyll site for preview
         run: |
-          bundle exec jekyll build --baseurl /pr/${{ github.event.number }}
+          bundle exec jekyll build --baseurl /${{ github.event.number }}
         env:
           JEKYLL_ENV: production
 
       # Step 5: Deploy the built site to a PR-specific directory
       # Uses rossjrw/pr-preview-action to:
-      # - Push the _site contents to /pr/{PR_NUMBER}/ on main branch
+      # - Push the _site contents to /{PR_NUMBER}/ on main branch
       # - Comment on the PR with the preview URL
       # - Optionally delete the preview when PR is closed
       - name: Deploy PR preview
@@ -49,7 +49,6 @@ jobs:
         with:
           source-dir: ./_site/           # Jekyll's output directory
           preview-branch: main            # Deploy to main since Pages builds from main
-          umbrella-dir: pr                # Organize previews under /pr/ subdirectory
           action: auto                    # Auto-deploy on open/update, auto-remove on close
           deploy-repository: aly-andrews/aly-andrews.github.io  # Your repo
           token: ${{ secrets.GITHUB_TOKEN }}  # Built-in GitHub token
