@@ -1,95 +1,47 @@
 ---
 layout: default
-title: About
+title: How I work
 permalink: /about
 ---
 
 <section class="page-header-creative about-page-header">
   <div class="container">
-    <h1>About me</h1>
-    <p class="page-subtitle">Technical writer, content creator, and photographer</p>
+    <h1>How I work</h1>
+    <p class="page-subtitle">My approach to technical writing, content creation, and automation</p>
   </div>
 </section>
 
 <section class="about-content about-content-creative">
   <div class="container">
     <div class="about-intro">
-      <h2>Welcome</h2>
-      <p>I'm a Senior Education Content Producer with 8 years of experience creating educational content at Shopify. I specialize in video production, technical writing and developing scalable content systems that make complex information accessible.</p>
-      <p>Currently pursuing a Technical Writing Graduate Certificate at Algonquin College, I'm passionate about bridging the gap between technical expertise and user understanding through clear, engaging content.</p>
+      <h2>My philosophy</h2>
+      <p>I believe in optimizing for longevity and creating systems that scale. What started as agent profiles and personas has evolved into cursor rules and style guide execution across entire project basis for consistent output. This is my love letter to AI—what I couldn't do ten years ago has become a seamless experience by asking questions and learning on the fly.</p>
+      <p>I thrive in trial and error and amplify my output by leveraging technology. Technical writing has evolved in the way we consume things—I no longer write directly to the user. Now, I optimize content to be consumed by an LLM to then distribute to a user.</p>
     </div>
 
     <div class="about-section">
-      <h2>My unique skillset</h2>
-      <p>I have a sharp mix of technical and creative skills, enriched by my technical writing journey. My hard skills include expertise of the Adobe Creative Suite for photo and video, data analysis and harnessing LLM to create custom workflows.</p>
-      <p>My soft skills shine in stakeholder management, process development and simplifying complex information. I excel at presenting and directing on-camera talent, while my technical writing background ensures precise, reusable content structures. This blend lets me adapt to new tech and audiences, delivering impactful, brand-consistent results.</p>
+      <h2>AI philosophy and daily drivers</h2>
+      <p>I implement specific LLM models for different tasks, use a command folder for repeated execution, and leverage sub-agents for multi-task execution. I test AI across different modalities with voiceover, graphics, UX, and video to understand what works and what doesn't.</p>
+      <p>The human element remains critical for reviews and approval. While I can ask the system to generate content, the human element of knowledge repository validation is essential. At Shopify, I connected to MCP servers to pull information, scrape my Slack, calendar, email, Google Hangout transcripts, and GitHub issues to write weekly summaries. This triggered automatically every Wednesday at 8am and sent me a completion notification in Slack, saving 1-2 hours of admin tasks and putting me back into impactful work.</p>
     </div>
 
     <div class="about-section">
-      <h2>My approach</h2>
-      <p>I believe great educational content starts with understanding your audience. Whether I'm writing a help center article, producing a video tutorial, or developing a style guide, I focus on clarity, accessibility, and user outcomes.</p>
-      <p>My work combines technical expertise with creative problem-solving. I've developed AI-powered workflows that reduce production time while maintaining quality, created comprehensive onboarding frameworks for teams, and produced content that has helped millions of users learn and succeed.</p>
+      <h2>Technical writing optimization</h2>
+      <p>I optimize for longevity and keep localization in mind. My approach focuses on creating modular content with reusable partials in the CMS, ensuring documentation can be maintained efficiently and adapted for different regions and languages.</p>
+      <p>I've developed unified style guides for LLM training, which reduced pre-production time from 5 days to 1 day. By creating consistent patterns and structures, content becomes more predictable for both AI systems and human editors.</p>
     </div>
 
     <div class="about-section">
-      <h2>Skills and expertise</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Content creation</h3>
-          <ul>
-            <li>Technical writing</li>
-            <li>Video production and scripting</li>
-            <li>Help center documentation</li>
-            <li>Educational article writing</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Tools and technology</h3>
-          <ul>
-            <li>Adobe Creative Suite</li>
-            <li>LLM and AI workflow development</li>
-            <li>Content management systems</li>
-            <li>Data analysis and SEO optimization</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Process and strategy</h3>
-          <ul>
-            <li>Style guide development</li>
-            <li>Team onboarding and training</li>
-            <li>Content strategy and roadmaps</li>
-            <li>Stakeholder management</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3>Soft skills</h3>
-          <ul>
-            <li>Process development</li>
-            <li>Simplifying complex information</li>
-            <li>On-camera presentation</li>
-            <li>Cross-functional collaboration</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-section">
-      <h2>Education</h2>
-      <div class="education-item">
-        <h3>Technical Writing Graduate Certificate</h3>
-        <p class="education-meta">Algonquin College | 2024–2026 (Part-time, online)</p>
-      </div>
-      <div class="education-item">
-        <h3>Marketing & Advertising Diploma</h3>
-        <p class="education-meta">Loyalist College, Belleville, Ontario | 2007–2009</p>
-      </div>
+      <h2>Data driven decisions</h2>
+      <p>Every piece of content I create is informed by data. I analyze user behavior, support tickets, search queries, and engagement metrics to identify what content is needed and how it should be structured.</p>
+      <p>This data-first approach ensures that the content I produce directly addresses user needs and reduces support burden. At Shopify, this methodology helped grow the YouTube channel to over 100,000 subscribers by creating videos that answered the questions users were actually asking.</p>
     </div>
 
     <div class="about-section about-section-photography">
-      <h2>Things I love</h2>
-      <p>I've always been someone who needs to have a passion hobby outside of my work. A few years ago it was cooking and then I discovered my love of photography during the pandemic. What started out as a few portraits of friends and family, grew into an entire business with regular clients and sold out mini sessions with waitlists.</p>
-      <p>Not only did I prove again that I can create scalable business frameworks, I created a new source of income for my family and found a way to express myself creatively. After starting my Technical Writing program, I've since put a pause in my photography business, but still take a few clients throughout the year for creative joy.</p>
-      <p>You can see my work at <a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a>. I'm also passionate about continuous learning—exploring new technical writing techniques, diving into healthcare documentation opportunities, and experimenting with AI tools.</p>
+      <h2>Passion projects</h2>
+      <p>Photography is one of my passion projects that demonstrates how I approach everything—with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
+      <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing—understanding user needs, creating consistent processes, and optimizing for outcomes—applied to building a photography business from scratch.</p>
+      <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy. You can see my work at <a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a>.</p>
 
       <h3 class="photography-grid-title">Photography work</h3>
       <div class="photography-grid">
