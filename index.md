@@ -82,18 +82,9 @@ permalink: /
 <section class="video-showcase" id="watch-me-in-action">
   <div class="container">
     <div class="video-showcase-inner">
-      <div class="video-header-with-plaque">
-        <div class="video-section-header">
-          <h2 class="video-title">Watch me in action</h2>
-          <p class="video-subtitle">Watch videos I created from concept to completion—researching ideas, developing concepts based on support data, writing scripts and filming. I handled editing for many of these projects, bringing complex topics to life through engaging content</p>
-        </div>
-        <div class="youtube-plaque-wrap">
-          <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Plaque" class="youtube-plaque-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder youtube-plaque-placeholder" style="display: none;">
-            <p>YouTube plaque</p>
-            <p class="placeholder-hint">Upload to: assets/images/youtube-plaque.png</p>
-          </div>
-        </div>
+      <div class="video-section-header">
+        <h2 class="video-title">Watch me in action</h2>
+        <p class="video-subtitle">Watch videos I created from concept to completion—researching ideas, developing concepts based on support data, writing scripts and filming. I handled editing for many of these projects, bringing complex topics to life through engaging content</p>
       </div>
       <div class="video-carousel-container">
         <div class="video-carousel">
