@@ -121,7 +121,7 @@ permalink: /experience
               <tr><td>Launched 25-video POS series including script writing, SME training and cross-team coordination in film</td><td>Influential POS hardware sales; 20k deflection savings first week of launch (tracked through coupons to 10 per series)</td></tr>
               <tr><td>2020 stats</td><td>Hours watched +70% (to 14,228), Views +48% (to 356,223), Total subscribers to 96,800 (+130%)</td></tr>
               <tr><td>Improved English YouTube SEO ranking from C+ to A- in Google search results</td><td>Videos surfaced as recommendations in YouTube algorithm</td></tr>
-              <tr><td>Grew YouTube channel through organic traffic within the first two years</td><td>To 100,000+ subscribers, earning Silver Plaque recognition</td></tr>
+              <tr><td>Grew YouTube channel through organic traffic within the first two years</td><td>Grew to 100,000+ subscribers, earning Silver Plaque recognition</td></tr>
               <tr><td>Independently produced 92 videos (62 English, 30 international) within two years</td><td>—</td></tr>
             </tbody>
           </table>
@@ -258,20 +258,6 @@ permalink: /experience
           </ul>
         </div>
       </article>
-
-      <!-- My Unique Skillset -->
-      <div class="experience-section experience-section-skills">
-        <h2>My unique skillset</h2>
-        <p>I have a sharp mix of technical and creative skills, enriched by my technical writing journey. My hard skills include expertise of the Adobe Creative Suite for photo and video, data analysis and harnessing LLM to create custom workflows.</p>
-        <p>My soft skills shine in stakeholder management, process development and simplifying complex information. I excel at presenting and directing on-camera talent, while my technical writing background ensures precise, reusable content structures. This blend lets me adapt to new tech and audiences, delivering impactful, brand-consistent results.</p>
-      </div>
-
-      <!-- Things I Love -->
-      <div class="experience-section experience-section-beyond">
-        <h2>Things I love</h2>
-        <p>I've always been someone who needs to have a passion hobby outside of my work. A few years ago it was cooking and then I discovered my love of photography during the pandemic. What started out as a few portraits of friends and family, grew into an entire business with regular clients and sold out mini sessions with waitlists.</p>
-        <p>Not only did I prove again that I can create scalable business frameworks, I created a new source of income for my family and found a way to express myself creatively. After starting my Technical Writing program, I've since put a pause in my photography business, but still take a few clients throughout the year for creative joy.</p>
-      </div>
 
     </div>
   </div>
