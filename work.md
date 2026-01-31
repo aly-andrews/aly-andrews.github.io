@@ -131,7 +131,7 @@ permalink: /work
         </div>
         <div class="work-section-intro">
           <h2>Video production</h2>
-          <p>Produced 100+ educational videos for Shopify Help Center YouTube channels. Worked independently to grow the channel from 40,000 to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
+          <p>Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
         </div>
       </div>
       

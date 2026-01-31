@@ -46,7 +46,7 @@ permalink: /love-letter
     <div class="about-section">
       <h2>Data driven decisions</h2>
       <p>AI enables data-driven content creation at a scale previously impossible. I analyze user behavior, support tickets, search queries, and engagement metrics to identify what content is needed and how it should be structured.</p>
-      <p>This approach helped grow the Shopify Help Center YouTube channel from 40,000 to over 100,000 subscribers within 2 years. Every video was informed by data—questions users were asking, topics with high support volume, gaps in existing documentation. AI helped process and pattern-match across thousands of data points to surface what mattered most.</p>
+      <p>This approach helped grow the Shopify Help Center YouTube channel to over 100,000 subscribers within 2 years. Every video was informed by data—questions users were asking, topics with high support volume, gaps in existing documentation. AI helped process and pattern-match across thousands of data points to surface what mattered most.</p>
     </div>
 
     <div class="about-section">

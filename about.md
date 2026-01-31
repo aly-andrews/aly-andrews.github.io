@@ -34,7 +34,7 @@ permalink: /about
     <div class="about-section">
       <h2>Data driven decisions</h2>
       <p>Every piece of content I create is informed by data. I analyze user behavior, support tickets, search queries, and engagement metrics to identify what content is needed and how it should be structured.</p>
-      <p>This data-first approach ensures that the content I produce directly addresses user needs and reduces support burden. At Shopify, this methodology helped grow the YouTube channel from 40,000 to over 100,000 subscribers by creating videos that answered the questions users were actually asking.</p>
+      <p>This data-first approach ensures that the content I produce directly addresses user needs and reduces support burden. At Shopify, this methodology helped grow the YouTube channel to over 100,000 subscribers by creating videos that answered the questions users were actually asking.</p>
     </div>
 
     <div class="about-section about-section-photography">
