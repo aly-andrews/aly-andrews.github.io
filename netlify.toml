@@ -1,0 +1,33 @@
+# Netlify configuration for Jekyll site
+# Main site: https://aly-andrews.github.io (GitHub Pages)
+# PR previews: deploy-preview-{PR#}--aly-andrews.netlify.app
+
+[build]
+  # Build command for Jekyll
+  command = "bundle install && bundle exec jekyll build"
+  
+  # Directory with the built site
+  publish = "_site"
+  
+  # Environment variables for the build
+  [build.environment]
+    JEKYLL_ENV = "production"
+    RUBY_VERSION = "3.2.0"
+
+# Deploy previews for pull requests
+[context.deploy-preview]
+  command = "bundle install && bundle exec jekyll build --baseurl ''"
+
+# Branch deploys (won't be used since main is on GitHub Pages)
+[context.branch-deploy]
+  command = "bundle install && bundle exec jekyll build --baseurl ''"
+
+# Production build (won't be used since main is on GitHub Pages)
+[context.production]
+  command = "bundle install && bundle exec jekyll build --baseurl ''"
+
+# Redirect rules (if needed in future)
+# [[redirects]]
+#   from = "/old-path"
+#   to = "/new-path"
+#   status = 301
