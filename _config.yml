@@ -20,7 +20,7 @@ plugins:
 navigation:
   - title: Home
     url: /
-  - title: About
+  - title: How I work
     url: /about
   - title: Work
     url: /work

@@ -66,15 +66,12 @@ permalink: /
         
         <div class="work-feature">
           <div class="work-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Video Production</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/video.jpg</p>
-            </div>
+            <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Plaque for 100,000 subscribers" class="work-image-img">
           </div>
           <div class="work-content">
             <h3>Video production</h3>
-            <p>Produced 100+ educational videos, growing YouTube channel from 40,000 to 100,000+ subscribers</p>
-            <a href="/work#video" class="work-link">View video work →</a>
+            <p>Independently grew Shopify Help Center YouTube channel to over 100,000 subscribers within 2 years</p>
+            <a href="#watch-me-in-action" class="work-link">View video work →</a>
           </div>
         </div>
       </div>
@@ -82,7 +79,7 @@ permalink: /
   </div>
 </section>
 
-<section class="video-showcase">
+<section class="video-showcase" id="watch-me-in-action">
   <div class="container">
     <div class="video-showcase-inner">
       <div class="video-header-with-plaque">
@@ -105,9 +102,9 @@ permalink: /
               <video 
                 controls 
                 class="video-embed"
-                poster="{{ '/assets/videos/what is shopify.jpg' | relative_url }}"
+                poster="{{ '/assets/videos/BFCM.jpg' | relative_url }}"
                 preload="metadata">
-                <source src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+                <source src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <button type="button" class="video-play-overlay" aria-label="Play video">
@@ -120,9 +117,9 @@ permalink: /
               <video 
                 controls 
                 class="video-embed"
-                poster="{{ '/assets/videos/BFCM.jpg' | relative_url }}"
+                poster="{{ '/assets/videos/what is shopify.jpg' | relative_url }}"
                 preload="metadata">
-                <source src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+                <source src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
               <button type="button" class="video-play-overlay" aria-label="Play video">
