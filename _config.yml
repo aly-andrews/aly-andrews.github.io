@@ -12,6 +12,12 @@ url: "https://aly-andrews.github.io"
 markdown: kramdown
 exclude:
   - cursor-workflows
+  - vendor
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - script
 plugins:
   - jekyll-feed
   - jekyll-sitemap
