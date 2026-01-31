@@ -1,0 +1,278 @@
+# Update Dependencies
+
+## Purpose
+Update Jekyll, Ruby gems, and other dependencies for the website
+
+## When to Use
+- Security updates are released
+- New Jekyll version available
+- Dependency warnings appear
+- Site build issues occur
+- Regular maintenance (quarterly recommended)
+
+## Pre-written Prompt
+
+```
+Update dependencies for the aly-andrews.github.io Jekyll site. Check for outdated gems, update Gemfile and bundle, test that the site still builds and serves correctly, and commit the updated Gemfile.lock. Show me what will be updated before proceeding.
+```
+
+## Steps Checklist
+
+The AI will:
+1. Check current dependency versions
+2. Review Gemfile for outdated dependencies
+3. Show what will be updated
+4. Run `bundle update` or update specific gems
+5. Test site builds: `bundle exec jekyll serve`
+6. Verify site works locally
+7. Commit updated Gemfile.lock
+8. Deploy if everything works
+
+## Update Process
+
+### Step 1: Check current versions
+```bash
+cd /Users/alysaandrews/Documents/docs/aly-andrews.github.io
+
+# Check Ruby version
+ruby -v
+
+# Check current gem versions
+bundle list
+
+# Check for outdated gems
+bundle outdated
+```
+
+### Step 2: Update dependencies
+
+**Update all gems:**
+```bash
+bundle update
+```
+
+**Update specific gem:**
+```bash
+bundle update jekyll
+bundle update github-pages
+```
+
+**Update minor versions only (safer):**
+```bash
+bundle update --patch  # Patch updates only (1.2.3 → 1.2.4)
+bundle update --minor  # Minor updates only (1.2.3 → 1.3.0)
+```
+
+### Step 3: Test locally
+```bash
+# Clean old builds
+rm -rf _site .jekyll-cache
+
+# Test build
+bundle exec jekyll build
+
+# Test serve
+bundle exec jekyll serve
+# Visit http://127.0.0.1:4000 to verify
+```
+
+### Step 4: Commit and deploy
+```bash
+git add Gemfile.lock
+git commit -m "Update dependencies: Jekyll and gems"
+git push origin main
+```
+
+## Ruby Version Requirements
+
+Your site requires **Ruby 3.0+** (Jekyll 4.x dependency).
+
+**Check Ruby version:**
+```bash
+ruby -v
+```
+
+**If Ruby is too old (2.6):**
+```bash
+# Install Ruby 3 via Homebrew
+brew install ruby
+
+# Restart Terminal, verify
+ruby -v  # Should show 3.x
+```
+
+**Script automatically handles this:**
+```bash
+./script/preview.sh  # Will use Homebrew Ruby if system Ruby is old
+```
+
+## Key Dependencies
+
+### Core dependencies:
+- **Jekyll** - Static site generator
+- **github-pages** - GitHub Pages gem collection
+- **jekyll-feed** - RSS feed generation
+- **jekyll-sitemap** - Sitemap generation
+
+### Current Gemfile:
+Located at: `/Users/alysaandrews/Documents/docs/aly-andrews.github.io/Gemfile`
+
+## Common Updates
+
+### Update Jekyll only:
+```bash
+bundle update jekyll
+```
+
+### Update GitHub Pages (includes Jekyll):
+```bash
+bundle update github-pages
+```
+
+### Update all dependencies:
+```bash
+bundle update
+```
+
+### Lock specific version (if update breaks site):
+Edit Gemfile:
+```ruby
+gem "jekyll", "~> 4.3.0"  # Lock to 4.3.x
+```
+
+## Testing After Updates
+
+### Checklist:
+- [ ] Site builds without errors
+- [ ] Site serves locally at http://127.0.0.1:4000
+- [ ] All pages load correctly
+- [ ] Navigation works
+- [ ] Images display
+- [ ] CSS styles apply correctly
+- [ ] Mobile layout works
+- [ ] No console errors in browser
+
+### Test commands:
+```bash
+# Build test
+bundle exec jekyll build
+
+# Serve test
+bundle exec jekyll serve
+
+# Check for broken links (if linkchecker installed)
+linkchecker http://127.0.0.1:4000
+```
+
+## Troubleshooting
+
+### "Bundler version mismatch":
+```bash
+# Update bundler
+gem install bundler
+
+# Or use bundler from gems
+bundle update --bundler
+```
+
+### "Gem not found":
+```bash
+# Reinstall gems
+rm -rf vendor/bundle
+bundle install
+```
+
+### "Jekyll build failed":
+```bash
+# Check for plugin issues
+bundle exec jekyll build --verbose
+
+# Try cleaning first
+bundle exec jekyll clean
+bundle exec jekyll build
+```
+
+### "Ruby version too old":
+```bash
+# macOS system Ruby is 2.6, need 3.0+
+brew install ruby
+
+# Restart Terminal
+ruby -v  # Should show 3.x
+
+# Reinstall gems
+bundle install
+```
+
+### Updates broke the site:
+```bash
+# Revert to previous versions
+git checkout HEAD~1 Gemfile.lock
+bundle install
+
+# Or restore specific gem version in Gemfile
+gem "jekyll", "~> 4.2.0"
+bundle update
+```
+
+## Security Updates
+
+### Check for security vulnerabilities:
+```bash
+bundle audit check --update
+```
+
+### If vulnerabilities found:
+```bash
+# Update specific vulnerable gem
+bundle update vulnerable-gem-name
+
+# Test thoroughly before deploying
+```
+
+## Update Schedule
+
+### Recommended:
+- **Monthly**: Check for security updates
+- **Quarterly**: Update all dependencies
+- **As needed**: When GitHub Pages updates Jekyll
+
+### Signs you need to update:
+- GitHub Pages build warnings
+- Security alerts on GitHub
+- Features not working
+- Site build errors
+
+## Gemfile vs Gemfile.lock
+
+**Gemfile:**
+- Lists dependencies you want
+- You edit this manually
+- Specifies version constraints
+
+**Gemfile.lock:**
+- Lists exact versions installed
+- Auto-generated by bundler
+- Always commit this file
+- Don't edit manually
+
+## After Updating
+
+1. **Test locally** - Always test before deploying
+2. **Commit Gemfile.lock** - This is the important file
+3. **Deploy** - Push to GitHub
+4. **Monitor build** - Check GitHub Actions for successful build
+5. **Test live site** - Verify everything works on production
+
+## Related Workflows
+- [@maintenance/fix-common-issues.md](fix-common-issues.md) - Troubleshoot issues
+- [@deploy/deploy-to-production.md](../deploy/deploy-to-production.md) - Deploy updates
+
+## Quick Reference
+
+**Gemfile:** `Gemfile`
+**Lock file:** `Gemfile.lock`
+**Preview script:** `./script/preview.sh`
+**Update command:** `bundle update`
+**Test command:** `bundle exec jekyll serve`
+**Ruby requirement:** 3.0+
