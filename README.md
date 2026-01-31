@@ -1,60 +1,68 @@
-# Aly Andrews - Portfolio Website
+# Aly Andrews - Portfolio Site
 
-A modern portfolio website showcasing my work as a Senior Education Content Producer, Technical Writer, and Video Producer.
+Personal portfolio website showcasing my work in technical writing, content creation and video production.
 
-## About
+**Live site:** https://aly-andrews.github.io
 
-This is my personal portfolio website, built with Jekyll and hosted on GitHub Pages. It showcases my experience creating educational content, developing scalable content processes, and leading teams at Shopify.
+## Tech Stack
 
-## Local Development (preview branches before merging)
+- **Jekyll** - Static site generator
+- **GitHub Pages** - Hosting
+- **Netlify** - PR preview deployments
 
-**Requires Ruby 3.0+.** macOS system Ruby is 2.6 and is too old for Jekyll 4.x.
+## Project Structure
 
-1. **Install Homebrew** (if you don't have it): https://brew.sh  
-   In Terminal, run:
-   ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
-2. **Restart Terminal**, then install Ruby 3:
-   ```bash
-   brew install ruby
-   ```
-3. **Restart Terminal again** (so `ruby` points to the new version), then run the preview steps below.  
-   If you already have Ruby 3+ installed via Homebrew but the script still says "Current: 2.6.10", the script will try to use Homebrew's Ruby automatically (no restart needed). Run `./script/preview.sh` again.
-
-Gems install into the project (`vendor/bundle`) so you don't need system Ruby write access.
-
-**Option 1 – one command (recommended)**  
-From the repo root, in **Terminal** (not Cursor):
-
-```bash
-cd /path/to/aly-andrews.github.io
-./script/preview.sh
+```
+aly-andrews.github.io/
+├── pages/              # All site pages
+│   ├── how-i-work.md  # "How I work" page (nav: /about)
+│   ├── work.md        # Portfolio/work samples
+│   ├── experience.md  # Professional experience & resume
+│   ├── contact.md     # Contact information
+│   └── love-letter.md # AI & technical writing philosophy
+├── assets/            # Static assets
+│   ├── css/          # Stylesheets
+│   ├── js/           # JavaScript files
+│   ├── images/       # Images & graphics
+│   └── videos/       # Video files
+├── _layouts/          # Jekyll layouts
+├── cursor-workflows/  # Cursor IDE workflow commands
+├── docs/             # Documentation & guides
+├── script/           # Build & deployment scripts
+└── index.md          # Homepage
 ```
 
-Then open **http://127.0.0.1:4000** in your browser. Use **Ctrl+C** in the terminal to stop the server.
+## Local Development
 
-**Option 2 – step by step**
+### Prerequisites
+- Ruby 3.2+
+- Bundler
 
+### Setup
 ```bash
-cd /path/to/aly-andrews.github.io
-bundle config set --local path 'vendor/bundle'
 bundle install
 bundle exec jekyll serve
 ```
 
-Then open **http://127.0.0.1:4000**. Switch branches with `git checkout <branch>` and restart `bundle exec jekyll serve` to preview that branch.
+Site will be available at `http://localhost:4000`
 
-## Site Structure
+## Deployment
 
-- **Home** (`/`) - Hero section and featured work
-- **About** (`/about`) - Background, skills, and education
-- **Work** (`/work`) - Portfolio samples and project highlights
-- **Experience** (`/experience`) - Detailed work history
-- **Contact** (`/contact`) - Ways to get in touch
+- **Production:** Automatically deploys from `main` branch to GitHub Pages
+- **PR Previews:** Netlify automatically builds deploy previews for all pull requests
 
-## Technologies
+## Navigation Structure
 
-- Jekyll (static site generator)
-- GitHub Pages (hosting)
-- Custom CSS (responsive design)
+- **Home** → `/` (index.md)
+- **How I work** → `/about` (pages/how-i-work.md)
+- **Work** → `/work` (pages/work.md)
+- **Experience** → `/experience` (pages/experience.md)
+- **Contact** → `/contact` (pages/contact.md)
+
+## Contributing
+
+This is a personal portfolio site. For major changes, please open an issue first.
+
+## License
+
+© 2026 Aly Andrews. All rights reserved.

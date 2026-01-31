@@ -5,3 +5,7 @@ vendor/bundle
 
 # PR preview directories (managed by GitHub Actions)
 pr/
+pr-preview/
+
+# Debug logs
+_preview_debug.log

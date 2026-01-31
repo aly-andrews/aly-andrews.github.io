@@ -12,6 +12,7 @@ url: "https://aly-andrews.github.io"
 markdown: kramdown
 exclude:
   - cursor-workflows
+  - docs
   - vendor
   - .bundle
   - Gemfile
