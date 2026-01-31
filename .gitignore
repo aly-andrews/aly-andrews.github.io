@@ -2,3 +2,6 @@ _site
 .jekyll-cache
 vendor/bundle
 .bundle
+
+# PR preview directories (managed by GitHub Actions)
+pr/
