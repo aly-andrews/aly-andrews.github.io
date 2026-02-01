@@ -2655,6 +2655,85 @@ img {
   background: color-mix(in srgb, var(--accent-gold) 15%, var(--bg-color));
 }
 
+.pattern-callout .pattern-quote {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.pattern-quote p {
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.pattern-quote cite {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: normal;
+}
+
+/* Section + card grid (how I work, etc.) */
+.pattern-section {
+  margin-bottom: 3rem;
+}
+
+.pattern-section h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-unit);
+  color: var(--primary-color);
+}
+
+.pattern-section h3 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+  color: var(--primary-color);
+}
+
+.pattern-section p {
+  margin-bottom: var(--spacing-unit);
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+.pattern-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pattern-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .pattern-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pattern-card {
+  background: var(--bg-color);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.pattern-card h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+}
+
+.pattern-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
 /* Checklist: checkmark + short lines */
 .portfolio-checklist {
   list-style: none;
