@@ -96,20 +96,6 @@ permalink: /about
     </section>
 
     <section class="pattern-section">
-      <h2>Challenges and learnings</h2>
-      <details class="portfolio-accordion">
-        <summary class="portfolio-accordion-heading">Key moments (expand)</summary>
-        <div class="portfolio-accordion-content">
-          <p><strong>Shipping Profiles launch (2019):</strong> The feature kept changing up to and after launch; there was conflicting feedback and no clear owner for sign off. I learned to push back, lay ground rules, and provide a post mortem. My manager fully backed the decision. I now avoid simultaneous launches when release management isn't set up for it.</p>
-          <p><strong>POS project rescue (2020):</strong> Start and Studios were pulled off three days before launch; every video needed edits and I had no working files. I delivered alone: recorded updated POS screen recordings on my iPad, made edits on 20 videos without working files, and created 2 new videos in time for launch. I learned that I can deliver under extreme pressure and that I should take full credit when I'm the reason something shipped.</p>
-          <p><strong>Rebrand (2020):</strong> 130 videos were outdated after the Shopify and Oberlo admin rebrand. I learned After Effects, prioritized Shopify remakes, and accepted that delisting Oberlo would cut views in the short term to reduce support debt and protect trust.</p>
-          <p><strong>Return and ramp-up (2021):</strong> I returned gradually to full capacity (scripts, onboarding docs, refamiliarizing with Premiere). Injuries and RSI had set back work earlier in the year. I learned to hand off clearly and to ramp back at a sustainable pace.</p>
-          <p><strong>Leadership support (2025):</strong> I experienced frustration with lack of support from my lead. I'm treating it as a learning opportunity for clearer communication and for asking for what I need explicitly.</p>
-        </div>
-      </details>
-    </section>
-
-    <section class="pattern-section">
       <h2>Software and tools</h2>
       <details class="portfolio-accordion">
         <summary class="portfolio-accordion-heading">Tools I use (expand)</summary>
