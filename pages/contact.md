@@ -21,7 +21,7 @@ permalink: /contact
       
       <div class="contact-item">
         <h2>LinkedIn</h2>
-        <p><a href="https://linkedin.com/in/aly-andrews" target="_blank">Connect with me on LinkedIn</a></p>
+        <p><a href="https://www.linkedin.com/in/alysaandrews/" target="_blank">Connect with me on LinkedIn</a></p>
       </div>
     
   </div>
