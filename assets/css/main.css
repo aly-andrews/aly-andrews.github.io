@@ -2571,3 +2571,147 @@ img {
     display: none;
   }
 }
+
+/* ===== Engine: accordion + callout variants (from article-engine) ===== */
+
+/* Accordion: collapse long content; no JS */
+.portfolio-accordion {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin: var(--spacing-unit) 0;
+  overflow: hidden;
+}
+
+.portfolio-accordion summary.portfolio-accordion-heading {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  background: var(--bg-light);
+  color: var(--text-color);
+}
+
+.portfolio-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.portfolio-accordion summary.portfolio-accordion-heading::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-accordion[open] summary.portfolio-accordion-heading::before {
+  transform: rotate(90deg);
+}
+
+.portfolio-accordion .portfolio-accordion-content {
+  padding: 1rem 1rem 1rem 2rem;
+  border-top: 1px solid var(--border-color);
+  background: var(--bg-color);
+}
+
+.portfolio-accordion .portfolio-accordion-content p {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio-accordion .portfolio-accordion-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Callout base + type variants */
+.pattern-callout {
+  padding: 1rem 1.25rem;
+  border-radius: 6px;
+  border-left: 4px solid var(--accent-teal);
+  background: var(--bg-light);
+  margin: var(--spacing-unit) 0;
+}
+
+.pattern-callout h3 {
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+}
+
+.pattern-callout p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.pattern-callout--tip {
+  border-left-color: var(--accent-teal);
+  background: color-mix(in srgb, var(--accent-teal) 12%, var(--bg-color));
+}
+
+.pattern-callout--note {
+  border-left-color: var(--text-light);
+  background: color-mix(in srgb, var(--text-light) 8%, var(--bg-color));
+}
+
+.pattern-callout--important {
+  border-left-color: var(--accent-gold);
+  background: color-mix(in srgb, var(--accent-gold) 15%, var(--bg-color));
+}
+
+/* Checklist: checkmark + short lines */
+.portfolio-checklist {
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-unit) 0;
+}
+
+.portfolio-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-checklist li::before {
+  content: '✓';
+  flex-shrink: 0;
+  color: var(--accent-teal);
+  font-weight: 700;
+}
+
+.portfolio-checklist li:last-child {
+  margin-bottom: 0;
+}
+
+/* CTA block: end-of-section call to action */
+.portfolio-cta-block {
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-light) 100%);
+  border: 1px solid var(--border-color);
+  margin: 1.5rem 0;
+}
+
+.portfolio-cta-block .portfolio-cta-heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.portfolio-cta-block .portfolio-cta-text {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.portfolio-cta-block .portfolio-cta-button {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: var(--accent-teal);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: opacity 0.2s ease;
+}
+
+.portfolio-cta-block .portfolio-cta-button:hover {
+  opacity: 0.9;
+}

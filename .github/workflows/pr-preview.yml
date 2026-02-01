@@ -1,0 +1,54 @@
+name: Deploy PR Preview
+
+# Trigger on PR open, update, reopen, or close
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+
+# Required permissions for the action to:
+# - Push preview builds to main branch
+# - Comment on PRs with preview links
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the PR branch
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Ruby with caching for faster builds
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'  # GitHub Pages compatible Ruby version
+          bundler-cache: true  # Automatically caches gems for faster subsequent runs
+
+      # Step 3: Install Jekyll dependencies
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+
+      # Step 4: Build Jekyll site with PR-specific baseurl
+      # This ensures all links and assets work correctly in the preview subdirectory
+      - name: Build Jekyll site for preview
+        run: |
+          bundle exec jekyll build --baseurl /${{ github.event.number }}
+        env:
+          JEKYLL_ENV: production
+
+      # Step 5: Deploy the built site to a PR-specific directory
+      # Uses rossjrw/pr-preview-action to:
+      # - Push the _site contents to /{PR_NUMBER}/ on main branch
+      # - Comment on the PR with the preview URL
+      # - Optionally delete the preview when PR is closed
+      - name: Deploy PR preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./_site/           # Jekyll's output directory
+          preview-branch: main            # Deploy to main since Pages builds from main
+          action: auto                    # Auto-deploy on open/update, auto-remove on close
+          deploy-repository: aly-andrews/aly-andrews.github.io  # Your repo
+          token: ${{ secrets.GITHUB_TOKEN }}  # Built-in GitHub token
