@@ -1,5 +1,12 @@
 source "https://rubygems.org"
 
+# Pin Ruby so Netlify uses 2.7.x (Jekyll 3.9 / Liquid 4.x need String#tainted?, removed in Ruby 4.x).
+ruby "2.7.8"
+
+# CSV and bigdecimal were removed from Ruby stdlib in Ruby 4.x; keep for future Ruby upgrades.
+gem "csv"
+gem "bigdecimal"
+
 # Use the GitHub Pages gem set so the site builds on Pages.
 # This pins Jekyll and plugin versions to what GitHub Pages supports.
 gem "github-pages", group: :jekyll_plugins
