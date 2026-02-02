@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
-# CSV was removed from Ruby stdlib in Ruby 4.x; Jekyll requires it.
+# CSV and bigdecimal were removed from Ruby stdlib in Ruby 4.x; Jekyll/Liquid require them.
 gem "csv"
+gem "bigdecimal"
 
 # Use the GitHub Pages gem set so the site builds on Pages.
 # This pins Jekyll and plugin versions to what GitHub Pages supports.
