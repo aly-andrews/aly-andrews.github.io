@@ -4,6 +4,9 @@ source "https://rubygems.org"
 # This pins Jekyll and plugin versions to what GitHub Pages supports.
 gem "github-pages", group: :jekyll_plugins
 
+# Required for Ruby 4.0+ where csv is no longer in stdlib by default
+gem "csv"
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data
 # gem and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
