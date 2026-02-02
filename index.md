@@ -35,35 +35,20 @@ permalink: /
     <div class="work-showcase">
       <div class="work-feature large-feature">
         <div class="work-image">
-          <img src="{{ '/assets/images/portfolio/skio.jpg' | relative_url }}" alt="Skio Documentation" class="work-image-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder work-placeholder" style="display: none;">
-            <p>Skio Documentation</p>
-            <p class="placeholder-hint">Upload to: assets/images/portfolio/skio.jpg</p>
+          <div class="image-placeholder work-placeholder">
+            <p>Shopify documentation</p>
+            <p class="placeholder-hint">Visual coming soon</p>
           </div>
         </div>
         <div class="work-content">
-          <h3>Getting started with Shopify</h3>
+          <h3>Getting started on Shopify</h3>
           <p class="work-subtitle">5 essential setup tasks before going live</p>
           <p>Comprehensive documentation and guides to help new merchants set up their Shopify store successfully. Step-by-step instructions covering essential configuration, settings, and best practices for launching your online store.</p>
-          <a href="/portfolio#shopify" class="work-link">View documentation →</a>
+          <a href="/portfolio#getting-started-shopify" class="work-link">View project →</a>
         </div>
       </div>
       
       <div class="work-features-grid">
-        <div class="work-feature">
-          <div class="work-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Style Guides</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/style-guides.jpg</p>
-            </div>
-          </div>
-          <div class="work-content">
-            <h3>Style guide development</h3>
-            <p>Developed unified style guides for LLM training, reducing pre-production time from 5 days to 1</p>
-            <a href="/portfolio#style-guides" class="work-link">View style guides →</a>
-          </div>
-        </div>
-        
         <div class="work-feature">
           <div class="work-image">
             <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Plaque for 100,000 subscribers" class="work-image-img">

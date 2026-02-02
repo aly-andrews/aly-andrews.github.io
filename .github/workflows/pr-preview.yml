@@ -20,12 +20,12 @@ jobs:
       - name: Checkout PR branch
         uses: actions/checkout@v4
 
-      # Step 2: Setup Ruby with caching for faster builds
+      # Step 2: Setup Ruby 3.3.4 to match GitHub Pages (Liquid 4.0.4+ compatible)
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'  # GitHub Pages compatible Ruby version
-          bundler-cache: true  # Automatically caches gems for faster subsequent runs
+          ruby-version: '3.3.4'
+          bundler-cache: true
 
       # Step 3: Install Jekyll dependencies
       - name: Install dependencies

@@ -123,3 +123,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// Photography carousel: auto-scroll with pause/play
+document.addEventListener('DOMContentLoaded', function() {
+  const wrapper = document.querySelector('.photography-carousel-wrapper[data-auto="true"]');
+  const btn = document.querySelector('.photography-carousel-pause');
+  if (!wrapper || !btn) return;
+
+  btn.addEventListener('click', function() {
+    const isPaused = wrapper.classList.toggle('paused');
+    btn.setAttribute('aria-label', isPaused ? 'Play carousel' : 'Pause carousel');
+    btn.textContent = isPaused ? 'Play' : 'Pause';
+  });
+});

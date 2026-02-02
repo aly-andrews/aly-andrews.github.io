@@ -1,11 +1,15 @@
 source "https://rubygems.org"
 
+# Pin Ruby to match GitHub Pages (Liquid 4.0.4+ compatible with Ruby 3.2+, no tainted? issue)
+ruby "3.3.4"
+
+# CSV and bigdecimal removed from Ruby stdlib in Ruby 4.x; keep for forward compatibility
+gem "csv"
+gem "bigdecimal"
+
 # Use the GitHub Pages gem set so the site builds on Pages.
 # This pins Jekyll and plugin versions to what GitHub Pages supports.
 gem "github-pages", group: :jekyll_plugins
-
-# Required for Ruby 4.0+ where csv is no longer in stdlib by default
-gem "csv"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data
 # gem and associated library.

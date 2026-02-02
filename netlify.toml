@@ -10,14 +10,17 @@
   publish = "_site"
   
   # Environment variables for the build
-  # Do not set RUBY_VERSION here; Netlify will use its preinstalled Ruby.
-  # Pinning 3.2.0 triggers compiling Ruby from source and exceeds the 18m build timeout.
+  # Use Ruby 3.3.4 to match GitHub Pages; Liquid 4.0.4+ is compatible (no tainted? issue)
   [build.environment]
+    RUBY_VERSION = "3.3.4"
     JEKYLL_ENV = "production"
 
-# Deploy previews for pull requests
+# Deploy previews for pull requests (must set Ruby here; context does not inherit [build.environment])
 [context.deploy-preview]
   command = "bundle install && bundle exec jekyll build --baseurl ''"
+  [context.deploy-preview.environment]
+    RUBY_VERSION = "3.3.4"
+    JEKYLL_ENV = "production"
 
 # Branch deploys (won't be used since main is on GitHub Pages)
 [context.branch-deploy]

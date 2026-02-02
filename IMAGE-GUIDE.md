@@ -14,8 +14,7 @@
    - Recommended: 600x600px or larger
 
 2. **Portfolio Images**:
-   - `assets/images/portfolio/skio.jpg` - Main Skio project
-   - `assets/images/portfolio/style-guides.jpg` - Style guides project  
+   - `assets/images/portfolio/shopify-docs.jpg` - Getting started on Shopify (homepage featured)
    - `assets/images/portfolio/video.jpg` - Video production project
 
 3. **YouTube Plaque** (near video section):
@@ -31,17 +30,8 @@ Upload to `assets/images/photography/`:
 ### Work Page Images
 Upload to `assets/images/portfolio/`:
 
-**Skio Section:**
-- `skio-main.jpg` - Large featured image
-- `skio-shipping.jpg` - Shipping profiles
-- `skio-3ds.jpg` - 3DS authentication
-- `skio-releases.jpg` - Product releases
-
-**Style Guides Section:**
-- `style-guides-main.jpg` - Large featured image
-- `style-unified.jpg` - Unified guide
-- `style-article.jpg` - Article guide
-- `style-help.jpg` - Help center guide
+**Getting started on Shopify Section:**
+- Placeholder for teach a class video and supporting content (project plan, learner profiles, storyboard, resources). Add images when ready.
 
 **Video Section:**
 - `video-main.jpg` - Large featured image
