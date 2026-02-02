@@ -1,6 +1,9 @@
 source "https://rubygems.org"
 
-# CSV and bigdecimal were removed from Ruby stdlib in Ruby 4.x; Jekyll/Liquid require them.
+# Pin Ruby so Netlify uses 2.7.x (Jekyll 3.9 / Liquid 4.x need String#tainted?, removed in Ruby 4.x).
+ruby "2.7.8"
+
+# CSV and bigdecimal were removed from Ruby stdlib in Ruby 4.x; keep for future Ruby upgrades.
 gem "csv"
 gem "bigdecimal"
 
