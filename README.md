@@ -55,8 +55,8 @@ Site will be available at `http://localhost:4000`
 
 - **Home** → `/` (index.md)
 - **How I work** → `/about` (pages/how-i-work.md)
-- **Work** → `/work` (pages/work.md)
-- **Experience** → `/experience` (pages/experience.md)
+- **Portfolio** → `/portfolio` (pages/work.md)
+- **Resume** → `/resume` (pages/experience.md)
 - **Contact** → `/contact` (pages/contact.md)
 
 ## Contributing

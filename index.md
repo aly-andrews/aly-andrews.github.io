@@ -45,7 +45,7 @@ permalink: /
           <h3>Getting started with Shopify</h3>
           <p class="work-subtitle">5 essential setup tasks before going live</p>
           <p>Comprehensive documentation and guides to help new merchants set up their Shopify store successfully. Step-by-step instructions covering essential configuration, settings, and best practices for launching your online store.</p>
-          <a href="/work#shopify" class="work-link">View documentation →</a>
+          <a href="/portfolio#shopify" class="work-link">View documentation →</a>
         </div>
       </div>
       
@@ -60,7 +60,7 @@ permalink: /
           <div class="work-content">
             <h3>Style guide development</h3>
             <p>Developed unified style guides for LLM training, reducing pre-production time from 5 days to 1</p>
-            <a href="/work#style-guides" class="work-link">View style guides →</a>
+            <a href="/portfolio#style-guides" class="work-link">View style guides →</a>
           </div>
         </div>
         

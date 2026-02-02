@@ -11,10 +11,12 @@ permalink: /about
   </div>
 </section>
 
+<div class="experience-resume-banner" aria-hidden="true"></div>
+
 <section class="about-content about-content-creative">
-  <div class="container">
+  <div class="about-content-container">
     <div class="about-intro">
-      <h2>Content philosophies</h2>
+      <h2 class="section-title">Content philosophies</h2>
       <p>I'm user centric at the core. I care about who will read/watch my content, what they need to do and whether what I'm shipping actually helps them problem solve. I love taking complex topics and making them easy to understand for users so they feel empowered to self-serve. There's something deeply satisfying about taking an idea and turning it into something tangible: a help center doc, an Academy course, a technical style guide, a how-to video or even a website like this one.</p>
       <p>Whether I was at Shopify, DrInfo or working on my own projects, the thread for my content philosophy is always the same: start with the user, write with clarity and build with intention.</p>
       <p>Another content philosophy I heavily subscribe to? Data. It's not enough to just ship a piece of content and hope it works. I get into the weeds of the data behind what I've built and also what I *will* build. People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen. This might look like retention rates, drop-off points, high-volume of support tickets on a topic or even just comments on a video. I use this information to not only build what users are asking for, but explore the modalities and information presented in ways that speak to them.</p>
@@ -27,7 +29,7 @@ permalink: /about
     </div>
 
     <section class="pattern-section">
-      <h2>Skillsets</h2>
+      <h2 class="section-title">Skillsets</h2>
       <div class="pattern-card-grid">
         <div class="project-card" data-type="popup" data-target="popup-content-ai-automation">
           <div class="card-content">
@@ -57,9 +59,9 @@ permalink: /about
             <span class="card-cta">Learn more</span>
           </div>
         </div>
-        <div class="project-card" data-type="doc" data-url="{{ '/work#docs-website' | relative_url }}">
+        <div class="project-card" data-type="doc" data-url="{{ '/portfolio#docs-website' | relative_url }}">
           <div class="card-content">
-            <h3>Docs as code and CMS/LMS</h3>
+            <h3>Docs as code</h3>
             <p>Version control, Markdown and static sites. Single-source content and CMS/LMS platforms for courses and publishing.</p>
             <span class="card-cta">View project</span>
           </div>
@@ -83,10 +85,10 @@ permalink: /about
 
     <!-- Hidden popup content (used by skillset popup) -->
     <div id="popup-content-ai-automation" class="skillset-popup-content" hidden aria-hidden="true">
-      <p>I use AI and automation to scale content work, keep tone and style consistent and support repeatable workflows. This includes prompt design, tool evaluation and integrating AI into drafting, editing and localization so teams can ship faster without sacrificing quality.</p>
+      <p>I use AI and automation to scale content work, keep tone and style consistent and support repeatable workflows. This includes prompt design, tool evaluation and integrating AI into drafting, editing and daily admin so teams can ship faster without sacrificing quality.</p>
     </div>
     <div id="popup-content-content-production" class="skillset-popup-content" hidden aria-hidden="true">
-      <p>I start with audience and task: what does the user need to do, and what format best serves that? I focus on clear structure, consistent style and reusable content so the same information can live in multiple places without drift. Writing and structure come first; format follows.</p>
+      <p>I start with audience and task: what does the user need to do, and what format best serves that. I focus on clear structure, consistent style and reusable content so the same information can live in multiple places without drift. Writing and structure come first; format follows.</p>
     </div>
     <div id="popup-content-analytics" class="skillset-popup-content" hidden aria-hidden="true">
       <p>I treat analytics as part of content strategy. I define what success looks like, track it consistently and change goals when the audience or product changes. I use completion, engagement and growth in context to prioritize what to double down on and what to shorten. When metrics need to evolve, I document the shift and set a new baseline.</p>
@@ -100,6 +102,5 @@ permalink: /about
     <div id="popup-content-video-photography" class="skillset-popup-content" hidden aria-hidden="true">
       <p>I approach video and photography with the same user-centric and systems thinking I bring to documentation. For video I focus on scripting and storyboarding first, then coordination and delivery. For photography I focus on understanding the client, clear process and scalable workflows. Both are about clarity, structure and intention.</p>
     </div>
-
   </div>
 </section>

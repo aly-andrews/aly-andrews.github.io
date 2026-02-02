@@ -29,9 +29,9 @@ navigation:
     url: /
   - title: How I work
     url: /about
-  - title: Work
-    url: /work
-  - title: Experience
-    url: /experience
+  - title: Portfolio
+    url: /portfolio
+  - title: Resume
+    url: /resume
   - title: Contact
     url: /contact

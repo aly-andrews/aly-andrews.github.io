@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Experience
-permalink: /experience
+permalink: /resume
 ---
 
 <div class="experience-resume-banner" aria-hidden="true"></div>
@@ -36,9 +36,8 @@ permalink: /experience
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Accomplishments & responsibilities</summary>
+            <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <h3>Accomplishments & Results</h3>
               <table class="accomplishment-table">
                 <thead>
                   <tr><th>Accomplishment</th><th>Result</th></tr>
@@ -49,14 +48,12 @@ permalink: /experience
                   <tr><td>Migration of 100+ educational videos between video hosting platforms, implemented structured customized onboarding documentation</td><td>Video content was always live and accessible for viewers, Shopify staff had little disruption to workflow with zero downtime; data captured and segmented immediately</td></tr>
                 </tbody>
               </table>
-              <h3>Content Strategy & Development</h3>
               <ul>
                 <li>Writing articles and producing videos for structured learning tracks</li>
                 <li>Content creation follows modular format serving audience segments from SMB, enterprise, partners and developers</li>
                 <li>Redefined video success metrics from deflection to learning outcomes</li>
                 <li>Build and maintain relationships with SMEs across Shopify Product, Support, Marketing and more</li>
               </ul>
-              <h3>AI Innovation & Process Optimization</h3>
               <ul>
                 <li>Developed Claude-based script writing agents adopted across teams</li>
                 <li>Created Academy style guides designed to train LLM models for consistent brand voice and technical accuracy with scalable content creation</li>
@@ -79,9 +76,8 @@ permalink: /experience
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Accomplishments & responsibilities</summary>
+            <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <h3>Accomplishments & Results</h3>
               <table class="accomplishment-table">
                 <thead>
                   <tr><th>Accomplishment</th><th>Result</th></tr>
@@ -92,19 +88,16 @@ permalink: /experience
                   <tr><td>Developed educational content roadmaps based on support data and learning opportunities aligned with Shopify quarterly goals</td><td>Video content was based on real-support queries, meaning viewers were actively seeking the content instead of contacting support. It saved Shopify money through deflection and organically improved Google search rankings through keyword topics</td></tr>
                 </tbody>
               </table>
-              <h3>Team Building & Documentation</h3>
               <ul>
                 <li>Designed end-to-end hiring process including role definitions, interview frameworks, and candidate evaluation criteria</li>
                 <li>Created structured onboarding documentation with 30-60-90 day milestone check-ins</li>
                 <li>Performed impact review cycles, career development frameworks and Burst planning</li>
               </ul>
-              <h3>Strategic Documentation & Process Creation</h3>
               <ul>
                 <li>Launched multilingual content expansion project, securing headcount approval</li>
                 <li>Established frameworks that scaled English content processes to 14 languages</li>
                 <li>Authored remote filming guides on hardware/software setup, lighting, wardrobe and quality standards</li>
               </ul>
-              <h3>Content Strategy & Stakeholder Management</h3>
               <ul>
                 <li>Developed educational content roadmaps based on support data analysis and learning opportunities aligned with Shopify quarterly goals</li>
                 <li>Implemented systematic retros and review cycles to maintain content accuracy</li>
@@ -127,9 +120,8 @@ permalink: /experience
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Accomplishments & responsibilities</summary>
+            <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <h3>Accomplishments & Results</h3>
               <table class="accomplishment-table">
                 <thead>
                   <tr><th>Accomplishment</th><th>Result</th></tr>
@@ -142,12 +134,10 @@ permalink: /experience
                   <tr><td>Independently produced 92 videos (62 English, 30 international) within two years</td><td>—</td></tr>
                 </tbody>
               </table>
-              <h3>International Expansion & Localization</h3>
               <ul>
                 <li>Coordinated localization of 30+ videos through Videolocalize partnership</li>
                 <li>Created comprehensive style guides and systematic tracking systems for international content scaling</li>
               </ul>
-              <h3>Team Development & Process Creation</h3>
               <ul>
                 <li>Developed scalable production workflows and quality control standards adopted across international markets</li>
                 <li>Led cross-functional project management including 4-month, 25-video POS series with SME training and coordination</li>
