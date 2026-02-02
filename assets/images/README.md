@@ -7,18 +7,7 @@ Upload your portfolio images here. The site will automatically use them once you
 ### Portfolio Images (`portfolio/`)
 Upload work sample images here:
 
-- `skio.jpg` - Main Skio documentation image (homepage)
-- `skio-main.jpg` - Large Skio project image (work page)
-- `skio-shipping.jpg` - Shipping profiles article
-- `skio-3ds.jpg` - 3DS authentication content
-- `skio-releases.jpg` - Product releases documentation
-
-- `style-guides.jpg` - Main style guides image (homepage)
-- `style-guides-main.jpg` - Large style guides image (work page)
-- `style-unified.jpg` - Unified style guide
-- `style-article.jpg` - Article styleguide
-- `style-help.jpg` - Help center style guide
-
+- `shopify-docs.jpg` - Getting started on Shopify (homepage featured work)
 - `video.jpg` - Main video production image (homepage)
 - `video-main.jpg` - Large video production image (work page)
 - `video-pos.jpg` - POS series

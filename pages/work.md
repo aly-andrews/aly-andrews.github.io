@@ -13,17 +13,17 @@ permalink: /portfolio
 
 <section class="work-content-creative">
   <div class="container">
-    <div id="skio" class="work-section-creative">
+    <div id="getting-started-shopify" class="work-section-creative">
       <div class="work-section-header">
         <div class="work-image-large">
           <div class="image-placeholder work-placeholder-large">
-            <p>Skio Documentation</p>
-            <p class="placeholder-hint">Upload to: assets/images/portfolio/skio-main.jpg</p>
+            <p>Teach a class video</p>
+            <p class="placeholder-hint">Video coming soon</p>
           </div>
         </div>
         <div class="work-section-intro">
-          <h2>Skio documentation</h2>
-          <p>Created comprehensive help center articles and video scripts for Skio, a subscription management platform for Shopify merchants. Work included developing both written documentation and video content to help merchants understand and use subscription features effectively.</p>
+          <h2>Getting started on Shopify</h2>
+          <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. The top segment will host the teach a class video; supporting content includes project plan, learner profiles, storyboard and accompanying resources.</p>
         </div>
       </div>
       
@@ -31,91 +31,64 @@ permalink: /portfolio
         <div class="work-example-visual">
           <div class="work-example-image">
             <div class="image-placeholder work-placeholder">
-              <p>Shipping Profiles</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/skio-shipping.jpg</p>
+              <p>Project plan</p>
+              <p class="placeholder-hint">Coming soon</p>
             </div>
           </div>
           <div class="work-example-content">
-            <h3>Shipping profiles article</h3>
-            <p>Help center article explaining how to configure shipping profiles for subscription products</p>
+            <h3>Project plan</h3>
+            <p>Scope, objectives and approach for the Getting started on Shopify instructional project</p>
           </div>
         </div>
         <div class="work-example-visual">
           <div class="work-example-image">
             <div class="image-placeholder work-placeholder">
-              <p>3DS Authentication</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/skio-3ds.jpg</p>
+              <p>Learner profiles</p>
+              <p class="placeholder-hint">Coming soon</p>
             </div>
           </div>
           <div class="work-example-content">
-            <h3>3DS authentication</h3>
-            <p>Article and video content covering 3D Secure authentication for subscription payments</p>
+            <h3>Learner profiles</h3>
+            <p>Audience and user profiles for the course</p>
           </div>
         </div>
         <div class="work-example-visual">
           <div class="work-example-image">
             <div class="image-placeholder work-placeholder">
-              <p>Product Releases</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/skio-releases.jpg</p>
+              <p>Storyboard</p>
+              <p class="placeholder-hint">Coming soon</p>
             </div>
           </div>
           <div class="work-example-content">
-            <h3>Product releases</h3>
-            <p>Documentation for new product features and template documentation releases</p>
+            <h3>Storyboard</h3>
+            <p>Visual and script planning for the teach a class video</p>
+          </div>
+        </div>
+        <div class="work-example-visual">
+          <div class="work-example-image">
+            <div class="image-placeholder work-placeholder">
+              <p>Resources</p>
+              <p class="placeholder-hint">Coming soon</p>
+            </div>
+          </div>
+          <div class="work-example-content">
+            <h3>Accompanying resources</h3>
+            <p>Supporting materials and deliverables for the project</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div id="style-guides" class="work-section-creative">
-      <div class="work-section-header reverse">
+    <div id="docs-website" class="work-section-creative">
+      <div class="work-section-header">
         <div class="work-section-intro">
-          <h2>Style guide development</h2>
-          <p>Developed unified style guides designed to train LLM models for consistent brand voice and technical accuracy. These guides were adopted across teams and reduced pre-production time from 5 days to 1 day, including script revision cycles.</p>
+          <h2>How I made this website</h2>
+          <p>Docs as code in practice: this portfolio site was built with Jekyll, GitHub Pages and Cursor. A video walkthrough of how I built it is coming soon.</p>
         </div>
         <div class="work-image-large">
           <div class="image-placeholder work-placeholder-large">
-            <p>Style Guides</p>
-            <p class="placeholder-hint">Upload to: assets/images/portfolio/style-guides-main.jpg</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="work-examples-creative">
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Unified Guide</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/style-unified.jpg</p>
-            </div>
-          </div>
-          <div class="work-example-content">
-            <h3>Unified style guide</h3>
-            <p>Comprehensive guide combining best practices from multiple style guides for help center articles, educational articles, and general technical writing</p>
-          </div>
-        </div>
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Article Guide</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/style-article.jpg</p>
-            </div>
-          </div>
-          <div class="work-example-content">
-            <h3>Article styleguide</h3>
-            <p>Specific guidelines for creating conversational, educational articles with knowledge checks and structured learning objectives</p>
-          </div>
-        </div>
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Help Center Guide</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/style-help.jpg</p>
-            </div>
-          </div>
-          <div class="work-example-content">
-            <h3>Help center style guide</h3>
-            <p>Task-focused guidelines for creating direct, action-oriented help center documentation</p>
+            <p>Website project</p>
+            <p class="placeholder-hint">Video and thumbnail coming soon</p>
           </div>
         </div>
       </div>
@@ -175,113 +148,95 @@ permalink: /portfolio
       </div>
     </div>
 
-    <!-- Project Cards Example Section -->
     <div class="work-section-creative">
-      <div class="work-section-header">
-        <div class="work-section-intro">
-          <h2>Project cards</h2>
-          <p>Interactive project cards with video modals and document links. Click a card to view videos in a modal or navigate to documentation pages.</p>
-        </div>
-      </div>
-      
-      <div class="work-examples-creative">
-        <!-- Example: Video Card -->
-        <div class="project-card" data-type="video" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}">
-          <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="What is Shopify video thumbnail" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder work-placeholder" style="display: none;">
-            <p>Video thumbnail</p>
-          </div>
-          <div class="card-content">
-            <h3>What is Shopify</h3>
-            <p>Quick introduction to Shopify platform and features</p>
-          </div>
-        </div>
-
-        <!-- Example: Document Card -->
-        <div class="project-card" data-type="doc" data-url="/about">
-          <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="How I work documentation" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder work-placeholder" style="display: none;">
-            <p>Document thumbnail</p>
-          </div>
-          <div class="card-content">
-            <h3>How I work</h3>
-            <p>Learn about my approach to technical writing and content creation</p>
-          </div>
-        </div>
-
-        <!-- Example: Another Video Card -->
-        <div class="project-card" data-type="video" data-video-src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}">
-          <img src="{{ '/assets/videos/what is shop.jpg' | relative_url }}" alt="What is Shop video thumbnail" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder work-placeholder" style="display: none;">
-            <p>Video thumbnail</p>
-          </div>
-          <div class="card-content">
-            <h3>What is Shop</h3>
-            <p>Overview of the Shop app and its features</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="docs-website" class="work-section-creative">
-      <div class="work-section-header">
-        <div class="work-section-intro">
-          <h2>How I made this website</h2>
-          <p>Docs as code in practice: this portfolio site was built with Jekyll, GitHub Pages and Cursor. A video walkthrough of how I built it is coming soon.</p>
-        </div>
-        <div class="work-image-large">
-          <div class="image-placeholder work-placeholder-large">
-            <p>Website project</p>
-            <p class="placeholder-hint">Video and thumbnail coming soon</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="work-section-creative">
-      <h2>Passion projects</h2>
+      <h2 class="section-title">Passion projects</h2>
       <p>Photography is one of my passion projects that demonstrates how I approach everything—with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
       <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing—understanding user needs, creating consistent processes, and optimizing for outcomes—applied to building a photography business from scratch.</p>
-      <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy. You can see my work at <a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a>.</p>
-      <h3 class="photography-grid-title">Photography work</h3>
-      <div class="photography-grid">
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-        </div>
-        <div class="photography-grid-item">
-          <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+      <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy. You can see my work at <a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a> and follow <a href="https://www.instagram.com/alyanne.co?igsh=M2xzeGF0cXNveTcy&utm_source=qr" target="_blank" rel="noopener">@alyanne.co on Instagram</a>.</p>
+      <a href="https://www.instagram.com/alyanne.co?igsh=M2xzeGF0cXNveTcy&utm_source=qr" target="_blank" rel="noopener" class="photography-instagram-cta" aria-label="Follow @alyanne.co on Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Follow @alyanne.co on Instagram
+      </a>
+      <div class="photography-carousel-wrapper" data-auto="true">
+        <button type="button" class="photography-carousel-pause" aria-label="Pause carousel">Pause</button>
+        <div class="photography-carousel">
+        <div class="photography-carousel-track">
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <!-- Duplicated for infinite scroll -->
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
+          <div class="photography-carousel-item">
+            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   </div>
 </section>

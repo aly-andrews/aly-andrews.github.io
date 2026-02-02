@@ -37,9 +37,9 @@ The AI will:
 `/Users/alysaandrews/Documents/docs/aly-andrews.github.io/work.md`
 
 ### Current Portfolio Items:
-1. **Skio documentation** - Help center articles and video scripts
-2. **Style guides** - Article and video style guides
-3. **Training programs** - Educational content development
+1. **Getting started on Shopify** - Instructional design project (teach a class video, project plan, learner profiles, storyboard, resources)
+2. **How I made this website** - Docs as code (Jekyll, GitHub Pages, Cursor)
+3. **Video production** - Educational videos for Shopify Help Center YouTube
 
 ### Standard Item Format:
 ```markdown
@@ -91,10 +91,10 @@ The AI will:
 
 ### Good Example:
 ```markdown
-<p>Created comprehensive help center articles and video scripts for Skio, 
-a subscription management platform for Shopify merchants. Work included 
-developing both written documentation and video content to help merchants 
-understand and use subscription features effectively.</p>
+<p>Created comprehensive documentation and instructional materials for new 
+Shopify merchants. Work included a teach a class video, project plan, 
+learner profiles, storyboard and accompanying resources to help merchants 
+set up their store successfully.</p>
 ```
 
 ### Include:
