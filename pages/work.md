@@ -174,5 +174,53 @@ permalink: /work
         </div>
       </div>
     </div>
+
+    <!-- Project Cards Example Section -->
+    <div class="work-section-creative">
+      <div class="work-section-header">
+        <div class="work-section-intro">
+          <h2>Project cards</h2>
+          <p>Interactive project cards with video modals and document links. Click a card to view videos in a modal or navigate to documentation pages.</p>
+        </div>
+      </div>
+      
+      <div class="work-examples-creative">
+        <!-- Example: Video Card -->
+        <div class="project-card" data-type="video" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}">
+          <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="What is Shopify video thumbnail" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder work-placeholder" style="display: none;">
+            <p>Video thumbnail</p>
+          </div>
+          <div class="card-content">
+            <h3>What is Shopify</h3>
+            <p>Quick introduction to Shopify platform and features</p>
+          </div>
+        </div>
+
+        <!-- Example: Document Card -->
+        <div class="project-card" data-type="doc" data-url="/about">
+          <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="How I work documentation" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder work-placeholder" style="display: none;">
+            <p>Document thumbnail</p>
+          </div>
+          <div class="card-content">
+            <h3>How I work</h3>
+            <p>Learn about my approach to technical writing and content creation</p>
+          </div>
+        </div>
+
+        <!-- Example: Another Video Card -->
+        <div class="project-card" data-type="video" data-video-src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}">
+          <img src="{{ '/assets/videos/what is shop.jpg' | relative_url }}" alt="What is Shop video thumbnail" class="card-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder work-placeholder" style="display: none;">
+            <p>Video thumbnail</p>
+          </div>
+          <div class="card-content">
+            <h3>What is Shop</h3>
+            <p>Overview of the Shop app and its features</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
