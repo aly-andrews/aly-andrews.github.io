@@ -2986,3 +2986,110 @@ img {
     font-size: 1.25rem;
   }
 }
+
+/* Skillset popup (How I work cards) */
+.skillset-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillset-popup[aria-hidden="false"] {
+  display: flex;
+}
+
+.skillset-popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+}
+
+.skillset-popup-container {
+  position: relative;
+  width: 100%;
+  max-width: 36rem;
+  max-height: 85vh;
+  z-index: 10000;
+  background: var(--bg-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillset-popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10001;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.skillset-popup-close:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.skillset-popup-title {
+  margin: 0 0 1rem 0;
+  padding-right: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.skillset-popup-body {
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+.skillset-popup-body p {
+  margin-bottom: 0.75rem;
+}
+
+.skillset-popup-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .skillset-popup-container {
+    max-width: 95vw;
+    max-height: 90vh;
+    padding: 1rem 1rem 1.5rem;
+  }
+
+  .skillset-popup-close {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .skillset-popup-title {
+    font-size: 1.125rem;
+    padding-right: 2rem;
+  }
+}
