@@ -55,5 +55,16 @@
       </div>
     </div>
   </footer>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="video-modal-overlay"></div>
+    <div class="video-modal-container">
+      <button class="video-modal-close" aria-label="Close video">×</button>
+      <video id="modalVideoPlayer" controls></video>
+    </div>
+  </div>
+
+  <script src="{{ '/assets/js/project-cards.js' | relative_url }}" defer></script>
 </body>
 </html>
