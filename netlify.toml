@@ -10,9 +10,10 @@
   publish = "_site"
   
   # Environment variables for the build
+  # Do not set RUBY_VERSION here; Netlify will use its preinstalled Ruby.
+  # Pinning 3.2.0 triggers compiling Ruby from source and exceeds the 18m build timeout.
   [build.environment]
     JEKYLL_ENV = "production"
-    RUBY_VERSION = "3.2.0"
 
 # Deploy previews for pull requests
 [context.deploy-preview]
