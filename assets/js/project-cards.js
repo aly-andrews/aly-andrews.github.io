@@ -1,11 +1,15 @@
-// Project Card Click Handlers and Video Modal
+// Project Card Click Handlers, Video Modal and Skillset Popup
 document.addEventListener('DOMContentLoaded', function() {
   const modal = document.getElementById('videoModal');
   const videoPlayer = document.getElementById('modalVideoPlayer');
   const closeBtn = document.querySelector('.video-modal-close');
   const overlay = document.querySelector('.video-modal-overlay');
 
-  if (!modal || !videoPlayer) return;
+  const skillsetPopup = document.getElementById('skillsetPopup');
+  const skillsetPopupTitle = document.getElementById('skillset-popup-title');
+  const skillsetPopupBody = document.querySelector('.skillset-popup-body');
+  const skillsetPopupClose = document.querySelector('.skillset-popup-close');
+  const skillsetPopupOverlay = document.querySelector('.skillset-popup-overlay');
 
   // Handle clicks on project cards with data-type attribute
   document.querySelectorAll('.project-card[data-type]').forEach(card => {
@@ -23,34 +27,46 @@ document.addEventListener('DOMContentLoaded', function() {
         if (targetUrl) {
           window.location.href = targetUrl;
         }
-      } else if (type === 'expand') {
+      } else if (type === 'popup') {
         const targetId = card.getAttribute('data-target');
         if (targetId) {
           e.preventDefault();
-          expandSection(targetId);
+          openSkillsetPopup(card, targetId);
         }
       }
     });
   });
 
-  // Scroll to section and expand its accordion (for how-i-work skillset cards)
-  function expandSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (!section) return;
+  // Open skillset popup with content from hidden div
+  function openSkillsetPopup(card, contentId) {
+    const contentEl = document.getElementById(contentId);
+    if (!contentEl || !skillsetPopup || !skillsetPopupTitle || !skillsetPopupBody) return;
 
-    const accordion = section.querySelector('.portfolio-accordion');
-    if (accordion && accordion.tagName === 'DETAILS') {
-      accordion.setAttribute('open', '');
-    }
+    const titleEl = card.querySelector('.card-content h3');
+    skillsetPopupTitle.textContent = titleEl ? titleEl.textContent : '';
+    skillsetPopupBody.innerHTML = contentEl.innerHTML;
 
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-    // Brief highlight for expanded section
-    section.classList.add('section-just-expanded');
-    setTimeout(function() {
-      section.classList.remove('section-just-expanded');
-    }, 1500);
+    skillsetPopup.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
   }
+
+  function closeSkillsetPopup() {
+    if (!skillsetPopup) return;
+    skillsetPopup.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (skillsetPopupClose) {
+    skillsetPopupClose.addEventListener('click', closeSkillsetPopup);
+  }
+  if (skillsetPopupOverlay) {
+    skillsetPopupOverlay.addEventListener('click', closeSkillsetPopup);
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && skillsetPopup && skillsetPopup.getAttribute('aria-hidden') === 'false') {
+      closeSkillsetPopup();
+    }
+  });
 
   // Open video modal
   function openVideoModal(src) {
@@ -82,9 +98,9 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', closeVideoModal);
   }
 
-  // ESC key to close
+  // ESC key to close video modal
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+    if (e.key === 'Escape' && modal && modal.getAttribute('aria-hidden') === 'false') {
       closeVideoModal();
     }
   });
@@ -93,6 +109,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const modalContainer = document.querySelector('.video-modal-container');
   if (modalContainer) {
     modalContainer.addEventListener('click', function(e) {
+      e.stopPropagation();
+    });
+  }
+
+  // Prevent skillset popup container clicks from closing popup
+  const skillsetPopupContainer = document.querySelector('.skillset-popup-container');
+  if (skillsetPopupContainer) {
+    skillsetPopupContainer.addEventListener('click', function(e) {
       e.stopPropagation();
     });
   }
