@@ -10,17 +10,16 @@
   publish = "_site"
   
   # Environment variables for the build
-  # Jekyll 3.9 / Liquid 4.x need Ruby 2.7 (String#tainted? removed in 3.2+).
-  # Explicit RUBY_VERSION so Netlify uses 2.7.x; clear build cache if first deploy is slow.
+  # Use Ruby 3.3.4 to match GitHub Pages; Liquid 4.0.4+ is compatible (no tainted? issue)
   [build.environment]
-    RUBY_VERSION = "2.7.8"
+    RUBY_VERSION = "3.3.4"
     JEKYLL_ENV = "production"
 
 # Deploy previews for pull requests (must set Ruby here; context does not inherit [build.environment])
 [context.deploy-preview]
   command = "bundle install && bundle exec jekyll build --baseurl ''"
   [context.deploy-preview.environment]
-    RUBY_VERSION = "2.7.8"
+    RUBY_VERSION = "3.3.4"
     JEKYLL_ENV = "production"
 
 # Branch deploys (won't be used since main is on GitHub Pages)
