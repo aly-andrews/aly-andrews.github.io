@@ -2678,10 +2678,15 @@ img {
   margin-bottom: 3rem;
 }
 
-.pattern-section h2 {
+.pattern-section h2,
+.pattern-section-heading {
   font-size: 2rem;
   margin-bottom: var(--spacing-unit);
   color: var(--primary-color);
+}
+
+.pattern-section-heading {
+  margin-top: 2.5rem;
 }
 
 .pattern-section h3 {

@@ -222,5 +222,66 @@ permalink: /work
         </div>
       </div>
     </div>
+
+    <div id="docs-website" class="work-section-creative">
+      <div class="work-section-header">
+        <div class="work-section-intro">
+          <h2>How I made this website</h2>
+          <p>Docs as code in practice: this portfolio site was built with Jekyll, GitHub Pages and Cursor. A video walkthrough of how I built it is coming soon.</p>
+        </div>
+        <div class="work-image-large">
+          <div class="image-placeholder work-placeholder-large">
+            <p>Website project</p>
+            <p class="placeholder-hint">Video and thumbnail coming soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-section-creative">
+      <h2>Passion projects</h2>
+      <p>Photography is one of my passion projects that demonstrates how I approach everything—with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
+      <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing—understanding user needs, creating consistent processes, and optimizing for outcomes—applied to building a photography business from scratch.</p>
+      <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy. You can see my work at <a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a>.</p>
+      <h3 class="photography-grid-title">Photography work</h3>
+      <div class="photography-grid">
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+        <div class="photography-grid-item">
+          <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
