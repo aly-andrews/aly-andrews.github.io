@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# CSV was removed from Ruby stdlib in Ruby 4.x; Jekyll requires it.
+gem "csv"
+
 # Use the GitHub Pages gem set so the site builds on Pages.
 # This pins Jekyll and plugin versions to what GitHub Pages supports.
 gem "github-pages", group: :jekyll_plugins
