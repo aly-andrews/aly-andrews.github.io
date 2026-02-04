@@ -10,17 +10,17 @@
   publish = "_site"
   
   # Environment variables for the build
-  # Use Ruby 3.3.4 to match GitHub Pages; Liquid 4.0.4+ is compatible (no tainted? issue)
   [build.environment]
-    RUBY_VERSION = "3.3.4"
     JEKYLL_ENV = "production"
+    # Tell mise to skip Ruby version management and use system Ruby
+    MISE_RUBY_INSTALL = "false"
 
-# Deploy previews for pull requests (must set Ruby here; context does not inherit [build.environment])
+# Deploy previews for pull requests
 [context.deploy-preview]
   command = "bundle install && bundle exec jekyll build --baseurl ''"
   [context.deploy-preview.environment]
-    RUBY_VERSION = "3.3.4"
     JEKYLL_ENV = "production"
+    MISE_RUBY_INSTALL = "false"
 
 # Branch deploys (won't be used since main is on GitHub Pages)
 [context.branch-deploy]

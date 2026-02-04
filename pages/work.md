@@ -97,10 +97,7 @@ permalink: /portfolio
     <div id="video" class="work-section-creative">
       <div class="work-section-header">
         <div class="work-image-large">
-          <div class="image-placeholder work-placeholder-large">
-            <p>Video Production</p>
-            <p class="placeholder-hint">Upload to: assets/images/portfolio/video-main.jpg</p>
-          </div>
+          <img src="{{ '/assets/videos/BFCM.jpg' | relative_url }}" alt="Your guide to BFCM - Shopify Help Center video thumbnail" class="work-image-img">
         </div>
         <div class="work-section-intro">
           <h2>Video production</h2>
@@ -111,10 +108,7 @@ permalink: /portfolio
       <div class="work-examples-creative">
         <div class="work-example-visual">
           <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>POS Series</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/video-pos.jpg</p>
-            </div>
+            <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="What is Shopify video thumbnail" class="work-image-img">
           </div>
           <div class="work-example-content">
             <h3>POS series</h3>
@@ -123,10 +117,7 @@ permalink: /portfolio
         </div>
         <div class="work-example-visual">
           <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>International</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/video-international.jpg</p>
-            </div>
+            <img src="{{ '/assets/videos/store policies.jpg' | relative_url }}" alt="Store policies video thumbnail" class="work-image-img">
           </div>
           <div class="work-example-content">
             <h3>International expansion</h3>
@@ -135,15 +126,99 @@ permalink: /portfolio
         </div>
         <div class="work-example-visual">
           <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Migration</p>
-              <p class="placeholder-hint">Upload to: assets/images/portfolio/video-migration.jpg</p>
-            </div>
+            <img src="{{ '/assets/videos/what is shop.jpg' | relative_url }}" alt="What is Shop video thumbnail" class="work-image-img">
           </div>
           <div class="work-example-content">
             <h3>Content migration</h3>
             <p>Migrated 100+ educational videos between video hosting platforms with zero downtime, implementing structured onboarding documentation for the team</p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-production" class="work-section-creative">
+      <h2 class="section-title">Watch me in action</h2>
+      <p>Watch videos I created from concept to completion—researching ideas, developing concepts based on support data, writing scripts and filming. I handled editing for many of these projects, bringing complex topics to life through engaging content.</p>
+      <div class="video-carousel-container">
+        <div class="video-carousel">
+          <div class="video-slide active">
+            <div class="video-wrapper">
+              <video 
+                controls 
+                class="video-embed"
+                poster="{{ '/assets/videos/BFCM.jpg' | relative_url }}"
+                preload="metadata">
+                <source src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <button type="button" class="video-play-overlay" aria-label="Play video">
+                <span class="video-play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="video-slide">
+            <div class="video-wrapper">
+              <video 
+                controls 
+                class="video-embed"
+                poster="{{ '/assets/videos/what is shopify.jpg' | relative_url }}"
+                preload="metadata">
+                <source src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <button type="button" class="video-play-overlay" aria-label="Play video">
+                <span class="video-play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="video-slide">
+            <div class="video-wrapper">
+              <video 
+                controls 
+                class="video-embed"
+                poster="{{ '/assets/videos/store policies.jpg' | relative_url }}"
+                preload="metadata">
+                <source src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <button type="button" class="video-play-overlay" aria-label="Play video">
+                <span class="video-play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <div class="video-slide">
+            <div class="video-wrapper">
+              <video 
+                controls 
+                class="video-embed"
+                poster="{{ '/assets/videos/what is shop.jpg' | relative_url }}"
+                preload="metadata">
+                <source src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <button type="button" class="video-play-overlay" aria-label="Play video">
+                <span class="video-play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn carousel-prev" aria-label="Previous video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-btn carousel-next" aria-label="Next video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+        <div class="carousel-dots">
+          <button class="carousel-dot active" data-slide="0" aria-label="Go to video 1"></button>
+          <button class="carousel-dot" data-slide="1" aria-label="Go to video 2"></button>
+          <button class="carousel-dot" data-slide="2" aria-label="Go to video 3"></button>
+          <button class="carousel-dot" data-slide="3" aria-label="Go to video 4"></button>
         </div>
       </div>
     </div>

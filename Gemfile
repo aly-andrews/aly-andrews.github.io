@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-# Pin Ruby to match GitHub Pages (Liquid 4.0.4+ compatible with Ruby 3.2+, no tainted? issue)
-ruby "3.3.4"
+# Require Ruby 2.7 or higher (compatible with Jekyll and GitHub Pages)
+ruby ">= 2.7.0"
 
 # CSV and bigdecimal removed from Ruby stdlib in Ruby 4.x; keep for forward compatibility
 gem "csv"
