@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-# Pin Ruby to match GitHub Pages (Liquid 4.0.4+ compatible with Ruby 3.2+, no tainted? issue)
-ruby "3.3.4"
+# Pin Ruby to version pre-installed on Netlify build image
+ruby "3.2.2"
 
 # CSV and bigdecimal removed from Ruby stdlib in Ruby 4.x; keep for forward compatibility
 gem "csv"
