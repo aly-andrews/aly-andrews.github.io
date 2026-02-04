@@ -1,9 +1,5 @@
-# Disable mise Ruby version management for Netlify
-# Let Netlify use its system Ruby instead of compiling from source
+# Configure mise for Netlify builds
+# Explicitly set Ruby version to match Gemfile.lock
 
 [tools]
-# No Ruby specified - use system Ruby
-
-[settings]
-# Disable auto-installation of tools
-auto_install = false
+ruby = "3.3.4"
