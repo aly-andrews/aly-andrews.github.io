@@ -22,7 +22,7 @@ jobs:
 
       # Step 2: Setup Ruby 3.3.4 to match GitHub Pages (Liquid 4.0.4+ compatible)
       - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.13.0
         with:
           ruby-version: '3.3.4'
           bundler-cache: true
