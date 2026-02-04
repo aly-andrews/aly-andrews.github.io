@@ -17,8 +17,6 @@ permalink: /about
   <div class="about-content-container">
     <div class="about-intro">
       <h2 class="section-title">Content philosophies</h2>
-     <div class="about-intro">
-  <h2 class="section-title">Content philosophies</h2>
 
   <p>I'm user-centric at the core.</p>
 
