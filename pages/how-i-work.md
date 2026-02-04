@@ -19,7 +19,13 @@ permalink: /about
       <h2 class="section-title">Content philosophies</h2>
       <p>I'm user centric at the core. I care about who will read/watch my content, what they need to do and whether what I'm shipping actually helps them problem solve. I love taking complex topics and making them easy to understand for users so they feel empowered to self-serve. There's something deeply satisfying about taking an idea and turning it into something tangible: a help center doc, an Academy course, a technical style guide, a how-to video or even a website like this one.</p>
       <p>Whether I was at Shopify, DrInfo or working on my own projects, the thread for my content philosophy is always the same: start with the user, write with clarity and build with intention.</p>
-      <p>Another content philosophy I heavily subscribe to? Data. It's not enough to just ship a piece of content and hope it works. I get into the weeds of the data behind what I've built and also what I *will* build. People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen. This might look like retention rates, drop-off points, high-volume of support tickets on a topic or even just comments on a video. I use this information to not only build what users are asking for, but explore the modalities and information presented in ways that speak to them.</p>
+      <p>Another content philosophy I heavily subscribe to? Data. It's not enough to just ship a piece of content and hope it works. I get into the weeds of the data behind what I've built and also what I *will* build.</p>
+
+      <blockquote>
+        <p>People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen.</p>
+      </blockquote>
+
+      <p>This might look like retention rates, drop-off points, high-volume of support tickets on a topic or even just comments on a video. I use this information to not only build what users are asking for, but explore the modalities and information presented in ways that speak to them.</p>
       <p>My career has been an organic evolution through trial and error and seeking learning opportunities. I've formalized my skillset with a Technical Writing Graduate Certificate (Algonquin College, graduating summer 2026). This gives me a unique perspective of learning traditional technical writing methods, while simultaneously building for the future as I learn to write for LLM's. There is an art to weaving the writing fundamentals while embracing the technology before us. To build the plane as we fly it, so to speak.</p>
       <p>I warmly welcome this change and invite others to meet me at the intersection of this evolution.</p>
     </div>
