@@ -24,7 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.13.0
         with:
-          ruby-version: '3.2'
+          ruby-version: '2.7.0'
 
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3
