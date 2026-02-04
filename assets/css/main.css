@@ -1179,7 +1179,7 @@ img {
 
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -1187,9 +1187,15 @@ img {
 .contact-item {
   background-color: var(--bg-color);
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: left;
   border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .contact-item h2 {
@@ -3163,10 +3169,13 @@ img {
   z-index: 9999;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .skillset-popup[aria-hidden="false"] {
   display: flex;
+  opacity: 1;
 }
 
 .skillset-popup-overlay {
@@ -3175,7 +3184,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
 }
 
@@ -3192,6 +3201,12 @@ img {
   padding: 1.5rem 1.5rem 2rem;
   display: flex;
   flex-direction: column;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+.skillset-popup[aria-hidden="false"] .skillset-popup-container {
+  transform: scale(1);
 }
 
 .skillset-popup-close {

@@ -7,7 +7,7 @@ permalink: /contact
 <section class="page-header">
   <div class="container">
     <h1>Get in touch</h1>
-    <p class="page-subtitle">I'm always interested in connecting with fellow content creators, technical writers, and educators</p>
+    <p class="page-subtitle">I'm always interested in connecting with fellow content creators, technical writers and educators</p>
   </div>
 </section>
 
@@ -23,6 +23,6 @@ permalink: /contact
         <h2>LinkedIn</h2>
         <p><a href="https://www.linkedin.com/in/alysaandrews/" target="_blank">Connect with me on LinkedIn</a></p>
       </div>
-    
+    </div>
   </div>
 </section>

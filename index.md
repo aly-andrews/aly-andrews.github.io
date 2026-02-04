@@ -6,7 +6,7 @@ permalink: /
 
 <section class="site-credits">
   <div class="container">
-    <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages. <a href="https://github.com/aly-andrews/aly-andrews.github.io" target="_blank" rel="noopener">View source on GitHub</a></p>
+    <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll and GitHub Pages.</p>
   </div>
 </section>
 
