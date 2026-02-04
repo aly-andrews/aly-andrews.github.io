@@ -19,6 +19,14 @@ exclude:
   - Gemfile.lock
   - node_modules
   - script
+  # Built HTML in root (deploy artifacts); Jekyll must generate these from source
+  - about.html
+  - contact.html
+  - index.html
+  - love-letter.html
+  - portfolio.html
+  - resume.html
+  - IMAGE-GUIDE.html
 plugins:
   - jekyll-feed
   - jekyll-sitemap
