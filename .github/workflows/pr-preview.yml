@@ -24,8 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.13.0
         with:
-          ruby-version: '3.3.4'
-          bundler-cache: true
+          ruby-version: '3.2'
 
       # Step 3: Install Jekyll dependencies
       - name: Install dependencies
