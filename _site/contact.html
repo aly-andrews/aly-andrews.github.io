@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Aly Andrews - Portfolio</title>
+  <meta name="description" content="Senior Education Content Producer | Technical Writer | Video Producer">
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/images/favicon.png">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/carousel.js" defer></script>
+</head>
+<body>
+  <!-- Skip to main content link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/" class="site-logo" aria-label="Aly Andrews - Home">
+          <img src="/assets/images/alyandrews2.png" alt="Aly Andrews logo" class="logo-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="logo-placeholder" style="display: none;">Aly Andrews</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="nav-toggle-icon"></span>
+        </button>
+        <ul class="nav-links" role="menubar">
+          
+          <li role="none">
+            <a href="/" role="menuitem" >
+              Home
+            </a>
+          </li>
+          
+          <li role="none">
+            <a href="/about" role="menuitem" >
+              How I work
+            </a>
+          </li>
+          
+          <li role="none">
+            <a href="/portfolio" role="menuitem" >
+              Portfolio
+            </a>
+          </li>
+          
+          <li role="none">
+            <a href="/resume" role="menuitem" >
+              Resume
+            </a>
+          </li>
+          
+          <li role="none">
+            <a href="/contact" role="menuitem" class="active" aria-current="page">
+              Contact
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <section class="page-header">
+  <div class="container">
+    <h1>Get in touch</h1>
+    <p class="page-subtitle">I'm always interested in connecting with fellow content creators, technical writers and educators</p>
+  </div>
+</section>
+
+<section class="contact-content">
+  <div class="container">
+    <div class="contact-info">
+      <div class="contact-item">
+        <h2>Email</h2>
+        <p><a href="mailto:hello.alyanne@gmail.com">hello.alyanne@gmail.com</a></p>
+      </div>
+      
+      <div class="contact-item">
+        <h2>LinkedIn</h2>
+        <p><a href="https://www.linkedin.com/in/alysaandrews/" target="_blank">Connect with me on LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <p>&copy; 2026 Aly Andrews - Portfolio. All rights reserved.</p>
+        <p class="footer-links">
+          <a href="mailto:hello.alyanne@gmail.com">Email</a> |
+          <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+      <div class="footer-built">
+        <p>This static site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+    <div class="video-modal-overlay"></div>
+    <div class="video-modal-container">
+      <button class="video-modal-close" aria-label="Close video">×</button>
+      <video id="modalVideoPlayer" controls></video>
+    </div>
+  </div>
+
+  <!-- Skillset popup (How I work cards) -->
+  <div id="skillsetPopup" class="skillset-popup" aria-hidden="true" role="dialog" aria-labelledby="skillset-popup-title" aria-modal="true">
+    <div class="skillset-popup-overlay"></div>
+    <div class="skillset-popup-container">
+      <button class="skillset-popup-close" aria-label="Close">×</button>
+      <h2 class="skillset-popup-title" id="skillset-popup-title"></h2>
+      <div class="skillset-popup-body"></div>
+    </div>
+  </div>
+
+  <script src="/assets/js/project-cards.js" defer></script>
+</body>
+</html>
