@@ -10,16 +10,13 @@
   publish = "_site"
   
   # Environment variables for the build
-  # Use Ruby 3.2.2 (pre-installed on Netlify build image for faster builds)
   [build.environment]
-    RUBY_VERSION = "3.2.2"
     JEKYLL_ENV = "production"
 
-# Deploy previews for pull requests (must set Ruby here; context does not inherit [build.environment])
+# Deploy previews for pull requests
 [context.deploy-preview]
   command = "bundle install && bundle exec jekyll build --baseurl ''"
   [context.deploy-preview.environment]
-    RUBY_VERSION = "3.2.2"
     JEKYLL_ENV = "production"
 
 # Branch deploys (won't be used since main is on GitHub Pages)
