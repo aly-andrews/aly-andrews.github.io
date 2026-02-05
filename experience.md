@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Experience
-permalink: /resume
+title: Resume
+permalink: /resume/
 ---
 
 <div class="experience-resume-banner" aria-hidden="true"></div>
