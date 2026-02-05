@@ -3009,6 +3009,139 @@ img {
   line-height: 1.6;
 }
 
+/* Skill accordion (How I Work page) */
+.skill-accordion {
+  margin: 2rem 0;
+}
+
+.accordion-section {
+  margin-bottom: 2rem;
+}
+
+.accordion-toggle {
+  width: 100%;
+  padding: 1.4rem 1.8rem;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease, background 0.2s ease;
+}
+
+.accordion-toggle:hover,
+.accordion-toggle:focus {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  outline: 2px solid var(--accent-teal);
+  outline-offset: 2px;
+  background: #f0f4ff;
+}
+
+.accordion-toggle[aria-expanded="true"] {
+  background: #e9f0ff;
+  border-color: #ccc;
+}
+
+.accordion-toggle[aria-expanded="true"]:hover {
+  outline: 2px solid var(--accent-purple);
+}
+
+.accordion-icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+}
+
+.accordion-toggle[aria-expanded="true"] .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #eee;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.accordion-content[aria-expanded="true"] {
+  max-height: none;
+  padding: 1.5rem;
+}
+
+/* Content philosophies: match Skillsets text span (2rem horizontal = .skills-table-container padding) */
+#philosophies-panel {
+  padding: 1.5rem 2rem;
+}
+
+.accordion-content p {
+  padding: 1.2rem 0;
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Skills table – white container inside Skillsets accordion content */
+.skills-table-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skills-table th,
+.skills-table td {
+  padding: 1.4rem 2rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.skills-table th {
+  background: #f9f9f9;
+  font-weight: 600;
+  color: #444;
+}
+
+.skills-table-container p,
+.skills-table-container td p {
+  margin: 0;
+}
+
+.skills-table tr {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.skills-table tr:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .skills-table-container {
+    overflow-x: auto;
+  }
+}
+
 /* Project card (clickable cards with optional image) */
 .project-card {
   border-radius: 12px;

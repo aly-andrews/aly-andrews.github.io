@@ -45,3 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 400); // Match CSS transition duration
   }
 });
+
+// Accordions (How I Work page – independent, no "close others")
+document.addEventListener('DOMContentLoaded', () => {
+  const toggles = document.querySelectorAll('.accordion-toggle');
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      const content = toggle.nextElementSibling;
+
+      toggle.setAttribute('aria-expanded', !expanded);
+      if (!expanded) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.offsetHeight; // force reflow for smoother animation
+        toggle.querySelector('.accordion-icon').textContent = '−';
+      } else {
+        content.style.maxHeight = null;
+        toggle.querySelector('.accordion-icon').textContent = '+';
+      }
+    });
+  });
+});
