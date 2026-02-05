@@ -24,59 +24,6 @@ permalink: /portfolio/
           <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. The top segment will host the teach a class video; supporting content includes project plan, learner profiles, storyboard and accompanying resources.</p>
         </div>
       </div>
-      
-      <img src="{{ '/assets/images/placeholder-wireframe.jpg' | relative_url }}" alt="Shopify onboarding guide preview – coming soon" style="max-width: 100%; margin: 2rem 0; border-radius: 8px;">
-      
-      <div class="work-examples-creative">
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Project plan</p>
-              <p class="placeholder">In progress – contact me for drafts or details.</p>
-            </div>
-          </div>
-          <div class="work-example-content">
-            <h3>Project plan</h3>
-            <p>Scope, objectives and approach for the Getting started on Shopify instructional project</p>
-          </div>
-        </div>
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Learner profiles</p>
-              <p class="placeholder">In progress – contact me for drafts or details.</p>
-            </div>
-          </div>
-          <div class="work-example-content">
-            <h3>Learner profiles</h3>
-            <p>Audience and user profiles for the course</p>
-          </div>
-        </div>
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Storyboard</p>
-              <p class="placeholder">In progress – contact me for drafts or details.</p>
-            </div>
-          </div>
-          <div class="work-example-content">
-            <h3>Storyboard</h3>
-            <p>Visual and script planning for the teach a class video</p>
-          </div>
-        </div>
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <div class="image-placeholder work-placeholder">
-              <p>Resources</p>
-              <p class="placeholder">In progress – contact me for drafts or details.</p>
-            </div>
-          </div>
-          <div class="work-example-content">
-            <h3>Accompanying resources</h3>
-            <p>Supporting materials and deliverables for the project</p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div id="docs-website" class="work-section-creative">

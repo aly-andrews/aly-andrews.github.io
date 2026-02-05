@@ -9,8 +9,6 @@ permalink: /resume/
   <p class="page-hero-subtitle">Aly Andrews · Senior Education Content Producer</p>
 </div>
 
-<div class="experience-resume-banner" aria-hidden="true"></div>
-
 <section class="experience-resume-page">
   <div class="experience-resume-shapes" aria-hidden="true">
     <div class="resume-shape resume-shape-1"></div>
@@ -19,10 +17,6 @@ permalink: /resume/
   </div>
 
   <div class="experience-resume-container">
-    <div class="pattern-callout pattern-callout--note">
-      <p>Expand any role below to see accomplishments and responsibilities.</p>
-    </div>
-
     <div class="experience-content-inner">
       <!-- Senior Education Content Producer -->
       <article class="experience-item">
@@ -310,6 +304,4 @@ permalink: /resume/
 
     </div>
   </div>
-
-  <div class="experience-resume-banner-bottom" aria-hidden="true"></div>
 </section>

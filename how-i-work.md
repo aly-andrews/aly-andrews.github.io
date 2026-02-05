@@ -27,10 +27,6 @@ permalink: /how-i-work/
       <p>There's real art in weaving strong writing fundamentals together with emerging technology. We're literally building the plane as we fly it and I warmly welcome that change. I invite others to meet me at this intersection of evolution.</p>
     </div>
 
-    <div class="pattern-callout pattern-callout--note">
-      <p>Click a card below to learn more.</p>
-    </div>
-
     <div class="work-section-creative">
       <h2 class="section-title">Skillsets</h2>
       <div class="pattern-card-grid">
