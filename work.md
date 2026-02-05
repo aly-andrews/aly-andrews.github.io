@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Work
-permalink: /portfolio
+title: Portfolio
+permalink: /portfolio/
 ---
 
 <section class="page-header-creative">
