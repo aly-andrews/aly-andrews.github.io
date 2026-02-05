@@ -848,28 +848,13 @@ img {
   margin-top: 0;
 }
 
-/* Dynamic resume page: full bleed, accent shapes, white PDF area */
+/* Experience page: white background to match portfolio */
 .experience-resume-page {
   position: relative;
   min-height: 80vh;
   padding: 3rem 0 4rem;
-  overflow: hidden;
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-light) 50%, #f0ede8 100%);
-}
-
-.experience-resume-page::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(circle at 15% 20%, rgba(122, 154, 122, 0.12) 0%, transparent 45%),
-    radial-gradient(circle at 85% 60%, rgba(107, 154, 154, 0.12) 0%, transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(201, 169, 107, 0.08) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
+  overflow: visible;
+  background: #fff;
 }
 
 .experience-resume-shapes {
