@@ -1,7 +1,7 @@
 ---
 layout: default
 title: How I work
-permalink: /about
+permalink: /how-i-work/
 ---
 
 <section class="page-header-creative about-page-header">
