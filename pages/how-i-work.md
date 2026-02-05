@@ -19,34 +19,31 @@ permalink: /about
       <h2 class="section-title">Content philosophies</h2>
 
   <p>I'm user-centric at the core.</p>
-
-  <p>I care about <strong>who</strong> will read or watch my content, <strong>what they need to do</strong>, and whether what I'm shipping actually helps them solve problems. I love taking complex topics and making them easy to understand—so users feel empowered to self-serve.</p>
-
-  <p>There's something deeply satisfying about taking an abstract idea and turning it into something tangible: a help center doc, an Academy course, a technical style guide, a how-to video, or even a website like this one.</p>
-
-  <p>Whether I was at Shopify, DrInfo, or working on my own projects, the thread running through my content philosophy has always been the same:</p>
-
+  <br>
+  </br>
+  <p>I care about <strong>who</strong> will read or watch my content, <strong>what they need to do</strong>, and whether what I'm shipping actually helps them solve problems. I love taking complex topics and making them easy to understand, so users feel empowered to self-serve.</p>
+  <br>
+  </br>
+  <p>There's something deeply satisfying about taking an abstract idea and turning it into something tangible: a help center doc, an Academy course, a technical style guide, a how-to video, or even a website like this one. Whether I was at Shopify, DrInfo, or working on my own projects, the thread running through my content philosophy has always been the same:</p>
+<br>
+</br>
   <p class="highlight-line"><strong>Start with the user. Write with clarity. Build with intention.</strong></p>
-
-  <p>Another philosophy I heavily subscribe to: <strong>data</strong>.</p>
-
-  <p>It’s not enough to ship a piece of content and hope it works. I dig into the data behind what I’ve already built—and what I <em>will</em> build.</p>
+<br>
+</br>
+  <p>Another philosophy I heavily subscribe to: <strong>data</strong>.</p>It’s not enough to ship a piece of content and hope it works. I dig into the data behind what I’ve already built and what I <em>will</em> build.</p>
 
   <blockquote>
     <p>People are not afraid to tell you what they want, what works, and what doesn’t. I firmly believe we should take the time to listen.</p>
   </blockquote>
 
-  <p>This listening might show up as retention rates, drop-off points, high volumes of support tickets on a particular topic, or even just comments on a video.</p>
+  <p>This listening might show up as retention rates, drop-off points, high volumes of support tickets on a particular topic, or even just comments on a video. I use this information not only to build exactly what users are asking for, but also to explore new ways of presenting information with different modalities and formats that speak more directly to how they learn and work.</p>
+<br>
+</br>
+  <p>My career has been an organic evolution: trial and error, chasing learning opportunities, and constant iteration. I’ve now formalized that journey with a Technical Writing Graduate Certificate from Algonquin College (graduating summer 2026). It gives me a unique vantage point of learning traditional technical writing methods while simultaneously building for the future by writing for LLMs.</p>
+  <br>
+  </br>
 
-  <p>I use this information not only to build exactly what users are asking for, but also to explore new ways of presenting information—different modalities and formats that speak more directly to how they learn and work.</p>
-
-  <p>My career has been an organic evolution: trial and error, chasing learning opportunities, and constant iteration.</p>
-
-  <p>I’ve now formalized that journey with a Technical Writing Graduate Certificate from Algonquin College (graduating summer 2026). It gives me a unique vantage point of learning traditional technical writing methods while simultaneously building for the future by writing for LLMs.</p>
-
-  <p>There’s real art in weaving strong writing fundamentals together with emerging technology. We’re literally building the plane as we fly it and I warmly welcome that change.</p>
-
-  <p>I invite others to meet me at this intersection of evolution.</p>
+  <p>There’s real art in weaving strong writing fundamentals together with emerging technology. We’re literally building the plane as we fly it and I warmly welcome that change. I invite others to meet me at this intersection of evolution.</p>
 </div>
     </div>
 
