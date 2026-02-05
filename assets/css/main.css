@@ -520,23 +520,50 @@ img {
   font-style: italic;
 }
 
-/* Page header */
+/* Page header – same gradient, overlay and left alignment as portfolio hero */
 .page-header {
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-light) 100%);
-  color: var(--text-color);
-  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-purple) 40%, var(--accent-gold) 70%, var(--accent-coral) 100%);
+  color: white;
+  padding: 5rem 0 4rem;
   text-align: left;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 1;
 }
 
 .page-header h1 {
+  font-family: var(--font-heading);
   font-size: 3rem;
   margin-bottom: var(--spacing-unit);
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.page-header .page-subtitle {
+  color: white;
+  opacity: 0.95;
 }
 
 .page-subtitle {
   font-size: 1.2rem;
-  opacity: 0.9;
+  opacity: 0.95;
   max-width: 600px;
   margin: 0;
 }
@@ -1335,9 +1362,9 @@ img {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 30%, rgba(122, 154, 122, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(107, 154, 154, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(201, 169, 107, 0.08) 0%, transparent 50%);
+    radial-gradient(circle at 20% 30%, rgba(122, 154, 122, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(107, 154, 154, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(201, 169, 107, 0.04) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -1355,11 +1382,11 @@ img {
 .shape {
   position: absolute;
   border-radius: 50%;
-  opacity: 0.35;
+  opacity: 0.2;
   animation: float 20s infinite ease-in-out;
   filter: blur(35px);
   will-change: transform;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.08);
 }
 
 .shape::before {
@@ -1453,9 +1480,10 @@ img {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 1200px;
+  max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--spacing-unit);
+  box-sizing: border-box;
 }
 
 .hero-creative .hero-title {
@@ -1603,7 +1631,8 @@ img {
     height: 48px;
   }
 
-  .page-header h1 {
+  .page-header h1,
+  .page-header-creative h1 {
     font-size: 2rem;
   }
 
@@ -2560,37 +2589,78 @@ img {
 }
 
 /* Creative Work Page */
+/* How I work and other creative pages – same gradient, overlay and left alignment as portfolio hero */
 .page-header-creative {
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-light) 100%);
-  color: var(--text-color);
-  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-purple) 40%, var(--accent-gold) 70%, var(--accent-coral) 100%);
+  color: white;
+  padding: 5rem 0 4rem;
   text-align: left;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: none;
   position: relative;
   overflow: hidden;
 }
 
-.page-header-creative::before {
+.page-header-creative::after {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(122, 154, 122, 0.1), transparent);
-  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  z-index: 0;
 }
 
-/* Portfolio Hero Banner */
+.page-header-creative .container {
+  position: relative;
+  z-index: 1;
+}
+
+.page-header-creative h1 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  border-bottom: none;
+  padding-bottom: 0;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.page-header-creative .page-subtitle {
+  color: white;
+  opacity: 0.95;
+}
+
+/* Portfolio Hero Banner – left-aligned with .container, Playfair title, lighter gradient */
 .portfolio-hero {
   background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-purple) 40%, var(--accent-gold) 70%, var(--accent-coral) 100%);
   color: white;
-  padding: 5rem 2rem 4rem;
-  text-align: center;
+  padding: 5rem max(var(--spacing-unit), calc((100vw - 1200px) / 2 + var(--spacing-unit))) 4rem;
+  text-align: left;
   border-radius: 0 0 20px 20px;
   margin-bottom: 2rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   position: relative;
+}
+
+.portfolio-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.portfolio-hero h1,
+.portfolio-hero p {
+  position: relative;
+  z-index: 1;
 }
 
 .portfolio-hero h1 {
@@ -2606,7 +2676,51 @@ img {
 .portfolio-hero p {
   font-size: 1.3rem;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Shared hero banner for Experience and other pages – same gradient, overlay, left alignment */
+.page-hero-banner {
+  background: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-purple) 40%, var(--accent-gold) 70%, var(--accent-coral) 100%);
+  color: white;
+  padding: 5rem max(var(--spacing-unit), calc((100vw - 1200px) / 2 + var(--spacing-unit))) 4rem;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.page-hero-banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page-hero-banner h1,
+.page-hero-banner .page-hero-subtitle {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero-banner h1 {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  border-bottom: none;
+  padding-bottom: 0;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.page-hero-banner .page-hero-subtitle {
+  font-size: 1.3rem;
+  margin: 0;
   opacity: 0.95;
 }
 
@@ -2643,6 +2757,32 @@ img {
 
 .work-section-creative {
   margin-bottom: 8rem;
+}
+
+/* How I work / portfolio-style section body text */
+.work-section-creative > p {
+  margin-bottom: 1.25rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.work-section-creative > p:last-of-type {
+  margin-bottom: 0;
+}
+
+.work-section-creative .highlight-line {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--accent-teal);
+  background: linear-gradient(to right, rgba(107, 154, 154, 0.08), transparent);
+  border-radius: 0 8px 8px 0;
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.work-section-creative blockquote {
+  margin: 1.5rem 0;
 }
 
 /* Placeholder styling for "In progress" content */
@@ -2760,15 +2900,19 @@ img {
 }
 
 @media (max-width: 640px) {
-  .portfolio-hero {
+  .portfolio-hero,
+  .page-hero-banner {
     padding: 2.5rem 1rem;
   }
 
-  .portfolio-hero h1 {
+  .portfolio-hero h1,
+  .page-hero-banner h1,
+  .page-header-creative h1 {
     font-size: 2rem;
   }
 
-  .portfolio-hero p {
+  .portfolio-hero p,
+  .page-hero-banner .page-hero-subtitle {
     font-size: 1rem;
   }
 
@@ -3686,15 +3830,19 @@ img {
 
 /* Portfolio Hero Responsive */
 @media (max-width: 768px) {
-  .portfolio-hero {
+  .portfolio-hero,
+  .page-hero-banner {
     padding: 3rem 1rem;
   }
   
-  .portfolio-hero h1 {
+  .portfolio-hero h1,
+  .page-hero-banner h1,
+  .page-header-creative h1 {
     font-size: 2.8rem;
   }
   
-  .portfolio-hero p {
+  .portfolio-hero p,
+  .page-hero-banner .page-hero-subtitle {
     font-size: 1.1rem;
   }
 }
