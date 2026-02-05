@@ -2728,16 +2728,14 @@ img {
 }
 
 /* Section dividers for h2 headings in portfolio */
+/* All portfolio h2s: match "How I made this website" – sans-serif, rule underneath */
 .work-section-creative > h2,
-.work-content-creative h2:not(.section-title) {
+.work-content-creative h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-
-/* Override for section-title which has its own decoration */
-.work-content-creative .section-title {
-  border-bottom: none;
 }
 
 .work-section-creative {
@@ -2768,6 +2766,30 @@ img {
 
 .work-section-creative blockquote {
   margin: 1.5rem 0;
+}
+
+/* Lists and CTA in portfolio sections – match paragraph styling and layout */
+.work-section-creative ul {
+  margin: 1.25rem 0;
+  padding-left: 1.5rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.work-section-creative ul li {
+  margin-bottom: 0.5rem;
+}
+
+.work-section-creative ul li:last-child {
+  margin-bottom: 0;
+}
+
+.work-section-cta {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 /* Placeholder styling for "In progress" content */

@@ -42,11 +42,11 @@ permalink: /portfolio/
     </div>
 
     <div id="video-production" class="work-section-creative">
-      ## Video production {#video-production}
+      <h2>Video production</h2>
 
-      Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.
+      <p>Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
 
-      Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.
+      <p>Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.</p>
 
       <div class="featured-video">
         <div class="featured-left">
@@ -106,15 +106,15 @@ permalink: /portfolio/
     </div>
 
     <div class="work-section-creative">
-      <h2 class="section-title">Passion projects</h2>
-      <p>Photography is one of my passion projects that demonstrates how I approach everything—with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
-      <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing—understanding user needs, creating consistent processes, and optimizing for outcomes—applied to building a photography business from scratch.</p>
+      <h2>Passion projects</h2>
+      <p>Photography is one of my passion projects that demonstrates how I approach everything, with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
+      <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing like understanding user needs, creating consistent processes and optimizing for outcomes, I apply to building a photography business from scratch.</p>
       <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy.</p>
-      
-      <p style="text-align: center; margin-top: 1.5rem;">
+
+      <div class="work-section-cta">
         <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
         <a href="https://www.instagram.com/alyanne.co" class="btn btn-secondary" target="_blank" rel="noopener">Follow on Instagram</a>
-      </p>
+      </div>
       <div class="photography-carousel-wrapper" data-auto="true">
         <button type="button" class="photography-carousel-pause" aria-label="Pause carousel">Pause</button>
         <div class="photography-carousel">
@@ -197,13 +197,15 @@ permalink: /portfolio/
     </div>
 
     <div class="work-section-creative">
-      <h2 class="section-title">Ready to collaborate?</h2>
+      <h2>Ready to collaborate?</h2>
       <p>I'm excited to bring clear, scalable content solutions to your team—whether technical docs, video education, or process frameworks.</p>
       <ul>
         <li>Need help with onboarding guides or merchant education?</li>
         <li>Interested in AI workflows or content systems?</li>
       </ul>
-      <a href="/contact" class="btn btn-primary" style="display: block; text-align: center; margin: 1rem auto; max-width: 300px;">Get in touch</a>
+      <div class="work-section-cta">
+        <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Get in touch</a>
+      </div>
     </div>
     </div>
   </div>
