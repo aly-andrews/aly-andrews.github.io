@@ -1,7 +1,6 @@
 title: Aly Andrews - Portfolio
 description: Senior Education Content Producer | Technical Writer | Video Producer
 email: hello.alyanne@gmail.com
-phone: +613-223-2720
 location: Ottawa, Ontario
 
 # Site settings
@@ -35,11 +34,11 @@ plugins:
 navigation:
   - title: Home
     url: /
-  - title: How I work
-    url: /about
   - title: Portfolio
-    url: /portfolio
+    url: /portfolio/
+  - title: How I Work
+    url: /how-i-work/
   - title: Resume
-    url: /resume
+    url: /resume/
   - title: Contact
-    url: /contact
+    url: /contact/
