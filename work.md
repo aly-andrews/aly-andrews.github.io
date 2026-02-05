@@ -4,12 +4,10 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<section class="page-header-creative">
-  <div class="container">
-    <h1>My work</h1>
-    <p class="page-subtitle">A selection of projects showcasing my content creation, technical writing, and process development work</p>
-  </div>
-</section>
+<div class="portfolio-hero">
+  <h1>My work</h1>
+  <p>A selection of projects showcasing my content creation, technical writing, and process development work.</p>
+</div>
 
 <section class="work-content-creative">
   <div class="container">
@@ -18,7 +16,7 @@ permalink: /portfolio/
         <div class="work-image-large">
           <div class="image-placeholder work-placeholder-large">
             <p>Teach a class video</p>
-            <p class="placeholder-hint">Video coming soon</p>
+            <p class="placeholder">In progress – contact me for drafts or details.</p>
           </div>
         </div>
         <div class="work-section-intro">
@@ -27,12 +25,14 @@ permalink: /portfolio/
         </div>
       </div>
       
+      <img src="{{ '/assets/images/placeholder-wireframe.jpg' | relative_url }}" alt="Shopify onboarding guide preview – coming soon" style="max-width: 100%; margin: 2rem 0; border-radius: 8px;">
+      
       <div class="work-examples-creative">
         <div class="work-example-visual">
           <div class="work-example-image">
             <div class="image-placeholder work-placeholder">
               <p>Project plan</p>
-              <p class="placeholder-hint">Coming soon</p>
+              <p class="placeholder">In progress – contact me for drafts or details.</p>
             </div>
           </div>
           <div class="work-example-content">
@@ -44,7 +44,7 @@ permalink: /portfolio/
           <div class="work-example-image">
             <div class="image-placeholder work-placeholder">
               <p>Learner profiles</p>
-              <p class="placeholder-hint">Coming soon</p>
+              <p class="placeholder">In progress – contact me for drafts or details.</p>
             </div>
           </div>
           <div class="work-example-content">
@@ -56,7 +56,7 @@ permalink: /portfolio/
           <div class="work-example-image">
             <div class="image-placeholder work-placeholder">
               <p>Storyboard</p>
-              <p class="placeholder-hint">Coming soon</p>
+              <p class="placeholder">In progress – contact me for drafts or details.</p>
             </div>
           </div>
           <div class="work-example-content">
@@ -68,7 +68,7 @@ permalink: /portfolio/
           <div class="work-example-image">
             <div class="image-placeholder work-placeholder">
               <p>Resources</p>
-              <p class="placeholder-hint">Coming soon</p>
+              <p class="placeholder">In progress – contact me for drafts or details.</p>
             </div>
           </div>
           <div class="work-example-content">
@@ -83,142 +83,77 @@ permalink: /portfolio/
       <div class="work-section-header">
         <div class="work-section-intro">
           <h2>How I made this website</h2>
-          <p>Docs as code in practice: this portfolio site was built with Jekyll, GitHub Pages and Cursor. A video walkthrough of how I built it is coming soon.</p>
+          <p>Docs as code in practice: this portfolio site was built with Jekyll, GitHub Pages, and Cursor IDE. Video walkthrough in progress.</p>
         </div>
         <div class="work-image-large">
           <div class="image-placeholder work-placeholder-large">
             <p>Website project</p>
-            <p class="placeholder-hint">Video and thumbnail coming soon</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="video" class="work-section-creative">
-      <div class="work-section-header">
-        <div class="work-image-large">
-          <img src="{{ '/assets/videos/BFCM.jpg' | relative_url }}" alt="Your guide to BFCM - Shopify Help Center video thumbnail" class="work-image-img">
-        </div>
-        <div class="work-section-intro">
-          <h2>Video production</h2>
-          <p>Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
-        </div>
-      </div>
-      
-      <div class="work-examples-creative">
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="What is Shopify video thumbnail" class="work-image-img">
-          </div>
-          <div class="work-example-content">
-            <h3>POS series</h3>
-            <p>Launched 25-video POS series including script writing, SME training, and cross-team coordination. Influential in POS hardware sales with 20k deflection savings in the first week</p>
-          </div>
-        </div>
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <img src="{{ '/assets/videos/store policies.jpg' | relative_url }}" alt="Store policies video thumbnail" class="work-image-img">
-          </div>
-          <div class="work-example-content">
-            <h3>International expansion</h3>
-            <p>Coordinated localization of 30+ videos through Videolocalize partnership, creating comprehensive style guides and tracking systems for international content scaling</p>
-          </div>
-        </div>
-        <div class="work-example-visual">
-          <div class="work-example-image">
-            <img src="{{ '/assets/videos/what is shop.jpg' | relative_url }}" alt="What is Shop video thumbnail" class="work-image-img">
-          </div>
-          <div class="work-example-content">
-            <h3>Content migration</h3>
-            <p>Migrated 100+ educational videos between video hosting platforms with zero downtime, implementing structured onboarding documentation for the team</p>
+            <p class="placeholder-hint">Built with Jekyll, GitHub Pages, and Cursor IDE. Video walkthrough in progress.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div id="video-production" class="work-section-creative">
-      <h2 class="section-title">Watch me in action</h2>
-      <p>Watch videos I created from concept to completion—researching ideas, developing concepts based on support data, writing scripts and filming. I handled editing for many of these projects, bringing complex topics to life through engaging content.</p>
-      <div class="video-carousel-container">
-        <div class="video-carousel">
-          <div class="video-slide active">
-            <div class="video-wrapper">
-              <video 
-                controls 
-                class="video-embed"
-                poster="{{ '/assets/videos/BFCM.jpg' | relative_url }}"
-                preload="metadata">
-                <source src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <button type="button" class="video-play-overlay" aria-label="Play video">
-                <span class="video-play-icon" aria-hidden="true"></span>
-              </button>
-            </div>
-          </div>
-          <div class="video-slide">
-            <div class="video-wrapper">
-              <video 
-                controls 
-                class="video-embed"
-                poster="{{ '/assets/videos/what is shopify.jpg' | relative_url }}"
-                preload="metadata">
-                <source src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <button type="button" class="video-play-overlay" aria-label="Play video">
-                <span class="video-play-icon" aria-hidden="true"></span>
-              </button>
-            </div>
-          </div>
-          <div class="video-slide">
-            <div class="video-wrapper">
-              <video 
-                controls 
-                class="video-embed"
-                poster="{{ '/assets/videos/store policies.jpg' | relative_url }}"
-                preload="metadata">
-                <source src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <button type="button" class="video-play-overlay" aria-label="Play video">
-                <span class="video-play-icon" aria-hidden="true"></span>
-              </button>
-            </div>
-          </div>
-          <div class="video-slide">
-            <div class="video-wrapper">
-              <video 
-                controls 
-                class="video-embed"
-                poster="{{ '/assets/videos/what is shop.jpg' | relative_url }}"
-                preload="metadata">
-                <source src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <button type="button" class="video-play-overlay" aria-label="Play video">
-                <span class="video-play-icon" aria-hidden="true"></span>
-              </button>
+      ## Video production {#video-production}
+
+      Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.
+
+      Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.
+
+      <div class="featured-video">
+        <div class="featured-left">
+          <div class="video-card large" data-video-src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/BFCM.jpg' | relative_url }}">
+            <div class="thumbnail-wrapper">
+              <img src="{{ '/assets/videos/BFCM.jpg' | relative_url }}" alt="Black Friday Cyber Monday Guide thumbnail">
+              <div class="play-overlay">
+                <span class="play-button">▶</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="carousel-controls">
-          <button class="carousel-btn carousel-prev" aria-label="Previous video">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button class="carousel-btn carousel-next" aria-label="Next video">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
+        <div class="featured-right">
+          <h3>BLACK FRIDAY CYBER MONDAY</h3>
+          <p>Your guide to BFCM</p>
+          <p>Produced engaging educational content for Shopify merchants covering Black Friday and Cyber Monday strategies.</p>
         </div>
-        <div class="carousel-dots">
-          <button class="carousel-dot active" data-slide="0" aria-label="Go to video 1"></button>
-          <button class="carousel-dot" data-slide="1" aria-label="Go to video 2"></button>
-          <button class="carousel-dot" data-slide="2" aria-label="Go to video 3"></button>
-          <button class="carousel-dot" data-slide="3" aria-label="Go to video 4"></button>
+      </div>
+      
+      <div class="video-cards-grid">
+        <!-- POS Series Card -->
+        <div class="video-card" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shopify.jpg' | relative_url }}">
+          <div class="thumbnail-wrapper">
+            <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="POS Series: What is Shopify?">
+            <div class="play-overlay">
+              <span class="play-button">▶</span>
+            </div>
+          </div>
+          <h3>POS series</h3>
+          <p>Launched 25-video POS series including script writing, SME training, and cross-team coordination. Influential in POS hardware sales with 20k deflection savings in the first week.</p>
+        </div>
+
+        <!-- International Expansion Card -->
+        <div class="video-card" data-video-src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/store policies.jpg' | relative_url }}">
+          <div class="thumbnail-wrapper">
+            <img src="{{ '/assets/videos/store policies.jpg' | relative_url }}" alt="International Expansion: Create store policies">
+            <div class="play-overlay">
+              <span class="play-button">▶</span>
+            </div>
+          </div>
+          <h3>International expansion</h3>
+          <p>Coordinated localization of 30+ videos through Videolocalize partnership, creating comprehensive style guides and tracking systems for international content scaling.</p>
+        </div>
+
+        <!-- Content Migration Card -->
+        <div class="video-card" data-video-src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shop.jpg' | relative_url }}">
+          <div class="thumbnail-wrapper">
+            <img src="{{ '/assets/videos/what is shop.jpg' | relative_url }}" alt="Content Migration">
+            <div class="play-overlay">
+              <span class="play-button">▶</span>
+            </div>
+          </div>
+          <h3>Content migration</h3>
+          <p>Migrated 100+ educational videos between video hosting platforms with zero downtime, implementing structured onboarding documentation for the team.</p>
         </div>
       </div>
     </div>
@@ -227,11 +162,12 @@ permalink: /portfolio/
       <h2 class="section-title">Passion projects</h2>
       <p>Photography is one of my passion projects that demonstrates how I approach everything—with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
       <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing—understanding user needs, creating consistent processes, and optimizing for outcomes—applied to building a photography business from scratch.</p>
-      <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy. You can see my work at <a href="https://alyanne.mypixieset.com/" target="_blank" rel="noopener">Aly Anne Photography</a> and follow <a href="https://www.instagram.com/alyanne.co?igsh=M2xzeGF0cXNveTcy&utm_source=qr" target="_blank" rel="noopener">@alyanne.co on Instagram</a>.</p>
-      <a href="https://www.instagram.com/alyanne.co?igsh=M2xzeGF0cXNveTcy&utm_source=qr" target="_blank" rel="noopener" class="photography-instagram-cta" aria-label="Follow @alyanne.co on Instagram">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        Follow @alyanne.co on Instagram
-      </a>
+      <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy.</p>
+      
+      <p style="text-align: center; margin-top: 1.5rem;">
+        <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
+        <a href="https://www.instagram.com/alyanne.co" class="btn btn-secondary" target="_blank" rel="noopener">Follow on Instagram</a>
+      </p>
       <div class="photography-carousel-wrapper" data-auto="true">
         <button type="button" class="photography-carousel-pause" aria-label="Pause carousel">Pause</button>
         <div class="photography-carousel">
@@ -312,6 +248,18 @@ permalink: /portfolio/
         </div>
       </div>
     </div>
+
+    <div class="work-section-creative">
+      <h2 class="section-title">Ready to collaborate?</h2>
+      <p>I'm excited to bring clear, scalable content solutions to your team—whether technical docs, video education, or process frameworks.</p>
+      <ul>
+        <li>Need help with onboarding guides or merchant education?</li>
+        <li>Interested in AI workflows or content systems?</li>
+      </ul>
+      <a href="/contact" class="btn btn-primary" style="display: block; text-align: center; margin: 1rem auto; max-width: 300px;">Get in touch</a>
+    </div>
     </div>
   </div>
 </section>
+
+{% include video-modal.html %}

@@ -51,7 +51,9 @@ permalink: /
       <div class="work-features-grid">
         <div class="work-feature">
           <div class="work-image">
-            <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Plaque for 100,000 subscribers" class="work-image-img">
+            <a href="/portfolio#video-production">
+              <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Plaque for 100,000 subscribers" class="work-image-img youtube-plaque">
+            </a>
           </div>
           <div class="work-content">
             <h3>Video production</h3>
