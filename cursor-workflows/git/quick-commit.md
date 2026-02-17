@@ -146,7 +146,7 @@ git commit -am "Message"  # Only for tracked files
 
 3. **Use the existing push script:**
 ```bash
-bash /Users/alysaandrews/Documents/docs/aly-andrews.github.io/push-to-github.sh
+bash /Users/alysaandrews/Documents/docs/aly-andrews.github.io/script/push-to-github.sh
 ```
 
 ## Related Workflows
