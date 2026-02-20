@@ -69,18 +69,50 @@
   </div>
 </section>
 
-<section class="contact-content">
+<section class="contact-layout">
   <div class="container">
-    <div class="contact-info">
-      <div class="contact-item">
-        <h2>Email</h2>
-        <p><a href="mailto:hello.alyanne@gmail.com">hello.alyanne@gmail.com</a></p>
+    <div class="contact-grid">
+
+      <div class="contact-info-panel">
+        <h2>Let's collaborate</h2>
+        <p>Whether you need technical documentation, educational content or process optimization, I'd love to hear about your project.</p>
+
+        <div class="contact-links">
+          <a href="mailto:hello.alyanne@gmail.com" class="contact-link-item">
+            <div class="contact-link-icon icon-email">✉</div>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">hello.alyanne@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+            <div class="contact-link-icon icon-linkedin">in</div>
+            <div>
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">Connect with me</span>
+            </div>
+          </a>
+        </div>
       </div>
-      
-      <div class="contact-item">
-        <h2>LinkedIn</h2>
-        <p><a href="https://www.linkedin.com/in/alysaandrews/" target="_blank">Connect with me on LinkedIn</a></p>
+
+      <div class="contact-form-panel">
+        <form action="https://formspree.io/f/hello.alyanne@gmail.com" method="POST" class="contact-form">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required="" placeholder="Your name" />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required="" placeholder="your.email@example.com" />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="" rows="6" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send message →</button>
+        </form>
       </div>
+
     </div>
   </div>
 </section>
@@ -89,15 +121,37 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-main">
-        <p>&copy; 2026 Aly Andrews - Portfolio. All rights reserved.</p>
-        <p class="footer-links">
-          <a href="mailto:hello.alyanne@gmail.com">Email</a> |
-          <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank">LinkedIn</a>
-        </p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Aly Andrews</h3>
+          <p>Technical writer and content creator specializing in accessible, engaging educational content.</p>
+        </div>
+        <div class="footer-nav-col">
+          <h4>Quick links</h4>
+          <ul>
+            
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/portfolio/">Portfolio</a></li>
+            
+            <li><a href="/how-i-work/">How I Work</a></li>
+            
+            <li><a href="/resume/">Resume</a></li>
+            
+            <li><a href="/contact/">Contact</a></li>
+            
+          </ul>
+        </div>
+        <div class="footer-connect-col">
+          <h4>Connect</h4>
+          <div class="footer-social-icons">
+            <a href="mailto:hello.alyanne@gmail.com" class="footer-social-btn" aria-label="Email">✉</a>
+            <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
       </div>
       <div class="footer-built">
-        <p>This static site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
+        <p>&copy; 2026 Aly Andrews. This static site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
       </div>
     </div>
   </footer>
