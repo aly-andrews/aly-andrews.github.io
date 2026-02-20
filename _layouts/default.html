@@ -43,15 +43,29 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-main">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
-        <p class="footer-links">
-          <a href="mailto:{{ site.email }}">Email</a> |
-          <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank">LinkedIn</a>
-        </p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Aly Andrews</h3>
+          <p>Technical writer and content creator specializing in accessible, engaging educational content.</p>
+        </div>
+        <div class="footer-nav-col">
+          <h4>Quick links</h4>
+          <ul>
+            {% for item in site.navigation %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="footer-connect-col">
+          <h4>Connect</h4>
+          <div class="footer-social-icons">
+            <a href="mailto:{{ site.email }}" class="footer-social-btn" aria-label="Email">✉</a>
+            <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
       </div>
       <div class="footer-built">
-        <p>This static site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
+        <p>&copy; {{ 'now' | date: "%Y" }} Aly Andrews. This static site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
       </div>
     </div>
   </footer>
