@@ -381,8 +381,26 @@ img {
 
 .highlights-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .highlight-card {
@@ -1546,7 +1564,7 @@ img {
 }
 
 /* Responsive design (must come after base hero styles so overrides apply) */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .hero-creative .hero-title {
     font-size: 4rem;
   }
@@ -1580,7 +1598,7 @@ img {
   }
 
   .hero-creative .hero-title {
-    font-size: 3.25rem;
+    font-size: 2.75rem;
   }
 
   .hero-creative .hero-subtitle {
@@ -1603,9 +1621,57 @@ img {
     order: 2;
   }
 
+  .site-nav {
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-links {
-    gap: 1rem;
-    font-size: 0.9rem;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    order: 3;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: var(--bg-light);
   }
 
   .site-logo {
@@ -1633,50 +1699,23 @@ img {
 }
 
 @media (max-width: 480px) {
-  .site-nav {
-    flex-wrap: wrap;
-    position: relative;
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+  
+  .work-content h3 {
+    font-size: 1.25rem;
   }
 
-  .nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .contact-info {
+    grid-template-columns: 1fr;
   }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    width: 100%;
-    order: 3;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
-    margin-top: 1rem;
-  }
-
-  .nav-links.nav-open {
-    display: flex;
-  }
-
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-links a {
+  .experience-highlights .accomplishment-table {
     display: block;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .nav-links a:hover,
-  .nav-links a:focus {
-    background-color: var(--bg-light);
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   .hero {
@@ -1684,7 +1723,7 @@ img {
   }
 
   .hero-creative .hero-title {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
 
   .hero-creative {
@@ -1697,8 +1736,8 @@ img {
   }
 
   .hero-photo {
-    width: 180px;
-    height: 240px;
+    width: 160px;
+    height: 210px;
   }
 
   .hero-profile-image {
@@ -2876,7 +2915,7 @@ img {
 }
 
 /* Responsive updates for creative sections */
-@media (max-width: 968px) {
+@media (max-width: 768px) {
   .intro-grid {
     grid-template-columns: 1fr;
   }
@@ -2906,7 +2945,58 @@ img {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .site-footer {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+  }
+  
+  .footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0;
+    font-size: 0; /* Hides the separator | */
+  }
+  
+  .footer-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.5rem 1rem;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .work-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .highlight-card h3 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
   .portfolio-hero,
   .page-hero-banner {
     padding: 2.5rem 1rem;
