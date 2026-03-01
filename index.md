@@ -20,16 +20,16 @@ permalink: /
     <div class="hero-content">
       <h1 class="hero-title">Aly Andrews</h1>
       <p class="hero-description">Technical writer and content creator specializing in accessible, engaging educational content that helps people learn and succeed</p>
-      <div class="hero-cta">
-        <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-primary">View my work</a>
-        <a href="{{ '/contact' | relative_url }}" class="btn btn-ghost">Get in touch</a>
-      </div>
     </div>
     <div class="hero-photo">
       <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="hero-photo-placeholder" style="display: none;">
         <p>Add your photo</p>
         <p class="placeholder-hint">Upload to: assets/images/about/profile.jpg</p>
+      </div>
+      <div class="hero-cta">
+        <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-primary">View my work</a>
+        <a href="{{ '/contact' | relative_url }}" class="btn btn-ghost">Get in touch</a>
       </div>
     </div>
   </div>

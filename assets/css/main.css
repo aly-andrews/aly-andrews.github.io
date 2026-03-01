@@ -1708,6 +1708,16 @@ img {
     font-size: 1.25rem;
   }
 
+  .work-section-creative {
+    margin-bottom: 3rem;
+  }
+
+  .work-section-creative > h2,
+  .work-content-creative h2,
+  .work-section-intro h2 {
+    font-size: 1.5rem;
+  }
+
   .contact-info {
     grid-template-columns: 1fr;
   }
@@ -2869,6 +2879,8 @@ img {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
 }
 
 .work-section-intro p {
@@ -2930,6 +2942,7 @@ img {
 
   .work-section-header {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .work-section-header.reverse {
@@ -3015,6 +3028,16 @@ img {
 
   .work-examples-creative {
     grid-template-columns: 1fr;
+  }
+
+  .work-section-creative {
+    margin-bottom: 4rem;
+  }
+
+  .work-section-creative > h2,
+  .work-content-creative h2,
+  .work-section-intro h2 {
+    font-size: 1.75rem;
   }
 
   .hero-creative {
@@ -3506,44 +3529,71 @@ img {
   opacity: 0.9;
 }
 
-/* Project card component */
-.project-card {
-  border-radius: 12px;
-  overflow: hidden;
-  background: var(--bg-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  border: 1px solid var(--border-color);
+/* Article cards: live articles and writing samples */
+.article-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.article-card {
   display: flex;
   flex-direction: column;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.project-card .card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.article-card-source {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-teal);
+  margin-bottom: 0.75rem;
 }
 
-.project-card .card-content {
-  padding: 1.5rem;
-}
-
-.project-card .card-content h3 {
-  margin: 0 0 0.5rem 0;
+.article-card h3 {
+  font-size: 1.15rem;
   color: var(--primary-color);
-  font-size: 1.3rem;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
 }
 
-.project-card .card-content p {
+.article-card p {
   font-size: 0.9rem;
   color: var(--text-light);
-  line-height: 1.4;
-  margin: 0;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+
+.article-card-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+}
+
+.article-card:hover .article-card-link {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .article-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Video modal */
@@ -3671,7 +3721,7 @@ img {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  padding: 1.5rem 1.5rem 2rem;
+  padding: 2rem 2rem 2.5rem;
   display: flex;
   flex-direction: column;
   transform: scale(0.9);
@@ -3707,9 +3757,12 @@ img {
 }
 
 .skillset-popup-title {
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.25rem 0;
   padding-right: 2.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.75rem;
 }
 
 .skillset-popup-body {
@@ -3730,7 +3783,7 @@ img {
   .skillset-popup-container {
     max-width: 95vw;
     max-height: 90vh;
-    padding: 1rem 1rem 1.5rem;
+    padding: 1.5rem 1.5rem 2rem;
   }
 
   .skillset-popup-close {
@@ -3742,7 +3795,7 @@ img {
   }
 
   .skillset-popup-title {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     padding-right: 2rem;
   }
 }
@@ -3768,9 +3821,11 @@ img {
 }
 
 .featured-right h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .featured-right p {
@@ -4119,8 +4174,10 @@ img {
   width: auto;
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .hero-profile-image {
@@ -4357,6 +4414,11 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.footer-nav-col {
+  text-align: left;
 }
 
 .footer-nav-col ul {

@@ -41,6 +41,29 @@ permalink: /portfolio/
       </div>
     </div>
 
+    <div id="technical-writing" class="work-section-creative">
+      <h2>Technical writing</h2>
+      <p>A selection of published articles and documentation written for Shopify Academy, where I produced education content for the platform's merchant and partner programs. More samples are available on request.</p>
+
+      <div class="article-cards-grid">
+
+        <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-retailer/2283513" class="article-card" target="_blank" rel="noopener">
+          <span class="article-card-source">Shopify Academy</span>
+          <h3>Shopify Collective: Getting started as a retailer</h3>
+          <p>Step-by-step guide for merchants who want to source and sell products from other Shopify brands through Collective. Covers setup, product discovery, importing items and managing supplier relationships.</p>
+          <span class="article-card-link">Read article →</span>
+        </a>
+
+        <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-supplier/2283509" class="article-card" target="_blank" rel="noopener">
+          <span class="article-card-source">Shopify Academy</span>
+          <h3>Shopify Collective: Getting started as a supplier</h3>
+          <p>Step-by-step guide for merchants who want to make their products available to other Shopify retailers through Collective. Covers eligibility, catalog setup, onboarding and managing retailer relationships.</p>
+          <span class="article-card-link">Read article →</span>
+        </a>
+
+      </div>
+    </div>
+
     <div id="video-production" class="work-section-creative">
       <h2>Video production</h2>
 
@@ -60,7 +83,7 @@ permalink: /portfolio/
           </div>
         </div>
         <div class="featured-right">
-          <h3>BLACK FRIDAY CYBER MONDAY</h3>
+          <h3>Black Friday Cyber Monday</h3>
           <p>Your guide to BFCM</p>
           <p>Produced engaging educational content for Shopify merchants covering Black Friday and Cyber Monday strategies.</p>
         </div>
@@ -196,17 +219,6 @@ permalink: /portfolio/
       </div>
     </div>
 
-    <div class="work-section-creative">
-      <h2>Ready to collaborate?</h2>
-      <p>I'm excited to bring clear, scalable content solutions to your team—whether technical docs, video education, or process frameworks.</p>
-      <ul>
-        <li>Need help with onboarding guides or merchant education?</li>
-        <li>Interested in AI workflows or content systems?</li>
-      </ul>
-      <div class="work-section-cta">
-        <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Get in touch</a>
-      </div>
-    </div>
     </div>
   </div>
 </section>
