@@ -5217,6 +5217,55 @@ h6,
     --design-band-height: 36px;
   }
 
+  .site-header {
+    overflow: visible;
+  }
+
+  .site-nav {
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    left: 0;
+    right: 0;
+    width: auto;
+    order: initial;
+    margin: 0;
+    padding: 0.45rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: #f8f7f3;
+    box-shadow: 0 18px 34px rgba(15, 23, 42, 0.18);
+    z-index: 320;
+    font-size: 1rem;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .nav-links a {
+    justify-content: flex-start;
+    padding: 0.72rem 0.85rem;
+    min-height: 44px;
+    border-radius: 8px;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #efede7;
+  }
+
   .hero-creative {
     padding: 1rem 0 1.25rem;
   }
