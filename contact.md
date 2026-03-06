@@ -1,15 +1,11 @@
 ---
 layout: default
 title: Contact
-permalink: /contact
+permalink: /contact/
 ---
 
-<section class="page-header">
-  <div class="container">
-    <h1>Get in touch</h1>
-    <p class="page-subtitle">I'm always interested in connecting with fellow content creators, technical writers and educators</p>
-  </div>
-</section>
+<div class="page-top-band" aria-hidden="true"></div>
+<h1 class="visually-hidden">Contact</h1>
 
 <section class="contact-layout">
   <div class="container">

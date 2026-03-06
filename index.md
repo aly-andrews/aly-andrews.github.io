@@ -27,10 +27,6 @@ permalink: /
         <p>Add your photo</p>
         <p class="placeholder-hint">Upload to: assets/images/about/profile.jpg</p>
       </div>
-      <div class="hero-cta">
-        <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-primary">View my work</a>
-        <a href="{{ '/contact' | relative_url }}" class="btn btn-ghost">Get in touch</a>
-      </div>
     </div>
   </div>
 </section>
@@ -131,26 +127,23 @@ permalink: /
   </div>
 </section>
 
-<section class="how-i-work-section highlights-creative" id="how-i-work">
+<section class="how-i-work-section" id="how-i-work">
   <div class="container">
     <h2 class="section-title">How I work</h2>
-    <div class="highlights-grid">
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));"></div>
+    <ol class="how-i-work-steps">
+      <li class="how-i-work-step">
         <h3>Start with the user</h3>
         <p>I care about who will read or watch my content, what they need to do and whether what I'm shipping actually helps them solve problems. Audience and task come first — format follows.</p>
-      </div>
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--accent-green), var(--accent-gold));"></div>
+      </li>
+      <li class="how-i-work-step">
         <h3>Write with clarity</h3>
         <p>There's something deeply satisfying about taking an abstract idea and turning it into something tangible — a help center doc, an Academy course, a style guide, a how-to video. Complex topics made accessible.</p>
-      </div>
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--accent-gold), var(--accent-color));"></div>
+      </li>
+      <li class="how-i-work-step">
         <h3>Build with intention</h3>
         <p>It's not enough to ship content and hope it works. I track retention, drop-off points, support ticket volume and engagement signals — and I use what I learn to build exactly what users are asking for.</p>
-      </div>
-    </div>
+      </li>
+    </ol>
     <blockquote class="how-i-work-quote">
       <p>People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen.</p>
     </blockquote>

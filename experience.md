@@ -4,10 +4,8 @@ title: Resume
 permalink: /resume/
 ---
 
-<div class="page-hero-banner">
-  <h1>Experience</h1>
-  <p class="page-hero-subtitle">Aly Andrews · Senior Education Content Producer</p>
-</div>
+<div class="page-top-band" aria-hidden="true"></div>
+<h1 class="visually-hidden">Resume</h1>
 
 <section class="experience-resume-page">
   <div class="experience-resume-shapes" aria-hidden="true">

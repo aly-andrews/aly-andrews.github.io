@@ -5012,3 +5012,306 @@ img {
     margin-bottom: 3.5rem;
   }
 }
+
+/* ===========================================
+   DESIGN TEST — compact brand system pass
+   =========================================== */
+
+:root {
+  --font-heading: var(--font-family);
+  --design-band-height: 88px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title,
+.hero-title,
+.portfolio-hero h1,
+.page-hero-banner h1,
+.page-header h1,
+.page-header-creative h1 {
+  font-family: var(--font-family);
+  letter-spacing: -0.01em;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Shared slim top band for portfolio/resume/contact */
+.page-top-band {
+  height: var(--design-band-height);
+  background: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-teal) 50%, var(--accent-blue) 100%);
+  border-radius: 0 0 14px 14px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.page-top-band + .visually-hidden + .work-content-creative {
+  padding-top: 2.75rem;
+}
+
+.page-top-band + .visually-hidden + .experience-resume-page {
+  padding-top: 2rem;
+}
+
+.page-top-band + .visually-hidden + .contact-layout {
+  padding-top: 2.5rem;
+}
+
+/* Condensed hero with smaller image and tighter rhythm */
+.site-credits {
+  padding: 0.55rem 0;
+}
+
+.hero-shapes {
+  display: none;
+}
+
+.hero-creative {
+  min-height: auto;
+  margin-bottom: 0;
+  padding: 1.75rem 0 1.5rem;
+  background: linear-gradient(135deg, #f3f1ec 0%, #f7f5f2 45%, #edf5f5 100%);
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 240px);
+  gap: 1.25rem;
+  align-items: end;
+}
+
+.hero-creative .hero-title {
+  font-size: clamp(2.15rem, 4vw, 3.4rem);
+  line-height: 1.08;
+  margin-bottom: 0.75rem;
+}
+
+.hero-creative .hero-description {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  max-width: 54ch;
+  margin-bottom: 0;
+}
+
+.hero-photo {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.hero-profile-image {
+  max-width: 220px;
+  height: 280px;
+  border-width: 3px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+  transform: none;
+}
+
+.hero-profile-image:hover {
+  transform: scale(1.01);
+}
+
+.hero-photo-placeholder {
+  width: 220px;
+  height: 280px;
+  border-width: 3px;
+  border-radius: 16px;
+  transform: none;
+}
+
+.featured-work-creative {
+  padding-top: 3.5rem;
+}
+
+.section-subtitle {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* Distinct How I work treatment (not same as What I do card grid) */
+.how-i-work-section {
+  padding: 4.5rem 0;
+  background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-color) 100%);
+}
+
+.how-i-work-section .section-title {
+  margin-bottom: 1.5rem;
+}
+
+.how-i-work-steps {
+  list-style: none;
+  counter-reset: how-i-work-step;
+  margin: 0 0 2rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.how-i-work-step {
+  counter-increment: how-i-work-step;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--agent-card-shadow);
+  padding: 1.15rem 1.15rem 1rem;
+}
+
+.how-i-work-step::before {
+  content: "0" counter(how-i-work-step);
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-teal);
+}
+
+.how-i-work-step h3 {
+  margin-bottom: 0.65rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.how-i-work-step p {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.65;
+  color: var(--text-light);
+}
+
+.how-i-work-quote {
+  margin: 0;
+  max-width: 100%;
+  padding: 1rem 1.25rem 1rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --design-band-height: 72px;
+  }
+
+  .hero-creative {
+    padding: 1rem 0 1.25rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+    align-items: start;
+    position: relative;
+    min-height: 150px;
+    padding-right: 7.75rem;
+  }
+
+  .hero-creative .hero-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .hero-creative .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .hero-creative .hero-content {
+    text-align: left;
+    padding-right: 0.35rem;
+  }
+
+  .hero-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 96px;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+  .hero-profile-image {
+    max-width: 96px;
+    height: 124px;
+    border-radius: 14px;
+    display: block !important;
+  }
+
+  .hero-photo-placeholder {
+    width: 96px;
+    height: 124px;
+    border-radius: 14px;
+  }
+
+  .featured-work-creative {
+    padding-top: 2.4rem;
+  }
+
+  .how-i-work-section {
+    padding: 3.25rem 0;
+  }
+
+  .how-i-work-steps {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 82%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0.5rem;
+  }
+
+  .how-i-work-step {
+    scroll-snap-align: start;
+  }
+
+  .how-i-work-steps::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .how-i-work-steps::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 999px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-grid {
+    padding-right: 5.6rem;
+    min-height: 118px;
+  }
+
+  .hero-creative .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-creative .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-photo {
+    width: 80px;
+  }
+
+  .hero-profile-image {
+    max-width: 80px;
+    height: 102px;
+  }
+
+  .hero-photo-placeholder {
+    width: 80px;
+    height: 102px;
+  }
+
+  .how-i-work-steps {
+    grid-auto-columns: 88%;
+  }
+}

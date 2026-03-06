@@ -4,10 +4,8 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<div class="portfolio-hero">
-  <h1>My work</h1>
-  <p>A selection of projects showcasing my content creation, technical writing, and process development work.</p>
-</div>
+<div class="page-top-band" aria-hidden="true"></div>
+<h1 class="visually-hidden">Portfolio</h1>
 
 <section class="work-content-creative">
   <div class="container">
