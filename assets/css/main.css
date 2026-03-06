@@ -4797,3 +4797,218 @@ img {
     padding: 1.25rem;
   }
 }
+
+/* ===========================================
+   AGENT PREVIEW — QUICK CONSISTENCY PASS
+   =========================================== */
+
+:root {
+  --agent-section-space: clamp(3rem, 5vw, 5rem);
+  --agent-card-radius: 14px;
+  --agent-card-shadow: 0 8px 28px rgba(15, 23, 42, 0.08);
+}
+
+.site-main section,
+.site-main .portfolio-hero,
+.site-main .page-hero-banner,
+.site-main .page-header,
+.site-main .page-header-creative {
+  scroll-margin-top: 6rem;
+}
+
+.site-main > section {
+  padding-block: var(--agent-section-space);
+}
+
+.portfolio-hero,
+.page-hero-banner,
+.page-header,
+.page-header-creative {
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 1.25rem;
+}
+
+.portfolio-hero h1,
+.page-hero-banner h1,
+.page-header h1,
+.page-header-creative h1 {
+  letter-spacing: -0.02em;
+}
+
+.page-subtitle,
+.page-hero-subtitle {
+  max-width: 52ch;
+}
+
+.section-title {
+  margin-bottom: 2.5rem;
+}
+
+.work-section-creative {
+  margin-bottom: 5rem;
+}
+
+.work-section-header {
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.work-section-intro p,
+.work-content-creative p,
+.about-content p,
+.contact-info-panel > p,
+.contact-link-value {
+  max-width: 68ch;
+}
+
+.highlight-card,
+.work-feature,
+.work-example-visual,
+.article-card,
+.project-card,
+.portfolio-card-item,
+.contact-form-panel,
+.contact-link-item {
+  border-radius: var(--agent-card-radius);
+  box-shadow: var(--agent-card-shadow);
+}
+
+.highlight-card:hover,
+.work-feature:hover,
+.work-example-visual:hover,
+.article-card:hover,
+.project-card:hover,
+.portfolio-card-item:hover {
+  transform: translateY(-4px);
+}
+
+.experience-resume-container,
+.about-content-container {
+  border-radius: 18px;
+}
+
+.experience-content-inner {
+  max-width: 760px;
+}
+
+.portfolio-accordion summary.portfolio-accordion-heading {
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-grid {
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.footer-nav-col a,
+.footer-social-btn,
+.contact-link-item,
+.btn,
+.nav-links a {
+  min-height: 44px;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-photo {
+    order: -1;
+  }
+
+  .hero-creative .hero-content {
+    text-align: center;
+  }
+
+  .hero-creative .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .work-section-header,
+  .work-section-header.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-main > section {
+    padding-block: 3.5rem;
+  }
+
+  .nav-links,
+  .nav-links.nav-open {
+    background: var(--bg-color);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  }
+
+  .portfolio-hero,
+  .page-hero-banner,
+  .page-header,
+  .page-header-creative {
+    padding: 2.75rem 1rem;
+    border-radius: 0 0 14px 14px;
+  }
+
+  .portfolio-hero h1,
+  .page-hero-banner h1,
+  .page-header h1,
+  .page-header-creative h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .work-content,
+  .work-example-content,
+  .contact-form-panel,
+  .portfolio-card-body {
+    padding: 1.25rem;
+  }
+
+  .site-header {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-main > section {
+    padding-block: 3rem;
+  }
+
+  .portfolio-hero h1,
+  .page-hero-banner h1,
+  .page-header h1,
+  .page-header-creative h1,
+  .hero-creative .hero-title {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+
+  .portfolio-hero p,
+  .page-subtitle,
+  .page-hero-subtitle,
+  .hero-creative .hero-description {
+    font-size: 1rem;
+  }
+
+  .work-section-creative {
+    margin-bottom: 3.5rem;
+  }
+}
