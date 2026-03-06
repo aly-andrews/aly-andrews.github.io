@@ -128,25 +128,27 @@ permalink: /
 </section>
 
 <section class="how-i-work-section" id="how-i-work">
-  <div class="container">
-    <h2 class="section-title">How I work</h2>
-    <ol class="how-i-work-steps">
-      <li class="how-i-work-step">
+  <div class="container how-i-work-editorial">
+    <div class="how-i-work-editorial-side">
+      <h2 class="section-title">How I work</h2>
+      <blockquote class="how-i-work-quote">
+        <p>People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen.</p>
+      </blockquote>
+    </div>
+    <div class="how-i-work-editorial-main">
+      <article class="how-i-work-editorial-item" data-step="01">
         <h3>Start with the user</h3>
         <p>I care about who will read or watch my content, what they need to do and whether what I'm shipping actually helps them solve problems. Audience and task come first — format follows.</p>
-      </li>
-      <li class="how-i-work-step">
+      </article>
+      <article class="how-i-work-editorial-item" data-step="02">
         <h3>Write with clarity</h3>
         <p>There's something deeply satisfying about taking an abstract idea and turning it into something tangible — a help center doc, an Academy course, a style guide, a how-to video. Complex topics made accessible.</p>
-      </li>
-      <li class="how-i-work-step">
+      </article>
+      <article class="how-i-work-editorial-item" data-step="03">
         <h3>Build with intention</h3>
         <p>It's not enough to ship content and hope it works. I track retention, drop-off points, support ticket volume and engagement signals — and I use what I learn to build exactly what users are asking for.</p>
-      </li>
-    </ol>
-    <blockquote class="how-i-work-quote">
-      <p>People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen.</p>
-    </blockquote>
+      </article>
+    </div>
   </div>
 </section>
 
