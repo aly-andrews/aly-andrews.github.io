@@ -14,14 +14,23 @@ permalink: /portfolio/
     <div id="getting-started-shopify" class="work-section-creative">
       <div class="work-section-header">
         <div class="work-image-large">
-          <div class="image-placeholder work-placeholder-large">
-            <p>Teach a class video</p>
-            <p class="placeholder">In progress – contact me for drafts or details.</p>
+          <div class="video-wrapper">
+            <iframe class="video-embed" src="https://www.youtube.com/embed/dCyQ9-CiMjo" title="Getting started on Shopify webinar" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
         <div class="work-section-intro">
           <h2>Getting started on Shopify</h2>
-          <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. The top segment will host the teach a class video; supporting content includes project plan, learner profiles, storyboard and accompanying resources.</p>
+          <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. This webinar covers the core setup steps new merchants need to launch successfully.</p>
+          <div class="work-section-docs">
+            <a href="{{ '/assets/documents/getting-started-shopify-lesson-companion.pdf' | relative_url }}" class="doc-link" target="_blank" rel="noopener">
+              <span class="doc-tag">PDF</span>
+              <span>Lesson companion</span>
+            </a>
+            <a href="{{ '/assets/documents/getting-started-shopify-project-plan.pdf' | relative_url }}" class="doc-link" target="_blank" rel="noopener">
+              <span class="doc-tag">PDF</span>
+              <span>Behind the scenes: project plan</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -43,7 +52,7 @@ permalink: /portfolio/
 
     <div id="technical-writing" class="work-section-creative">
       <h2>Technical writing</h2>
-      <p>A selection of published articles and documentation written for Shopify Academy, where I produced education content for the platform's merchant and partner programs. More samples are available on request.</p>
+      <p>A selection of published articles, documentation and project planning work spanning Shopify Academy and instructional design projects. More samples are available on request.</p>
 
       <div class="article-cards-grid">
 
@@ -60,6 +69,14 @@ permalink: /portfolio/
           <p>Step-by-step guide for merchants who want to make their products available to other Shopify retailers through Collective. Covers eligibility, catalog setup, onboarding and managing retailer relationships.</p>
           <span class="article-card-link">Read article →</span>
         </a>
+
+        <a href="{{ '/assets/documents/lollydex-documentation-project-plan.pdf' | relative_url }}" class="article-card" target="_blank" rel="noopener">
+          <span class="article-card-source">Documentation project plan</span>
+          <h3>LollyDex Docs: documentation release plan</h3>
+          <p>Full documentation project plan for a global software launch — covering content scope, audience analysis, reuse strategy, team roles, milestone schedule and risk management with mitigation plans.</p>
+          <span class="article-card-link">View document →</span>
+        </a>
+
 
       </div>
     </div>
@@ -132,11 +149,8 @@ permalink: /portfolio/
       <h2>Passion projects</h2>
       <p>Photography is one of my passion projects that demonstrates how I approach everything, with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
       <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing like understanding user needs, creating consistent processes and optimizing for outcomes, I apply to building a photography business from scratch.</p>
-      <p>After starting my Technical Writing program, I've put the business on pause but still take select clients throughout the year for creative joy.</p>
-
       <div class="work-section-cta">
         <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
-        <a href="https://www.instagram.com/alyanne.co" class="btn btn-secondary" target="_blank" rel="noopener">Follow on Instagram</a>
       </div>
       <div class="photography-carousel-wrapper" data-auto="true">
         <button type="button" class="photography-carousel-pause" aria-label="Pause carousel">Pause</button>

@@ -35,8 +35,6 @@ navigation:
     url: /
   - title: Portfolio
     url: /portfolio/
-  - title: How I Work
-    url: /how-i-work/
   - title: Resume
     url: /resume/
   - title: Contact

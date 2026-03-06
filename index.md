@@ -44,9 +44,9 @@ permalink: /
 
       <a href="{{ '/portfolio#getting-started-shopify' | relative_url }}" class="portfolio-card-item">
         <div class="portfolio-card-image">
-          <div class="portfolio-card-image-placeholder">
+          <img src="https://img.youtube.com/vi/dCyQ9-CiMjo/maxresdefault.jpg" alt="Getting started on Shopify webinar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="portfolio-card-image-placeholder" style="display:none;">
             <p>Shopify documentation</p>
-            <p style="font-size:0.75rem; opacity:0.7;">In progress</p>
           </div>
         </div>
         <div class="portfolio-card-body">
@@ -131,6 +131,32 @@ permalink: /
   </div>
 </section>
 
+<section class="how-i-work-section highlights-creative" id="how-i-work">
+  <div class="container">
+    <h2 class="section-title">How I work</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card creative-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--accent-teal), var(--accent-green));"></div>
+        <h3>Start with the user</h3>
+        <p>I care about who will read or watch my content, what they need to do and whether what I'm shipping actually helps them solve problems. Audience and task come first — format follows.</p>
+      </div>
+      <div class="highlight-card creative-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--accent-green), var(--accent-gold));"></div>
+        <h3>Write with clarity</h3>
+        <p>There's something deeply satisfying about taking an abstract idea and turning it into something tangible — a help center doc, an Academy course, a style guide, a how-to video. Complex topics made accessible.</p>
+      </div>
+      <div class="highlight-card creative-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--accent-gold), var(--accent-color));"></div>
+        <h3>Build with intention</h3>
+        <p>It's not enough to ship content and hope it works. I track retention, drop-off points, support ticket volume and engagement signals — and I use what I learn to build exactly what users are asking for.</p>
+      </div>
+    </div>
+    <blockquote class="how-i-work-quote">
+      <p>People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen.</p>
+    </blockquote>
+  </div>
+</section>
+
 <section class="testimonials">
   <div class="container">
     <h2 class="section-title">What people say</h2>
@@ -142,25 +168,13 @@ permalink: /
           </svg>
         </div>
         <div class="testimonial-quote">
-          <p>"Aly created strong, cohesive, and beautiful copy for our business. Her ability to translate complex technical concepts into accessible content is unmatched."</p>
+          <p>"Her Technical Writing expertise was critical to establishing quality criteria and evaluation frameworks that determined when AI-generated content met professional publishing standards."</p>
         </div>
         <div class="testimonial-author">
-          <p class="author-name">— Shopify Team</p>
-          <p class="author-role">Education & Enablement</p>
-        </div>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-quote-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-          </svg>
-        </div>
-        <div class="testimonial-quote">
-          <p>"The style guides and AI workflows Aly developed transformed our content creation process, reducing production time while maintaining exceptional quality."</p>
-        </div>
-        <div class="testimonial-author">
-          <p class="author-name">— Content Team</p>
-          <p class="author-role">Shopify Academy</p>
+          <a href="https://www.linkedin.com/in/jordanwille/" target="_blank" rel="noopener" class="author-link">
+            <p class="author-name">— Jordan Wille</p>
+            <p class="author-role">Senior Program Manager, Operations · Shopify · LinkedIn →</p>
+          </a>
         </div>
       </div>
     </div>
