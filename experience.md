@@ -7,7 +7,15 @@ permalink: /resume/
 <div class="page-top-band" aria-hidden="true"></div>
 <h1 class="visually-hidden">Resume</h1>
 
-<section class="experience-resume-page">
+<nav class="resume-subnav" aria-label="Resume sections">
+  <div class="resume-subnav-inner">
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+  </div>
+</nav>
+
+<section class="experience-resume-page" id="experience">
   <div class="experience-resume-shapes" aria-hidden="true">
     <div class="resume-shape resume-shape-1"></div>
     <div class="resume-shape resume-shape-2"></div>
@@ -17,7 +25,7 @@ permalink: /resume/
   <div class="experience-resume-container">
     <div class="experience-content-inner">
       <!-- Senior Education Content Producer -->
-      <article class="experience-item">
+      <article class="experience-item role-education">
         <div class="experience-header">
           <h2>Senior Education Content Producer</h2>
           <p class="experience-company">Shopify</p>
@@ -57,7 +65,7 @@ permalink: /resume/
       </article>
 
       <!-- Video Production Lead -->
-      <article class="experience-item">
+      <article class="experience-item role-video">
         <div class="experience-header">
           <h2>Video Production Lead</h2>
           <p class="experience-company">Shopify</p>
@@ -101,7 +109,7 @@ permalink: /resume/
       </article>
 
       <!-- Senior Video Producer -->
-      <article class="experience-item">
+      <article class="experience-item role-video">
         <div class="experience-header">
           <h2>Senior Video Producer</h2>
           <p class="experience-company">Shopify</p>
