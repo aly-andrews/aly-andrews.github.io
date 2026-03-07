@@ -18,8 +18,9 @@ permalink: /
   </div>
   <div class="hero-grid">
     <div class="hero-content">
-      <h1 class="hero-title">Aly Andrews</h1>
-      <p class="hero-description">Technical writer and content creator specializing in accessible, engaging educational content that helps people learn and succeed</p>
+      <h1 class="hero-title">Aly Andrews. I bridge the gap between complex systems and the people who use them.</h1>
+      <p class="hero-description">Expert technical writer and content creator. Using systematic approach to make complexity clear, from Shopify Academy to video production. I create scalable frameworks that empower users to succeed.</p>
+      <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-primary">Explore My Work</a>
     </div>
     <div class="hero-photo">
       <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -76,25 +77,30 @@ permalink: /
         </div>
       </a>
 
-      <a href="{{ '/portfolio/' | relative_url }}" class="portfolio-card-item">
-        <div class="portfolio-card-image">
-          <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Photography by Aly Anne" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="portfolio-card-image-placeholder" style="display:none;">
-            <p>Passion projects</p>
-          </div>
-        </div>
-        <div class="portfolio-card-body">
-          <div class="portfolio-card-tags">
-            <span class="portfolio-card-tag">Photography</span>
-            <span class="portfolio-card-tag">Business</span>
-            <span class="portfolio-card-tag">Systems</span>
-          </div>
-          <h3>Passion projects</h3>
-          <p>Photography business built from scratch: scalable frameworks, regular clients and sold-out mini sessions. The same systems thinking I bring to technical writing, applied creatively.</p>
-          <p class="portfolio-card-link">View gallery →</p>
-        </div>
-      </a>
+    </div>
+  </div>
+</section>
 
+<section class="featured-proof" id="featured-proof">
+  <div class="container">
+    <h2 class="section-title">Featured proof</h2>
+    <div class="featured-proof-grid">
+      <article class="featured-proof-card">
+        <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Plaque for 100,000 subscribers" />
+        <div class="featured-proof-content">
+          <h3>YouTube Silver Plaque</h3>
+          <p>Grew the Shopify Help Center YouTube channel to 100,000+ subscribers through educational strategy and production systems.</p>
+          <span class="proof-metric">100k+ Subscribers</span>
+        </div>
+      </article>
+      <article class="featured-proof-card">
+        <img src="{{ '/assets/videos/BFCM.jpg' | relative_url }}" alt="Shopify BFCM guide thumbnail" />
+        <div class="featured-proof-content">
+          <h3>Shopify BFCM Guide</h3>
+          <p>Produced practical Black Friday and Cyber Monday learning content to help merchants plan, launch, and scale with confidence.</p>
+          <span class="proof-metric">High-impact learning asset</span>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -172,6 +178,27 @@ permalink: /
           </a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="passion-projects-home" id="passion-projects">
+  <div class="container">
+    <h2 class="section-title">Passion projects</h2>
+    <p class="section-subtitle">Photography is where systems thinking meets creative expression. I built repeatable frameworks, client workflows and a waitlist-driven mini-session model.</p>
+    <div class="photo-masonry">
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" /></figure>
+      <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" /></figure>
+    </div>
+    <div class="work-section-cta">
+      <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
     </div>
   </div>
 </section>

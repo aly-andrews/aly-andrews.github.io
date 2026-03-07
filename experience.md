@@ -30,7 +30,7 @@ permalink: /resume/
           <details class="portfolio-accordion">
             <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <table class="accomplishment-table">
+              <table class="accomplishment-table accomplishment-table--lavender">
                 <thead>
                   <tr><th>Accomplishment</th><th>Result</th></tr>
                 </thead>
@@ -70,7 +70,7 @@ permalink: /resume/
           <details class="portfolio-accordion">
             <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <table class="accomplishment-table">
+              <table class="accomplishment-table accomplishment-table--pink">
                 <thead>
                   <tr><th>Accomplishment</th><th>Result</th></tr>
                 </thead>

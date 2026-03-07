@@ -9,7 +9,7 @@ permalink: /portfolio/
 
 <section class="work-content-creative">
   <div class="container">
-    <div id="getting-started-shopify" class="work-section-creative">
+    <div id="getting-started-shopify" class="work-section-creative case-study-card case-creative">
       <div class="work-section-header">
         <div class="work-image-large">
           <div class="video-wrapper">
@@ -17,6 +17,10 @@ permalink: /portfolio/
           </div>
         </div>
         <div class="work-section-intro">
+          <div class="case-pill-row">
+            <span class="case-pill case-pill--creative">Creative</span>
+            <span class="case-pill case-pill--technical">Technical Writing</span>
+          </div>
           <h2>Getting started on Shopify</h2>
           <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. This webinar covers the core setup steps new merchants need to launch successfully.</p>
           <div class="work-section-docs">
@@ -33,9 +37,13 @@ permalink: /portfolio/
       </div>
     </div>
 
-    <div id="docs-website" class="work-section-creative">
+    <div id="docs-website" class="work-section-creative case-study-card case-technical">
       <div class="work-section-header">
         <div class="work-section-intro">
+          <div class="case-pill-row">
+            <span class="case-pill case-pill--technical">Technical Writing</span>
+            <span class="case-pill case-pill--systems">Systems &amp; Docs</span>
+          </div>
           <h2>How I made this website</h2>
           <p>Docs as code in practice: this portfolio site was built with Jekyll, GitHub Pages, and Cursor IDE. Video walkthrough in progress.</p>
         </div>
@@ -54,21 +62,24 @@ permalink: /portfolio/
 
       <div class="article-cards-grid">
 
-        <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-retailer/2283513" class="article-card" target="_blank" rel="noopener">
+        <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-retailer/2283513" class="article-card case-study-link case-technical" target="_blank" rel="noopener">
+          <span class="case-pill case-pill--technical">Technical Writing</span>
           <span class="article-card-source">Shopify Academy</span>
           <h3>Shopify Collective: Getting started as a retailer</h3>
           <p>Step-by-step guide for merchants who want to source and sell products from other Shopify brands through Collective. Covers setup, product discovery, importing items and managing supplier relationships.</p>
           <span class="article-card-link">Read article →</span>
         </a>
 
-        <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-supplier/2283509" class="article-card" target="_blank" rel="noopener">
+        <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-supplier/2283509" class="article-card case-study-link case-technical" target="_blank" rel="noopener">
+          <span class="case-pill case-pill--technical">Technical Writing</span>
           <span class="article-card-source">Shopify Academy</span>
           <h3>Shopify Collective: Getting started as a supplier</h3>
           <p>Step-by-step guide for merchants who want to make their products available to other Shopify retailers through Collective. Covers eligibility, catalog setup, onboarding and managing retailer relationships.</p>
           <span class="article-card-link">Read article →</span>
         </a>
 
-        <a href="{{ '/assets/documents/lollydex-documentation-project-plan.pdf' | relative_url }}" class="article-card" target="_blank" rel="noopener">
+        <a href="{{ '/assets/documents/lollydex-documentation-project-plan.pdf' | relative_url }}" class="article-card case-study-link case-technical" target="_blank" rel="noopener">
+          <span class="case-pill case-pill--technical">Technical Writing</span>
           <span class="article-card-source">Documentation project plan</span>
           <h3>LollyDex Docs: documentation release plan</h3>
           <p>Full documentation project plan for a global software launch — covering content scope, audience analysis, reuse strategy, team roles, milestone schedule and risk management with mitigation plans.</p>
@@ -106,7 +117,8 @@ permalink: /portfolio/
       
       <div class="video-cards-grid">
         <!-- POS Series Card -->
-        <div class="video-card" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shopify.jpg' | relative_url }}">
+        <div class="video-card case-study-link case-creative" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shopify.jpg' | relative_url }}">
+          <span class="case-pill case-pill--creative">Creative</span>
           <div class="thumbnail-wrapper">
             <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="POS Series: What is Shopify?">
             <div class="play-overlay">
@@ -118,7 +130,8 @@ permalink: /portfolio/
         </div>
 
         <!-- International Expansion Card -->
-        <div class="video-card" data-video-src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/store policies.jpg' | relative_url }}">
+        <div class="video-card case-study-link case-creative" data-video-src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/store policies.jpg' | relative_url }}">
+          <span class="case-pill case-pill--creative">Creative</span>
           <div class="thumbnail-wrapper">
             <img src="{{ '/assets/videos/store policies.jpg' | relative_url }}" alt="International Expansion: Create store policies">
             <div class="play-overlay">
@@ -130,7 +143,8 @@ permalink: /portfolio/
         </div>
 
         <!-- Content Migration Card -->
-        <div class="video-card" data-video-src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shop.jpg' | relative_url }}">
+        <div class="video-card case-study-link case-creative" data-video-src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shop.jpg' | relative_url }}">
+          <span class="case-pill case-pill--creative">Creative</span>
           <div class="thumbnail-wrapper">
             <img src="{{ '/assets/videos/what is shop.jpg' | relative_url }}" alt="Content Migration">
             <div class="play-overlay">
@@ -150,86 +164,17 @@ permalink: /portfolio/
       <div class="work-section-cta">
         <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
       </div>
-      <div class="photography-carousel-wrapper" data-auto="true">
-        <button type="button" class="photography-carousel-pause" aria-label="Pause carousel">Pause</button>
-        <div class="photography-carousel">
-        <div class="photography-carousel-track">
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <!-- Duplicated for infinite scroll -->
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-        </div>
+      <div class="photo-masonry photo-masonry--portfolio">
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" /></figure>
+        <figure class="photo-masonry-item"><img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" /></figure>
       </div>
-    </div>
 
     </div>
   </div>

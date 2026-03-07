@@ -5387,3 +5387,322 @@ h6,
     font-size: 1.15rem;
   }
 }
+
+/* ===========================================
+   PASTEL STUDIO THEME — branch: pastel
+   =========================================== */
+
+:root {
+  --brand-pink: #FCE4EC;
+  --brand-lavender: #F3E5F5;
+  --brand-mint: #E0F2F1;
+  --brand-gold: #D4AF37;
+  --text-deep: #2D2D2D;
+  --dusty-rose: #CC6F8F;
+  --primary-color: var(--text-deep);
+  --text-color: var(--text-deep);
+  --text-light: var(--text-deep);
+  --accent-gold: var(--brand-gold);
+}
+
+body {
+  color: var(--text-deep);
+  background: linear-gradient(180deg, #fff 0%, #fff8fb 100%);
+}
+
+p,
+li,
+.work-section-intro p,
+.work-content-creative p,
+.contact-info-panel > p,
+.contact-link-value,
+.article-card p,
+.work-example-content p {
+  color: var(--text-deep);
+}
+
+img,
+[class*="card"],
+.case-study-card,
+.work-section-creative,
+.contact-form-panel,
+.portfolio-accordion,
+.photo-masonry-item img,
+.featured-proof-card {
+  border-radius: 16px;
+}
+
+/* Header and branding */
+.site-header {
+  background-color: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid #f0dde4;
+}
+
+.site-logo {
+  height: 64px;
+}
+
+.logo-image {
+  height: 64px;
+  width: auto;
+}
+
+.nav-links a {
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--brand-gold);
+}
+
+/* Hero refresh */
+.hero-creative {
+  background: linear-gradient(to right, var(--brand-lavender), var(--brand-mint), var(--brand-pink));
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.hero-creative .hero-title {
+  max-width: 20ch;
+  font-weight: 800;
+}
+
+.hero-creative .hero-description {
+  max-width: 56ch;
+}
+
+.hero-creative .btn-primary {
+  margin-top: 1.1rem;
+  background: linear-gradient(135deg, #e28daa, #cc6f8f);
+  border: none;
+  color: #fff;
+}
+
+.hero-creative .btn-primary:hover {
+  background: linear-gradient(135deg, #cc6f8f, #b95f7e);
+}
+
+/* Shared slim top band */
+.page-top-band {
+  background: linear-gradient(to right, var(--brand-lavender), var(--brand-mint), var(--brand-pink));
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Featured proof */
+.featured-proof {
+  padding: 3.2rem 0 1rem;
+}
+
+.featured-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+
+.featured-proof-card {
+  background: #fff;
+  border: 1px solid #f0d9e3;
+  box-shadow: 0 12px 28px rgba(90, 52, 74, 0.08);
+  overflow: hidden;
+}
+
+.featured-proof-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.featured-proof-content {
+  padding: 1rem 1rem 1.15rem;
+}
+
+.featured-proof-content h3 {
+  margin-bottom: 0.45rem;
+}
+
+.proof-metric {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: var(--brand-lavender);
+  color: var(--text-deep);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* What I do card polish */
+.highlight-card {
+  background: #fff;
+  border: 1px solid #f2dfe6;
+  box-shadow: 0 10px 26px rgba(93, 76, 88, 0.07);
+}
+
+/* Portfolio case study logic */
+.case-study-card {
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(97, 77, 90, 0.09);
+  border: 1px solid #f0dce4;
+  padding: 1.25rem;
+}
+
+.case-study-card .work-section-header {
+  margin-bottom: 0;
+}
+
+.case-study-link,
+.video-card.case-study-link {
+  position: relative;
+  padding-top: 2.05rem;
+}
+
+.case-study-link.case-technical {
+  background: var(--brand-lavender);
+  border: 1px solid #e8d4eb;
+}
+
+.case-study-link.case-creative {
+  background: var(--brand-pink);
+  border: 1px solid #f1cfdc;
+}
+
+.case-pill-row {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.65rem;
+}
+
+.case-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.2rem 0.62rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.case-pill--technical {
+  background: var(--brand-lavender);
+  color: #5b4262;
+}
+
+.case-pill--creative {
+  background: var(--brand-pink);
+  color: #704757;
+}
+
+.case-pill--systems {
+  background: var(--brand-mint);
+  color: #35605d;
+}
+
+.case-study-link > .case-pill {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.95rem;
+}
+
+/* Resume table headers and accordion accents */
+.accomplishment-table--lavender thead {
+  background: var(--brand-lavender);
+}
+
+.accomplishment-table--pink thead {
+  background: var(--brand-pink);
+}
+
+.accomplishment-table--lavender th,
+.accomplishment-table--pink th {
+  color: var(--text-deep);
+}
+
+.portfolio-accordion summary.portfolio-accordion-heading {
+  color: var(--brand-gold);
+  border: 1px solid #f1e0ac;
+  background: #fffdf6;
+}
+
+.portfolio-accordion summary.portfolio-accordion-heading::before {
+  color: var(--brand-gold);
+}
+
+.portfolio-accordion summary.portfolio-accordion-heading:hover {
+  background: #fff8e8;
+  box-shadow: inset 0 0 0 1px #f0dd9f;
+}
+
+/* Contact refinements */
+.contact-form-panel {
+  background: linear-gradient(rgba(252, 228, 236, 0.10), rgba(252, 228, 236, 0.10)), #ffffff;
+  border: 1px solid #f1d7e1;
+}
+
+.contact-form-panel .btn-primary {
+  background: var(--dusty-rose);
+  color: #fff;
+  border: none;
+}
+
+.contact-form-panel .btn-primary:hover {
+  background: #b95f7e;
+}
+
+/* Masonry photography gallery */
+.photo-masonry {
+  column-count: 3;
+  column-gap: 1rem;
+  margin-top: 1.1rem;
+}
+
+.photo-masonry-item {
+  break-inside: avoid;
+  margin: 0 0 1rem;
+}
+
+.photo-masonry-item img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(70, 44, 56, 0.12);
+}
+
+.passion-projects-home {
+  padding: 4rem 0 4.6rem;
+  background: linear-gradient(180deg, #fff7fb 0%, #fff 100%);
+}
+
+@media (max-width: 1024px) {
+  .featured-proof-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 52px;
+  }
+
+  .hero-creative {
+    padding-top: 1.35rem;
+    padding-bottom: 1.35rem;
+  }
+
+  .photo-masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-masonry {
+    column-count: 1;
+  }
+
+  .case-study-card {
+    padding: 1rem;
+  }
+}
