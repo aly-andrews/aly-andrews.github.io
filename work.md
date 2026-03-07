@@ -19,6 +19,7 @@ permalink: /portfolio/
         <div class="work-section-intro">
           <h2>Getting started on Shopify</h2>
           <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. This webinar covers the core setup steps new merchants need to launch successfully.</p>
+          <p class="work-section-note">Created independently as a portfolio and course project — not as part of my role at Shopify. All content is based on publicly available information only; no internal or proprietary materials were used.</p>
           <div class="work-section-docs">
             <a href="{{ '/assets/documents/getting-started-shopify-lesson-companion.pdf' | relative_url }}" class="doc-link" target="_blank" rel="noopener">
               <span class="doc-tag">PDF</span>
@@ -79,157 +80,99 @@ permalink: /portfolio/
       </div>
     </div>
 
+    <div id="youtube-plaque" class="work-section-creative">
+      <div class="work-section-header work-section-header--plaque">
+        <div class="work-image-large youtube-plaque-section-image">
+          <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Play Button — 100,000 subscribers" class="work-image-img" />
+        </div>
+        <div class="work-section-intro">
+          <p>Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
+          <div class="youtube-plaque-projects">
+            <div class="youtube-plaque-project">
+              <h4>POS series</h4>
+              <p>Launched 25-video POS series including script writing, SME training, and cross-team coordination. Influential in POS hardware sales with 20k deflection savings in the first week.</p>
+            </div>
+            <div class="youtube-plaque-project">
+              <h4>International expansion</h4>
+              <p>Coordinated localization of 30+ videos through Videolocalize partnership, creating comprehensive style guides and tracking systems for international content scaling.</p>
+            </div>
+            <div class="youtube-plaque-project">
+              <h4>Content migration</h4>
+              <p>Migrated 100+ educational videos between video hosting platforms with zero downtime, implementing structured onboarding documentation for the team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="video-production" class="work-section-creative">
       <h2>Video production</h2>
-
-      <p>Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
-
       <p>Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.</p>
 
-      <div class="featured-video">
-        <div class="featured-left">
-          <div class="video-card large" data-video-src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/BFCM.jpg' | relative_url }}">
-            <div class="thumbnail-wrapper">
-              <img src="{{ '/assets/videos/BFCM.jpg' | relative_url }}" alt="Black Friday Cyber Monday Guide thumbnail">
-              <div class="play-overlay">
-                <span class="play-button">▶</span>
-              </div>
+      <div class="video-cards-grid">
+        <div class="video-card" data-video-src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/BFCM.jpg' | relative_url }}">
+          <div class="thumbnail-wrapper">
+            <img src="{{ '/assets/videos/BFCM.jpg' | relative_url }}" alt="Your guide to BFCM - Shopify Help Center">
+            <div class="play-overlay">
+              <span class="play-button">▶</span>
             </div>
           </div>
+          <h3>Your guide to BFCM</h3>
+          <p>Black Friday and Cyber Monday strategies for Shopify merchants.</p>
         </div>
-        <div class="featured-right">
-          <h3>Black Friday Cyber Monday</h3>
-          <p>Your guide to BFCM</p>
-          <p>Produced engaging educational content for Shopify merchants covering Black Friday and Cyber Monday strategies.</p>
-        </div>
-      </div>
-      
-      <div class="video-cards-grid">
-        <!-- POS Series Card -->
+
         <div class="video-card" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shopify.jpg' | relative_url }}">
           <div class="thumbnail-wrapper">
-            <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="POS Series: What is Shopify?">
+            <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="What is Shopify - Shopify Help Center">
             <div class="play-overlay">
               <span class="play-button">▶</span>
             </div>
           </div>
-          <h3>POS series</h3>
-          <p>Launched 25-video POS series including script writing, SME training, and cross-team coordination. Influential in POS hardware sales with 20k deflection savings in the first week.</p>
+          <h3>What is Shopify</h3>
+          <p>Introduction to Shopify for new merchants. From the POS series.</p>
         </div>
 
-        <!-- International Expansion Card -->
         <div class="video-card" data-video-src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/store policies.jpg' | relative_url }}">
           <div class="thumbnail-wrapper">
-            <img src="{{ '/assets/videos/store policies.jpg' | relative_url }}" alt="International Expansion: Create store policies">
+            <img src="{{ '/assets/videos/store policies.jpg' | relative_url }}" alt="How to create store policies - Shopify Help Center">
             <div class="play-overlay">
               <span class="play-button">▶</span>
             </div>
           </div>
-          <h3>International expansion</h3>
-          <p>Coordinated localization of 30+ videos through Videolocalize partnership, creating comprehensive style guides and tracking systems for international content scaling.</p>
-        </div>
-
-        <!-- Content Migration Card -->
-        <div class="video-card" data-video-src="{{ '/assets/videos/What is Shop - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shop.jpg' | relative_url }}">
-          <div class="thumbnail-wrapper">
-            <img src="{{ '/assets/videos/what is shop.jpg' | relative_url }}" alt="Content Migration">
-            <div class="play-overlay">
-              <span class="play-button">▶</span>
-            </div>
-          </div>
-          <h3>Content migration</h3>
-          <p>Migrated 100+ educational videos between video hosting platforms with zero downtime, implementing structured onboarding documentation for the team.</p>
+          <h3>How to create store policies</h3>
+          <p>Step-by-step guide to setting up store policies.</p>
         </div>
       </div>
     </div>
 
-    <div class="work-section-creative">
+    <div class="work-section-creative passion-projects-portfolio">
       <h2>Passion projects</h2>
-      <p>Photography is one of my passion projects that demonstrates how I approach everything, with systems thinking and a focus on scalability. What started as a creative outlet during the pandemic grew into a full business with regular clients and sold out mini sessions with waitlists.</p>
-      <p>I created scalable business frameworks, developed a new source of income for my family, and found a way to express myself creatively. The same systematic approach I bring to technical writing like understanding user needs, creating consistent processes and optimizing for outcomes, I apply to building a photography business from scratch.</p>
-      <div class="work-section-cta">
-        <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
-      </div>
-      <div class="photography-carousel-wrapper" data-auto="true">
-        <button type="button" class="photography-carousel-pause" aria-label="Pause carousel">Pause</button>
-        <div class="photography-carousel">
-        <div class="photography-carousel-track">
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+      <p>Photography started as a pandemic creative outlet and grew into a business with regular clients and sold out mini sessions. I applied the same approach I use in technical writing: understand the audience, build consistent processes and optimize for outcomes.</p>
+
+      <div class="passion-projects-showcase">
+        <div class="passion-projects-featured">
+          <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection by Aly Anne Photography" />
+        </div>
+        <div class="passion-projects-grid">
+          <div class="passion-projects-grid-item">
+            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" />
           </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          <div class="passion-projects-grid-item">
+            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" />
           </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          <div class="passion-projects-grid-item">
+            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" />
           </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <!-- Duplicated for infinite scroll -->
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/2.jpg' | relative_url }}" alt="Creative portrait session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/4.jpg' | relative_url }}" alt="Mother and child portrait" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/6.jpg' | relative_url }}" alt="Maternity photography session" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/8.jpg' | relative_url }}" alt="Child portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
-          </div>
-          <div class="photography-carousel-item">
-            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder photography-placeholder" style="display: none;"><p>Photo</p></div>
+          <div class="passion-projects-grid-item">
+            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" />
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="passion-projects-cta">
+        <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View gallery</a>
+        <a href="https://www.instagram.com/alyanne.co" class="passion-projects-instagram" target="_blank" rel="noopener" aria-label="Follow @alyanne.co on Instagram">@alyanne.co</a>
+      </div>
 
     </div>
   </div>

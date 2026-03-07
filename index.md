@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-<section class="site-credits">
+<section class="site-credits" style="height: 36px; min-height: 36px; padding: 0 1rem; display: flex; align-items: center; justify-content: center;">
   <div class="container">
     <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll and GitHub Pages.</p>
   </div>
@@ -26,7 +26,7 @@ permalink: /
     </div>
     <div class="hero-content">
       <h1 class="hero-title">Aly Andrews. I bridge the gap between complex systems and the people who use them.</h1>
-      <p class="hero-description">Expert Technical Writer and Content Creator. Using systematic approach to make complexity clear, from Shopify Academy to video production. I create scalable frameworks that empower users to succeed.</p>
+      <p class="hero-description">Senior Education Strategist specializing in the intersection of AI-automation and scalable learning systems.</p>
       <a href="{{ '/portfolio/' | relative_url }}" class="btn-hero-cta">Explore My Work</a>
     </div>
   </div>
@@ -40,28 +40,26 @@ permalink: /
     <div class="portfolio-cards-grid">
 
       <a href="{{ '/portfolio#getting-started-shopify' | relative_url }}" class="portfolio-card-item">
-        <div class="portfolio-card-image">
-          <img src="https://img.youtube.com/vi/dCyQ9-CiMjo/maxresdefault.jpg" alt="Getting started on Shopify webinar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="portfolio-card-image-placeholder" style="display:none;">
-            <p>Shopify documentation</p>
+        <div class="portfolio-card-image card-visual-program">
+          <div class="portfolio-card-visual" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
           </div>
         </div>
         <div class="portfolio-card-body">
           <div class="portfolio-card-tags">
-            <span class="portfolio-card-tag tag-technical">Instructional Design</span>
-            <span class="portfolio-card-tag tag-systems">Documentation</span>
+            <span class="portfolio-card-tag tag-systems">Building programs</span>
+            <span class="portfolio-card-tag tag-technical">Instructional design</span>
           </div>
-          <h3>Getting started on Shopify</h3>
-          <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. Includes project plan, learner profiles and supporting resources.</p>
+          <h3>Building programs</h3>
+          <p>End-to-end learning program: technical writing, storyboarding, video production and hosting, plus instructional design. Documentation and guides to help new merchants set up their store, with project plan, learner profiles and supporting resources. Created independently as a portfolio piece using only publicly available information.</p>
           <p class="portfolio-card-link">View project →</p>
         </div>
       </a>
 
       <a href="{{ '/portfolio#technical-writing' | relative_url }}" class="portfolio-card-item">
-        <div class="portfolio-card-image">
-          <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="Technical writing and documentation samples" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="portfolio-card-image-placeholder" style="display:none;">
-            <p>Technical writing</p>
+        <div class="portfolio-card-image card-visual-writing">
+          <div class="portfolio-card-visual" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>
           </div>
         </div>
         <div class="portfolio-card-body">
@@ -76,10 +74,9 @@ permalink: /
       </a>
 
       <a href="{{ '/portfolio#video-production' | relative_url }}" class="portfolio-card-item">
-        <div class="portfolio-card-image">
-          <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Plaque for 100,000 subscribers" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="portfolio-card-image-placeholder" style="display:none;">
-            <p>Video production</p>
+        <div class="portfolio-card-image card-visual-video">
+          <div class="portfolio-card-visual" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
           </div>
         </div>
         <div class="portfolio-card-body">
@@ -88,23 +85,11 @@ permalink: /
             <span class="portfolio-card-tag tag-creative">YouTube</span>
           </div>
           <h3>Video production</h3>
-          <p>Independently grew Shopify Help Center YouTube channel to over 100,000 subscribers. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
+          <p>Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.</p>
           <p class="portfolio-card-link">Watch videos →</p>
         </div>
       </a>
 
-    </div>
-  </div>
-</section>
-
-<section class="youtube-milestone">
-  <div class="youtube-milestone-inner">
-    <div class="youtube-milestone-text">
-      <h2>Shopify Help Center YouTube Channel: From C+ to A- and over 100k Subscribers</h2>
-      <p>I grew the channel independently — writing scripts, producing and hosting videos, optimizing SEO, and tracking learning outcomes. The Silver Plaque followed.</p>
-    </div>
-    <div class="youtube-milestone-plaque">
-      <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Play Button — 100,000 subscribers">
     </div>
   </div>
 </section>
@@ -182,45 +167,6 @@ permalink: /
           </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<div class="creative-bridge">
-  <div class="creative-bridge-inner">
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <!-- Camera body -->
-      <rect x="6" y="16" width="24" height="18" rx="3" stroke="#D4AF37" stroke-width="1.8" fill="none"/>
-      <!-- Camera lens -->
-      <circle cx="18" cy="25" r="5" stroke="#D4AF37" stroke-width="1.8" fill="none"/>
-      <circle cx="18" cy="25" r="2" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
-      <!-- Camera viewfinder bump -->
-      <rect x="14" y="12" width="8" height="4" rx="1.5" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
-      <!-- Pencil body (diagonal, overlapping) -->
-      <line x1="28" y1="10" x2="44" y2="36" stroke="rgba(233,30,99,0.55)" stroke-width="2" stroke-linecap="round"/>
-      <line x1="30" y1="10" x2="46" y2="36" stroke="rgba(233,30,99,0.55)" stroke-width="2" stroke-linecap="round"/>
-      <!-- Pencil tip -->
-      <polygon points="37,33 44,36 40,38" fill="rgba(233,30,99,0.55)"/>
-      <!-- Pencil eraser end -->
-      <line x1="28" y1="10" x2="30" y2="10" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
-    </svg>
-    <span class="creative-bridge-text">"Systems Thinking Meets Creative Expression."</span>
-  </div>
-</div>
-
-<section class="passion-projects-home" id="passion-projects">
-  <div class="container">
-    <h2 class="section-title">Passion projects</h2>
-    <p class="section-subtitle">Photography is one of my creative outlets — and a demonstration of how I apply systems thinking to everything. What started during the pandemic grew into a business with regular clients and sold-out mini sessions.</p>
-    <div class="passion-projects-photos">
-      <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography">
-      <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session">
-      <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography">
-      <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection">
-      <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography">
-    </div>
-    <div style="margin-top: 1.5rem;">
-      <a href="{{ '/portfolio/' | relative_url }}" class="btn btn-primary">View full portfolio →</a>
     </div>
   </div>
 </section>
