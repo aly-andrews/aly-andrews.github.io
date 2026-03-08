@@ -38,30 +38,23 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
+    <div class="footer-band">
+      <div class="container footer-inner">
         <div class="footer-brand">
-          <h3>Aly Andrews</h3>
-          <p>Technical writer and content creator specializing in accessible, engaging educational content.</p>
+          <h3 class="footer-name">Aly Andrews</h3>
+          <p class="footer-tagline">Senior Education Content Producer · Ottawa, Ontario</p>
         </div>
-        <div class="footer-nav-col">
-          <h4>Quick links</h4>
-          <ul>
-            {% for item in site.navigation %}
-            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
-            {% endfor %}
-          </ul>
+        <div class="footer-contact">
+          <a href="mailto:{{ site.email }}" class="footer-contact-link">{{ site.email }}</a>
+          <span class="footer-contact-sep">·</span>
+          <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank" rel="noopener noreferrer" class="footer-contact-link">LinkedIn</a>
         </div>
-        <div class="footer-connect-col">
-          <h4>Connect</h4>
-          <div class="footer-social-icons">
-            <a href="mailto:{{ site.email }}" class="footer-social-btn" aria-label="Email">✉</a>
-            <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">in</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-built">
-        <p>&copy; {{ 'now' | date: "%Y" }} Aly Andrews. This static site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          {% for item in site.navigation %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% unless forloop.last %} · {% endunless %}
+          {% endfor %}
+        </nav>
+        <p class="footer-built">&copy; {{ site.time | date: "%Y" }} Aly Andrews. This site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll, and GitHub Pages.</p>
       </div>
     </div>
   </footer>

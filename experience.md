@@ -10,7 +10,7 @@ permalink: /resume/
 <nav class="resume-subnav" aria-label="Resume sections">
   <div class="resume-subnav-inner">
     <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
+    <a href="#expertise">Expertise</a>
     <a href="#education">Education</a>
   </div>
 </nav>
@@ -29,35 +29,20 @@ permalink: /resume/
         <div class="experience-header">
           <h2>Senior Education Content Producer</h2>
           <p class="experience-company">Shopify</p>
-          <p class="experience-meta">July 2023 – Present (Remote)</p>
+          <p class="experience-meta">July 2023 – March 2026</p>
         </div>
         <div class="experience-description">
-          <p>Individual contributor for Shopify Academy on the Education and Enablement team. Content creation includes written articles, video scripts/production and internal documentation. Working alongside Instructional Designers and Program Managers on certification tracks.</p>
+          <p>Produced educational content for Shopify Academy, creating articles, video scripts and documentation. Collaborated with Instructional Designers and Program Managers to develop certification tracks and modular learning experiences.</p>
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
             <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <table class="accomplishment-table">
-                <thead>
-                  <tr><th>Accomplishment</th><th>Result</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Created custom Shopify Academy LLM style guides used to train Claude-based script-writing agents adopted across teams</td><td>Reduce pre-production from 5 days to 1, including script revision cycles</td></tr>
-                  <tr><td>Onboarded Education team to new Reprise demo course for merchants</td><td>Maintained an 80% audience retention rate since Q1 launch; average 87% completion rate when compared to taking head video</td></tr>
-                  <tr><td>Migration of 100+ educational videos between video hosting platforms, implemented structured customized onboarding documentation</td><td>Video content was always live and accessible for viewers, Shopify staff had little disruption to workflow with zero downtime; data captured and segmented immediately</td></tr>
-                </tbody>
-              </table>
               <ul>
-                <li>Writing articles and producing videos for structured learning tracks</li>
-                <li>Content creation follows modular format serving audience segments from SMB, enterprise, partners and developers</li>
-                <li>Redefined video success metrics from deflection to learning outcomes</li>
-                <li>Build and maintain relationships with SMEs across Shopify Product, Support, Marketing and more</li>
-              </ul>
-              <ul>
-                <li>Developed Claude-based script writing agents adopted across teams</li>
-                <li>Created Academy style guides designed to train LLM models for consistent brand voice and technical accuracy with scalable content creation</li>
-                <li>Led Lunch & Learn sessions on AI optimization and became internal SME with recorded training sessions shared across Shopify</li>
+                <li>Designed LLM-based style guides, reducing pre-production time from 5 days to 1</li>
+                <li>Owned article content system, establishing style guides and AI-assisted quality criteria</li>
+                <li>Conducted AI-driven content experiments and A/B tests; enhanced operational infrastructure through training</li>
+                <li>Managed migration of 100+ videos, implementing standardized workflows for analytics</li>
               </ul>
             </div>
           </details>
@@ -69,39 +54,21 @@ permalink: /resume/
         <div class="experience-header">
           <h2>Video Production Lead</h2>
           <p class="experience-company">Shopify</p>
-          <p class="experience-meta">Nov 2021 – July 2023 (Remote)</p>
+          <p class="experience-meta">November 2021 – July 2023</p>
         </div>
         <div class="experience-description">
-          <p>Built and managed a team of 11 producing educational video content for Shopify Help Center YouTube channels. Developed comprehensive team management frameworks and absorbed Senior Management responsibilities during organizational restructuring.</p>
+          <p>Led an 11-person video production team, focusing on educational content for Shopify Help Center YouTube. Established management frameworks, absorbing senior management responsibilities during organizational restructuring.</p>
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
             <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <table class="accomplishment-table">
-                <thead>
-                  <tr><th>Accomplishment</th><th>Result</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Created comprehensive technical onboarding for producers priming the video team</td><td>New staff were equipped to self-serve their onboarding needs for their specific role, freeing up time for the remaining staff to continue producing</td></tr>
-                  <tr><td>Introduced webinar modality to video content offerings</td><td>Real-time data collection during live Q&A and business case created to secure headcount for webinar-specific role</td></tr>
-                  <tr><td>Developed educational content roadmaps based on support data and learning opportunities aligned with Shopify quarterly goals</td><td>Video content was based on real-support queries, meaning viewers were actively seeking the content instead of contacting support. It saved Shopify money through deflection and organically improved Google search rankings through keyword topics</td></tr>
-                </tbody>
-              </table>
               <ul>
-                <li>Designed end-to-end hiring process including role definitions, interview frameworks, and candidate evaluation criteria</li>
-                <li>Created structured onboarding documentation with 30-60-90 day milestone check-ins</li>
-                <li>Performed impact review cycles, career development frameworks and Burst planning</li>
-              </ul>
-              <ul>
-                <li>Launched multilingual content expansion project, securing headcount approval</li>
-                <li>Established frameworks that scaled English content processes to 14 languages</li>
-                <li>Authored remote filming guides on hardware/software setup, lighting, wardrobe and quality standards</li>
-              </ul>
-              <ul>
-                <li>Developed educational content roadmaps based on support data analysis and learning opportunities aligned with Shopify quarterly goals</li>
-                <li>Implemented systematic retros and review cycles to maintain content accuracy</li>
-                <li>Expanded instructional video into on-demand learning webinars</li>
+                <li>Recruited and developed a high-performing team, designing role definitions and onboarding documentation</li>
+                <li>Created technical resources for Producers, enabling senior staff to focus on strategic initiatives</li>
+                <li>Used engagement data to build the business case for a dedicated webinar role</li>
+                <li>Crafted data-driven content roadmaps, improving support deflection and organic search visibility</li>
+                <li>Scaled content processes to 14 languages by establishing localization standards</li>
               </ul>
             </div>
           </details>
@@ -113,34 +80,20 @@ permalink: /resume/
         <div class="experience-header">
           <h2>Senior Video Producer</h2>
           <p class="experience-company">Shopify</p>
-          <p class="experience-meta">June 2018 – Nov 2021 (Remote)</p>
+          <p class="experience-meta">June 2018 – November 2021</p>
         </div>
         <div class="experience-description">
-          <p>Owned educational video strategy for customer onboarding and product adoption. Researched high-impact topics through support data analysis and SEO optimization to identify content gaps. Managed full production cycle from script development through post-production, serving as both content creator and on-camera host.</p>
+          <p>Owned educational video strategy for customer onboarding and product adoption. Managed end-to-end production, hosted on camera and established scalable workflows for international expansion.</p>
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
             <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
-              <table class="accomplishment-table">
-                <thead>
-                  <tr><th>Accomplishment</th><th>Result</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Launched 25-video POS series including script writing, SME training and cross-team coordination in film</td><td>Influential POS hardware sales; 20k deflection savings first week of launch (tracked through coupons to 10 per series)</td></tr>
-                  <tr><td>2020 stats</td><td>Hours watched +70% (to 14,228), Views +48% (to 356,223), Total subscribers to 96,800 (+130%)</td></tr>
-                  <tr><td>Improved English YouTube SEO ranking from C+ to A- in Google search results</td><td>Videos surfaced as recommendations in YouTube algorithm</td></tr>
-                  <tr><td>Grew YouTube channel through organic traffic within the first two years</td><td>Grew to 100,000+ subscribers, earning Silver Plaque recognition</td></tr>
-                  <tr><td>Independently produced 92 videos (62 English, 30 international) within two years</td><td>—</td></tr>
-                </tbody>
-              </table>
               <ul>
-                <li>Coordinated localization of 30+ videos through Videolocalize partnership</li>
-                <li>Created comprehensive style guides and systematic tracking systems for international content scaling</li>
-              </ul>
-              <ul>
-                <li>Developed scalable production workflows and quality control standards adopted across international markets</li>
-                <li>Led cross-functional project management including 4-month, 25-video POS series with SME training and coordination</li>
+                <li>Launched 25-video POS series, generating ~$20k in deflections within the first week</li>
+                <li>Grew Help Center YouTube channel to 100,000+ subscribers and produced 92 videos in total</li>
+                <li>Achieved 2020 performance milestones: +70% hours watched, +65% views, +130% subscribers</li>
+                <li>Improved YouTube SEO ranking from C+ to A-, increasing video visibility on Google</li>
               </ul>
             </div>
           </details>
@@ -152,19 +105,19 @@ permalink: /resume/
         <div class="experience-header">
           <h2>Merchant Success Manager</h2>
           <p class="experience-company">Shopify</p>
-          <p class="experience-meta">Jan 2017 – June 2018 (Remote)</p>
+          <p class="experience-meta">January 2017 – June 2018</p>
         </div>
         <div class="experience-description">
-          <p>Coordinated support and educational content for merchants, enhancing software adoption through user-centered content development.</p>
+          <p>Oversaw merchant support and educational initiatives to enhance software adoption and outcomes. Developed onboarding flows and training materials for internal and external stakeholders.</p>
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
+            <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
               <ul>
-                <li>Developed training materials and educational resources for both internal teams and external users</li>
-                <li>Managed multiple communication channels while maintaining consistent messaging and quality standards</li>
-                <li>Specialized in educational content for complex software integrations and merchant onboarding</li>
+                <li>Designed onboarding programs for merchants</li>
+                <li>Collaborated with product teams to create targeted educational content</li>
+                <li>Managed communications across channels while maintaining consistent messaging and quality standards</li>
               </ul>
             </div>
           </details>
@@ -175,18 +128,19 @@ permalink: /resume/
       <article class="experience-item">
         <div class="experience-header">
           <h2>Marketing Coordinator</h2>
-          <p class="experience-company">Dr. Info & Group Healthcare</p>
-          <p class="experience-meta">May 2015 – Jan 2017 (Auckland, New Zealand & Remote)</p>
+          <p class="experience-company">Dr. Info / Group Healthcare</p>
+          <p class="experience-meta">May 2015 – January 2017</p>
         </div>
         <div class="experience-description">
-          <p>Led video tutorial projects for healthcare apps, ensuring stakeholder alignment and timely delivery.</p>
+          <p>Coordinated video tutorial projects for healthcare apps, aligning stakeholders and ensuring timely delivery for clinical rollouts. Defined project scopes, managed timelines and coordinated promotional materials to support clinic deployments.</p>
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
+            <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
               <ul>
-                <li>Defined project scopes, managed timelines, and coordinated promotional materials across teams to be used in clinics</li>
+                <li>Maintained stakeholder alignment and quality control for clinician-facing training resources</li>
+                <li>Achieved Level 1 Tableau certification</li>
               </ul>
             </div>
           </details>
@@ -194,120 +148,89 @@ permalink: /resume/
       </article>
 
       <!-- Advertising Consultant -->
-      <article class="experience-item">
+      <article class="experience-item experience-item-last">
         <div class="experience-header">
           <h2>Advertising Consultant</h2>
           <p class="experience-company">The Ottawa Sun</p>
-          <p class="experience-meta">Dec 2011 – Sept 2012 (Ottawa, Ontario)</p>
+          <p class="experience-meta">December 2011 – December 2012</p>
+        </div>
+        <div class="experience-description">
+          <p>Consulted with local businesses to sell advertising space, overseeing sales projects from initial pitch to delivery.</p>
         </div>
         <div class="experience-highlights">
           <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
+            <summary class="portfolio-accordion-heading">Learn more</summary>
             <div class="portfolio-accordion-content">
               <ul>
-                <li>Managed sales projects, meeting deadlines and maintaining client relationships through effective communication</li>
+                <li>Generated sales opportunities through prospecting and cold calling</li>
+                <li>Achieved monthly quotas by managing project timelines and client follow-ups</li>
               </ul>
             </div>
           </details>
         </div>
       </article>
 
-      <!-- Server -->
-      <article class="experience-item">
-        <div class="experience-header">
-          <h2>Server (intermittent)</h2>
-          <p class="experience-company">The Keg Steakhouse and Bar</p>
-          <p class="experience-meta">2011 – 2016 (Ottawa, Ontario)</p>
-        </div>
-        <div class="experience-highlights">
-          <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
-            <div class="portfolio-accordion-content">
-              <ul>
-                <li>Honed multitasking and client communication skills in a fast-paced environment while upselling entrees and drinks</li>
-              </ul>
-            </div>
-          </details>
-        </div>
-      </article>
+    </div>
+  </div>
+</section>
 
-      <!-- Cultural Representative -->
-      <article class="experience-item">
-        <div class="experience-header">
-          <h2>Cultural Representative – Food & Beverage</h2>
-          <p class="experience-company">Walt Disney World (Le Cellier Steakhouse, Canadian Pavilion, Epcot)</p>
-          <p class="experience-meta">Jun 2014 – Nov 2014 (Orlando, Florida, USA)</p>
-        </div>
-        <div class="experience-highlights">
-          <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
-            <div class="portfolio-accordion-content">
-              <ul>
-                <li>Worked in Food & Beverage at Le Cellier Steakhouse engaging international guests and educating on Canadian culture</li>
-                <li>Coordinated opening/closing duties, operated cash registers, and provided exceptional guest experiences post-training at Disney University</li>
-              </ul>
-            </div>
-          </details>
-        </div>
-      </article>
+<section class="highlights-creative resume-section" id="expertise">
+  <div class="container">
+    <h2 class="section-title">Expertise</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card creative-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-mint), var(--brand-lavender));"></div>
+        <h3>Technical</h3>
+        <ul class="highlight-card-list">
+          <li>Cursor, LLMs, Reprise</li>
+          <li>Markdown, Git, SEO</li>
+          <li>Adobe Suite, Wistia, Video Production</li>
+          <li>Style Guide Authoring, Docs-as-Code</li>
+          <li>Data Analysis, Screencasting</li>
+        </ul>
+      </div>
+      <div class="highlight-card creative-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-gold), var(--brand-pink));"></div>
+        <h3>Strategy</h3>
+        <ul class="highlight-card-list">
+          <li>Content Strategy, Documentation Lifecycle</li>
+          <li>Localization Frameworks, A/B Testing</li>
+          <li>Instructional Design, Knowledge Management</li>
+          <li>Support Deflection Strategy</li>
+          <li>Modular Content Design, Audience Analysis</li>
+        </ul>
+      </div>
+      <div class="highlight-card creative-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-lavender), var(--brand-mint));"></div>
+        <h3>Leadership</h3>
+        <ul class="highlight-card-list">
+          <li>Team Management (11+ people)</li>
+          <li>Process Optimization, Cross-functional Training</li>
+          <li>Stakeholder Management</li>
+          <li>Hiring & Onboarding Design</li>
+          <li>SME Facilitation, Training Facilitation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Account Manager Intern -->
-      <article class="experience-item">
-        <div class="experience-header">
-          <h2>Account Manager Intern</h2>
-          <p class="experience-company">TAXI</p>
-          <p class="experience-meta">May 2009 – Aug 2009 (Toronto, Ontario)</p>
-        </div>
-        <div class="experience-highlights">
-          <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
-            <div class="portfolio-accordion-content">
-              <ul>
-                <li>Supported the Canadian Tire account, editing schedules, assembling decks, and assisting with creative briefs and research</li>
-              </ul>
-            </div>
-          </details>
-        </div>
-      </article>
-
-      <!-- Intern -->
-      <article class="experience-item">
-        <div class="experience-header">
-          <h2>Intern</h2>
-          <p class="experience-company">Chamber of Commerce</p>
-          <p class="experience-meta">Mar 2009 – Apr 2009 (Belleville, Ontario)</p>
-        </div>
-        <div class="experience-highlights">
-          <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
-            <div class="portfolio-accordion-content">
-              <ul>
-                <li>Assisted in planning community events, proofreading, and newsletter collation</li>
-              </ul>
-            </div>
-          </details>
-        </div>
-      </article>
-
-      <!-- Cooperative Education Student -->
-      <article class="experience-item experience-item-last">
-        <div class="experience-header">
-          <h2>Cooperative Education Student</h2>
-          <p class="experience-company">Sun Media, Standard Freeholder</p>
-          <p class="experience-meta">Feb 2007 – Jun 2007 (Cornwall, Ontario)</p>
-        </div>
-        <div class="experience-highlights">
-          <details class="portfolio-accordion">
-            <summary class="portfolio-accordion-heading">Key responsibilities</summary>
-            <div class="portfolio-accordion-content">
-              <ul>
-                <li>Wrote a weekly column on cancer survivors for Relay For Life, interviewing and photographing subjects</li>
-              </ul>
-            </div>
-          </details>
-        </div>
-      </article>
-
+<section class="highlights-creative resume-section" id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <div class="highlights-grid">
+      <div class="highlight-card creative-card education-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-pink), var(--brand-gold));"></div>
+        <h3>Technical Writing Graduate Certificate</h3>
+        <p class="education-org">Algonquin College</p>
+        <p class="education-dates">2024–2026</p>
+      </div>
+      <div class="highlight-card creative-card education-card">
+        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-mint), var(--brand-lavender));"></div>
+        <h3>Marketing and Advertising Diploma</h3>
+        <p class="education-org">Loyalist College</p>
+        <p class="education-dates">2007–2009</p>
+      </div>
     </div>
   </div>
 </section>

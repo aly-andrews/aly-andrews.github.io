@@ -9,6 +9,9 @@ permalink: /portfolio/
 
 <section class="work-content-creative">
   <div class="container">
+
+    <div class="portfolio-group-label">Featured projects</div>
+
     <div id="getting-started-shopify" class="work-section-creative">
       <div class="work-section-header">
         <div class="work-image-large">
@@ -49,9 +52,11 @@ permalink: /portfolio/
       </div>
     </div>
 
-    <div id="technical-writing" class="work-section-creative">
-      <h2>Technical writing</h2>
-      <p>A selection of published articles, documentation and project planning work spanning Shopify Academy and instructional design projects. More samples are available on request.</p>
+    <div class="portfolio-group-label">Work samples</div>
+
+    <div id="writing-samples" class="work-section-creative">
+      <h2>Writing samples</h2>
+      <p>A selection of published articles, documentation and project planning work. More samples are available on request.</p>
 
       <div class="article-cards-grid">
 
@@ -81,12 +86,13 @@ permalink: /portfolio/
     </div>
 
     <div id="youtube-plaque" class="work-section-creative">
+      <h2>Help Center YouTube</h2>
+      <p>Produced 100+ educational videos for Shopify Help Center YouTube. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
       <div class="work-section-header work-section-header--plaque">
         <div class="work-image-large youtube-plaque-section-image">
           <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Play Button — 100,000 subscribers" class="work-image-img" />
         </div>
         <div class="work-section-intro">
-          <p>Produced 100+ educational videos for Shopify Help Center YouTube channels. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
           <div class="youtube-plaque-projects">
             <div class="youtube-plaque-project">
               <h4>POS series</h4>
@@ -151,20 +157,20 @@ permalink: /portfolio/
 
       <div class="passion-projects-showcase">
         <div class="passion-projects-featured">
-          <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection by Aly Anne Photography" />
+          <img src="{{ '/assets/images/photography/7.png' | relative_url }}" alt="Painterly portrait collection by Aly Anne Photography" loading="lazy" decoding="async" width="800" height="600" />
         </div>
         <div class="passion-projects-grid">
           <div class="passion-projects-grid-item">
-            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" />
+            <img src="{{ '/assets/images/photography/1.jpg' | relative_url }}" alt="Portrait photography by Aly Anne Photography" loading="lazy" decoding="async" width="400" height="300" />
           </div>
           <div class="passion-projects-grid-item">
-            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" />
+            <img src="{{ '/assets/images/photography/3.jpg' | relative_url }}" alt="Family photography session" loading="lazy" decoding="async" width="400" height="300" />
           </div>
           <div class="passion-projects-grid-item">
-            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" />
+            <img src="{{ '/assets/images/photography/5.jpg' | relative_url }}" alt="Outdoor portrait photography" loading="lazy" decoding="async" width="400" height="300" />
           </div>
           <div class="passion-projects-grid-item">
-            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" />
+            <img src="{{ '/assets/images/photography/9.jpg' | relative_url }}" alt="Self-portrait photography" loading="lazy" decoding="async" width="400" height="300" />
           </div>
         </div>
       </div>

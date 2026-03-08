@@ -471,6 +471,32 @@ img {
   color: var(--text-light);
 }
 
+.education-card .education-org {
+  margin-bottom: 0.25rem;
+}
+
+.education-card .education-dates {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.highlight-card-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.highlight-card-list li {
+  margin-bottom: 0.25rem;
+}
+
+.highlight-card-list li:last-child {
+  margin-bottom: 0;
+}
+
 /* Featured work section */
 .featured-work {
   padding: 4rem 0;
@@ -1196,6 +1222,45 @@ img {
   padding-bottom: 2rem;
 }
 
+.resume-section {
+  padding: 3rem 0 2rem;
+  border-top: 2px solid var(--border-color);
+}
+
+.resume-section-title {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.resume-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.resume-skills-block h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.resume-skills-block p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.resume-education-list .experience-item {
+  margin-bottom: 2rem;
+}
+
+.resume-education-list .experience-item-last {
+  margin-bottom: 0;
+}
+
 .experience-header h2 {
   font-size: 1.5rem;
   letter-spacing: 0.02em;
@@ -1310,59 +1375,97 @@ img {
   margin-bottom: var(--spacing-unit);
 }
 
-/* Footer */
+/* Footer – gradient band to match site credits / brand */
 .site-footer {
-  background-color: var(--bg-accent);
-  color: var(--text-color);
-  padding: 3rem 0 2rem;
+  color: var(--text-main);
   text-align: left;
-  border-top: 1px solid var(--border-color);
+  margin-top: auto;
 }
 
-.footer-main {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color);
+.footer-band {
+  background: linear-gradient(to right, var(--brand-lavender), var(--brand-mint), var(--brand-pink));
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 2rem 0;
 }
 
-.site-footer p {
-  margin-bottom: 0.5rem;
+.footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
 }
 
-.footer-links {
-  margin-top: var(--spacing-unit);
+.footer-brand {
+  margin-bottom: 1rem;
 }
 
-.footer-links a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
+.footer-name {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin: 0 0 0.25rem;
+  color: var(--primary-color);
 }
 
-.footer-links a:hover {
-  color: var(--accent-color);
-}
-
-.footer-built {
-  margin-top: 1.5rem;
-  padding-top: 1.5rem;
-}
-
-.footer-built p {
+.footer-tagline {
   font-size: 0.9rem;
   color: var(--text-light);
   margin: 0;
+  line-height: 1.5;
+}
+
+.footer-contact {
+  margin-bottom: 0.75rem;
+}
+
+.footer-contact-link {
+  color: var(--accent-teal);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-contact-link:hover {
+  color: var(--accent-green);
+  text-decoration: underline;
+}
+
+.footer-contact-sep {
+  color: var(--text-light);
+  margin: 0 0.35rem;
+  font-weight: 400;
+}
+
+.footer-nav {
+  margin-bottom: 1rem;
+}
+
+.footer-nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+  color: var(--accent-teal);
+}
+
+.footer-built {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .footer-built a {
-  color: var(--accent-green);
+  color: var(--accent-teal);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .footer-built a:hover {
-  color: var(--accent-teal);
+  color: var(--accent-green);
   text-decoration: underline;
 }
 
@@ -2930,6 +3033,17 @@ img {
   padding: 6rem 0;
 }
 
+.portfolio-group-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
 /* Section dividers for h2 headings in portfolio */
 /* All portfolio h2s: match "How I made this website" – sans-serif, rule underneath */
 .work-section-creative > h2,
@@ -3191,37 +3305,8 @@ img {
 }
 
 @media (max-width: 768px) {
-  .site-footer {
-    text-align: center;
-    padding: 3rem 1rem 2rem;
-  }
-  
-  .footer-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 0;
-    font-size: 0; /* Hides the separator | */
-  }
-  
-  .footer-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 0.5rem 1rem;
-    background: var(--bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    width: 100%;
-    font-size: 1rem;
+  .footer-band {
+    padding: 2rem 1rem;
   }
 
   .section-title {
@@ -4666,95 +4751,7 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-/* Footer: 3-column grid */
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.footer-brand h3 {
-  font-family: var(--font-heading);
-  font-size: 1.4rem;
-  margin-bottom: 0.75rem;
-  color: var(--primary-color);
-}
-
-.footer-brand p {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.footer-nav-col h4,
-.footer-connect-col h4 {
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  text-align: left;
-}
-
-.footer-nav-col {
-  text-align: left;
-}
-
-.footer-nav-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-nav-col li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-nav-col a {
-  color: var(--text-light);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
-}
-
-.footer-nav-col a:hover {
-  color: var(--accent-teal);
-}
-
-.footer-social-icons {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.footer-social-btn {
-  width: 40px;
-  height: 40px;
-  background: var(--bg-light);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-color);
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 700;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-  border: 1px solid var(--border-color);
-}
-
-.footer-social-btn:hover {
-  background: var(--accent-teal);
-  color: white;
-  border-color: var(--accent-teal);
-  transform: translateY(-2px);
-  text-decoration: none;
-}
+/* Footer layout: compact single column (grid removed in favour of footer-band) */
 
 /* Contact page: 2-column layout with form */
 .contact-layout {
@@ -4918,13 +4915,6 @@ img {
     height: 390px;
   }
 
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .footer-brand {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 768px) {
@@ -4962,16 +4952,6 @@ img {
   /* Portfolio cards: single column */
   .portfolio-cards-grid {
     grid-template-columns: 1fr;
-  }
-
-  /* Footer: stack columns */
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .footer-brand {
-    grid-column: auto;
   }
 
   /* Contact: stack columns */
@@ -5029,7 +5009,8 @@ img {
 .site-main .portfolio-hero,
 .site-main .page-hero-banner,
 .site-main .page-header,
-.site-main .page-header-creative {
+.site-main .page-header-creative,
+.site-main .work-section-creative {
   scroll-margin-top: 6rem;
 }
 
@@ -5113,12 +5094,8 @@ img {
   align-items: center;
 }
 
-.footer-grid {
-  gap: clamp(1.25rem, 3vw, 2.5rem);
-}
-
-.footer-nav-col a,
-.footer-social-btn,
+.footer-contact-link,
+.footer-nav a,
 .contact-link-item,
 .btn,
 .nav-links a {
