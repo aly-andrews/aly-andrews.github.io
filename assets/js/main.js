@@ -1,69 +1,152 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.video-card');
-  const modal = document.getElementById('videoModal');
-  const video = document.getElementById('modalVideo');
-  const closeBtn = document.querySelector('.close-modal');
-
-  if (!modal || !video || !closeBtn) {
-    console.warn('Modal elements not found');
-    return;
-  }
-
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      const src = card.getAttribute('data-video-src');
-      if (src) {
-        video.src = src;
-        modal.style.display = 'flex';
-        // Trigger reflow to ensure display is applied before transition
-        void modal.offsetWidth;
-        modal.classList.add('show');
-        video.play().catch(err => {
-          console.log('Autoplay prevented:', err);
-        });
-      }
-    });
-  });
-
-  closeBtn.addEventListener('click', closeModal);
-  window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
+(() => {
+  const ready = (callback) => {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", callback, { once: true });
+      return;
     }
-  });
+    callback();
+  };
 
-  function closeModal() {
-    modal.classList.remove('show');
-    video.pause();
-    video.currentTime = 0;
-    video.src = '';
-    // Wait for fade-out transition before hiding (CSS handles the visual fade)
-    setTimeout(() => {
-      if (!modal.classList.contains('show')) {
-        modal.style.display = 'none';
+  const initNavToggle = () => {
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+    if (!toggle || !links) {
+      return;
+    }
+
+    toggle.addEventListener("click", () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+      links.classList.toggle("nav-open", !isOpen);
+    });
+  };
+
+  const initVideoModal = () => {
+    const modal = document.getElementById("videoModal");
+    const player = document.getElementById("modalVideoPlayer");
+    if (!modal || !player) {
+      return;
+    }
+
+    const overlay = modal.querySelector(".video-modal-overlay");
+    const closeButton = modal.querySelector(".video-modal-close");
+    const videoCards = document.querySelectorAll(".video-card[data-video-src]");
+
+    const closeModal = () => {
+      modal.classList.remove("open", "active", "show");
+      modal.setAttribute("aria-hidden", "true");
+      player.pause();
+      player.removeAttribute("src");
+      player.load();
+      document.body.style.overflow = "";
+    };
+
+    const openModal = (src) => {
+      if (!src) {
+        return;
       }
-    }, 400); // Match CSS transition duration
-  }
-});
+      player.setAttribute("src", src);
+      modal.classList.add("open", "active", "show");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      player.play().catch(() => {});
+    };
 
-// Accordions (How I Work page – independent, no "close others")
-document.addEventListener('DOMContentLoaded', () => {
-  const toggles = document.querySelectorAll('.accordion-toggle');
+    videoCards.forEach((card) => {
+      card.addEventListener("click", () => {
+        openModal(card.getAttribute("data-video-src"));
+      });
+    });
 
-  toggles.forEach(toggle => {
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      const content = toggle.nextElementSibling;
+    if (overlay) {
+      overlay.addEventListener("click", closeModal);
+    }
+    if (closeButton) {
+      closeButton.addEventListener("click", closeModal);
+    }
 
-      toggle.setAttribute('aria-expanded', !expanded);
-      if (!expanded) {
-        content.style.maxHeight = content.scrollHeight + 'px';
-        content.offsetHeight; // force reflow for smoother animation
-        toggle.querySelector('.accordion-icon').textContent = '−';
-      } else {
-        content.style.maxHeight = null;
-        toggle.querySelector('.accordion-icon').textContent = '+';
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && modal.classList.contains("open")) {
+        closeModal();
       }
     });
+  };
+
+  const initStickerParallax = () => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion) {
+      return;
+    }
+
+    const targets = document.querySelectorAll(
+      ".hero-creative, .featured-work-creative, .highlights-creative, .how-i-work-section, .testimonials, .work-content-creative"
+    );
+    if (!targets.length) {
+      return;
+    }
+
+    let queued = false;
+    const update = () => {
+      const y = window.scrollY || window.pageYOffset;
+      targets.forEach((el, index) => {
+        const speed = 0.03 + index * 0.01;
+        el.style.setProperty("--sticker-shift", `${y * speed}px`);
+      });
+      queued = false;
+    };
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (queued) {
+          return;
+        }
+        queued = true;
+        requestAnimationFrame(update);
+      },
+      { passive: true }
+    );
+
+    update();
+  };
+
+  const initAccordions = () => {
+    const toggles = document.querySelectorAll(".accordion-toggle");
+    if (!toggles.length) {
+      return;
+    }
+
+    toggles.forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        const content = toggle.nextElementSibling;
+        if (!content) {
+          return;
+        }
+
+        toggle.setAttribute("aria-expanded", String(!expanded));
+        const icon = toggle.querySelector(".accordion-icon");
+
+        if (!expanded) {
+          content.style.maxHeight = `${content.scrollHeight}px`;
+          if (icon) {
+            icon.textContent = "−";
+          }
+          return;
+        }
+
+        content.style.maxHeight = "";
+        if (icon) {
+          icon.textContent = "+";
+        }
+      });
+    });
+  };
+
+  ready(() => {
+    initNavToggle();
+    initVideoModal();
+    initStickerParallax();
+    initAccordions();
   });
-});
+})();

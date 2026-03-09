@@ -6733,3 +6733,1610 @@ h6,
   box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08);
   z-index: 2;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Whimsical and bold visual refresh overrides                                */
+/* -------------------------------------------------------------------------- */
+
+:root {
+  --pop-mint: #BFF0DB;
+  --pop-yellow: #FFF0BC;
+  --pop-terracotta: #E67E66;
+  --ink-dark: #1f1c2a;
+}
+
+.site-header {
+  border-bottom: 2px solid var(--ink-dark);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+}
+
+.site-nav {
+  padding: 0.45rem;
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(243, 229, 245, 0.9), rgba(191, 240, 219, 0.86));
+  box-shadow: 5px 5px 0 rgba(31, 28, 42, 0.22);
+}
+
+.nav-links a {
+  border-radius: 999px;
+  border: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-color: var(--ink-dark);
+  background: rgba(255, 240, 188, 0.75);
+}
+
+.hero-creative,
+.featured-work-creative,
+.work-content-creative {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-creative::before,
+.hero-creative::after,
+.featured-work-creative::before,
+.featured-work-creative::after {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+.hero-creative::before {
+  content: "✦";
+  top: 1.2rem;
+  right: clamp(1rem, 7vw, 6rem);
+  width: 2.6rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  color: var(--ink-dark);
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: var(--pop-yellow);
+}
+
+.hero-creative::after {
+  content: "☺";
+  left: clamp(0.5rem, 5vw, 4.5rem);
+  bottom: 0.85rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  color: var(--ink-dark);
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+  background: var(--pop-mint);
+}
+
+.featured-work-creative::before {
+  content: "~";
+  right: clamp(0.9rem, 3vw, 2.6rem);
+  top: 2rem;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--pop-terracotta);
+}
+
+.featured-work-creative::after {
+  content: "✷";
+  left: clamp(1rem, 3vw, 2.8rem);
+  top: 3.1rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 2px solid var(--ink-dark);
+  color: var(--ink-dark);
+  background: rgba(191, 240, 219, 0.9);
+}
+
+.hero-photo {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-photo::before {
+  content: "";
+  position: absolute;
+  inset: 8% 6% 4% 10%;
+  z-index: -1;
+  border: 2px solid var(--ink-dark);
+  background: linear-gradient(135deg, rgba(243, 229, 245, 0.95), rgba(191, 240, 219, 0.95), rgba(255, 240, 188, 0.95));
+  border-radius: 53% 47% 62% 38% / 45% 55% 45% 55%;
+  box-shadow: 8px 8px 0 rgba(31, 28, 42, 0.18);
+}
+
+.hero-profile-image {
+  clip-path: ellipse(46% 50% at 50% 50%);
+}
+
+.portfolio-card-item,
+.highlight-card,
+.work-content-creative .work-section-creative,
+.article-card,
+.developer-video-card {
+  border: 2px solid var(--ink-dark) !important;
+  border-radius: 28px;
+  box-shadow: 0 0 0 rgba(31, 28, 42, 0);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background-color 0.22s ease;
+}
+
+.portfolio-card-item:hover,
+.highlight-card:hover,
+.work-content-creative .work-section-creative:hover,
+.article-card:hover,
+.developer-video-card:hover,
+.btn-hero-cta:hover,
+.btn-primary:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0 rgba(31, 28, 42, 0.9);
+}
+
+.btn-hero-cta,
+.btn-primary {
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+}
+
+.portfolio-cards-grid {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.portfolio-cards-grid .portfolio-card-item:nth-child(1) {
+  grid-column: 1 / span 4;
+  margin-top: 0.65rem;
+}
+
+.portfolio-cards-grid .portfolio-card-item:nth-child(2) {
+  grid-column: 5 / span 4;
+  margin-top: 2rem;
+}
+
+.portfolio-cards-grid .portfolio-card-item:nth-child(3) {
+  grid-column: 9 / span 4;
+  margin-top: 0.15rem;
+}
+
+.portfolio-card-image,
+.work-image-img,
+.passion-projects-showcase img {
+  border-radius: 30px 30px 20px 20px;
+}
+
+.work-content-creative .work-section-creative {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+body.whimsy-cursor-enabled {
+  cursor: none;
+}
+
+body.whimsy-cursor-enabled a,
+body.whimsy-cursor-enabled button,
+body.whimsy-cursor-enabled .portfolio-card-item,
+body.whimsy-cursor-enabled .video-card {
+  cursor: none;
+}
+
+.whimsy-cursor {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10000;
+  border: 2px solid rgba(31, 28, 42, 0.5);
+  background: radial-gradient(circle at 35% 35%, rgba(255, 240, 188, 0.75), rgba(191, 240, 219, 0.55));
+  transform: translate(-50%, -50%);
+  transition: width 0.18s ease, height 0.18s ease, border-color 0.18s ease;
+}
+
+.whimsy-cursor.is-hovering {
+  width: 40px;
+  height: 40px;
+  border-color: rgba(230, 126, 102, 0.85);
+}
+
+@media (max-width: 980px) {
+  .portfolio-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-cards-grid .portfolio-card-item:nth-child(1),
+  .portfolio-cards-grid .portfolio-card-item:nth-child(2),
+  .portfolio-cards-grid .portfolio-card-item:nth-child(3) {
+    grid-column: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-nav {
+    border-radius: 20px;
+  }
+
+  .hero-photo::before {
+    inset: 12% 8% 5% 12%;
+  }
+
+  .hero-creative::before,
+  .hero-creative::after,
+  .featured-work-creative::before,
+  .featured-work-creative::after {
+    opacity: 0.75;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-creative::before,
+  .hero-creative::after,
+  .featured-work-creative::before,
+  .featured-work-creative::after {
+    transform: none;
+  }
+
+  .whimsy-cursor {
+    display: none;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Second pass: wix editorial layout tuning                                   */
+/* -------------------------------------------------------------------------- */
+
+/* Disable custom cursor styling until needed again */
+body.whimsy-cursor-enabled,
+body.whimsy-cursor-enabled a,
+body.whimsy-cursor-enabled button,
+body.whimsy-cursor-enabled .portfolio-card-item,
+body.whimsy-cursor-enabled .video-card {
+  cursor: auto;
+}
+
+.whimsy-cursor {
+  display: none !important;
+}
+
+.hero-grid {
+  grid-template-columns: minmax(300px, 470px) minmax(0, 1fr);
+  gap: clamp(1.1rem, 2.8vw, 2.8rem);
+  align-items: center;
+}
+
+.hero-creative .hero-content {
+  padding: clamp(1rem, 2vw, 1.45rem);
+  background: rgba(255, 255, 255, 0.56);
+  border: 2px solid rgba(31, 28, 42, 0.9);
+  border-radius: 34px;
+  box-shadow: 8px 8px 0 rgba(31, 28, 42, 0.18);
+}
+
+.hero-creative .hero-title {
+  max-width: 20ch;
+}
+
+.featured-work-creative,
+.highlights-creative,
+.how-i-work-section,
+.testimonials {
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-work-creative::before,
+.featured-work-creative::after,
+.highlights-creative::before,
+.highlights-creative::after,
+.how-i-work-section::before,
+.how-i-work-section::after,
+.testimonials::before,
+.testimonials::after {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+.highlights-creative::before {
+  content: "✦";
+  left: 3.8%;
+  top: 1.1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+  background: var(--pop-yellow);
+  display: grid;
+  place-items: center;
+  font-size: 0.92rem;
+}
+
+.highlights-creative::after {
+  content: "☻";
+  right: 5%;
+  bottom: 1.1rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+  background: var(--pop-mint);
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
+}
+
+.how-i-work-section::before {
+  content: "~~~";
+  left: 4.8%;
+  top: 1.1rem;
+  color: var(--pop-terracotta);
+  font-size: 1.9rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.how-i-work-section::after {
+  content: "✷";
+  right: 4.2%;
+  top: 1.6rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  border: 2px solid var(--ink-dark);
+  border-radius: 14px;
+  background: rgba(243, 229, 245, 0.95);
+  display: grid;
+  place-items: center;
+  font-size: 0.95rem;
+}
+
+.testimonials::before {
+  content: "✦";
+  right: 7.5%;
+  top: 1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+  background: rgba(191, 240, 219, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+.testimonials::after {
+  content: "☺";
+  left: 6%;
+  bottom: 1.3rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+  background: rgba(255, 240, 188, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+.section-title {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 2px solid rgba(31, 28, 42, 0.85);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.portfolio-cards-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.portfolio-cards-grid .portfolio-card-item:nth-child(1) {
+  grid-column: 1 / span 2;
+  margin-top: 0.35rem;
+}
+
+.portfolio-cards-grid .portfolio-card-item:nth-child(2) {
+  grid-column: 3 / span 2;
+  margin-top: 1.8rem;
+}
+
+.portfolio-cards-grid .portfolio-card-item:nth-child(3) {
+  grid-column: 5 / span 2;
+  margin-top: 0.1rem;
+}
+
+.portfolio-card-item,
+.highlight-card,
+.work-content-creative .work-section-creative,
+.article-card,
+.developer-video-card,
+.testimonial-card {
+  border-radius: 32px;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.highlights-grid .highlight-card:nth-child(2),
+.highlights-grid .highlight-card:nth-child(4) {
+  margin-top: 1.15rem;
+}
+
+.how-i-work-editorial {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(1.2rem, 2.4vw, 2.1rem);
+}
+
+.how-i-work-editorial-main {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.how-i-work-editorial-item {
+  border: 2px solid var(--ink-dark);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 5px 5px 0 rgba(31, 28, 42, 0.15);
+  padding: 1.15rem 1.2rem;
+}
+
+.work-content-creative .portfolio-layout {
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.portfolio-sidebar-nav {
+  border: 2px solid var(--ink-dark);
+  border-radius: 24px;
+  box-shadow: 6px 6px 0 rgba(31, 28, 42, 0.15);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.work-content-creative .work-section-creative {
+  padding: clamp(1.15rem, 2.2vw, 1.8rem);
+  margin-bottom: 1.1rem;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(odd) {
+  margin-left: 0.15rem;
+  margin-right: 1.1rem;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) {
+  margin-left: 1.1rem;
+  margin-right: 0.15rem;
+}
+
+.work-content-creative .work-section-creative::after {
+  content: "✷";
+  position: absolute;
+  top: 0.8rem;
+  right: 0.9rem;
+  width: 1.65rem;
+  height: 1.65rem;
+  border: 2px solid rgba(31, 28, 42, 0.86);
+  border-radius: 12px;
+  background: rgba(255, 240, 188, 0.85);
+  display: grid;
+  place-items: center;
+  font-size: 0.76rem;
+  pointer-events: none;
+}
+
+.passion-projects-showcase img,
+.youtube-plaque-section-image img,
+.work-image-img {
+  border: 2px solid var(--ink-dark);
+  box-shadow: 7px 7px 0 rgba(31, 28, 42, 0.18);
+}
+
+@media (max-width: 1080px) {
+  .hero-grid {
+    grid-template-columns: minmax(250px, 350px) minmax(0, 1fr);
+  }
+
+  .work-content-creative .work-section-creative:nth-of-type(odd),
+  .work-content-creative .work-section-creative:nth-of-type(even) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-cards-grid .portfolio-card-item:nth-child(1),
+  .portfolio-cards-grid .portfolio-card-item:nth-child(2),
+  .portfolio-cards-grid .portfolio-card-item:nth-child(3) {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-grid .highlight-card:nth-child(2),
+  .highlights-grid .highlight-card:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .how-i-work-editorial {
+    grid-template-columns: 1fr;
+  }
+
+  .work-content-creative .portfolio-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-creative .hero-content {
+    margin-left: 0;
+  }
+
+  .featured-work-creative::before,
+  .featured-work-creative::after,
+  .highlights-creative::before,
+  .highlights-creative::after,
+  .how-i-work-section::before,
+  .how-i-work-section::after,
+  .testimonials::before,
+  .testimonials::after {
+    opacity: 0.78;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Third pass polish: editorial rhythm and sticker density                    */
+/* -------------------------------------------------------------------------- */
+
+.work-content-creative .portfolio-content-main {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.work-content-creative .work-section-creative {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.35rem, 2.4vw, 2rem);
+  border-radius: 34px;
+  border: 2px solid var(--ink-dark) !important;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(252, 246, 255, 0.85));
+  box-shadow: 8px 8px 0 rgba(31, 28, 42, 0.18);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(odd) {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) {
+  margin-left: 2rem;
+  margin-right: 0;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(241, 253, 247, 0.86));
+}
+
+.work-content-creative .work-section-creative > h2,
+.work-content-creative .work-section-creative .work-section-intro h2 {
+  position: relative;
+  display: inline-block;
+  max-width: fit-content;
+  padding: 0.25rem 0.95rem;
+  border: 2px solid var(--ink-dark);
+  border-radius: 999px;
+  background: rgba(255, 240, 188, 0.8);
+  box-shadow: 4px 4px 0 rgba(31, 28, 42, 0.16);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) > h2,
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro h2 {
+  margin-left: auto;
+  text-align: right;
+  background: rgba(191, 240, 219, 0.84);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) > p,
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro p,
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-note {
+  text-align: right;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-header {
+  direction: rtl;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-header > * {
+  direction: ltr;
+}
+
+/* Sticker set: waves, flowers and modular icons */
+.work-content-creative .work-section-creative::before,
+.work-content-creative .work-section-creative::after {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(1)::before {
+  content: "✿";
+  top: -0.62rem;
+  left: 0.9rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(255, 240, 188, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(1)::after {
+  content: "~~~";
+  top: 0.55rem;
+  right: 1.1rem;
+  font-size: 1.35rem;
+  color: var(--pop-terracotta);
+  letter-spacing: 0.05em;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(2)::before {
+  content: "❀";
+  top: -0.62rem;
+  right: 0.9rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(191, 240, 219, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(2)::after {
+  content: "◻ ◻ ◻";
+  left: 1rem;
+  bottom: 0.7rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.2rem;
+  color: rgba(31, 28, 42, 0.58);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(3)::before {
+  content: "〰〰";
+  top: 0.4rem;
+  left: 1rem;
+  font-size: 1.15rem;
+  color: var(--pop-terracotta);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(3)::after {
+  content: "✺";
+  top: -0.55rem;
+  right: 0.9rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 14px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(243, 229, 245, 0.94);
+  display: grid;
+  place-items: center;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(4)::before {
+  content: "✿";
+  top: -0.62rem;
+  left: 0.95rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(243, 229, 245, 0.94);
+  display: grid;
+  place-items: center;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(4)::after {
+  content: "~~~";
+  bottom: 0.6rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: var(--pop-terracotta);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(5)::before {
+  content: "❀";
+  top: -0.62rem;
+  right: 0.9rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(255, 240, 188, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(5)::after {
+  content: "◼ ◼ ◼";
+  left: 1rem;
+  bottom: 0.7rem;
+  font-size: 0.66rem;
+  letter-spacing: 0.25rem;
+  color: rgba(31, 28, 42, 0.54);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(6)::before {
+  content: "〰〰";
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 1.15rem;
+  color: var(--pop-terracotta);
+}
+
+.work-content-creative .work-section-creative:nth-of-type(6)::after {
+  content: "✺";
+  top: -0.55rem;
+  right: 0.9rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 14px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(191, 240, 219, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+/* Small modular corner details inside each container */
+.work-content-creative .work-section-creative > * {
+  position: relative;
+  z-index: 1;
+}
+
+.work-content-creative .work-section-creative .work-section-intro::before {
+  content: "";
+  position: absolute;
+  top: -0.55rem;
+  left: -0.25rem;
+  width: 42px;
+  height: 10px;
+  border-radius: 999px;
+  transform: rotate(-8deg);
+  background: rgba(255, 240, 188, 0.82);
+  border: 1px solid rgba(31, 28, 42, 0.25);
+  pointer-events: none;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro::before {
+  left: auto;
+  right: -0.25rem;
+  transform: rotate(8deg);
+  background: rgba(191, 240, 219, 0.82);
+}
+
+/* Add more sticker accents on key home sections */
+.hero-creative .hero-content::before,
+.featured-work-creative .container::before,
+.highlights-creative .container::before,
+.testimonials .container::before {
+  position: absolute;
+  pointer-events: none;
+  transform: translateY(var(--sticker-shift, 0px));
+}
+
+.hero-creative .hero-content::before {
+  content: "❀";
+  top: -0.9rem;
+  right: 0.75rem;
+  width: 1.95rem;
+  height: 1.95rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(255, 240, 188, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+.featured-work-creative .container::before {
+  content: "〰〰〰";
+  left: 0.8rem;
+  bottom: 0.2rem;
+  font-size: 1rem;
+  color: var(--pop-terracotta);
+}
+
+.highlights-creative .container::before {
+  content: "✿";
+  right: 0.8rem;
+  top: 0.25rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(243, 229, 245, 0.92);
+  display: grid;
+  place-items: center;
+}
+
+.testimonials .container::before {
+  content: "◻ ◻ ◻";
+  right: 0.65rem;
+  bottom: 0.15rem;
+  font-size: 0.64rem;
+  letter-spacing: 0.2rem;
+  color: rgba(31, 28, 42, 0.58);
+}
+
+@media (max-width: 1080px) {
+  .work-content-creative .work-section-creative:nth-of-type(odd),
+  .work-content-creative .work-section-creative:nth-of-type(even) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .work-content-creative .work-section-creative:nth-of-type(even) .work-section-header {
+    direction: ltr;
+  }
+
+  .work-content-creative .work-section-creative:nth-of-type(even) > h2,
+  .work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro h2 {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .work-content-creative .work-section-creative:nth-of-type(even) > p,
+  .work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro p,
+  .work-content-creative .work-section-creative:nth-of-type(even) .work-section-note {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-content-creative .work-section-creative::before,
+  .work-content-creative .work-section-creative::after,
+  .hero-creative .hero-content::before,
+  .featured-work-creative .container::before,
+  .highlights-creative .container::before,
+  .testimonials .container::before {
+    opacity: 0.78;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Fourth pass: pill spacing + background only sticker layers                 */
+/* -------------------------------------------------------------------------- */
+
+/* More breathing room inside all pill style headers */
+.section-title {
+  padding: 0.58rem 1.38rem;
+}
+
+.work-content-creative .work-section-creative > h2,
+.work-content-creative .work-section-creative .work-section-intro h2 {
+  padding: 0.46rem 1.28rem;
+}
+
+.nav-links a {
+  padding: 0.58rem 1rem;
+}
+
+/* Keep all decorative stickers behind content blocks */
+.hero-creative,
+.featured-work-creative,
+.highlights-creative,
+.how-i-work-section,
+.testimonials,
+.work-content-creative {
+  isolation: isolate;
+}
+
+.hero-creative::before,
+.hero-creative::after,
+.featured-work-creative::before,
+.featured-work-creative::after,
+.highlights-creative::before,
+.highlights-creative::after,
+.how-i-work-section::before,
+.how-i-work-section::after,
+.testimonials::before,
+.testimonials::after,
+.work-content-creative .work-section-creative::before,
+.work-content-creative .work-section-creative::after,
+.hero-creative .hero-content::before,
+.featured-work-creative .container::before,
+.highlights-creative .container::before,
+.testimonials .container::before {
+  z-index: 0 !important;
+  pointer-events: none;
+}
+
+.hero-creative .container,
+.featured-work-creative .container,
+.highlights-creative .container,
+.how-i-work-section .container,
+.testimonials .container,
+.work-content-creative .portfolio-layout,
+.work-content-creative .work-section-creative > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Add more animated background stickers as soft layers */
+.hero-creative::before,
+.hero-creative::after,
+.featured-work-creative::before,
+.featured-work-creative::after,
+.highlights-creative::before,
+.highlights-creative::after,
+.how-i-work-section::before,
+.how-i-work-section::after,
+.testimonials::before,
+.testimonials::after {
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+.hero-creative .container::after,
+.featured-work-creative .container::after,
+.how-i-work-section .container::after,
+.testimonials .container::after {
+  content: "";
+  position: absolute;
+  inset: -0.4rem -0.2rem auto auto;
+  width: 170px;
+  height: 90px;
+  z-index: 0;
+  opacity: 0.58;
+  pointer-events: none;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+  background:
+    radial-gradient(circle at 12% 22%, rgba(255, 240, 188, 0.72) 0 14px, transparent 15px),
+    radial-gradient(circle at 35% 70%, rgba(191, 240, 219, 0.7) 0 11px, transparent 12px),
+    radial-gradient(circle at 62% 35%, rgba(243, 229, 245, 0.76) 0 13px, transparent 14px),
+    linear-gradient(130deg, rgba(230, 126, 102, 0.28), rgba(230, 126, 102, 0.02) 65%);
+  border-radius: 28px;
+}
+
+.featured-work-creative .container::after {
+  inset: auto auto -0.6rem 0.2rem;
+  width: 210px;
+  height: 80px;
+  opacity: 0.52;
+}
+
+.how-i-work-section .container::after {
+  inset: 0.2rem auto auto 0.4rem;
+  width: 130px;
+  height: 70px;
+}
+
+.testimonials .container::after {
+  inset: auto 0.35rem -0.55rem auto;
+  width: 150px;
+  height: 75px;
+}
+
+/* Extra wave and modular motifs as background only accents */
+.work-content-creative::before,
+.work-content-creative::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.45;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+.work-content-creative::before {
+  left: 15%;
+  top: 0.8rem;
+  width: 84px;
+  height: 36px;
+  background:
+    radial-gradient(circle at 12px 18px, rgba(230, 126, 102, 0.65) 0 2px, transparent 3px),
+    radial-gradient(circle at 30px 18px, rgba(230, 126, 102, 0.65) 0 2px, transparent 3px),
+    radial-gradient(circle at 48px 18px, rgba(230, 126, 102, 0.65) 0 2px, transparent 3px),
+    radial-gradient(circle at 66px 18px, rgba(230, 126, 102, 0.65) 0 2px, transparent 3px);
+}
+
+.work-content-creative::after {
+  right: 7%;
+  bottom: 0.8rem;
+  width: 74px;
+  height: 74px;
+  border-radius: 22px;
+  background:
+    linear-gradient(rgba(31, 28, 42, 0.18), rgba(31, 28, 42, 0.18)) 25% 25% / 1px 50% no-repeat,
+    linear-gradient(rgba(31, 28, 42, 0.18), rgba(31, 28, 42, 0.18)) 50% 25% / 1px 50% no-repeat,
+    linear-gradient(rgba(31, 28, 42, 0.18), rgba(31, 28, 42, 0.18)) 75% 25% / 1px 50% no-repeat,
+    linear-gradient(90deg, rgba(31, 28, 42, 0.18), rgba(31, 28, 42, 0.18)) 25% 25% / 50% 1px no-repeat,
+    linear-gradient(90deg, rgba(31, 28, 42, 0.18), rgba(31, 28, 42, 0.18)) 25% 50% / 50% 1px no-repeat,
+    linear-gradient(90deg, rgba(31, 28, 42, 0.18), rgba(31, 28, 42, 0.18)) 25% 75% / 50% 1px no-repeat,
+    rgba(191, 240, 219, 0.32);
+}
+
+@media (max-width: 900px) {
+  .section-title {
+    padding: 0.5rem 1.12rem;
+  }
+
+  .work-content-creative .work-section-creative > h2,
+  .work-content-creative .work-section-creative .work-section-intro h2 {
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-creative .container::after,
+  .featured-work-creative .container::after,
+  .how-i-work-section .container::after,
+  .testimonials .container::after,
+  .work-content-creative::before,
+  .work-content-creative::after {
+    opacity: 0.32;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Fifth pass: alignment fixes + behind only doodle stickers                  */
+/* -------------------------------------------------------------------------- */
+
+/* Keep project block text consistently aligned */
+.work-content-creative .work-section-creative,
+.work-content-creative .work-section-creative > h2,
+.work-content-creative .work-section-creative > p,
+.work-content-creative .work-section-creative .work-section-intro,
+.work-content-creative .work-section-creative .work-section-intro h2,
+.work-content-creative .work-section-creative .work-section-intro p,
+.work-content-creative .work-section-creative .work-section-note {
+  text-align: left !important;
+}
+
+.work-content-creative .work-section-creative .work-section-header,
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-header {
+  direction: ltr !important;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-header > * {
+  direction: ltr !important;
+}
+
+/* Remove all stickers and tape from inside project blocks */
+.work-content-creative .work-section-creative::before,
+.work-content-creative .work-section-creative::after,
+.work-content-creative .work-section-creative .work-section-intro::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Place modular blocks above decorative background */
+.work-content-creative .portfolio-content-main {
+  position: relative;
+  z-index: 1;
+}
+
+.work-content-creative .work-section-creative {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hand-drawn style doodles behind project blocks only */
+.work-content-creative .container {
+  position: relative;
+}
+
+.work-content-creative .container::before,
+.work-content-creative .container::after,
+.work-content-creative .portfolio-content-main::before,
+.work-content-creative .portfolio-content-main::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+/* Top right doodle cluster: arc + spark */
+.work-content-creative .container::before {
+  top: 1.1rem;
+  right: 2.6rem;
+  width: 170px;
+  height: 86px;
+  opacity: 0.55;
+  background:
+    radial-gradient(circle at 78% 25%, rgba(31, 28, 42, 0.8) 0 1.5px, transparent 2px),
+    radial-gradient(circle at 83% 19%, rgba(31, 28, 42, 0.8) 0 1.5px, transparent 2px),
+    radial-gradient(circle at 72% 32%, rgba(31, 28, 42, 0.8) 0 1.5px, transparent 2px),
+    radial-gradient(34px 24px at 26% 68%, transparent 72%, rgba(31, 28, 42, 0.65) 73% 77%, transparent 78%),
+    linear-gradient(120deg, transparent 47%, rgba(31, 28, 42, 0.62) 48% 50%, transparent 51%);
+}
+
+/* Bottom left scribble underline */
+.work-content-creative .container::after {
+  left: 11rem;
+  bottom: 1.2rem;
+  width: 190px;
+  height: 30px;
+  opacity: 0.45;
+  background:
+    linear-gradient(176deg, transparent 42%, rgba(31, 28, 42, 0.55) 43% 48%, transparent 49%),
+    linear-gradient(174deg, transparent 55%, rgba(31, 28, 42, 0.55) 56% 60%, transparent 61%),
+    linear-gradient(172deg, transparent 67%, rgba(31, 28, 42, 0.55) 68% 72%, transparent 73%);
+}
+
+/* Mid left blob + tiny rays */
+.work-content-creative .portfolio-content-main::before {
+  top: 33%;
+  left: -1.25rem;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  opacity: 0.48;
+  background:
+    radial-gradient(circle at 48% 52%, rgba(243, 145, 205, 0.58) 0 30%, transparent 31%),
+    linear-gradient(205deg, transparent 46%, rgba(243, 145, 205, 0.5) 47% 50%, transparent 51%),
+    linear-gradient(152deg, transparent 46%, rgba(243, 145, 205, 0.5) 47% 50%, transparent 51%);
+}
+
+/* Mid right circle + hand-drawn corner mark */
+.work-content-creative .portfolio-content-main::after {
+  top: 57%;
+  right: -0.95rem;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  opacity: 0.44;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(95, 225, 161, 0.38) 0 26%, transparent 27%),
+    radial-gradient(34px 24px at 28% 75%, transparent 72%, rgba(31, 28, 42, 0.52) 73% 77%, transparent 78%),
+    linear-gradient(130deg, transparent 54%, rgba(31, 28, 42, 0.5) 55% 57%, transparent 58%);
+}
+
+@media (max-width: 900px) {
+  .work-content-creative .container::before {
+    right: 0.5rem;
+    opacity: 0.4;
+  }
+
+  .work-content-creative .container::after {
+    left: 0.5rem;
+    opacity: 0.34;
+  }
+
+  .work-content-creative .portfolio-content-main::before,
+  .work-content-creative .portfolio-content-main::after {
+    opacity: 0.3;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Sixth pass: retire old stickers, keep blob doodle system only             */
+/* -------------------------------------------------------------------------- */
+
+/* Remove legacy sticker language globally */
+.hero-creative::before,
+.hero-creative::after,
+.featured-work-creative::before,
+.featured-work-creative::after,
+.highlights-creative::before,
+.highlights-creative::after,
+.how-i-work-section::before,
+.how-i-work-section::after,
+.testimonials::before,
+.testimonials::after,
+.hero-creative .hero-content::before,
+.featured-work-creative .container::before,
+.highlights-creative .container::before,
+.testimonials .container::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Blob doodles only, always behind content */
+.hero-creative,
+.featured-work-creative,
+.highlights-creative,
+.how-i-work-section,
+.testimonials,
+.work-content-creative {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-creative .container,
+.featured-work-creative .container,
+.highlights-creative .container,
+.how-i-work-section .container,
+.testimonials .container,
+.work-content-creative .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-creative .container::before,
+.hero-creative .container::after,
+.featured-work-creative .container::before,
+.featured-work-creative .container::after,
+.highlights-creative .container::before,
+.highlights-creative .container::after,
+.how-i-work-section .container::before,
+.how-i-work-section .container::after,
+.testimonials .container::before,
+.testimonials .container::after,
+.work-content-creative .container::before,
+.work-content-creative .container::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+/* Hero blobs */
+.hero-creative .container::before {
+  top: 0.5rem;
+  left: -1.2rem;
+  width: 110px;
+  height: 110px;
+  border-radius: 62% 38% 53% 47% / 44% 56% 46% 54%;
+  background: rgba(95, 225, 161, 0.3);
+}
+
+.hero-creative .container::after {
+  right: -0.9rem;
+  bottom: 0.35rem;
+  width: 92px;
+  height: 92px;
+  border-radius: 45% 55% 39% 61% / 57% 43% 57% 43%;
+  background: rgba(243, 145, 205, 0.28);
+}
+
+/* Featured work blobs */
+.featured-work-creative .container::before {
+  top: 1rem;
+  right: -0.6rem;
+  width: 84px;
+  height: 84px;
+  border-radius: 54% 46% 58% 42% / 47% 53% 47% 53%;
+  background: rgba(255, 214, 68, 0.33);
+}
+
+.featured-work-creative .container::after {
+  left: -1rem;
+  bottom: 0.8rem;
+  width: 120px;
+  height: 70px;
+  border-radius: 61% 39% 64% 36% / 55% 45% 55% 45%;
+  background: rgba(95, 225, 161, 0.2);
+}
+
+/* Highlights blobs */
+.highlights-creative .container::before {
+  top: -0.3rem;
+  left: 13%;
+  width: 68px;
+  height: 68px;
+  border-radius: 48% 52% 57% 43% / 57% 43% 57% 43%;
+  background: rgba(243, 145, 205, 0.26);
+}
+
+.highlights-creative .container::after {
+  right: 8%;
+  bottom: 0.25rem;
+  width: 96px;
+  height: 60px;
+  border-radius: 58% 42% 53% 47% / 48% 52% 48% 52%;
+  background: rgba(255, 214, 68, 0.24);
+}
+
+/* How I work blobs */
+.how-i-work-section .container::before {
+  top: 0.1rem;
+  left: -1rem;
+  width: 98px;
+  height: 98px;
+  border-radius: 43% 57% 51% 49% / 61% 39% 61% 39%;
+  background: rgba(95, 225, 161, 0.23);
+}
+
+.how-i-work-section .container::after {
+  right: -0.6rem;
+  top: 2.3rem;
+  width: 78px;
+  height: 78px;
+  border-radius: 63% 37% 49% 51% / 42% 58% 42% 58%;
+  background: rgba(243, 145, 205, 0.24);
+}
+
+/* Testimonials blobs */
+.testimonials .container::before {
+  top: 0.2rem;
+  right: -0.4rem;
+  width: 86px;
+  height: 86px;
+  border-radius: 55% 45% 40% 60% / 56% 44% 56% 44%;
+  background: rgba(255, 214, 68, 0.22);
+}
+
+.testimonials .container::after {
+  left: -0.85rem;
+  bottom: 0.2rem;
+  width: 106px;
+  height: 64px;
+  border-radius: 64% 36% 58% 42% / 49% 51% 49% 51%;
+  background: rgba(95, 225, 161, 0.2);
+}
+
+/* Portfolio backdrop blobs */
+.work-content-creative .container::before {
+  left: 9rem;
+  top: 1.2rem;
+  width: 102px;
+  height: 72px;
+  border-radius: 59% 41% 47% 53% / 50% 50% 50% 50%;
+  background: rgba(243, 145, 205, 0.21);
+}
+
+.work-content-creative .container::after {
+  right: 6%;
+  bottom: 1.4rem;
+  width: 120px;
+  height: 120px;
+  border-radius: 44% 56% 62% 38% / 39% 61% 39% 61%;
+  background: rgba(95, 225, 161, 0.2);
+}
+
+@media (max-width: 900px) {
+  .hero-creative .container::before,
+  .hero-creative .container::after,
+  .featured-work-creative .container::before,
+  .featured-work-creative .container::after,
+  .highlights-creative .container::before,
+  .highlights-creative .container::after,
+  .how-i-work-section .container::before,
+  .how-i-work-section .container::after,
+  .testimonials .container::before,
+  .testimonials .container::after,
+  .work-content-creative .container::before,
+  .work-content-creative .container::after {
+    opacity: 0.7;
+    transform: scale(0.85) translateY(var(--sticker-shift, 0px));
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* Seventh pass: bigger blobs, colorful section pills, playful testimonials   */
+/* -------------------------------------------------------------------------- */
+
+/* Bigger, bolder blobs across the whole site background */
+.site-main {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-main::before,
+.site-main::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  transform: translateY(var(--sticker-shift, 0px));
+  transition: transform 0.2s linear;
+}
+
+.site-main::before {
+  top: 12rem;
+  left: -5.5rem;
+  width: 300px;
+  height: 300px;
+  border-radius: 58% 42% 61% 39% / 46% 54% 46% 54%;
+  background: rgba(95, 225, 161, 0.4);
+}
+
+.site-main::after {
+  right: -6rem;
+  top: 34rem;
+  width: 330px;
+  height: 330px;
+  border-radius: 45% 55% 40% 60% / 57% 43% 57% 43%;
+  background: rgba(243, 145, 205, 0.35);
+}
+
+.hero-creative .container::before {
+  width: 180px;
+  height: 180px;
+  background: rgba(95, 225, 161, 0.45);
+}
+
+.hero-creative .container::after {
+  width: 145px;
+  height: 145px;
+  background: rgba(243, 145, 205, 0.4);
+}
+
+.featured-work-creative .container::before {
+  width: 145px;
+  height: 145px;
+  background: rgba(255, 214, 68, 0.42);
+}
+
+.featured-work-creative .container::after {
+  width: 190px;
+  height: 110px;
+  background: rgba(95, 225, 161, 0.35);
+}
+
+.highlights-creative .container::before {
+  width: 120px;
+  height: 120px;
+  background: rgba(243, 145, 205, 0.36);
+}
+
+.highlights-creative .container::after {
+  width: 165px;
+  height: 105px;
+  background: rgba(255, 214, 68, 0.34);
+}
+
+.how-i-work-section .container::before {
+  width: 170px;
+  height: 170px;
+  background: rgba(95, 225, 161, 0.34);
+}
+
+.how-i-work-section .container::after {
+  width: 140px;
+  height: 140px;
+  background: rgba(243, 145, 205, 0.34);
+}
+
+.testimonials .container::before {
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 214, 68, 0.34);
+}
+
+.testimonials .container::after {
+  width: 185px;
+  height: 115px;
+  background: rgba(95, 225, 161, 0.32);
+}
+
+.work-content-creative .container::before {
+  width: 170px;
+  height: 120px;
+  background: rgba(243, 145, 205, 0.34);
+}
+
+.work-content-creative .container::after {
+  width: 190px;
+  height: 190px;
+  background: rgba(95, 225, 161, 0.32);
+}
+
+/* Match these key headers to colorful portfolio style pills */
+.highlights-creative .section-title,
+.how-i-work-section .section-title,
+.testimonials .section-title {
+  border: 2px solid var(--ink-dark) !important;
+  border-radius: 999px;
+  padding: 0.62rem 1.45rem !important;
+  box-shadow: 6px 6px 0 rgba(31, 28, 42, 0.16);
+}
+
+.highlights-creative .section-title {
+  background: rgba(191, 240, 219, 0.95);
+}
+
+.how-i-work-section .section-title {
+  background: rgba(255, 240, 188, 0.95);
+}
+
+.testimonials .section-title {
+  background: rgba(243, 145, 205, 0.28);
+}
+
+/* Playful testimonial layout */
+.testimonial-grid {
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 1.3rem;
+  align-items: start;
+}
+
+.testimonial-card {
+  border: 2px solid var(--ink-dark);
+  border-radius: 30px;
+  box-shadow: 8px 8px 0 rgba(31, 28, 42, 0.2);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(243, 229, 245, 0.68));
+  transform: rotate(-1.1deg);
+}
+
+.testimonial-grid .testimonial-card:nth-child(2n) {
+  transform: rotate(1deg) translateY(1.1rem);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(191, 240, 219, 0.62));
+}
+
+.testimonial-card:hover {
+  transform: translate(-4px, -4px) rotate(-0.2deg);
+  box-shadow: 11px 11px 0 rgba(31, 28, 42, 0.3);
+}
+
+.testimonial-grid .testimonial-card:nth-child(2n):hover {
+  transform: translate(-4px, -4px) rotate(0.2deg);
+}
+
+.testimonial-quote-icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 999px;
+  border: 2px solid var(--ink-dark);
+  background: rgba(255, 240, 188, 0.9);
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 900px) {
+  .site-main::before {
+    width: 210px;
+    height: 210px;
+    left: -4.3rem;
+  }
+
+  .site-main::after {
+    width: 220px;
+    height: 220px;
+    right: -4.6rem;
+  }
+
+  .highlights-creative .section-title,
+  .how-i-work-section .section-title,
+  .testimonials .section-title {
+    padding: 0.55rem 1.15rem !important;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card,
+  .testimonial-grid .testimonial-card:nth-child(2n) {
+    transform: none;
+  }
+}
