@@ -40,15 +40,6 @@
   <footer class="site-footer">
     <div class="footer-band">
       <div class="container footer-inner">
-        <div class="footer-brand">
-          <h3 class="footer-name">Aly Andrews</h3>
-          <p class="footer-tagline">Senior Education Content Producer · Ottawa, Ontario</p>
-        </div>
-        <div class="footer-contact">
-          <a href="mailto:{{ site.email }}" class="footer-contact-link">{{ site.email }}</a>
-          <span class="footer-contact-sep">·</span>
-          <a href="https://www.linkedin.com/in/alysaandrews/" target="_blank" rel="noopener noreferrer" class="footer-contact-link">LinkedIn</a>
-        </div>
         <nav class="footer-nav" aria-label="Footer navigation">
           {% for item in site.navigation %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% unless forloop.last %} · {% endunless %}

@@ -10,8 +10,6 @@ permalink: /portfolio/
 <section class="work-content-creative">
   <div class="container">
 
-    <div class="portfolio-group-label">Featured projects</div>
-
     <div id="getting-started-shopify" class="work-section-creative">
       <div class="work-section-header">
         <div class="work-image-large">
@@ -20,9 +18,9 @@ permalink: /portfolio/
           </div>
         </div>
         <div class="work-section-intro">
-          <h2>Getting started on Shopify</h2>
-          <p>Instructional design project: documentation and guides to help new merchants set up their Shopify store. This webinar covers the core setup steps new merchants need to launch successfully.</p>
-          <p class="work-section-note">Created independently as a portfolio and course project — not as part of my role at Shopify. All content is based on publicly available information only; no internal or proprietary materials were used.</p>
+          <h2>Teach-a-lesson</h2>
+          <p>An instructional design project including video lesson with accompanying PDF guide.</p>
+          <p class="work-section-note">Created independently as a portfolio piece, not as part of my role at Shopify. All content is based on publicly available information only; no internal or proprietary materials were used.</p>
           <div class="work-section-docs">
             <a href="{{ '/assets/documents/getting-started-shopify-lesson-companion.pdf' | relative_url }}" class="doc-link" target="_blank" rel="noopener">
               <span class="doc-tag">PDF</span>
@@ -37,22 +35,41 @@ permalink: /portfolio/
       </div>
     </div>
 
-    <div id="docs-website" class="work-section-creative">
-      <div class="work-section-header">
-        <div class="work-section-intro">
-          <h2>How I made this website</h2>
-          <p>Docs as code in practice: this portfolio site was built with Jekyll, GitHub Pages, and Cursor IDE. Video walkthrough in progress.</p>
-        </div>
-        <div class="work-image-large">
-          <div class="image-placeholder work-placeholder-large">
-            <p>Website project</p>
-            <p class="placeholder-hint">Built with Jekyll, GitHub Pages, and Cursor IDE. Video walkthrough in progress.</p>
-          </div>
+    <div id="developer-education" class="work-section-creative">
+      <div class="work-section-intro">
+        <h2>Developer content</h2>
+        <p class="developer-education-intro">Developer focused instructional videos for Shopify Academy. I partnered directly with developers and technical stakeholders to validate accuracy and turn complex concepts into clear, practical learning content.</p>
+        <div class="developer-video-cards">
+          <a href="https://www.shopifyacademy.com/video-surfaces-to-create-apps/2123524" class="developer-video-card" target="_blank" rel="noopener">
+            <div class="developer-video-visual visual-surfaces" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"/></svg>
+            </div>
+            <div class="developer-video-body">
+              <h3>Surfaces to create apps for</h3>
+              <span class="developer-video-link">Watch video →</span>
+            </div>
+          </a>
+          <a href="https://www.shopifyacademy.com/video-shopify-flow-fundamentals-1/2219293?wchannelid=mrepg1xhxf" class="developer-video-card" target="_blank" rel="noopener">
+            <div class="developer-video-visual visual-flow" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a.75.75 0 0 0 1.06 0L21.75 8.25M4.5 8.25h4.875M4.5 12h2.625m-2.625 3.75h6"/></svg>
+            </div>
+            <div class="developer-video-body">
+              <h3>Shopify Flow fundamentals</h3>
+              <span class="developer-video-link">Watch video →</span>
+            </div>
+          </a>
+          <a href="https://www.shopifyacademy.com/video-shopify-function-decision-framework/2378551" class="developer-video-card" target="_blank" rel="noopener">
+            <div class="developer-video-visual visual-functions" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6a2.25 2.25 0 0 1 2.25-2.25h3A2.25 2.25 0 0 1 15.75 6v1.5m-7.5 0h7.5m-7.5 0A2.25 2.25 0 0 0 6 9.75v7.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 17.25v-7.5A2.25 2.25 0 0 0 15.75 7.5m-4.5 4.5h1.5v3h-1.5v-3Z"/></svg>
+            </div>
+            <div class="developer-video-body">
+              <h3>Shopify Function Decision Framework</h3>
+              <span class="developer-video-link">Watch video →</span>
+            </div>
+          </a>
         </div>
       </div>
     </div>
-
-    <div class="portfolio-group-label">Work samples</div>
 
     <div id="writing-samples" class="work-section-creative">
       <h2>Writing samples</h2>

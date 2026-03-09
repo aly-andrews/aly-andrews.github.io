@@ -18,10 +18,10 @@ permalink: /
   </div>
   <div class="hero-grid">
     <div class="hero-photo">
-      <img src="{{ '/assets/images/about/profile.jpg' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <img src="{{ '/assets/images/about/profile-cutout.png' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="hero-photo-placeholder" style="display: none;">
         <p>Add your photo</p>
-        <p class="placeholder-hint">Upload to: assets/images/about/profile.jpg</p>
+        <p class="placeholder-hint">Upload to: assets/images/about/profile-cutout.png</p>
       </div>
     </div>
     <div class="hero-content">
@@ -35,7 +35,6 @@ permalink: /
 <section class="featured-work-creative" id="portfolio">
   <div class="container">
     <h2 class="section-title">My work</h2>
-    <p class="section-subtitle">A selection of projects showcasing my content creation, technical writing and process development work.</p>
 
     <div class="portfolio-cards-grid">
 
@@ -51,7 +50,7 @@ permalink: /
             <span class="portfolio-card-tag tag-technical">Instructional design</span>
           </div>
           <h3>Building programs</h3>
-          <p>End-to-end learning program: technical writing, storyboarding, video production and hosting, plus instructional design. Documentation and guides to help new merchants set up their store, with project plan, learner profiles and supporting resources. Created independently as a portfolio piece using only publicly available information.</p>
+          <p>End-to-end learning program: technical writing, storyboarding, video production and hosting, plus instructional design.</p>
           <p class="portfolio-card-link">View project →</p>
         </div>
       </a>
@@ -68,7 +67,7 @@ permalink: /
             <span class="portfolio-card-tag tag-systems">Systems</span>
           </div>
           <h3>Technical writing</h3>
-          <p>Published articles, documentation and project planning work spanning Shopify Academy, API docs and full software release documentation.</p>
+          <p>Published articles, documentation and software release documentation.</p>
           <p class="portfolio-card-link">Read samples →</p>
         </div>
       </a>
@@ -85,7 +84,7 @@ permalink: /
             <span class="portfolio-card-tag tag-creative">YouTube</span>
           </div>
           <h3>Video production</h3>
-          <p>Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.</p>
+          <p>Videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts and filming.</p>
           <p class="portfolio-card-link">Watch videos →</p>
         </div>
       </a>
@@ -165,6 +164,21 @@ permalink: /
             <p class="author-name">— Jordan Wille</p>
             <p class="author-role">Senior Program Manager, Operations · Shopify · LinkedIn →</p>
           </a>
+        </div>
+      </div>
+
+      <div class="testimonial-card testimonial-card-placeholder">
+        <div class="testimonial-quote-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
+          </svg>
+        </div>
+        <div class="testimonial-quote">
+          <p>"Placeholder testimonial coming soon."</p>
+        </div>
+        <div class="testimonial-author">
+          <p class="author-name">— Name coming soon</p>
+          <p class="author-role">Role and company</p>
         </div>
       </div>
     </div>
