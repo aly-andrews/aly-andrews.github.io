@@ -9,6 +9,19 @@ permalink: /portfolio/
 
 <section class="work-content-creative">
   <div class="container">
+    <div class="portfolio-layout">
+      <aside class="portfolio-sidebar" aria-label="Portfolio section navigation">
+        <nav class="portfolio-sidebar-nav">
+          <a href="#getting-started-shopify">Teach-a-lesson</a>
+          <a href="#developer-education">Developer content</a>
+          <a href="#writing-samples">Writing samples</a>
+          <a href="#youtube-plaque">Help Center YouTube</a>
+          <a href="#video-production">Video production</a>
+          <a href="#passion-projects">Passion projects</a>
+        </nav>
+      </aside>
+
+      <div class="portfolio-content-main">
 
     <div id="getting-started-shopify" class="work-section-creative">
       <div class="work-section-header">
@@ -166,7 +179,7 @@ permalink: /portfolio/
       </div>
     </div>
 
-    <div class="work-section-creative passion-projects-portfolio">
+    <div id="passion-projects" class="work-section-creative passion-projects-portfolio">
       <h2>Passion projects</h2>
       <p>Photography started as a pandemic creative outlet and grew into a business with regular clients and sold out mini sessions. I applied the same approach I use in technical writing: understand the audience, build consistent processes and optimize for outcomes.</p>
 
@@ -195,6 +208,8 @@ permalink: /portfolio/
         <a href="https://www.instagram.com/alyanne.co" class="passion-projects-instagram" target="_blank" rel="noopener" aria-label="Follow @alyanne.co on Instagram">@alyanne.co</a>
       </div>
 
+    </div>
+    </div>
     </div>
   </div>
 </section>
