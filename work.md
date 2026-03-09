@@ -38,7 +38,8 @@ permalink: /portfolio/
     <div id="developer-education" class="work-section-creative">
       <div class="work-section-intro">
         <h2>Developer content</h2>
-        <p class="developer-education-intro">Developer focused instructional videos for Shopify Academy. I partnered directly with developers and technical stakeholders to validate accuracy and turn complex concepts into clear, practical learning content.</p>
+        <p>Developer focused instructional videos for Shopify Academy.</p>
+        <p class="work-section-note">I partnered directly with developers and technical stakeholders to validate accuracy and turn complex concepts into clear, practical learning content.</p>
         <div class="developer-video-cards">
           <a href="https://www.shopifyacademy.com/video-surfaces-to-create-apps/2123524" class="developer-video-card" target="_blank" rel="noopener">
             <div class="developer-video-visual visual-surfaces" aria-hidden="true">
@@ -73,28 +74,31 @@ permalink: /portfolio/
 
     <div id="writing-samples" class="work-section-creative">
       <h2>Writing samples</h2>
-      <p>A selection of published articles, documentation and project planning work. More samples are available on request.</p>
+      <p>A selection of published articles, documentation and project planning work.</p>
 
       <div class="article-cards-grid">
 
         <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-retailer/2283513" class="article-card" target="_blank" rel="noopener">
-          <span class="article-card-source">Shopify Academy</span>
+          <div class="article-card-visual article-card-visual-writing" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5.25A2.25 2.25 0 0 1 5.25 3h10.086a2.25 2.25 0 0 1 1.591.659l3.414 3.414a2.25 2.25 0 0 1 .659 1.591V18.75A2.25 2.25 0 0 1 18.75 21H5.25A2.25 2.25 0 0 1 3 18.75V5.25Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 11.25h7.5M8.25 15h4.5"/></svg>
+          </div>
           <h3>Shopify Collective: Getting started as a retailer</h3>
-          <p>Step-by-step guide for merchants who want to source and sell products from other Shopify brands through Collective. Covers setup, product discovery, importing items and managing supplier relationships.</p>
           <span class="article-card-link">Read article →</span>
         </a>
 
-        <a href="https://www.shopifyacademy.com/article-shopify-collective-getting-started-as-a-supplier/2283509" class="article-card" target="_blank" rel="noopener">
-          <span class="article-card-source">Shopify Academy</span>
-          <h3>Shopify Collective: Getting started as a supplier</h3>
-          <p>Step-by-step guide for merchants who want to make their products available to other Shopify retailers through Collective. Covers eligibility, catalog setup, onboarding and managing retailer relationships.</p>
-          <span class="article-card-link">Read article →</span>
-        </a>
+        <article class="article-card article-card-static article-card-placeholder" aria-label="Getting started with Shopify placeholder card">
+          <div class="article-card-visual article-card-visual-guide" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14.25V6.75m0 0-3 3m3-3 3 3M4.5 15.75v1.5A2.25 2.25 0 0 0 6.75 19.5h10.5A2.25 2.25 0 0 0 19.5 17.25v-1.5"/></svg>
+          </div>
+          <h3>Getting started with Shopify</h3>
+          <span class="article-card-link">PDF coming soon</span>
+        </article>
 
         <a href="{{ '/assets/documents/lollydex-documentation-project-plan.pdf' | relative_url }}" class="article-card" target="_blank" rel="noopener">
-          <span class="article-card-source">Documentation project plan</span>
+          <div class="article-card-visual article-card-visual-plan" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 6.75h15M4.5 12h15m-15 5.25h9"/></svg>
+          </div>
           <h3>LollyDex Docs: documentation release plan</h3>
-          <p>Full documentation project plan for a global software launch — covering content scope, audience analysis, reuse strategy, team roles, milestone schedule and risk management with mitigation plans.</p>
           <span class="article-card-link">View document →</span>
         </a>
 
@@ -104,7 +108,7 @@ permalink: /portfolio/
 
     <div id="youtube-plaque" class="work-section-creative">
       <h2>Help Center YouTube</h2>
-      <p>Produced 100+ educational videos for Shopify Help Center YouTube. Independently grew the channel to 100,000+ subscribers, earning Silver Plaque recognition. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
+      <p>Independently grew the channel to 100,000+ subscribers within two years, earning Silver Plaque recognition. Produced 100+ educational videos for Shopify Help Center YouTube. Improved YouTube SEO ranking from C+ to A- in Google search results.</p>
       <div class="work-section-header work-section-header--plaque">
         <div class="work-image-large youtube-plaque-section-image">
           <img src="{{ '/assets/images/youtube-plaque.png' | relative_url }}" alt="YouTube Silver Play Button — 100,000 subscribers" class="work-image-img" />
@@ -140,8 +144,6 @@ permalink: /portfolio/
               <span class="play-button">▶</span>
             </div>
           </div>
-          <h3>Your guide to BFCM</h3>
-          <p>Black Friday and Cyber Monday strategies for Shopify merchants.</p>
         </div>
 
         <div class="video-card" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shopify.jpg' | relative_url }}">
@@ -151,8 +153,6 @@ permalink: /portfolio/
               <span class="play-button">▶</span>
             </div>
           </div>
-          <h3>What is Shopify</h3>
-          <p>Introduction to Shopify for new merchants. From the POS series.</p>
         </div>
 
         <div class="video-card" data-video-src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/store policies.jpg' | relative_url }}">
@@ -162,8 +162,6 @@ permalink: /portfolio/
               <span class="play-button">▶</span>
             </div>
           </div>
-          <h3>How to create store policies</h3>
-          <p>Step-by-step guide to setting up store policies.</p>
         </div>
       </div>
     </div>
