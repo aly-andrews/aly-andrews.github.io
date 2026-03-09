@@ -8340,3 +8340,424 @@ body.whimsy-cursor-enabled .video-card {
     transform: none;
   }
 }
+
+/* -------------------------------------------------------------------------- */
+/* Mobile stability pass                                                      */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .site-main::before,
+  .site-main::after,
+  .hero-creative .container::before,
+  .hero-creative .container::after,
+  .featured-work-creative .container::before,
+  .featured-work-creative .container::after,
+  .highlights-creative .container::before,
+  .highlights-creative .container::after,
+  .how-i-work-section .container::before,
+  .how-i-work-section .container::after,
+  .testimonials .container::before,
+  .testimonials .container::after,
+  .work-content-creative .container::before,
+  .work-content-creative .container::after,
+  .work-content-creative .portfolio-content-main::before,
+  .work-content-creative .portfolio-content-main::after {
+    display: none !important;
+  }
+
+  .portfolio-cards-grid,
+  .highlights-grid,
+  .testimonial-grid,
+  .article-cards-grid,
+  .video-cards-grid,
+  .developer-video-cards {
+    grid-template-columns: 1fr !important;
+    gap: 0.9rem !important;
+  }
+
+  .portfolio-cards-grid .portfolio-card-item,
+  .highlights-grid .highlight-card,
+  .testimonial-grid .testimonial-card,
+  .article-cards-grid .article-card {
+    grid-column: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .work-content-creative .portfolio-layout {
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
+  }
+
+  .portfolio-sidebar {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .portfolio-sidebar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    gap: 0.45rem !important;
+    padding: 0.55rem !important;
+  }
+
+  .portfolio-sidebar-nav a {
+    flex: 0 0 auto;
+  }
+
+  .work-content-creative .work-section-creative,
+  .work-content-creative .work-section-creative:nth-of-type(odd),
+  .work-content-creative .work-section-creative:nth-of-type(even) {
+    margin: 0 0 1rem 0 !important;
+    padding: 1rem !important;
+  }
+
+  .work-section-header,
+  .work-section-header.reverse {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    margin-bottom: 1.25rem !important;
+    direction: ltr !important;
+  }
+
+  .work-image-large,
+  .youtube-plaque-section-image,
+  .video-wrapper,
+  .video-embed {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .passion-projects-showcase {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .passion-projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    padding-right: 0 !important;
+    min-height: 0 !important;
+  }
+
+  .hero-photo {
+    width: min(72vw, 290px) !important;
+    height: auto !important;
+    margin: 0 auto 0.85rem !important;
+  }
+
+  .hero-profile-image {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .experience-resume-container {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-credits {
+    height: auto;
+    min-height: 44px;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .credits-text {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .site-nav {
+    padding: 0.35rem !important;
+  }
+
+  .nav-links {
+    left: 0.35rem !important;
+    right: 0.35rem !important;
+    top: calc(100% + 0.3rem) !important;
+  }
+
+  .nav-links a {
+    font-size: 0.98rem;
+  }
+
+  .section-title {
+    font-size: 1.7rem !important;
+    margin-bottom: 1.45rem !important;
+  }
+
+  .work-content-creative .work-section-creative > h2,
+  .work-content-creative .work-section-creative .work-section-intro h2 {
+    max-width: 100%;
+    width: 100%;
+    text-align: left !important;
+    font-size: 1.45rem !important;
+  }
+
+  .work-section-intro p,
+  .work-section-note,
+  .work-content-creative .work-section-creative:nth-of-type(even) > p,
+  .work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro p,
+  .work-content-creative .work-section-creative:nth-of-type(even) .work-section-note {
+    text-align: left !important;
+  }
+
+  .work-section-docs {
+    padding-left: 0.65rem;
+  }
+
+  .passion-projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .testimonial-card {
+    padding: 1rem !important;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Alignment and decorative balance pass                                      */
+/* -------------------------------------------------------------------------- */
+
+/* Keep cards and portfolio modules aligned on a shared vertical rhythm */
+.portfolio-cards-grid .portfolio-card-item:nth-child(1),
+.portfolio-cards-grid .portfolio-card-item:nth-child(2),
+.portfolio-cards-grid .portfolio-card-item:nth-child(3) {
+  margin-top: 0 !important;
+}
+
+.highlights-grid .highlight-card:nth-child(2),
+.highlights-grid .highlight-card:nth-child(4) {
+  margin-top: 0 !important;
+}
+
+.work-content-creative .work-section-creative,
+.work-content-creative .work-section-creative:nth-of-type(odd),
+.work-content-creative .work-section-creative:nth-of-type(even) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) > h2,
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro h2,
+.work-content-creative .work-section-creative:nth-of-type(even) > p,
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-intro p,
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-note {
+  margin-left: 0 !important;
+  text-align: left !important;
+}
+
+.work-content-creative .work-section-creative:nth-of-type(even) .work-section-header {
+  direction: ltr !important;
+}
+
+/* Soften blobs so they support rather than dominate */
+.shape,
+.resume-shape {
+  opacity: 0.12;
+}
+
+.site-main::before,
+.site-main::after,
+.hero-creative .container::before,
+.hero-creative .container::after,
+.featured-work-creative .container::before,
+.featured-work-creative .container::after,
+.highlights-creative .container::before,
+.highlights-creative .container::after,
+.how-i-work-section .container::before,
+.how-i-work-section .container::after,
+.testimonials .container::before,
+.testimonials .container::after,
+.work-content-creative .container::before,
+.work-content-creative .container::after {
+  opacity: 0.4;
+}
+
+/* Add subtle hand drawn dots and squiggles more consistently */
+.portfolio-card-item,
+.highlight-card,
+.article-card,
+.developer-video-card,
+.work-content-creative .work-section-creative {
+  position: relative;
+}
+
+.portfolio-card-item::after,
+.highlight-card::after,
+.article-card::after,
+.developer-video-card::after,
+.work-content-creative .work-section-creative::after {
+  content: "";
+  position: absolute;
+  top: 0.55rem;
+  left: 0.95rem;
+  width: 26px;
+  height: 8px;
+  pointer-events: none;
+  opacity: 0.5;
+  background:
+    radial-gradient(circle, rgba(194, 24, 91, 0.45) 0 1.2px, transparent 1.3px) 0 50% / 8px 8px repeat-x;
+}
+
+.portfolio-card-item::before,
+.article-card::before,
+.developer-video-card::before {
+  content: "";
+  position: absolute;
+  left: 0.95rem;
+  bottom: 0.75rem;
+  width: 34px;
+  height: 10px;
+  pointer-events: none;
+  opacity: 0.45;
+  background:
+    linear-gradient(174deg, transparent 46%, rgba(31, 28, 42, 0.45) 47% 54%, transparent 55%),
+    linear-gradient(172deg, transparent 60%, rgba(31, 28, 42, 0.45) 61% 68%, transparent 69%);
+}
+
+@media (max-width: 900px) {
+  .site-main::before,
+  .site-main::after,
+  .hero-creative .container::before,
+  .hero-creative .container::after,
+  .featured-work-creative .container::before,
+  .featured-work-creative .container::after,
+  .highlights-creative .container::before,
+  .highlights-creative .container::after,
+  .how-i-work-section .container::before,
+  .how-i-work-section .container::after,
+  .testimonials .container::before,
+  .testimonials .container::after,
+  .work-content-creative .container::before,
+  .work-content-creative .container::after {
+    opacity: 0.3;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Card icon cleanup and device polish                                        */
+/* -------------------------------------------------------------------------- */
+
+/* Remove tiny decorative marks from all cards/modules */
+.portfolio-card-item::before,
+.portfolio-card-item::after,
+.highlight-card::before,
+.highlight-card::after,
+.article-card::before,
+.article-card::after,
+.developer-video-card::before,
+.developer-video-card::after,
+.testimonial-card::before,
+.testimonial-card::after,
+.work-content-creative .work-section-creative::before,
+.work-content-creative .work-section-creative::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+}
+
+/* iPad and small tablet tuning */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.85rem !important;
+    margin-bottom: 1.3rem !important;
+  }
+
+  .portfolio-sidebar-nav {
+    padding: 0.5rem !important;
+    gap: 0.4rem !important;
+  }
+
+  .portfolio-sidebar-nav a {
+    font-size: 0.88rem !important;
+    padding: 0.5rem 0.6rem !important;
+  }
+
+  .work-content-creative .work-section-creative {
+    border-radius: 20px !important;
+  }
+
+  .work-section-docs {
+    border-left: 0 !important;
+    padding-left: 0 !important;
+    gap: 0.4rem !important;
+  }
+
+  .doc-link {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .article-card,
+  .developer-video-card,
+  .highlight-card,
+  .portfolio-card-item,
+  .testimonial-card {
+    border-radius: 18px !important;
+  }
+}
+
+/* iPhone width tuning */
+@media (max-width: 430px) {
+  .container {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .hero-creative .hero-title {
+    font-size: 1.55rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-creative .hero-description {
+    font-size: 0.92rem !important;
+  }
+
+  .portfolio-sidebar-nav {
+    border-radius: 12px !important;
+  }
+
+  .portfolio-sidebar-nav a {
+    font-size: 0.84rem !important;
+  }
+
+  .work-content-creative .work-section-creative {
+    padding: 0.85rem !important;
+  }
+
+  .work-content-creative .work-section-creative > h2,
+  .work-content-creative .work-section-creative .work-section-intro h2 {
+    font-size: 1.32rem !important;
+    padding: 0.22rem 0.72rem !important;
+  }
+
+  .work-section-intro p,
+  .work-section-note {
+    font-size: 0.92rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .doc-link {
+    font-size: 0.9rem !important;
+  }
+}
