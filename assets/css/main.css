@@ -3874,6 +3874,7 @@ img {
   background: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
+  overflow: hidden;
   padding: 1.75rem;
   text-decoration: none;
   color: inherit;
@@ -3881,9 +3882,46 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+.article-card-static {
+  cursor: default;
+}
+
 .article-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.article-card-static:hover {
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.article-card-visual {
+  height: 120px;
+  margin: -1.75rem -1.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-card-visual svg {
+  width: 44px;
+  height: 44px;
+}
+
+.article-card-visual-writing {
+  background: linear-gradient(135deg, rgba(243, 229, 245, 0.95), rgba(252, 228, 236, 0.95));
+  color: #7b1fa2;
+}
+
+.article-card-visual-guide {
+  background: linear-gradient(135deg, rgba(224, 242, 241, 0.95), rgba(243, 229, 245, 0.95));
+  color: #00796b;
+}
+
+.article-card-visual-plan {
+  background: linear-gradient(135deg, rgba(255, 249, 196, 0.95), rgba(252, 228, 236, 0.95));
+  color: var(--brand-rose);
 }
 
 .article-card-source {
@@ -3895,6 +3933,25 @@ img {
   color: var(--accent-teal);
   margin-bottom: 0.75rem;
 }
+
+#writing-samples .article-card-source {
+  display: none;
+}
+
+#youtube-plaque > p:first-of-type {
+  margin-bottom: 0.35rem;
+}
+
+#youtube-plaque > .work-section-note {
+  margin-top: 0.2rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  opacity: 1;
+  border-left: 0;
+  padding-left: 0;
+  letter-spacing: 0;
+}
+
 
 .article-card h3 {
   font-size: 1.15rem;
@@ -3915,6 +3972,7 @@ img {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--accent-teal);
+  margin-top: auto;
 }
 
 .article-card:hover .article-card-link {
@@ -4245,16 +4303,17 @@ img {
 .play-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.28);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
 .video-card:hover .play-overlay {
   opacity: 1;
+  background: rgba(0,0,0,0.38);
 }
 
 .play-button {
@@ -4438,9 +4497,9 @@ img {
   }
 
   .play-button {
-    width: 60px;
-    height: 60px;
-    font-size: 3rem;
+    width: 64px;
+    height: 64px;
+    font-size: 3.1rem;
   }
 }
 
@@ -6375,12 +6434,6 @@ h6,
   grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: 1rem;
   margin-top: 1.25rem;
-}
-
-#developer-education .developer-education-intro {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--text-light);
 }
 
 .developer-video-card {
