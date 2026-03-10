@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-<section class="site-credits" style="height: 36px; min-height: 36px; padding: 0 1rem; display: flex; align-items: center; justify-content: center;">
+<section class="site-credits" style="min-height: 36px; padding: 1.5rem 1rem 1rem; display: flex; align-items: center; justify-content: center;">
   <div class="container">
     <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll and GitHub Pages.</p>
   </div>
@@ -123,11 +123,6 @@ permalink: /
     <h2 class="section-title">What people say</h2>
     <div class="testimonial-grid">
       <div class="testimonial-card">
-        <div class="testimonial-quote-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-          </svg>
-        </div>
         <div class="testimonial-quote">
           <p>"Her Technical Writing expertise was critical to establishing quality criteria and evaluation frameworks that determined when AI-generated content met professional publishing standards."</p>
         </div>
@@ -139,18 +134,15 @@ permalink: /
         </div>
       </div>
 
-      <div class="testimonial-card testimonial-card-placeholder">
-        <div class="testimonial-quote-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
-          </svg>
-        </div>
+      <div class="testimonial-card">
         <div class="testimonial-quote">
-          <p>"Placeholder testimonial coming soon."</p>
+          <p>"She has deep product knowledge and strong relationships across the company from her tenure. SMEs like working with her because she always comes prepared, asks the right questions and makes her insight accessible to the entire team."</p>
         </div>
         <div class="testimonial-author">
-          <p class="author-name">— Name coming soon</p>
-          <p class="author-role">Role and company</p>
+          <a href="https://www.linkedin.com/in/kelsey-chatterson/" target="_blank" rel="noopener" class="author-link">
+            <p class="author-name">— Kelsey Chatterson</p>
+            <p class="author-role">Senior Education Specialist · Shopify · LinkedIn →</p>
+          </a>
         </div>
       </div>
     </div>
