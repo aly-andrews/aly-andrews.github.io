@@ -26,7 +26,7 @@ permalink: /
     </div>
     <div class="hero-content">
       <h1 class="hero-title">Aly Andrews. I bridge the gap between complex systems and the people who use them.</h1>
-      <p class="hero-description">Senior Education Strategist specializing in the intersection of AI-automation and scalable learning systems.</p>
+      <p class="hero-description">Senior Education Strategist specializing in the intersection of AI workflows and scalable learning systems.</p>
       <a href="{{ '/portfolio/' | relative_url }}" class="btn-hero-cta">Explore My Work</a>
     </div>
   </div>
@@ -34,7 +34,7 @@ permalink: /
 
 <section class="featured-work-creative" id="portfolio">
   <div class="container">
-    <h2 class="section-title">My work</h2>
+    <h2 class="section-title">What I create</h2>
 
     <div class="portfolio-cards-grid">
 
@@ -46,10 +46,10 @@ permalink: /
         </div>
         <div class="portfolio-card-body">
           <div class="portfolio-card-tags">
-            <span class="portfolio-card-tag tag-systems">Building programs</span>
+            <span class="portfolio-card-tag tag-systems">Scaleable programs</span>
             <span class="portfolio-card-tag tag-technical">Instructional design</span>
           </div>
-          <h3>Building programs</h3>
+          <h3>Scaleable programs</h3>
           <p>End-to-end learning program: technical writing, storyboarding, video production and hosting, plus instructional design.</p>
           <p class="portfolio-card-link">View project →</p>
         </div>
@@ -63,10 +63,10 @@ permalink: /
         </div>
         <div class="portfolio-card-body">
           <div class="portfolio-card-tags">
-            <span class="portfolio-card-tag tag-technical">Technical Writing</span>
+            <span class="portfolio-card-tag tag-technical">Product docs</span>
             <span class="portfolio-card-tag tag-systems">Systems</span>
           </div>
-          <h3>Technical writing</h3>
+          <h3>Product docs</h3>
           <p>Published articles, documentation and software release documentation.</p>
           <p class="portfolio-card-link">Read samples →</p>
         </div>
@@ -83,7 +83,7 @@ permalink: /
             <span class="portfolio-card-tag tag-video">Video Production</span>
             <span class="portfolio-card-tag tag-creative">YouTube</span>
           </div>
-          <h3>Video production</h3>
+          <h3>Video tutorials</h3>
           <p>Videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts and filming.</p>
           <p class="portfolio-card-link">Watch videos →</p>
         </div>
@@ -93,38 +93,10 @@ permalink: /
   </div>
 </section>
 
-<section class="highlights-creative" id="services">
-  <div class="container">
-    <h2 class="section-title">What I do</h2>
-    <div class="highlights-grid">
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-mint), var(--brand-lavender));"></div>
-        <h3>Content creation</h3>
-        <p>Writing articles, producing videos and creating documentation that helps users learn and succeed</p>
-      </div>
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-gold), var(--brand-pink));"></div>
-        <h3>Process optimization</h3>
-        <p>Developing AI-powered workflows and style guides that scale content creation while maintaining quality</p>
-      </div>
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-lavender), var(--brand-mint));"></div>
-        <h3>Program builder</h3>
-        <p>Creating onboarding frameworks, building and managing team knowledge and establishing analytical success metrics</p>
-      </div>
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-pink), var(--brand-gold));"></div>
-        <h3>Technical writing</h3>
-        <p>Creating clear, user-focused documentation that makes complex topics accessible to all audiences</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="how-i-work-section" id="how-i-work">
   <div class="container how-i-work-editorial">
     <div class="how-i-work-editorial-side">
-      <h2 class="section-title">How I work</h2>
+      <h2 class="section-title">How I create it</h2>
       <blockquote class="how-i-work-quote">
         <p>People are not afraid to tell you what they want, what works and what doesn't. I firmly believe we should take the time to listen.</p>
       </blockquote>
@@ -140,7 +112,7 @@ permalink: /
       </article>
       <article class="how-i-work-editorial-item" data-step="03">
         <h3>Build with intention</h3>
-        <p>It's not enough to ship content and hope it works. I track retention, drop-off points, support ticket volume and engagement signals — and I use what I learn to build exactly what users are asking for.</p>
+        <p>It's not enough to ship content and hope it works. I track retention, drop-off points, support ticket volume and engagement signals — and I use what I learn to build exactly what users are asking for. I also build the workflows and style guides that let teams scale that work—AI-assisted pipelines, quality criteria and documentation systems.</p>
       </article>
     </div>
   </div>

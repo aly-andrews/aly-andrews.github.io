@@ -16,7 +16,7 @@ permalink: /portfolio/
           <a href="#developer-education">Developer content</a>
           <a href="#writing-samples">Writing samples</a>
           <a href="#youtube-plaque">Help Center YouTube</a>
-          <a href="#video-production">Video production</a>
+          <a href="#video-production">Video tutorials</a>
           <a href="#passion-projects">Passion projects</a>
         </nav>
       </aside>
@@ -146,7 +146,7 @@ permalink: /portfolio/
     </div>
 
     <div id="video-production" class="work-section-creative">
-      <h2>Video production</h2>
+      <h2>Video tutorials</h2>
       <p>Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.</p>
 
       <div class="video-cards-grid">
@@ -213,5 +213,3 @@ permalink: /portfolio/
     </div>
   </div>
 </section>
-
-{% include video-modal.html %}

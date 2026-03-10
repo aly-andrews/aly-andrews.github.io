@@ -2793,7 +2793,7 @@ img {
 /* Testimonials */
 .testimonials {
   padding: 6rem 0;
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-light) 50%, #f0ede8 100%);
+  background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-light) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -5397,6 +5397,23 @@ h6,
   padding-top: 3.5rem;
 }
 
+/* Home page section headers: center aligned, more padding */
+.featured-work-creative .section-title,
+.how-i-work-section .section-title,
+.testimonials .section-title {
+  text-align: center;
+  display: block;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.featured-work-creative .section-title::after,
+.how-i-work-section .section-title::after,
+.testimonials .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .section-subtitle {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -7135,7 +7152,7 @@ body.whimsy-cursor-enabled .video-card {
   display: inline-block;
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
-  border: 2px solid rgba(31, 28, 42, 0.85);
+  border: 2px solid rgba(31, 28, 42, 0.45);
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -7351,7 +7368,7 @@ body.whimsy-cursor-enabled .video-card {
   display: inline-block;
   max-width: fit-content;
   padding: 0.25rem 0.95rem;
-  border: 2px solid var(--ink-dark);
+  border: 2px solid rgba(31, 28, 42, 0.45);
   border-radius: 999px;
   background: rgba(255, 240, 188, 0.8);
   box-shadow: 4px 4px 0 rgba(31, 28, 42, 0.16);
@@ -8077,7 +8094,7 @@ body.whimsy-cursor-enabled .video-card {
 
 .how-i-work-section .container::after {
   right: -0.6rem;
-  top: 2.3rem;
+  top: 0.3rem;
   width: 78px;
   height: 78px;
   border-radius: 63% 37% 49% 51% / 42% 58% 42% 58%;
@@ -8252,13 +8269,18 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 /* Match these key headers to colorful portfolio style pills */
+.featured-work-creative .section-title,
 .highlights-creative .section-title,
 .how-i-work-section .section-title,
 .testimonials .section-title {
-  border: 2px solid var(--ink-dark) !important;
+  border: 2px solid rgba(31, 28, 42, 0.45) !important;
   border-radius: 999px;
   padding: 0.62rem 1.45rem !important;
-  box-shadow: 6px 6px 0 rgba(31, 28, 42, 0.16);
+  box-shadow: 6px 6px 0 rgba(31, 28, 42, 0.1);
+}
+
+.featured-work-creative .section-title {
+  background: rgba(191, 240, 219, 0.95);
 }
 
 .highlights-creative .section-title {
@@ -8325,6 +8347,7 @@ body.whimsy-cursor-enabled .video-card {
     right: -4.6rem;
   }
 
+  .featured-work-creative .section-title,
   .highlights-creative .section-title,
   .how-i-work-section .section-title,
   .testimonials .section-title {
