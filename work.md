@@ -34,8 +34,13 @@ permalink: /portfolio/
     <div id="getting-started-shopify" class="work-section-creative">
       <div class="work-section-header">
         <div class="work-image-large">
-          <div class="video-wrapper">
-            <iframe class="video-embed" src="https://www.youtube.com/embed/dCyQ9-CiMjo" title="Getting started on Shopify webinar" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="video-card" data-video-src="https://www.youtube.com/embed/dCyQ9-CiMjo" data-thumbnail="https://img.youtube.com/vi/dCyQ9-CiMjo/maxresdefault.jpg">
+            <div class="thumbnail-wrapper">
+              <img src="https://img.youtube.com/vi/dCyQ9-CiMjo/maxresdefault.jpg" alt="Getting started on Shopify webinar">
+              <div class="play-overlay">
+                <span class="play-button">▶</span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="work-section-intro">
@@ -158,16 +163,7 @@ permalink: /portfolio/
       <p>Watch videos I created from concept to completion, including researching ideas, developing concepts based on support data, writing scripts, and filming. I handled editing for many of these projects and brought complex topics to life through engaging content.</p>
 
       <div class="video-cards-grid">
-        <div class="video-card" data-video-src="{{ '/assets/videos/Your guide to BFCM  - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/BFCM.jpg' | relative_url }}">
-          <div class="thumbnail-wrapper">
-            <img src="{{ '/assets/videos/BFCM.jpg' | relative_url }}" alt="Your guide to BFCM - Shopify Help Center">
-            <div class="play-overlay">
-              <span class="play-button">▶</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-card" data-video-src="{{ '/assets/videos/What is Shopify - Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/what is shopify.jpg' | relative_url }}">
+        <div class="video-card" data-video-src="https://www.youtube.com/embed/wM-NT6hcw48?list=PLhS95RehmSppmtv1THznwseZIO8h0JOXu" data-thumbnail="{{ '/assets/videos/what is shopify.jpg' | relative_url }}">
           <div class="thumbnail-wrapper">
             <img src="{{ '/assets/videos/what is shopify.jpg' | relative_url }}" alt="What is Shopify - Shopify Help Center">
             <div class="play-overlay">
@@ -176,7 +172,7 @@ permalink: /portfolio/
           </div>
         </div>
 
-        <div class="video-card" data-video-src="{{ '/assets/videos/How to create store policies -  Shopify Help Center.mp4' | relative_url }}" data-thumbnail="{{ '/assets/videos/store policies.jpg' | relative_url }}">
+        <div class="video-card" data-video-src="https://www.youtube.com/embed/hyaKIKb22cw?list=PLhS95RehmSppmtv1THznwseZIO8h0JOXu&index=20" data-thumbnail="{{ '/assets/videos/store policies.jpg' | relative_url }}">
           <div class="thumbnail-wrapper">
             <img src="{{ '/assets/videos/store policies.jpg' | relative_url }}" alt="How to create store policies - Shopify Help Center">
             <div class="play-overlay">
@@ -212,8 +208,8 @@ permalink: /portfolio/
       </div>
 
       <div class="passion-projects-cta">
-        <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">View gallery</a>
-        <a href="https://www.instagram.com/alyanne.co" class="passion-projects-instagram" target="_blank" rel="noopener" aria-label="Follow @alyanne.co on Instagram">@alyanne.co</a>
+        <a href="https://alyanne.mypixieset.com/" class="btn btn-primary" target="_blank" rel="noopener">Website</a>
+        <a href="https://www.instagram.com/alyanne.co" class="btn btn-primary passion-projects-instagram" target="_blank" rel="noopener" aria-label="Instagram @alyanne.co">Instagram</a>
       </div>
 
     </div>

@@ -23,8 +23,8 @@
 
   const initVideoModal = () => {
     const modal = document.getElementById("videoModal");
-    const player = document.getElementById("modalVideoPlayer");
-    if (!modal || !player) {
+    const playerContainer = document.getElementById("modalVideoPlayer");
+    if (!modal || !playerContainer) {
       return;
     }
 
@@ -32,12 +32,14 @@
     const closeButton = modal.querySelector(".video-modal-close");
     const videoCards = document.querySelectorAll(".video-card[data-video-src]");
 
+    const clearPlayer = () => {
+      playerContainer.innerHTML = "";
+    };
+
     const closeModal = () => {
       modal.classList.remove("open", "active", "show");
       modal.setAttribute("aria-hidden", "true");
-      player.pause();
-      player.removeAttribute("src");
-      player.load();
+      clearPlayer();
       document.body.style.overflow = "";
     };
 
@@ -45,11 +47,44 @@
       if (!src) {
         return;
       }
-      player.setAttribute("src", src);
+
+      clearPlayer();
+
+      const isYouTube = /youtube\.com|youtu\.be/.test(src);
+
+      if (isYouTube) {
+        // Ensure autoplay is enabled so users don't have to click twice
+        let autoplaySrc = src;
+        if (!/[?&]autoplay=1/.test(autoplaySrc)) {
+          autoplaySrc += autoplaySrc.includes("?") ? "&autoplay=1" : "?autoplay=1";
+        }
+
+        const iframe = document.createElement("iframe");
+        iframe.setAttribute("src", autoplaySrc);
+        iframe.setAttribute("title", "Video player");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute(
+          "allow",
+          "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        );
+        iframe.setAttribute("allowfullscreen", "true");
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        playerContainer.appendChild(iframe);
+      } else {
+        const video = document.createElement("video");
+        video.setAttribute("src", src);
+        video.setAttribute("controls", "true");
+        video.setAttribute("playsinline", "true");
+        video.style.width = "100%";
+        video.style.height = "100%";
+        playerContainer.appendChild(video);
+        video.play().catch(() => {});
+      }
+
       modal.classList.add("open", "active", "show");
       modal.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
-      player.play().catch(() => {});
     };
 
     videoCards.forEach((card) => {
