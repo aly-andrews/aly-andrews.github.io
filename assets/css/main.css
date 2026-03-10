@@ -980,7 +980,7 @@ img {
 .experience-resume-container {
   position: relative;
   z-index: 1;
-  max-width: 920px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 var(--spacing-unit);
   background: #fff;
@@ -5329,10 +5329,6 @@ h6,
   padding-top: 2.75rem;
 }
 
-.page-top-band + .visually-hidden + .experience-resume-page {
-  padding-top: 2rem;
-}
-
 .page-top-band + .visually-hidden + .contact-layout {
   padding-top: 2.5rem;
 }
@@ -6103,15 +6099,10 @@ h6,
   font-weight: 500;
 }
 
-/* Resume color-coding */
-.experience-item.role-education .experience-header h2 {
-  border-left: 4px solid var(--brand-lavender);
-  padding-left: 0.75rem;
-}
-
-.experience-item.role-video .experience-header h2 {
-  border-left: 4px solid var(--brand-pink);
-  padding-left: 0.75rem;
+/* Resume: use pill styling from work-section-creative (no role border) */
+.work-content-creative .experience-item .experience-header h2 {
+  border-left: none;
+  padding-left: 0;
 }
 
 /* Resume sticky subnav */
@@ -6573,6 +6564,174 @@ h6,
 
 .portfolio-content-main {
   min-width: 0;
+}
+
+/* Resume page: tighter spacing between modular sections */
+#experience.work-content-creative .portfolio-content-main {
+  gap: 0.5rem !important;
+}
+
+#experience.work-content-creative .work-section-creative {
+  margin-bottom: 0 !important;
+}
+
+#experience.work-content-creative .work-section-creative + .work-section-creative {
+  padding-top: 0.75rem !important;
+  margin-top: 0 !important;
+  border-top-width: 1px !important;
+}
+
+#experience.work-content-creative .work-section-creative + .work-section-creative::before {
+  display: none !important;
+}
+
+#experience.work-content-creative .work-section-creative {
+  padding: 1rem 1.2rem !important;
+}
+
+#experience.work-content-creative .experience-header {
+  margin-bottom: 1rem !important;
+}
+
+#experience.work-content-creative .experience-item {
+  margin-bottom: 0 !important;
+}
+
+/* Resume page sidebar navigation */
+.resume-layout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.resume-sidebar {
+  position: sticky;
+  top: 6.3rem;
+}
+
+.resume-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.85rem;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(212, 208, 200, 0.8);
+  border-radius: 12px;
+}
+
+.resume-sidebar-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  padding: 0 0.6rem;
+}
+
+.resume-sidebar-heading:first-child {
+  margin-top: 0;
+}
+
+.resume-sidebar-nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.35;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.resume-sidebar-nav a:hover {
+  background: rgba(224, 242, 241, 0.55);
+  color: var(--primary-color);
+}
+
+.resume-content-main {
+  min-width: 0;
+}
+
+.resume-section-creative {
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 2px solid rgba(212, 208, 200, 0.6);
+}
+
+.resume-section-creative .section-title {
+  margin-bottom: 1.25rem;
+}
+
+.resume-content-main .experience-item,
+.resume-content-main .resume-education-item,
+.resume-content-main .resume-expertise-block,
+.resume-content-main .resume-section-creative,
+.resume-content-main .highlight-card {
+  scroll-margin-top: 6rem;
+}
+
+.resume-education-item,
+.resume-expertise-block {
+  margin-bottom: 1.5rem;
+}
+
+.resume-education-item:last-child,
+.resume-expertise-block:last-child {
+  margin-bottom: 0;
+}
+
+.resume-education-item h3,
+.resume-expertise-block h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.resume-education-item p,
+.resume-expertise-block p {
+  font-size: 0.98rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-sidebar {
+    position: static;
+  }
+
+  .resume-sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 0.4rem;
+    padding: 0.6rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .resume-sidebar-heading {
+    flex-basis: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .resume-sidebar-heading:first-child {
+    margin-top: 0;
+  }
+
+  .resume-sidebar-nav a {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(212, 208, 200, 0.8);
+    flex: 0 0 auto;
+  }
 }
 
 @media (max-width: 1024px) {

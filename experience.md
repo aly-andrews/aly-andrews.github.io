@@ -7,26 +7,22 @@ permalink: /resume/
 <div class="page-top-band" aria-hidden="true"></div>
 <h1 class="visually-hidden">Resume</h1>
 
-<nav class="resume-subnav" aria-label="Resume sections">
-  <div class="resume-subnav-inner">
-    <a href="#experience">Experience</a>
-    <a href="#expertise">Expertise</a>
-    <a href="#education">Education</a>
-  </div>
-</nav>
+<section class="work-content-creative" id="experience">
+  <div class="container">
+    <div class="portfolio-layout">
+      <aside class="portfolio-sidebar" aria-label="Resume section navigation">
+        <nav class="portfolio-sidebar-nav">
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#expertise">Expertise</a>
+        </nav>
+      </aside>
 
-<section class="experience-resume-page" id="experience">
-  <div class="experience-resume-shapes" aria-hidden="true">
-    <div class="resume-shape resume-shape-1"></div>
-    <div class="resume-shape resume-shape-2"></div>
-    <div class="resume-shape resume-shape-3"></div>
-  </div>
-
-  <div class="experience-resume-container">
-    <div class="experience-content-inner">
+      <div class="portfolio-content-main">
       <!-- Senior Education Content Producer -->
+      <div id="senior-education-content-producer" class="work-section-creative">
       <article class="experience-item role-education">
-        <div class="experience-header">
+        <div class="experience-header work-section-intro">
           <h2>Senior Education Content Producer</h2>
           <p class="experience-company">Shopify</p>
           <p class="experience-meta">July 2023 – March 2026</p>
@@ -48,10 +44,12 @@ permalink: /resume/
           </details>
         </div>
       </article>
+      </div>
 
       <!-- Video Production Lead -->
+      <div id="video-production-lead" class="work-section-creative">
       <article class="experience-item role-video">
-        <div class="experience-header">
+        <div class="experience-header work-section-intro">
           <h2>Video Production Lead</h2>
           <p class="experience-company">Shopify</p>
           <p class="experience-meta">November 2021 – July 2023</p>
@@ -74,10 +72,12 @@ permalink: /resume/
           </details>
         </div>
       </article>
+      </div>
 
       <!-- Senior Video Producer -->
+      <div id="senior-video-producer" class="work-section-creative">
       <article class="experience-item role-video">
-        <div class="experience-header">
+        <div class="experience-header work-section-intro">
           <h2>Senior Video Producer</h2>
           <p class="experience-company">Shopify</p>
           <p class="experience-meta">June 2018 – November 2021</p>
@@ -99,10 +99,12 @@ permalink: /resume/
           </details>
         </div>
       </article>
+      </div>
 
       <!-- Merchant Success Manager -->
+      <div id="merchant-success-manager" class="work-section-creative">
       <article class="experience-item">
-        <div class="experience-header">
+        <div class="experience-header work-section-intro">
           <h2>Merchant Success Manager</h2>
           <p class="experience-company">Shopify</p>
           <p class="experience-meta">January 2017 – June 2018</p>
@@ -123,10 +125,12 @@ permalink: /resume/
           </details>
         </div>
       </article>
+      </div>
 
       <!-- Marketing Coordinator -->
+      <div id="marketing-coordinator" class="work-section-creative">
       <article class="experience-item">
-        <div class="experience-header">
+        <div class="experience-header work-section-intro">
           <h2>Marketing Coordinator</h2>
           <p class="experience-company">Dr. Info / Group Healthcare</p>
           <p class="experience-meta">May 2015 – January 2017</p>
@@ -146,10 +150,12 @@ permalink: /resume/
           </details>
         </div>
       </article>
+      </div>
 
       <!-- Advertising Consultant -->
+      <div id="advertising-consultant" class="work-section-creative">
       <article class="experience-item experience-item-last">
-        <div class="experience-header">
+        <div class="experience-header work-section-intro">
           <h2>Advertising Consultant</h2>
           <p class="experience-company">The Ottawa Sun</p>
           <p class="experience-meta">December 2011 – December 2012</p>
@@ -169,18 +175,32 @@ permalink: /resume/
           </details>
         </div>
       </article>
+      </div>
 
-    </div>
-  </div>
-</section>
+    <section class="work-section-creative" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="highlights-grid">
+        <div id="marketing-advertising" class="highlight-card creative-card education-card">
+          <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-mint), var(--brand-lavender));"></div>
+          <h3>Marketing and Advertising Diploma</h3>
+          <p class="education-org">Loyalist College</p>
+          <p class="education-dates">2007–2009</p>
+        </div>
+        <div id="technical-writing" class="highlight-card creative-card education-card">
+          <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-pink), var(--brand-gold));"></div>
+          <h3>Technical Writing Graduate Certificate</h3>
+          <p class="education-org">Algonquin College</p>
+          <p class="education-dates">2024–2026</p>
+        </div>
+      </div>
+    </section>
 
-<section class="highlights-creative resume-section" id="expertise">
-  <div class="container">
-    <h2 class="section-title">Expertise</h2>
-    <div class="highlights-grid">
-      <div class="highlight-card creative-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-mint), var(--brand-lavender));"></div>
-        <h3>Technical</h3>
+    <section class="work-section-creative" id="expertise">
+      <h2 class="section-title">Expertise</h2>
+      <div class="highlights-grid">
+        <div id="technical" class="highlight-card creative-card">
+          <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-mint), var(--brand-lavender));"></div>
+          <h3>Technical</h3>
         <ul class="highlight-card-list">
           <li>Cursor, LLMs, Reprise</li>
           <li>Markdown, Git, SEO</li>
@@ -189,7 +209,7 @@ permalink: /resume/
           <li>Data Analysis, Screencasting</li>
         </ul>
       </div>
-      <div class="highlight-card creative-card">
+      <div id="strategy" class="highlight-card creative-card">
         <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-gold), var(--brand-pink));"></div>
         <h3>Strategy</h3>
         <ul class="highlight-card-list">
@@ -200,7 +220,7 @@ permalink: /resume/
           <li>Modular Content Design, Audience Analysis</li>
         </ul>
       </div>
-      <div class="highlight-card creative-card">
+      <div id="leadership" class="highlight-card creative-card">
         <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-lavender), var(--brand-mint));"></div>
         <h3>Leadership</h3>
         <ul class="highlight-card-list">
@@ -212,24 +232,8 @@ permalink: /resume/
         </ul>
       </div>
     </div>
-  </div>
-</section>
+    </section>
 
-<section class="highlights-creative resume-section" id="education">
-  <div class="container">
-    <h2 class="section-title">Education</h2>
-    <div class="highlights-grid">
-      <div class="highlight-card creative-card education-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-pink), var(--brand-gold));"></div>
-        <h3>Technical Writing Graduate Certificate</h3>
-        <p class="education-org">Algonquin College</p>
-        <p class="education-dates">2024–2026</p>
-      </div>
-      <div class="highlight-card creative-card education-card">
-        <div class="card-icon" style="background: linear-gradient(135deg, var(--brand-mint), var(--brand-lavender));"></div>
-        <h3>Marketing and Advertising Diploma</h3>
-        <p class="education-org">Loyalist College</p>
-        <p class="education-dates">2007–2009</p>
       </div>
     </div>
   </div>
