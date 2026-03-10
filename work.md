@@ -9,6 +9,14 @@ permalink: /portfolio/
 
 <section class="work-content-creative">
   <div class="container">
+    <div class="portfolio-programs-callout">
+      <div class="pattern-callout pattern-callout--note">
+        <p class="pattern-quote">
+          <span class="programs-line-1">I design programs, not isolated deliverables.</span>
+          <span class="programs-line-2">Each series of assets works together so users can navigate a topic on their own.</span>
+        </p>
+      </div>
+    </div>
     <div class="portfolio-layout">
       <aside class="portfolio-sidebar" aria-label="Portfolio section navigation">
         <nav class="portfolio-sidebar-nav">

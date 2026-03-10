@@ -50,7 +50,7 @@ permalink: /
             <span class="portfolio-card-tag tag-technical">Instructional design</span>
           </div>
           <h3>Scaleable programs</h3>
-          <p>End-to-end learning program: technical writing, storyboarding, video production and hosting, plus instructional design.</p>
+          <p>End to end programs, not one-off assets: connected videos, articles and docs that build on each other to take users from first question to successful launch.</p>
           <p class="portfolio-card-link">View project →</p>
         </div>
       </a>
@@ -104,15 +104,15 @@ permalink: /
     <div class="how-i-work-editorial-main">
       <article class="how-i-work-editorial-item" data-step="01">
         <h3>Start with the user</h3>
-        <p>I care about who will read or watch my content, what they need to do and whether what I'm shipping actually helps them solve problems. Audience and task come first — format follows.</p>
+        <p>I care about who will read or watch my content, what they need to do and whether what I'm shipping actually helps them solve problems. Audience and task come first. Format follows.</p>
       </article>
       <article class="how-i-work-editorial-item" data-step="02">
         <h3>Write with clarity</h3>
-        <p>There's something deeply satisfying about taking an abstract idea and turning it into something tangible — a help center doc, an Academy course, a style guide, a how-to video. Complex topics made accessible.</p>
+        <p>There's something deeply satisfying about taking an abstract idea and turning it into something tangible: a help center doc, an Academy course, a style guide or a how-to video. Complex topics made accessible.</p>
       </article>
       <article class="how-i-work-editorial-item" data-step="03">
         <h3>Build with intention</h3>
-        <p>It's not enough to ship content and hope it works. I track retention, drop-off points, support ticket volume and engagement signals — and I use what I learn to build exactly what users are asking for. I also build the workflows and style guides that let teams scale that work—AI-assisted pipelines, quality criteria and documentation systems.</p>
+        <p>It's not enough to ship content and hope it works. I track retention, drop-off points, support ticket volume and engagement signals, and I use what I learn to build exactly what users are asking for. I also build the workflows and style guides that let teams scale that work with AI-assisted pipelines, quality criteria and documentation systems.</p>
       </article>
     </div>
   </div>
