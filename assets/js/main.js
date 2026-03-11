@@ -10,14 +10,44 @@
   const initNavToggle = () => {
     const toggle = document.querySelector(".nav-toggle");
     const links = document.querySelector(".nav-links");
-    if (!toggle || !links) {
+    const nav = document.querySelector(".site-nav");
+    if (!toggle || !links || !nav) {
       return;
     }
 
-    toggle.addEventListener("click", () => {
+    const setMenuOpen = (open) => {
+      toggle.setAttribute("aria-expanded", String(open));
+      links.classList.toggle("nav-open", open);
+    };
+
+    toggle.addEventListener("click", (event) => {
+      event.stopPropagation();
       const isOpen = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!isOpen));
-      links.classList.toggle("nav-open", !isOpen);
+      setMenuOpen(!isOpen);
+    });
+
+    links.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        setMenuOpen(false);
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (event.target instanceof Node && !nav.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 768) {
+        setMenuOpen(false);
+      }
     });
   };
 

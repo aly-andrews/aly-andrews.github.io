@@ -8971,3 +8971,77 @@ body.whimsy-cursor-enabled .video-card {
     font-size: 0.9rem !important;
   }
 }
+
+/* Mobile stability pass: nav + resume/portfolio stacking */
+@media (max-width: 768px) {
+  .site-header {
+    z-index: 1200;
+  }
+
+  .site-nav {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1201;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.45rem) !important;
+    left: 0.35rem !important;
+    right: 0.35rem !important;
+    width: auto;
+    margin: 0;
+    padding: 0.45rem;
+    background: #ffffff !important;
+    border: 1px solid rgba(31, 28, 42, 0.18) !important;
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18) !important;
+    border-radius: 12px;
+    z-index: 1202 !important;
+  }
+
+  .nav-links.nav-open {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .nav-links li,
+  .nav-links a {
+    width: 100%;
+  }
+
+  .nav-links a {
+    justify-content: flex-start;
+  }
+
+  .portfolio-layout,
+  .work-content-creative .portfolio-layout,
+  .resume-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .portfolio-sidebar,
+  .resume-sidebar {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .portfolio-sidebar-nav,
+  .resume-sidebar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    width: 100%;
+    gap: 0.4rem !important;
+  }
+
+  .portfolio-sidebar-nav a,
+  .resume-sidebar-nav a {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+}
