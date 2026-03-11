@@ -9091,9 +9091,9 @@ body.whimsy-cursor-enabled .video-card {
   .hero-grid-home .hero-content::before {
     content: "";
     float: right;
-    width: 8.7rem;
-    height: 8.7rem;
-    margin: 3.55rem 0 0.65rem 0.45rem;
+    width: 9.2rem;
+    height: 9.2rem;
+    margin: 3.4rem 0 0.65rem 0.45rem;
     shape-outside: circle(50%);
     -webkit-shape-outside: circle(50%);
     pointer-events: none;
@@ -9133,8 +9133,8 @@ body.whimsy-cursor-enabled .video-card {
     top: auto !important;
     left: auto !important;
     right: 0.7rem;
-    bottom: -1.7rem;
-    width: min(40vw, 152px) !important;
+    bottom: -1.35rem;
+    width: min(42vw, 160px) !important;
     height: auto !important;
     margin: 0 !important;
     z-index: 4;
@@ -9143,12 +9143,12 @@ body.whimsy-cursor-enabled .video-card {
 
   .hero-grid-home .hero-profile-image {
     height: auto !important;
-    max-height: 192px !important;
+    max-height: 202px !important;
     transform: none !important;
   }
 
   .hero-grid-home .hero-photo-placeholder {
-    height: 162px !important;
+    height: 172px !important;
   }
 
   .featured-work-creative {
@@ -9179,14 +9179,14 @@ body.whimsy-cursor-enabled .video-card {
   }
 
   .hero-grid-home .hero-content::before {
-    width: 7.7rem;
-    height: 7.7rem;
-    margin-top: 3.65rem;
+    width: 8.25rem;
+    height: 8.25rem;
+    margin-top: 3.5rem;
   }
 
   .hero-grid-home .hero-photo {
-    width: min(38vw, 138px) !important;
+    width: min(40vw, 146px) !important;
     right: 0.65rem;
-    bottom: -1.45rem;
+    bottom: -1.15rem;
   }
 }
