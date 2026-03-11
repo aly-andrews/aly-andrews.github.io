@@ -4557,6 +4557,10 @@ img {
    LAYOUT UPDATES — Mobile Responsiveness
    =========================================== */
 
+.mobile-scroll-indicator {
+  display: none;
+}
+
 /* Hero: proper 2-column grid */
 .hero-creative {
   padding: 6rem 0;
@@ -9050,7 +9054,7 @@ body.whimsy-cursor-enabled .video-card {
 @media (max-width: 768px) {
   .site-credits {
     min-height: auto !important;
-    padding: 0.4rem 0 0.2rem !important;
+    padding: 1.2rem 0 0.2rem !important;
   }
 
   .credits-text {
@@ -9068,8 +9072,8 @@ body.whimsy-cursor-enabled .video-card {
     position: relative;
     grid-template-columns: 1fr !important;
     gap: 0.4rem !important;
-    padding-right: 0 !important;
-    padding-bottom: 3.8rem;
+    padding: 0 var(--spacing-unit) !important;
+    padding-bottom: 3.8rem !important;
     align-items: start;
   }
 
@@ -9132,7 +9136,7 @@ body.whimsy-cursor-enabled .video-card {
     position: absolute;
     top: auto !important;
     left: auto !important;
-    right: 0.7rem;
+    right: calc(var(--spacing-unit) - 0.5rem);
     bottom: -1.35rem;
     width: min(42vw, 160px) !important;
     height: auto !important;
@@ -9153,6 +9157,7 @@ body.whimsy-cursor-enabled .video-card {
 
   .featured-work-creative {
     padding-top: 0.75rem !important;
+    margin-top: 3.5rem !important;
   }
 
   .featured-work-creative .section-title {
@@ -9170,6 +9175,26 @@ body.whimsy-cursor-enabled .video-card {
   .portfolio-card-body {
     padding: 0.9rem !important;
   }
+
+  .mobile-scroll-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0;
+    color: var(--text-light, #64748b);
+    opacity: 0.6;
+    animation: gentle-bounce 2s infinite ease-in-out;
+  }
+
+  .mobile-scroll-indicator svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  @keyframes gentle-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
 }
 
 @media (max-width: 430px) {
@@ -9186,7 +9211,7 @@ body.whimsy-cursor-enabled .video-card {
 
   .hero-grid-home .hero-photo {
     width: min(40vw, 146px) !important;
-    right: 0.65rem;
+    right: calc(var(--spacing-unit) - 0.5rem);
     bottom: -1.15rem;
   }
 }

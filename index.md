@@ -32,6 +32,12 @@ permalink: /
   </div>
 </section>
 
+<div class="mobile-scroll-indicator" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+  </svg>
+</div>
+
 <section class="featured-work-creative" id="portfolio">
   <div class="container">
     <h2 class="section-title">What I create</h2>
@@ -93,6 +99,12 @@ permalink: /
   </div>
 </section>
 
+<div class="mobile-scroll-indicator" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+  </svg>
+</div>
+
 <section class="how-i-work-section" id="how-i-work">
   <div class="container how-i-work-editorial">
     <div class="how-i-work-editorial-side">
@@ -117,6 +129,12 @@ permalink: /
     </div>
   </div>
 </section>
+
+<div class="mobile-scroll-indicator" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+  </svg>
+</div>
 
 <section class="testimonials">
   <div class="container">
