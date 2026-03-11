@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-<section class="site-credits" style="min-height: 36px; padding: 1.5rem 1rem 1rem; display: flex; align-items: center; justify-content: center;">
+<section class="site-credits" style="min-height: 32px; padding: 0.9rem 1rem 0.55rem; display: flex; align-items: center; justify-content: center;">
   <div class="container">
     <p class="credits-text">This portfolio site was custom built by me using <a href="https://cursor.sh" target="_blank" rel="noopener">Cursor</a>, Jekyll and GitHub Pages.</p>
   </div>
@@ -16,18 +16,18 @@ permalink: /
     <div class="shape shape-2"></div>
     <div class="shape shape-3"></div>
   </div>
-  <div class="hero-grid">
+  <div class="hero-grid hero-grid-home">
+    <div class="hero-content">
+      <h1 class="hero-title">Aly Andrews. I bridge the gap between complex systems and the people who use them.</h1>
+      <p class="hero-description">Senior Education Strategist specializing in the intersection of AI workflows and scalable learning systems.</p>
+      <a href="{{ '/portfolio/' | relative_url }}" class="btn-hero-cta">Explore My Work</a>
+    </div>
     <div class="hero-photo">
       <img src="{{ '/assets/images/about/profile-cutout.png' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="hero-photo-placeholder" style="display: none;">
         <p>Add your photo</p>
         <p class="placeholder-hint">Upload to: assets/images/about/profile-cutout.png</p>
       </div>
-    </div>
-    <div class="hero-content">
-      <h1 class="hero-title">Aly Andrews. I bridge the gap between complex systems and the people who use them.</h1>
-      <p class="hero-description">Senior Education Strategist specializing in the intersection of AI workflows and scalable learning systems.</p>
-      <a href="{{ '/portfolio/' | relative_url }}" class="btn-hero-cta">Explore My Work</a>
     </div>
   </div>
 </section>
