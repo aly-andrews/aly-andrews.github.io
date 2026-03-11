@@ -9133,8 +9133,8 @@ body.whimsy-cursor-enabled .video-card {
     top: auto !important;
     left: auto !important;
     right: 0.7rem;
-    bottom: -2.25rem;
-    width: min(37vw, 138px) !important;
+    bottom: -1.7rem;
+    width: min(40vw, 152px) !important;
     height: auto !important;
     margin: 0 !important;
     z-index: 4;
@@ -9143,12 +9143,12 @@ body.whimsy-cursor-enabled .video-card {
 
   .hero-grid-home .hero-profile-image {
     height: auto !important;
-    max-height: 176px !important;
+    max-height: 192px !important;
     transform: none !important;
   }
 
   .hero-grid-home .hero-photo-placeholder {
-    height: 148px !important;
+    height: 162px !important;
   }
 
   .featured-work-creative {
@@ -9185,8 +9185,8 @@ body.whimsy-cursor-enabled .video-card {
   }
 
   .hero-grid-home .hero-photo {
-    width: min(36vw, 128px) !important;
+    width: min(38vw, 138px) !important;
     right: 0.65rem;
-    bottom: -2.05rem;
+    bottom: -1.45rem;
   }
 }
