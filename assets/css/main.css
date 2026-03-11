@@ -9050,7 +9050,7 @@ body.whimsy-cursor-enabled .video-card {
 @media (max-width: 768px) {
   .site-credits {
     min-height: auto !important;
-    padding: 0.4rem 0 0.2rem !important;
+    padding: 0.45rem 0 0.3rem !important;
   }
 
   .credits-text {
@@ -9061,23 +9061,25 @@ body.whimsy-cursor-enabled .video-card {
   }
 
   .hero-creative {
-    padding: 0.3rem 0 0.45rem !important;
+    padding: 0.95rem 0 1.8rem !important;
+    min-height: 82svh;
   }
 
   .hero-grid-home {
     position: relative;
     grid-template-columns: 1fr !important;
-    gap: 0.4rem !important;
+    gap: 0.65rem !important;
     padding-right: 0 !important;
-    padding-bottom: 3.8rem;
+    padding-bottom: 5.4rem;
+    min-height: calc(82svh - 0.95rem);
     align-items: start;
   }
 
   .hero-grid-home .hero-content {
     order: 1;
-    margin: 0 !important;
-    padding: 0.9rem 1rem 1rem 1rem !important;
-    min-height: 17.9rem;
+    margin: 0.85rem 0 0 !important;
+    padding: 1.3rem 1.1rem 1.35rem 1.1rem !important;
+    min-height: 22.25rem;
     background: rgba(255, 255, 255, 0.8) !important;
     border: 1px solid rgba(31, 28, 42, 0.12);
     border-radius: 20px;
@@ -9091,9 +9093,9 @@ body.whimsy-cursor-enabled .video-card {
   .hero-grid-home .hero-content::before {
     content: "";
     float: right;
-    width: 9.2rem;
-    height: 9.2rem;
-    margin: 3.4rem 0 0.65rem 0.45rem;
+    width: 9.5rem;
+    height: 9.5rem;
+    margin: 4.6rem 0 0.65rem 0.55rem;
     shape-outside: circle(50%);
     -webkit-shape-outside: circle(50%);
     pointer-events: none;
@@ -9110,7 +9112,7 @@ body.whimsy-cursor-enabled .video-card {
   .hero-grid-home .hero-title {
     font-size: clamp(1.78rem, 7vw, 2.18rem) !important;
     line-height: 1.12 !important;
-    margin-bottom: 0.45rem !important;
+    margin-bottom: 0.7rem !important;
     max-width: 100%;
   }
 
@@ -9118,7 +9120,7 @@ body.whimsy-cursor-enabled .video-card {
     font-size: 0.95rem !important;
     line-height: 1.45 !important;
     max-width: 100%;
-    margin-bottom: 0.78rem !important;
+    margin-bottom: 1.05rem !important;
   }
 
   .hero-grid-home .btn-hero-cta {
@@ -9133,7 +9135,7 @@ body.whimsy-cursor-enabled .video-card {
     top: auto !important;
     left: auto !important;
     right: 0.7rem;
-    bottom: -1.35rem;
+    bottom: -1.8rem;
     width: min(42vw, 160px) !important;
     height: auto !important;
     margin: 0 !important;
@@ -9152,7 +9154,7 @@ body.whimsy-cursor-enabled .video-card {
   }
 
   .featured-work-creative {
-    padding-top: 0.75rem !important;
+    padding-top: 1.5rem !important;
   }
 
   .featured-work-creative .section-title {
@@ -9173,20 +9175,30 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 @media (max-width: 430px) {
+  .hero-creative {
+    min-height: 84svh;
+  }
+
+  .hero-grid-home {
+    min-height: calc(84svh - 0.95rem);
+    padding-bottom: 5rem;
+  }
+
   .hero-grid-home .hero-content {
-    padding: 0.88rem 0.92rem 0.95rem 0.92rem !important;
-    min-height: 17.5rem;
+    margin-top: 0.75rem !important;
+    padding: 1.15rem 1rem 1.2rem 1rem !important;
+    min-height: 21.2rem;
   }
 
   .hero-grid-home .hero-content::before {
-    width: 8.25rem;
-    height: 8.25rem;
-    margin-top: 3.5rem;
+    width: 8.6rem;
+    height: 8.6rem;
+    margin-top: 4.1rem;
   }
 
   .hero-grid-home .hero-photo {
     width: min(40vw, 146px) !important;
     right: 0.65rem;
-    bottom: -1.15rem;
+    bottom: -1.45rem;
   }
 }
