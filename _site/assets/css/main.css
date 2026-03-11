@@ -1720,8 +1720,8 @@ img {
     align-items: center;
     text-align: center;
     min-height: auto;
-    padding: 5rem 1.5rem 4rem;
-    margin-bottom: -4rem;
+    padding: 6rem 1.5rem 7rem;
+    margin-bottom: 0;
   }
 
   .hero-creative .hero-content {
@@ -5076,7 +5076,7 @@ img {
 
 @media (max-width: 480px) {
   .hero-creative {
-    padding: 3rem 0;
+    padding: 4rem 0 8rem;
     margin-bottom: 0;
   }
 
