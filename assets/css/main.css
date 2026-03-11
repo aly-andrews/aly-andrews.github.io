@@ -9045,3 +9045,148 @@ body.whimsy-cursor-enabled .video-card {
     flex: 1 1 auto;
   }
 }
+
+/* Landing page UX pass: preserve desktop, optimize mobile hero flow */
+@media (max-width: 768px) {
+  .site-credits {
+    min-height: auto !important;
+    padding: 0.4rem 0 0.2rem !important;
+  }
+
+  .credits-text {
+    font-size: 0.86rem !important;
+    line-height: 1.32 !important;
+    margin: 0 auto !important;
+    max-width: 34ch;
+  }
+
+  .hero-creative {
+    padding: 0.3rem 0 0.45rem !important;
+  }
+
+  .hero-grid-home {
+    position: relative;
+    grid-template-columns: 1fr !important;
+    gap: 0.4rem !important;
+    padding-right: 0 !important;
+    padding-bottom: 3.8rem;
+    align-items: start;
+  }
+
+  .hero-grid-home .hero-content {
+    order: 1;
+    margin: 0 !important;
+    padding: 0.9rem 1rem 1rem 1rem !important;
+    min-height: 17.9rem;
+    background: rgba(255, 255, 255, 0.8) !important;
+    border: 1px solid rgba(31, 28, 42, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+    text-align: left !important;
+    position: relative;
+    z-index: 3;
+  }
+
+  /* Reserve curved space near lower-right so copy does not run under image. */
+  .hero-grid-home .hero-content::before {
+    content: "";
+    float: right;
+    width: 9.2rem;
+    height: 9.2rem;
+    margin: 3.4rem 0 0.65rem 0.45rem;
+    shape-outside: circle(50%);
+    -webkit-shape-outside: circle(50%);
+    pointer-events: none;
+  }
+
+  .hero-grid-home .hero-title,
+  .hero-grid-home .hero-description,
+  .hero-grid-home .btn-hero-cta {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .hero-grid-home .hero-title {
+    font-size: clamp(1.78rem, 7vw, 2.18rem) !important;
+    line-height: 1.12 !important;
+    margin-bottom: 0.45rem !important;
+    max-width: 100%;
+  }
+
+  .hero-grid-home .hero-description {
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+    max-width: 100%;
+    margin-bottom: 0.78rem !important;
+  }
+
+  .hero-grid-home .btn-hero-cta {
+    display: inline-flex;
+    width: auto !important;
+    min-height: 44px;
+  }
+
+  .hero-grid-home .hero-photo {
+    order: 2;
+    position: absolute;
+    top: auto !important;
+    left: auto !important;
+    right: 0.7rem;
+    bottom: -1.35rem;
+    width: min(42vw, 160px) !important;
+    height: auto !important;
+    margin: 0 !important;
+    z-index: 4;
+    pointer-events: none;
+  }
+
+  .hero-grid-home .hero-profile-image {
+    height: auto !important;
+    max-height: 202px !important;
+    transform: none !important;
+  }
+
+  .hero-grid-home .hero-photo-placeholder {
+    height: 172px !important;
+  }
+
+  .featured-work-creative {
+    padding-top: 0.75rem !important;
+  }
+
+  .featured-work-creative .section-title {
+    margin-bottom: 0.85rem !important;
+  }
+
+  .portfolio-cards-grid {
+    gap: 0.8rem !important;
+  }
+
+  .portfolio-card-image {
+    height: 126px !important;
+  }
+
+  .portfolio-card-body {
+    padding: 0.9rem !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .hero-grid-home .hero-content {
+    padding: 0.88rem 0.92rem 0.95rem 0.92rem !important;
+    min-height: 17.5rem;
+  }
+
+  .hero-grid-home .hero-content::before {
+    width: 8.25rem;
+    height: 8.25rem;
+    margin-top: 3.5rem;
+  }
+
+  .hero-grid-home .hero-photo {
+    width: min(40vw, 146px) !important;
+    right: 0.65rem;
+    bottom: -1.15rem;
+  }
+}

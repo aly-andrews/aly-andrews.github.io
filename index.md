@@ -16,7 +16,7 @@ permalink: /
     <div class="shape shape-2"></div>
     <div class="shape shape-3"></div>
   </div>
-  <div class="hero-grid">
+  <div class="hero-grid hero-grid-home">
     <div class="hero-photo">
       <img src="{{ '/assets/images/about/profile-cutout.png' | relative_url }}" alt="Aly Andrews" class="hero-profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="hero-photo-placeholder" style="display: none;">
