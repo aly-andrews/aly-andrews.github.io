@@ -980,7 +980,7 @@ img {
 .experience-resume-container {
   position: relative;
   z-index: 1;
-  max-width: 920px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 var(--spacing-unit);
   background: #fff;
@@ -2304,9 +2304,6 @@ img {
 }
 
 .passion-projects-instagram {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--brand-rose);
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
@@ -2793,7 +2790,7 @@ img {
 /* Testimonials */
 .testimonials {
   padding: 6rem 0;
-  background: linear-gradient(135deg, var(--bg-accent) 0%, var(--bg-light) 50%, #f0ede8 100%);
+  background: linear-gradient(180deg, var(--bg-color) 0%, var(--bg-light) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -3514,6 +3511,43 @@ img {
   background: color-mix(in srgb, var(--accent-gold) 15%, var(--bg-color));
 }
 
+.portfolio-programs-callout {
+  width: 100%;
+  margin: 0 0 1.75rem 0;
+}
+
+.portfolio-programs-callout .pattern-callout {
+  border-left-width: 0;
+  border-radius: 18px;
+  border: 2px solid rgba(31, 28, 42, 0.45);
+  background: rgba(243, 145, 205, 0.28);
+  box-shadow: 6px 6px 0 rgba(31, 28, 42, 0.15);
+  text-align: center;
+}
+
+.portfolio-programs-callout .pattern-quote {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+  display: inline-block;
+  transform: translateX(4px);
+}
+
+.portfolio-programs-callout .pattern-quote .programs-line-1,
+.portfolio-programs-callout .pattern-quote .programs-line-2 {
+  display: block;
+}
+
+.portfolio-programs-callout .pattern-quote .programs-line-1 {
+  font-weight: 600;
+}
+
+.portfolio-programs-callout .pattern-quote .programs-line-2 {
+  font-style: normal;
+}
+
 .pattern-callout .pattern-quote {
   margin: 0;
   border: none;
@@ -4008,20 +4042,20 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.78);
   backdrop-filter: blur(4px);
 }
 
 .video-modal-container {
   position: relative;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 100vw;
+  max-height: 100vh;
   width: 100%;
   z-index: 10000;
-  background: var(--bg-color);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+  box-shadow: none;
 }
 
 .video-modal-close {
@@ -4049,10 +4083,13 @@ img {
 }
 
 #modalVideoPlayer {
+  position: relative;
   width: 100%;
-  height: auto;
+  max-width: 1200px;
+  aspect-ratio: 16 / 9;
   max-height: 90vh;
   display: block;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -4330,16 +4367,16 @@ img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.video-card:hover .play-button {
+  transform: scale(1.1);
+  box-shadow: 0 0 35px rgba(0,0,0,0.8);
+}
+
 /* Smaller play buttons for regular cards */
 .video-card:not(.large) .play-button {
   font-size: 4rem;
   width: 80px;
   height: 80px;
-}
-
-.video-card:hover .play-button {
-  transform: scale(1.1);
-  box-shadow: 0 0 35px rgba(0,0,0,0.8);
 }
 
 /* Video Modal */
@@ -4348,19 +4385,13 @@ img {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(6px);
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.4s ease-out;
 }
 
-.video-modal.show {
-  display: flex;
-  opacity: 1;
-}
-
+.video-modal.show,
 .video-modal[aria-hidden="false"],
 .video-modal.active {
   display: flex;
@@ -5329,10 +5360,6 @@ h6,
   padding-top: 2.75rem;
 }
 
-.page-top-band + .visually-hidden + .experience-resume-page {
-  padding-top: 2rem;
-}
-
 .page-top-band + .visually-hidden + .contact-layout {
   padding-top: 2.5rem;
 }
@@ -5395,6 +5422,23 @@ h6,
 
 .featured-work-creative {
   padding-top: 3.5rem;
+}
+
+/* Home page section headers: center aligned, more padding */
+.featured-work-creative .section-title,
+.how-i-work-section .section-title,
+.testimonials .section-title {
+  text-align: center;
+  display: block;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.featured-work-creative .section-title::after,
+.how-i-work-section .section-title::after,
+.testimonials .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section-subtitle {
@@ -6086,15 +6130,10 @@ h6,
   font-weight: 500;
 }
 
-/* Resume color-coding */
-.experience-item.role-education .experience-header h2 {
-  border-left: 4px solid var(--brand-lavender);
-  padding-left: 0.75rem;
-}
-
-.experience-item.role-video .experience-header h2 {
-  border-left: 4px solid var(--brand-pink);
-  padding-left: 0.75rem;
+/* Resume: use pill styling from work-section-creative (no role border) */
+.work-content-creative .experience-item .experience-header h2 {
+  border-left: none;
+  padding-left: 0;
 }
 
 /* Resume sticky subnav */
@@ -6556,6 +6595,171 @@ h6,
 
 .portfolio-content-main {
   min-width: 0;
+}
+
+/* Resume page: modular sections spacing */
+#experience.work-content-creative .portfolio-content-main {
+  gap: 1.1rem !important;
+}
+
+#experience.work-content-creative .work-section-creative {
+  margin-bottom: 0.35rem !important;
+  padding: 1rem 1.2rem !important;
+}
+
+#experience.work-content-creative .work-section-creative + .work-section-creative {
+  padding-top: 1.1rem !important;
+  margin-top: 0 !important;
+  border-top-width: 1px !important;
+}
+
+#experience.work-content-creative .work-section-creative + .work-section-creative::before {
+  display: none !important;
+}
+
+#experience.work-content-creative .experience-header {
+  margin-bottom: 1rem !important;
+}
+
+#experience.work-content-creative .experience-item {
+  margin-bottom: 0 !important;
+}
+
+/* Resume page sidebar navigation */
+.resume-layout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+
+.resume-sidebar {
+  position: sticky;
+  top: 6.3rem;
+}
+
+.resume-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.85rem;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(212, 208, 200, 0.8);
+  border-radius: 12px;
+}
+
+.resume-sidebar-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  padding: 0 0.6rem;
+}
+
+.resume-sidebar-heading:first-child {
+  margin-top: 0;
+}
+
+.resume-sidebar-nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.35;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.resume-sidebar-nav a:hover {
+  background: rgba(224, 242, 241, 0.55);
+  color: var(--primary-color);
+}
+
+.resume-content-main {
+  min-width: 0;
+}
+
+.resume-section-creative {
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 2px solid rgba(212, 208, 200, 0.6);
+}
+
+.resume-section-creative .section-title {
+  margin-bottom: 1.25rem;
+}
+
+.resume-content-main .experience-item,
+.resume-content-main .resume-education-item,
+.resume-content-main .resume-expertise-block,
+.resume-content-main .resume-section-creative,
+.resume-content-main .highlight-card {
+  scroll-margin-top: 6rem;
+}
+
+.resume-education-item,
+.resume-expertise-block {
+  margin-bottom: 1.5rem;
+}
+
+.resume-education-item:last-child,
+.resume-expertise-block:last-child {
+  margin-bottom: 0;
+}
+
+.resume-education-item h3,
+.resume-expertise-block h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.resume-education-item p,
+.resume-expertise-block p {
+  font-size: 0.98rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-sidebar {
+    position: static;
+  }
+
+  .resume-sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 0.4rem;
+    padding: 0.6rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .resume-sidebar-heading {
+    flex-basis: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .resume-sidebar-heading:first-child {
+    margin-top: 0;
+  }
+
+  .resume-sidebar-nav a {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(212, 208, 200, 0.8);
+    flex: 0 0 auto;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -7135,7 +7339,7 @@ body.whimsy-cursor-enabled .video-card {
   display: inline-block;
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
-  border: 2px solid rgba(31, 28, 42, 0.85);
+  border: 2px solid rgba(31, 28, 42, 0.45);
   background: rgba(255, 255, 255, 0.7);
 }
 
@@ -7351,7 +7555,7 @@ body.whimsy-cursor-enabled .video-card {
   display: inline-block;
   max-width: fit-content;
   padding: 0.25rem 0.95rem;
-  border: 2px solid var(--ink-dark);
+  border: 2px solid rgba(31, 28, 42, 0.45);
   border-radius: 999px;
   background: rgba(255, 240, 188, 0.8);
   box-shadow: 4px 4px 0 rgba(31, 28, 42, 0.16);
@@ -8077,7 +8281,7 @@ body.whimsy-cursor-enabled .video-card {
 
 .how-i-work-section .container::after {
   right: -0.6rem;
-  top: 2.3rem;
+  top: 0.3rem;
   width: 78px;
   height: 78px;
   border-radius: 63% 37% 49% 51% / 42% 58% 42% 58%;
@@ -8252,13 +8456,18 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 /* Match these key headers to colorful portfolio style pills */
+.featured-work-creative .section-title,
 .highlights-creative .section-title,
 .how-i-work-section .section-title,
 .testimonials .section-title {
-  border: 2px solid var(--ink-dark) !important;
+  border: 2px solid rgba(31, 28, 42, 0.45) !important;
   border-radius: 999px;
   padding: 0.62rem 1.45rem !important;
-  box-shadow: 6px 6px 0 rgba(31, 28, 42, 0.16);
+  box-shadow: 6px 6px 0 rgba(31, 28, 42, 0.1);
+}
+
+.featured-work-creative .section-title {
+  background: rgba(191, 240, 219, 0.95);
 }
 
 .highlights-creative .section-title {
@@ -8325,6 +8534,7 @@ body.whimsy-cursor-enabled .video-card {
     right: -4.6rem;
   }
 
+  .featured-work-creative .section-title,
   .highlights-creative .section-title,
   .how-i-work-section .section-title,
   .testimonials .section-title {
@@ -8759,5 +8969,79 @@ body.whimsy-cursor-enabled .video-card {
 
   .doc-link {
     font-size: 0.9rem !important;
+  }
+}
+
+/* Mobile stability pass: nav + resume/portfolio stacking */
+@media (max-width: 768px) {
+  .site-header {
+    z-index: 1200;
+  }
+
+  .site-nav {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1201;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.45rem) !important;
+    left: 0.35rem !important;
+    right: 0.35rem !important;
+    width: auto;
+    margin: 0;
+    padding: 0.45rem;
+    background: #ffffff !important;
+    border: 1px solid rgba(31, 28, 42, 0.18) !important;
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.18) !important;
+    border-radius: 12px;
+    z-index: 1202 !important;
+  }
+
+  .nav-links.nav-open {
+    display: flex !important;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .nav-links li,
+  .nav-links a {
+    width: 100%;
+  }
+
+  .nav-links a {
+    justify-content: flex-start;
+  }
+
+  .portfolio-layout,
+  .work-content-creative .portfolio-layout,
+  .resume-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .portfolio-sidebar,
+  .resume-sidebar {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .portfolio-sidebar-nav,
+  .resume-sidebar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    width: 100%;
+    gap: 0.4rem !important;
+  }
+
+  .portfolio-sidebar-nav a,
+  .resume-sidebar-nav a {
+    width: 100%;
+    flex: 1 1 auto;
   }
 }
