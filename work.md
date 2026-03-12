@@ -112,19 +112,19 @@ permalink: /portfolio/
           <span class="article-card-link">Read article →</span>
         </a>
 
-        <article class="article-card article-card-static article-card-placeholder" aria-label="Getting started with Shopify placeholder card">
+        <a href="/getting-started-shopify/" class="article-card">
           <div class="article-card-visual article-card-visual-guide" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 14.25V6.75m0 0-3 3m3-3 3 3M4.5 15.75v1.5A2.25 2.25 0 0 0 6.75 19.5h10.5A2.25 2.25 0 0 0 19.5 17.25v-1.5"/></svg>
           </div>
           <h3>Getting started with Shopify</h3>
-          <span class="article-card-link">PDF coming soon</span>
-        </article>
+          <span class="article-card-link">View manual →</span>
+        </a>
 
         <a href="{{ '/assets/documents/lollydex-documentation-project-plan.pdf' | relative_url }}" class="article-card" target="_blank" rel="noopener">
           <div class="article-card-visual article-card-visual-plan" aria-hidden="true">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 6.75h15M4.5 12h15m-15 5.25h9"/></svg>
           </div>
-          <h3>LollyDex Docs: documentation release plan</h3>
+          <h3>Documentation release</h3>
           <span class="article-card-link">View document →</span>
         </a>
 
