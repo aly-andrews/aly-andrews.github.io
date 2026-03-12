@@ -9281,11 +9281,16 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-page-header {
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
 }
 
 .manual-page-header h1 {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.85rem;
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  line-height: 1.15;
+  color: var(--primary-color);
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .manual-page-subtitle {
@@ -9297,11 +9302,12 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content {
-  padding: clamp(1.35rem, 2.4vw, 2rem);
+  padding: clamp(1.6rem, 2.8vw, 2.4rem);
   border-radius: 34px;
   border: 2px solid var(--ink-dark);
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(252, 246, 255, 0.85));
   box-shadow: 8px 8px 0 rgba(31, 28, 42, 0.18);
+  max-width: 920px;
 }
 
 .manual-content h2,
@@ -9311,12 +9317,28 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content h2 {
-  margin-top: 2.3rem;
+  margin-top: 3.4rem;
+  margin-bottom: 0.85rem;
+  font-size: clamp(1.3rem, 1.85vw, 1.65rem);
+  line-height: 1.25;
+  color: var(--primary-color);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Tighter grouping: intro content closer to H2 */
+.manual-content h2 + p {
+  margin-bottom: 0.95rem;
 }
 
 .manual-content h3 {
-  margin-top: 1.8rem;
-  margin-bottom: 0.6rem;
+  margin-top: 2.1rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.02rem, 1.25vw, 1.18rem);
+  line-height: 1.35;
+  color: var(--primary-color);
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .manual-content h3.manual-procedure {
@@ -9326,11 +9348,157 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-content ul,
 .manual-content ol {
-  max-width: 78ch;
+  max-width: 74ch;
+}
+
+.manual-content p,
+.manual-content li {
+  line-height: 1.8;
+}
+
+.manual-content p {
+  margin: 0 0 1.35rem;
+}
+
+.manual-content li {
+  margin-bottom: 0.6rem;
+}
+
+.manual-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* Procedure block: H3, lead-in, Desktop, steps grouped as mini section */
+.manual-procedure + p {
+  margin-bottom: 0.35rem;
+}
+
+.manual-procedure + p + p {
+  margin-bottom: 0.4rem;
+}
+
+/* Procedure lists: clean numbered steps, tight between steps */
+.manual-procedure + p + p + ol {
+  list-style: decimal;
+  margin: 0.25rem 0 1.8rem;
+  padding-left: 1.3rem;
+  max-width: 76ch;
+}
+
+.manual-procedure + p + p + ol > li {
+  margin: 0 0 0.5rem;
+  padding-left: 0.15rem;
+  line-height: 1.6;
+}
+
+.manual-procedure + p + p + ol > li:last-child {
+  margin-bottom: 0;
+}
+
+.manual-procedure + p + p + ol > li > ul,
+.manual-procedure + p + p + ol > li > ol {
+  margin-top: 0.3rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Keep non-procedure lists clean and readable */
+.manual-content > ul,
+.manual-content > ol {
+  margin-bottom: 1.5rem;
+}
+
+.manual-metadata {
+  margin: 1.2rem 0 1.8rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(212, 208, 200, 0.9);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.manual-metadata ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.manual-callout {
+  position: relative;
+  margin: 1.1rem 0;
+  padding: 0.75rem 0.9rem 0.75rem 2.75rem;
+  border-left: 3px solid rgba(148, 163, 184, 0.5);
+  border-radius: 0 8px 8px 0;
+  background: rgba(248, 250, 252, 0.7);
+  font-style: normal;
+}
+
+.manual-callout p {
+  margin: 0;
+}
+
+.manual-callout::before {
+  content: "";
+  position: absolute;
+  left: 0.7rem;
+  top: 0.8rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  opacity: 0.7;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.manual-callout-title {
+  margin: 0 0 0.2rem;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--text-light);
+}
+
+.manual-note::before {
+  background-image: url("/assets/images/icons/manual-note.svg");
+}
+
+.manual-note {
+  border-left-color: rgba(96, 165, 250, 0.5);
+  background: rgba(248, 250, 252, 0.85);
+}
+
+.manual-note .manual-callout-title {
+  color: #64748b;
+}
+
+.manual-tip::before {
+  background-image: url("/assets/images/icons/manual-tip.svg");
+}
+
+.manual-tip {
+  border-left-color: rgba(52, 211, 153, 0.45);
+  background: rgba(248, 250, 252, 0.85);
+}
+
+.manual-tip .manual-callout-title {
+  color: #64748b;
+}
+
+.manual-warning::before {
+  background-image: url("/assets/images/icons/manual-warning.svg");
+}
+
+.manual-warning {
+  border-left-color: rgba(245, 158, 11, 0.55);
+  background: rgba(254, 252, 232, 0.5);
+}
+
+.manual-warning .manual-callout-title {
+  color: #78716c;
 }
 
 .manual-on-this-page {
-  margin: 1.2rem 0 1.8rem;
+  margin: 1.6rem 0 2.4rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(212, 208, 200, 0.9);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .manual-on-this-page-title {
@@ -9342,11 +9510,12 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-on-this-page ul {
   margin: 0;
+  padding-left: 1.2rem;
 }
 
 .manual-page-nav {
-  margin-top: 2rem;
-  padding-top: 1.1rem;
+  margin-top: 2.3rem;
+  padding-top: 1.3rem;
   border-top: 1px solid var(--border-color);
   display: flex;
   gap: 1rem;
@@ -9360,7 +9529,7 @@ body.whimsy-cursor-enabled .video-card {
 @media (max-width: 1024px) {
   .manual-layout {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.2rem;
   }
 
   .manual-sidebar {
@@ -9384,5 +9553,14 @@ body.whimsy-cursor-enabled .video-card {
   .manual-sidebar-nav a {
     border: 1px solid rgba(212, 208, 200, 0.8);
     background: rgba(255, 255, 255, 0.88);
+  }
+
+  .manual-content {
+    padding: 1.3rem;
+    border-radius: 20px;
+  }
+
+  .manual-procedure + p + p + ol {
+    padding-left: 1.15rem;
   }
 }

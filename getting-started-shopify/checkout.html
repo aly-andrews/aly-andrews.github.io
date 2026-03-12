@@ -61,14 +61,31 @@
             <div class="manual-on-this-page">
               <p class="manual-on-this-page-title">On this page</p>
               <ul>
+                <li><a href="#why-checkout-configuration-matters">Why checkout configuration matters</a></li>
                 <li><a href="#checkout-options">Understanding checkout options</a></li>
                 <li><a href="#accessing-checkout-settings">Accessing checkout settings</a></li>
+                <li><a href="#customer-accounts">Configuring customer account settings</a></li>
                 <li><a href="#customizing-fields">Customizing checkout fields</a></li>
+                <li><a href="#testing-checkout">Testing checkout flow</a></li>
               </ul>
             </div>
 
+            <h2 id="why-checkout-configuration-matters">Why Checkout Configuration Matters</h2>
+            <ul>
+              <li>Checkout is the final conversion point before purchase.</li>
+              <li>Mobile checkout quality strongly affects completed orders.</li>
+              <li>Overly strict requirements can increase abandonment.</li>
+            </ul>
+
             <h2 id="checkout-options">Understanding checkout options</h2>
             <p>Checkout settings control customer account requirements, customer information fields and order processing behavior.</p>
+            <h3><strong>Overview: Checkout Customization Areas</strong></h3>
+            <ul>
+              <li><strong>Customer accounts:</strong> Optional, required or disabled account creation.</li>
+              <li><strong>Customer information:</strong> Required and optional checkout fields.</li>
+              <li><strong>Order processing:</strong> Post purchase behavior and notifications.</li>
+              <li><strong>Visual controls:</strong> Limited branding controls depending on plan.</li>
+            </ul>
 
             <h2 id="accessing-checkout-settings">Accessing checkout settings</h2>
             <h3 id="opening-checkout-settings" class="manual-procedure"><strong>Opening checkout settings</strong></h3>
@@ -80,7 +97,21 @@
               <li>Review sections for customer accounts, customer information and order processing.</li>
             </ol>
 
+            <h2 id="customer-accounts">Configuring customer account settings</h2>
+            <p>Account settings affect conversion. In most cases, optional or guest checkout performs better than requiring account creation before purchase.</p>
+            <h3 id="configuring-account-requirements" class="manual-procedure"><strong>Configuring account requirements</strong></h3>
+            <p>Follow these steps to configure customer account settings:</p>
+            <p><strong>Desktop</strong></p>
+            <ol>
+              <li>In your Shopify admin, go to <strong>Settings</strong>.</li>
+              <li>Click <strong>Checkout</strong>.</li>
+              <li>In <strong>Customer accounts</strong>, choose optional, required or disabled.</li>
+              <li>Click <strong>Save</strong>.</li>
+            </ol>
+
             <h2 id="customizing-fields">Customizing checkout fields</h2>
+            <h3><strong>Overview: Required vs Optional Fields</strong></h3>
+            <p>Require only information you need for fulfillment and payment. Extra required fields usually reduce completion rates.</p>
             <h3 id="setting-required-fields" class="manual-procedure"><strong>Setting required and optional fields</strong></h3>
             <p>Follow these steps to customize checkout fields:</p>
             <p><strong>Desktop</strong></p>
@@ -92,8 +123,34 @@
               <li>Click <strong>Save</strong>.</li>
             </ol>
 
-            <blockquote>
-              Requiring fewer fields can reduce checkout friction and cart abandonment.
+            <p><strong>Result:</strong> Customers see only the fields you configured, which can reduce checkout friction.</p>
+
+            <blockquote class="manual-callout manual-tip">
+              <p class="manual-callout-title">Tip</p>
+              <p>Requiring fewer fields can reduce checkout friction and cart abandonment.</p>
+            </blockquote>
+
+            <h2 id="testing-checkout">Testing checkout flow</h2>
+            <h3 id="testing-desktop-mobile" class="manual-procedure"><strong>Testing checkout on desktop and mobile</strong></h3>
+            <p>Follow these steps to test checkout before launch:</p>
+            <p><strong>Desktop</strong></p>
+            <ol>
+              <li>Add a product to cart and proceed to checkout.</li>
+              <li>Confirm required fields, shipping options and payment methods appear correctly.</li>
+              <li>Repeat the same flow on a mobile device.</li>
+              <li>Complete a test order and verify it appears in <strong>Orders</strong>.</li>
+            </ol>
+
+            <h3><strong>Best practices</strong></h3>
+            <ul>
+              <li>Keep guest checkout available unless your business model requires accounts.</li>
+              <li>Require only fields needed to fulfill and verify orders.</li>
+              <li>Retest checkout after any shipping, payment or account-setting changes.</li>
+            </ul>
+
+            <blockquote class="manual-callout manual-warning">
+              <p class="manual-callout-title">Warning</p>
+              <p>Always test checkout on a real phone before launch. Mobile issues can significantly affect conversion.</p>
             </blockquote>
 
             <nav class="manual-page-nav" aria-label="Previous and next pages">

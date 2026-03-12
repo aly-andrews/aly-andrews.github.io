@@ -61,16 +61,55 @@
             <div class="manual-on-this-page">
               <p class="manual-on-this-page-title">On this page</p>
               <ul>
+                <li><a href="#why-shipping-setup-matters">Why shipping setup matters</a></li>
+                <li><a href="#zones-vs-profiles">Understanding zones, rates and profiles</a></li>
                 <li><a href="#shipping-profiles">Understanding shipping profiles</a></li>
                 <li><a href="#domestic-zone">Creating a domestic shipping zone</a></li>
                 <li><a href="#weight-rates">Adding weight based shipping rates</a></li>
+                <li><a href="#testing-shipping">Testing shipping calculations</a></li>
               </ul>
             </div>
+
+            <h2 id="why-shipping-setup-matters">Why Shipping Setup Matters</h2>
+            <ul>
+              <li>Checkout cannot complete without shipping zones and rates.</li>
+              <li>Shipping logic can directly affect profitability.</li>
+              <li>Incorrect setup can block orders in specific regions.</li>
+            </ul>
+
+            <h2 id="zones-vs-profiles">Understanding zones, rates and profiles</h2>
+            <p>Why this matters: checkout cannot complete without valid zones and rates, and poor shipping configuration can erase margin quickly.</p>
+            <ul>
+              <li><strong>Shipping zones</strong> define where you ship.</li>
+              <li><strong>Shipping rates</strong> define how much customers pay.</li>
+              <li><strong>Shipping profiles</strong> define different shipping rules for different product groups.</li>
+            </ul>
+            <h3><strong>Shipping rate types</strong></h3>
+            <ul>
+              <li><strong>Weight based:</strong> Most reliable when products vary in weight.</li>
+              <li><strong>Price based:</strong> Simple but risky for heavy low price products.</li>
+              <li><strong>Flat rate:</strong> Works best when products have similar shipping cost.</li>
+            </ul>
 
             <h2 id="shipping-profiles">Understanding shipping profiles</h2>
             <p>Most new merchants can start with the default shipping profile. Add custom profiles later if different product groups need different shipping rates.</p>
 
+            <h3><strong>Overview: When to Use Shipping Profiles</strong></h3>
+            <p>Use additional shipping profiles when product groups have meaningfully different shipping costs, fulfillment locations or delivery expectations.</p>
+
+            <h3 id="understanding-default-profile" class="manual-procedure"><strong>Procedure: Understanding Default Shipping Profile</strong></h3>
+            <p>Follow these steps to review your default profile:</p>
+            <p><strong>Desktop</strong></p>
+            <ol>
+              <li>In your Shopify admin, go to <strong>Settings</strong>.</li>
+              <li>Click <strong>Shipping and delivery</strong>.</li>
+              <li>Open <strong>Shipping profiles</strong>.</li>
+              <li>Select <strong>Default shipping profile</strong> to inspect current zones and rates.</li>
+            </ol>
+
             <h2 id="domestic-zone">Creating a domestic shipping zone</h2>
+            <h3><strong>Overview: Domestic Shipping Considerations</strong></h3>
+            <p>Before you configure rates, estimate actual carrier costs, packaging cost and average order weight so your pricing model is realistic.</p>
             <h3 id="creating-zone" class="manual-procedure"><strong>Creating your domestic shipping zone</strong></h3>
             <p>Follow these steps to create your domestic shipping zone:</p>
             <p><strong>Desktop</strong></p>
@@ -81,6 +120,8 @@
               <li>Enter a zone name and select your country or region.</li>
               <li>Click <strong>Done</strong>.</li>
             </ol>
+
+            <p><strong>Result:</strong> Customers in this zone can now see shipping options at checkout once rates are added.</p>
 
             <h2 id="weight-rates">Adding weight based shipping rates</h2>
             <h3 id="adding-rates" class="manual-procedure"><strong>Adding weight based rates</strong></h3>
@@ -94,8 +135,27 @@
               <li>Click <strong>Save</strong>.</li>
             </ol>
 
-            <blockquote>
-              Accurate product weight is required for accurate shipping charges at checkout.
+            <p><strong>Result:</strong> Checkout now calculates shipping cost based on total order weight.</p>
+
+            <blockquote class="manual-callout manual-warning">
+              <p class="manual-callout-title">Warning</p>
+              <p>Accurate product weight is required for accurate shipping charges at checkout.</p>
+            </blockquote>
+
+            <h2 id="testing-shipping">Testing shipping calculations</h2>
+            <h3 id="test-shipping-checkout" class="manual-procedure"><strong>Testing shipping at checkout</strong></h3>
+            <p>Follow these steps to test your shipping setup:</p>
+            <p><strong>Desktop</strong></p>
+            <ol>
+              <li>Go to your storefront and add one or more products to cart.</li>
+              <li>Proceed to checkout and enter a shipping address in your active zone.</li>
+              <li>Confirm shipping options and rates appear correctly.</li>
+              <li>Test a second address for another zone if you ship internationally.</li>
+            </ol>
+
+            <blockquote class="manual-callout manual-tip">
+              <p class="manual-callout-title">Tip</p>
+              <p>Test lightweight and heavyweight orders separately to confirm your rate logic matches real fulfillment costs.</p>
             </blockquote>
 
             <nav class="manual-page-nav" aria-label="Previous and next pages">
