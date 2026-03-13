@@ -9308,6 +9308,7 @@ body.whimsy-cursor-enabled .video-card {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(252, 246, 255, 0.85));
   box-shadow: 8px 8px 0 rgba(31, 28, 42, 0.18);
   max-width: 920px;
+  text-align: left;
 }
 
 .manual-content h2,
@@ -9317,8 +9318,8 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content h2 {
-  margin-top: 3.4rem;
-  margin-bottom: 0.85rem;
+  margin-top: 4.8rem;
+  margin-bottom: 0.6rem;
   font-size: clamp(1.3rem, 1.85vw, 1.65rem);
   line-height: 1.25;
   color: var(--primary-color);
@@ -9332,7 +9333,7 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content h3 {
-  margin-top: 2.1rem;
+  margin-top: 1.7rem;
   margin-bottom: 0.5rem;
   font-size: clamp(1.02rem, 1.25vw, 1.18rem);
   line-height: 1.35;
@@ -9349,15 +9350,17 @@ body.whimsy-cursor-enabled .video-card {
 .manual-content ul,
 .manual-content ol {
   max-width: 74ch;
+  padding-left: 1.6rem;
 }
 
 .manual-content p,
 .manual-content li {
   line-height: 1.8;
+  color: var(--text-light);
 }
 
 .manual-content p {
-  margin: 0 0 1.35rem;
+  margin: 0 0 0.9rem;
 }
 
 .manual-content li {
@@ -9366,6 +9369,55 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-content li:last-child {
   margin-bottom: 0;
+}
+
+/* Checklist styling for "Before you begin" */
+.manual-checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.manual-checklist li {
+  position: relative;
+  padding-left: 1.8rem;
+}
+
+.manual-checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  font-size: 0.95rem;
+  color: var(--accent-green);
+}
+
+/* Embedded video on manual overview */
+.manual-video {
+  margin: 2rem 0 0;
+}
+
+.manual-video-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-light);
+  margin: 0 0 0.75rem;
+}
+
+.manual-video-embed {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.manual-video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* Procedure block: H3, lead-in, Desktop, steps grouped as mini section */
@@ -9404,7 +9456,16 @@ body.whimsy-cursor-enabled .video-card {
 /* Keep non-procedure lists clean and readable */
 .manual-content > ul,
 .manual-content > ol {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Extra breathing room between major sections */
+.manual-content p + h2,
+.manual-content ul + h2,
+.manual-content ol + h2,
+.manual-content .manual-callout + h2,
+.manual-content .manual-metadata + h2 {
+  margin-top: 4.8rem;
 }
 
 .manual-metadata {
@@ -9428,6 +9489,7 @@ body.whimsy-cursor-enabled .video-card {
   border-radius: 0 8px 8px 0;
   background: rgba(248, 250, 252, 0.7);
   font-style: normal;
+  font-size: 0.95em;
 }
 
 .manual-callout p {
@@ -9459,8 +9521,8 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-note {
-  border-left-color: rgba(96, 165, 250, 0.5);
-  background: rgba(248, 250, 252, 0.85);
+  border-left-color: rgba(59, 130, 246, 0.6);
+  background: linear-gradient(to right, rgba(239, 246, 255, 0.9), rgba(239, 246, 255, 0.3));
 }
 
 .manual-note .manual-callout-title {
@@ -9472,8 +9534,8 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-tip {
-  border-left-color: rgba(52, 211, 153, 0.45);
-  background: rgba(248, 250, 252, 0.85);
+  border-left-color: rgba(34, 197, 94, 0.6);
+  background: linear-gradient(to right, rgba(240, 253, 244, 0.9), rgba(240, 253, 244, 0.3));
 }
 
 .manual-tip .manual-callout-title {
@@ -9485,12 +9547,12 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-warning {
-  border-left-color: rgba(245, 158, 11, 0.55);
-  background: rgba(254, 252, 232, 0.5);
+  border-left-color: rgba(230, 126, 126, 0.55);
+  background: linear-gradient(to right, rgba(252, 231, 233, 0.75), rgba(252, 231, 233, 0.25));
 }
 
 .manual-warning .manual-callout-title {
-  color: #78716c;
+  color: #c2410c;
 }
 
 .manual-on-this-page {
@@ -9510,7 +9572,12 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-on-this-page ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.manual-on-this-page li + li {
+  margin-top: 0.25rem;
 }
 
 .manual-page-nav {
