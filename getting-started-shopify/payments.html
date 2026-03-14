@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Configure your payments | Getting started on Shopify</title>
+  <title>Configure payments | Getting started on Shopify</title>
   <meta name="description" content="Configure payment providers and Shopify Payments so your store can accept orders.">
   <link rel="icon" type="image/png" href="/assets/images/favicon.png">
   <link rel="apple-touch-icon" href="/assets/images/favicon.png">
@@ -46,152 +46,71 @@
             <nav class="manual-sidebar-nav">
               <p class="manual-sidebar-label">Getting started on Shopify</p>
               <a href="/getting-started-shopify/">Manual overview</a>
-              <a href="/getting-started-shopify/store-settings.html">Set up your store settings</a>
-              <a href="/getting-started-shopify/payments.html" class="active" aria-current="page">Configure your payments</a>
-              <a href="/getting-started-shopify/products.html">Add and organize your products</a>
-              <a href="/getting-started-shopify/shipping.html">Set up your shipping</a>
-              <a href="/getting-started-shopify/checkout.html">Configure your checkout</a>
-              <a href="/getting-started-shopify/reference.html">Reference and troubleshooting</a>
+              <a href="/getting-started-shopify/store-settings.html">Configure store settings</a>
+              <a href="/getting-started-shopify/payments.html" class="active" aria-current="page">Configure payments</a>
+              <a href="/getting-started-shopify/products.html">Add products</a>
+              <a href="/getting-started-shopify/shipping.html">Configure shipping</a>
+              <a href="/getting-started-shopify/checkout.html">Configure checkout</a>
+              <a href="/getting-started-shopify/reference.html">References</a>
             </nav>
           </aside>
 
           <article class="manual-main manual-content">
             <header class="manual-page-header">
-              <h1>Configure your payments</h1>
-              <p class="manual-page-subtitle">Set up your payment provider so customers can complete checkout and place orders.</p>
+              <h1>Configure payments</h1>
+              <p class="manual-page-subtitle">Payment provider and fee structure.</p>
             </header>
 
-            <p>Payment setup is essential because customers cannot place orders without an active payment provider. Start by checking what providers are available in your region, then activate Shopify Payments or an alternative provider.</p>
+            <p>Customers cannot place orders without an active payment provider. Provider availability depends on region and what you sell. Fee structure affects pricing and margin, and verification can delay launch if started too late. Check what is available in your region, then activate Shopify Payments or an alternative.</p>
 
             <div class="manual-on-this-page">
               <p class="manual-on-this-page-title">On this page</p>
               <ul>
-                <li><a href="#why-payment-setup-matters">Why payment setup matters</a></li>
                 <li><a href="#provider-details">Provider details</a></li>
                 <li><a href="#shopify-payments">Shopify Payments</a></li>
                 <li><a href="#alternative-provider">Alternative provider</a></li>
               </ul>
             </div>
 
-            <h2 id="why-payment-setup-matters">Why payment setup matters</h2>
-            <ul>
-              <li>Customers cannot complete checkout without an active payment provider.</li>
-              <li>Provider availability depends on region and what you sell.</li>
-              <li>Fee structure directly affects pricing and margin strategy.</li>
-              <li>Verification requirements can delay launch if started too late.</li>
-            </ul>
-
             <h2 id="provider-details">Provider details</h2>
             <h3 id="provider-options">Provider options</h3>
-            <p>Choose a payment setup based on your region, business model and fee structure. Shopify Payments is often the simplest option when available.</p>
-            <p>Before you decide, compare your options:</p>
-            <ul>
-              <li><strong>Shopify Payments:</strong> Built into Shopify admin, no Shopify transaction fees and unified reporting.</li>
-              <li><strong>Alternative providers:</strong> Options such as PayPal, Stripe or regional gateways that may have different features or regional availability.</li>
-            </ul>
-
-            <blockquote class="manual-callout manual-warning">
-              <p class="manual-callout-title">Warning</p>
-              <p>Check provider restrictions early if you sell regulated or high risk products.</p>
-            </blockquote>
-
+            <p>Choose a payment setup based on region, business model and fee structure. Shopify Payments is built into the admin, has no Shopify transaction fees and unified reporting. Alternatives such as PayPal, Stripe or regional gateways offer different features and availability. Check provider restrictions early if you sell regulated or high risk products such as some supplements, CBD or adult content. Availability and terms vary by country.</p>
             <h3 id="payment-fees">Payment fees</h3>
-            <p>New merchants often confuse transaction fees with credit card processing fees. Understanding this difference helps you set accurate product pricing before launch.</p>
-            <ul>
-              <li><strong>Transaction fees:</strong> Charged by Shopify when you use a third party provider instead of Shopify Payments.</li>
-              <li><strong>Credit card processing fees:</strong> Charged by the payment processor for each card transaction.</li>
-            </ul>
-            <p><strong>Example:</strong> If you use Shopify Payments, you usually pay only card processing fees. If you use a third party provider, you may pay both Shopify transaction fees and provider processing fees.</p>
-            <blockquote class="manual-callout manual-tip">
-              <p class="manual-callout-title">Tip</p>
-              <p>Build payment fees into your pricing model early so margins stay healthy as orders grow.</p>
-            </blockquote>
-
+            <p>Transaction fees are charged by Shopify when you use a third party provider instead of Shopify Payments. Credit card processing fees are charged by the processor for each card transaction. With Shopify Payments you usually pay only processing fees. With a third party provider you may pay both. Build fees into your pricing early so margins stay healthy.</p>
             <h3 id="provider-restrictions">Provider restrictions</h3>
-            <p>Payment providers can restrict what you sell. Review restrictions before launch, especially if you sell regulated or high risk products.</p>
-            <ul>
-              <li><strong>High risk categories:</strong> Some supplements, CBD, adult content and other restricted categories.</li>
-              <li><strong>Regional restrictions:</strong> Provider availability and terms vary by country.</li>
-              <li><strong>Business model restrictions:</strong> Some service types or fulfillment models may require extra review.</li>
-            </ul>
+            <p>Providers can restrict what you sell. Review restrictions before launch. High risk categories, regional rules and business model requirements may need extra review.</p>
 
             <h2 id="shopify-payments">Shopify Payments</h2>
-            <p>If Shopify Payments is available in your region, it is usually the fastest way to start accepting payments.</p>
-
-            <h3><strong>Why merchants choose Shopify Payments</strong></h3>
-            <ul>
-              <li>No additional Shopify transaction fees.</li>
-              <li>Native setup inside Shopify admin.</li>
-              <li>Centralized payment reporting with orders and payouts.</li>
-            </ul>
-
-            <h3 id="activating-shopify-payments" class="manual-procedure"><strong>Activating Shopify Payments</strong></h3>
-            <p>Follow these steps to activate Shopify Payments:</p>
+            <p>When available in your region, Shopify Payments is usually the fastest option. It has no Shopify transaction fees, native setup and centralized reporting. Processing rates vary by plan. Check current pricing before finalizing product prices.</p>
+            <p><strong>Steps: Activate Shopify Payments</strong></p>
             <ol>
-              <li>In your Shopify admin, go to <strong>Settings</strong>.</li>
-              <li>Click <strong>Payments</strong>.</li>
+              <li>In Shopify admin, go to <strong>Settings</strong> &gt; <strong>Payments</strong>.</li>
               <li>In <strong>Shopify Payments</strong>, click <strong>Complete account setup</strong>.</li>
-              <li>Enter your business and identity details.</li>
-              <li>Review terms and click <strong>Submit for review</strong>.</li>
+              <li>Enter business and identity details, review terms and click <strong>Submit for review</strong>.</li>
             </ol>
-
-            <p><strong>Result:</strong> Your Shopify Payments application is submitted for review.</p>
-
+            <p><strong>Steps: Business verification</strong></p>
+            <ol>
+              <li>Check email for verification requests from Shopify Payments.</li>
+              <li>Go to <strong>Settings</strong> &gt; <strong>Payments</strong> and open any pending request.</li>
+              <li>Upload business, banking and identity documents and wait for review.</li>
+            </ol>
             <blockquote class="manual-callout manual-note">
               <p class="manual-callout-title">Note</p>
-              <p>Business verification can take one to three business days depending on your country and business type.</p>
+              <p>Verification can take one to three business days. Prepare business registration, bank documents and ID in advance.</p>
             </blockquote>
-
-            <h3 id="business-verification">Business verification</h3>
-            <h4 class="manual-procedure"><strong>Completing business verification</strong></h4>
-            <p>Follow these steps to complete Shopify Payments verification:</p>
-            <ol>
-              <li>Check your email for verification requests from Shopify Payments.</li>
-              <li>In your Shopify admin, go to <strong>Settings</strong> &gt; <strong>Payments</strong>.</li>
-              <li>Open any pending request and review required documents.</li>
-              <li>Upload requested business, banking and identity documents.</li>
-              <li>Wait for review and monitor status updates.</li>
-            </ol>
-
-            <p><strong>Result:</strong> Once verification is complete, you can begin accepting payments with Shopify Payments.</p>
-
-            <blockquote class="manual-callout manual-tip">
-              <p class="manual-callout-title">Tip</p>
-              <p>Prepare documents in advance: business registration records, bank account documentation and valid owner identification.</p>
-            </blockquote>
-
-            <h3 id="shopify-fees">Shopify Payments fees</h3>
-            <p>Shopify Payments credit card processing rates vary by plan and transaction type. Check current Shopify pricing for your region before finalizing product prices.</p>
-            <ul>
-              <li><strong>Basic Shopify:</strong> Higher processing rate than upper plans.</li>
-              <li><strong>Shopify:</strong> Mid tier processing rate.</li>
-              <li><strong>Advanced Shopify:</strong> Lower processing rate for higher volume stores.</li>
-            </ul>
 
             <h2 id="alternative-provider">Alternative provider</h2>
-            <p>If Shopify Payments is not available in your region, you can activate providers such as PayPal, Stripe or other local gateways.</p>
-
-            <h3><strong>Alternative provider overview</strong></h3>
-            <p>Common alternatives include PayPal, Stripe, Square and regional providers. Compare setup requirements, support quality and total fee impact before choosing.</p>
-
-            <h3 id="activating-paypal" class="manual-procedure"><strong>Activating PayPal</strong></h3>
-            <p>Follow these steps to activate PayPal:</p>
+            <p>When Shopify Payments is not available, use providers such as PayPal, Stripe or regional gateways. Compare setup requirements, support and total fee impact. With third party providers you may pay both Shopify transaction fees and provider processing fees.</p>
+            <p><strong>Steps: Activate PayPal</strong></p>
             <ol>
-              <li>Create or verify your PayPal Business account.</li>
-              <li>In your Shopify admin, go to <strong>Settings</strong>.</li>
-              <li>Click <strong>Payments</strong>.</li>
-              <li>In the <strong>PayPal</strong> section, click <strong>Set up</strong>.</li>
-              <li>Enter your PayPal account email and click <strong>Activate</strong>.</li>
+              <li>Create or verify a PayPal Business account.</li>
+              <li>In Shopify admin go to <strong>Settings</strong> &gt; <strong>Payments</strong>.</li>
+              <li>In the <strong>PayPal</strong> section, click <strong>Set up</strong>, enter account email and click <strong>Activate</strong>.</li>
             </ol>
 
-            <blockquote class="manual-callout manual-note">
-              <p class="manual-callout-title">Note</p>
-              <p>With third party providers such as PayPal, you may pay both Shopify transaction fees and provider processing fees.</p>
-            </blockquote>
-
             <nav class="manual-page-nav" aria-label="Previous and next pages">
-              <a href="/getting-started-shopify/store-settings.html">Previous: Set up your store settings</a>
-              <a href="/getting-started-shopify/products.html">Next: Add and organize your products</a>
+              <a href="/getting-started-shopify/store-settings.html">Previous: Configure store settings</a>
+              <a href="/getting-started-shopify/products.html">Next: Add products</a>
             </nav>
           </article>
         </div>

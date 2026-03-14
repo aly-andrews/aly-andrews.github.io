@@ -9580,6 +9580,64 @@ body.whimsy-cursor-enabled .video-card {
   margin-top: 0.25rem;
 }
 
+.manual-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.manual-table th,
+.manual-table td {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.manual-table th {
+  background: var(--bg-light);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.manual-table tbody tr:hover {
+  background: rgba(107, 154, 154, 0.05);
+}
+
+.manual-glossary {
+  margin: 1.5rem 0;
+}
+
+.manual-glossary dt {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+.manual-glossary dt:first-child {
+  margin-top: 0;
+}
+
+.manual-glossary dd {
+  margin: 0.25rem 0 0 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.manual-index {
+  list-style: none;
+  padding-left: 0;
+}
+
+.manual-index li {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.manual-index li:last-child {
+  border-bottom: none;
+}
+
 .manual-page-nav {
   margin-top: 2.3rem;
   padding-top: 1.3rem;
