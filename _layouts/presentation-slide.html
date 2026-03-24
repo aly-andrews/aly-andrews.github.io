@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="page-top-band" aria-hidden="true"></div>
+
+<section class="work-content-creative presentation-slide">
+  <div class="container">
+    <div class="presentation-shell">
+      <header class="presentation-header">
+        <p class="presentation-kicker">{{ page.presentation_title | default: "Netomi technical writer case study" }}</p>
+        <h1>{{ page.slide_title }}</h1>
+        {% if page.slide_number and page.total_slides %}
+        <p class="presentation-progress">Slide {{ page.slide_number }} of {{ page.total_slides }}</p>
+        {% endif %}
+      </header>
+
+      <article class="work-section-creative presentation-card">
+        {{ content }}
+      </article>
+
+      <nav class="presentation-nav" aria-label="Presentation navigation">
+        {% if page.prev_url %}
+        <a class="btn btn-outline" href="{{ page.prev_url | relative_url }}">← Previous</a>
+        {% else %}
+        <span class="btn btn-outline is-disabled" aria-hidden="true">← Previous</span>
+        {% endif %}
+
+        {% if page.next_url %}
+        <a class="btn btn-primary" href="{{ page.next_url | relative_url }}">Next →</a>
+        {% else %}
+        <span class="btn btn-primary is-disabled" aria-hidden="true">Next →</span>
+        {% endif %}
+      </nav>
+    </div>
+  </div>
+</section>

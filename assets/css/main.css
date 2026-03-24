@@ -6817,6 +6817,117 @@ h6,
   z-index: 1;
 }
 
+/* Netomi case study presentation enhancements */
+.netomi-case-study .portfolio-content-main {
+  gap: 1.5rem;
+}
+
+.netomi-case-study .work-section-creative {
+  padding: clamp(1.5rem, 2.2vw, 2.4rem) !important;
+  border-radius: 18px;
+  margin-bottom: clamp(3.25rem, 5vw, 5rem);
+}
+
+.netomi-case-study .work-section-creative > h2 {
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  margin-bottom: 0.85rem;
+}
+
+.netomi-case-study .work-section-creative > p,
+.netomi-case-study .work-section-creative li {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.netomi-case-study .work-section-header {
+  display: grid;
+  grid-template-columns: minmax(220px, 330px) minmax(0, 1fr);
+  gap: 1.15rem;
+  align-items: start;
+  margin-bottom: 0.6rem;
+}
+
+.netomi-case-study .work-image-large {
+  min-height: 190px;
+}
+
+.netomi-case-study .image-placeholder {
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  border-width: 2px;
+  background: linear-gradient(135deg, rgba(224, 242, 241, 0.7), rgba(243, 229, 245, 0.7));
+}
+
+.netomi-case-study .highlights-grid {
+  margin-top: 1rem;
+}
+
+.netomi-case-study .highlight-card {
+  min-height: 175px;
+}
+
+@media (max-width: 1024px) {
+  .netomi-case-study .work-section-header {
+    grid-template-columns: 1fr;
+  }
+
+  .netomi-case-study .work-image-large {
+    min-height: 0;
+  }
+}
+
+/* Netomi presentation slide mode */
+.presentation-slide .presentation-shell {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.presentation-slide .presentation-header {
+  margin-bottom: 1rem;
+}
+
+.presentation-slide .presentation-kicker {
+  margin: 0 0 0.35rem 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.presentation-slide .presentation-header h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.presentation-slide .presentation-progress {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.presentation-slide .presentation-card {
+  padding: clamp(1.4rem, 2.2vw, 2.3rem) !important;
+  border-radius: 20px;
+  margin-bottom: 1rem !important;
+}
+
+.presentation-slide .presentation-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.presentation-slide .presentation-nav .btn {
+  min-width: 130px;
+  text-align: center;
+}
+
+.presentation-slide .presentation-nav .is-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
 .work-content-creative .work-section-creative::before,
 .work-content-creative .work-section-creative::after {
   content: "";
