@@ -15,14 +15,6 @@ speaker_notes:
   - This is a good example of clear now, complete shortly after.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- I classify this as high risk because auth and error behavior can block real workflows.
-- The release note focuses on confirmed behavior and user impact.
-- I update core API docs immediately, then defer payload and status detail until confirmed.
-- This is a good example of clear now, complete shortly after.
--->
-
 <div class="work-section-header">
   <div class="work-image-large">
     <div class="image-placeholder">

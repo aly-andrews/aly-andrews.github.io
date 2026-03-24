@@ -15,14 +15,6 @@ speaker_notes:
   - My goal in this presentation is to show a system that reduces those risks without heavy process overhead.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- Weekly shipping with incomplete inputs creates inconsistent release communication.
-- This is not just a writing speed issue, it is a reliability and trust issue.
-- I frame the cost in three layers: user confusion, team fire drills and support debt.
-- My goal in this presentation is to show a system that reduces those risks without heavy process overhead.
--->
-
 <p><strong>Core challenge:</strong> weekly releases with incomplete inputs.</p>
 <p><strong>Core goal:</strong> reliable release communication under uncertainty.</p>
 

@@ -15,14 +15,6 @@ speaker_notes:
   - If reliability or behavior changed, I immediately promote this to customer facing.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- I classify this as low customer impact based on the current ticket language.
-- I avoid customer facing release notes unless user visible behavior is confirmed.
-- I still document internally and verify with engineering to avoid blind spots.
-- If reliability or behavior changed, I immediately promote this to customer facing.
--->
-
 <div class="work-section-header">
   <div class="work-image-large">
     <div class="image-placeholder">

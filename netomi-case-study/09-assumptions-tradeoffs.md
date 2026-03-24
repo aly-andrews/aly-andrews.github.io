@@ -15,14 +15,6 @@ speaker_notes:
   - I do not present uncertainty as certainty just to appear complete.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- I make assumptions explicit so the panel can see my decision boundaries.
-- My first questions focus on user visibility, behavior change and support impact.
-- My tradeoff is deliberate: reliable guidance now, full detail in fast follow updates.
-- I do not present uncertainty as certainty just to appear complete.
--->
-
 <h3>Assumptions</h3>
 <p>Jira is the primary signal source. Weekly cadence is fixed. Some tickets will stay incomplete near release.</p>
 

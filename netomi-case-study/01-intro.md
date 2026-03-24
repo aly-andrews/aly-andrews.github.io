@@ -9,20 +9,14 @@ total_slides: 13
 prev_url:
 next_url: /netomi-case-study/02-problem/
 speaker_notes:
-  - Thanks for the exercise. I approached this as a weekly operating challenge, not only a writing task.
+  - Hi everyone, my name is Aly, and I am excited for this opportunity.
+  - I approached this as a technical writing system for release clarity, not a tooling project.
+  - I bring experience from Shopify and content operations work where I supported recurring release communication, cross functional coordination and customer facing clarity.
+  - I am also finishing the Technical Writing program at Algonquin College and graduating with honours at the end of this summer.
   - I have worked remote first for years and do my best work in async, cross functional environments where clarity matters.
   - I am interested in Netomi because this role sits at the intersection of technical writing, product change and customer trust.
   - I saw clear parallels to work I handled at Shopify: recurring updates, changing scope and incomplete release inputs.
 ---
-
-<!--
-Speaker notes (not shown on site):
-Intro and context:
-- Thanks for the exercise. I approached this as a weekly operating challenge, not only a writing task.
-- I have worked remote first for years and do my best work in async, cross functional environments where clarity matters.
-- I am interested in Netomi because this role sits at the intersection of technical writing, product change and customer trust.
-- I saw clear parallels to work I handled at Shopify: recurring updates, changing scope and incomplete release inputs.
--->
 
 <div class="work-section-header">
   <div class="work-image-large">

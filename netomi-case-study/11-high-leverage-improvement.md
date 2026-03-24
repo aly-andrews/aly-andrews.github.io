@@ -15,14 +15,6 @@ speaker_notes:
   - In practice I would pilot this in one product area, then scale after results.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- This is intentionally small and practical: one workflow block in Jira and one template in Flare.
-- The value is immediate consistency and less back-and-forth on release day.
-- It supports automation while preserving technical writing quality control.
-- In practice I would pilot this in one product area, then scale after results.
--->
-
 <div class="work-section-header">
   <div class="work-image-large">
     <div class="image-placeholder">

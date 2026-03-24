@@ -16,15 +16,6 @@ speaker_notes:
   - Writer owned publish gate is critical: automation can draft, but final judgment stays with technical writing.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- This model keeps speed and quality in balance.
-- Intake means minimum fields so I can make a decision even when information is incomplete.
-- Triage ranks risk by user disruption, support burden and trust impact.
-- Decision mapping prevents over-documenting low impact changes and under-documenting high impact changes.
-- Writer owned publish gate is critical: automation can draft, but final judgment stays with technical writing.
--->
-
 <div class="work-section-header">
   <div class="work-image-large">
     <div class="image-placeholder">

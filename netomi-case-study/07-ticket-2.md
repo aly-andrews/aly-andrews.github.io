@@ -15,14 +15,6 @@ speaker_notes:
   - I defer screenshots until the UI and access window are stable.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- I classify this as medium risk because impact depends on rollout visibility.
-- I publish what users need to act now: what changed and where to find it.
-- I include explicit rollout caveat language to prevent confusion.
-- I defer screenshots until the UI and access window are stable.
--->
-
 <div class="work-section-header">
   <div class="work-image-large">
     <div class="image-placeholder">

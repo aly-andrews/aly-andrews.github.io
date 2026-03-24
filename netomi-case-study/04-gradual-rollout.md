@@ -16,15 +16,6 @@ speaker_notes:
   - Phase 3 focuses on tuning and scaling based on real cycle data.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- I want this to feel adoptable, not disruptive, so I sequence it in phases.
-- Phase 0 establishes the baseline and current bottlenecks.
-- Phase 1 introduces only the minimum standards needed for consistency.
-- Phase 2 adds draft automation, but keeps writer review as a hard gate.
-- Phase 3 focuses on tuning and scaling based on real cycle data.
--->
-
 <p><strong>Approach:</strong> phased rollout, low disruption, measurable gains.</p>
 
 <h3>Phase 0 (weeks 1 to 2)</h3>

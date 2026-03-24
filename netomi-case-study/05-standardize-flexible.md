@@ -15,14 +15,6 @@ speaker_notes:
   - I explicitly avoid over-optimizing for perfect detail on day one.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- This is where I show judgment and avoid over-engineering.
-- I standardize decision quality and consistency points.
-- I keep execution depth flexible so writers can match effort to risk.
-- I explicitly avoid over-optimizing for perfect detail on day one.
--->
-
 <h3>Standardize</h3>
 <ul>
   <li>Intake fields</li>

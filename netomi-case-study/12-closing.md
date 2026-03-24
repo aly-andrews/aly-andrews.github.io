@@ -14,13 +14,6 @@ speaker_notes:
   - Close with outcomes and confidence in a long-term contribution model.
 ---
 
-<!--
-Speaker notes (not shown on site):
-- Reiterate the core thesis: speed with control.
-- Emphasize automation as a support layer, not a replacement for writing judgment.
-- Close with outcomes and confidence in a long-term contribution model.
--->
-
 <p><strong>Speed with control.</strong></p>
 <p><strong>Automation supports writers. Writers own accuracy.</strong></p>
 <p><strong>Outcome:</strong> cleaner weekly decisions, faster drafts and lower support debt.</p>
