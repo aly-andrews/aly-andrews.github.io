@@ -5,10 +5,25 @@ permalink: /netomi-case-study/03-decision-model/
 presentation_title: Netomi technical writer case study
 slide_title: My decision model
 slide_number: 3
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/02-problem/
 next_url: /netomi-case-study/04-gradual-rollout/
+speaker_notes:
+  - This model keeps speed and quality in balance.
+  - Intake means minimum fields so I can make a decision even when information is incomplete.
+  - Triage ranks risk by user disruption, support burden and trust impact.
+  - Decision mapping prevents over-documenting low impact changes and under-documenting high impact changes.
+  - Writer owned publish gate is critical: automation can draft, but final judgment stays with technical writing.
 ---
+
+<!--
+Speaker notes (not shown on site):
+- This model keeps speed and quality in balance.
+- Intake means minimum fields so I can make a decision even when information is incomplete.
+- Triage ranks risk by user disruption, support burden and trust impact.
+- Decision mapping prevents over-documenting low impact changes and under-documenting high impact changes.
+- Writer owned publish gate is critical: automation can draft, but final judgment stays with technical writing.
+-->
 
 <div class="work-section-header">
   <div class="work-image-large">
@@ -23,8 +38,8 @@ next_url: /netomi-case-study/04-gradual-rollout/
 </div>
 
 <ul>
-  <li><strong>Structured intake:</strong> What changed, who is affected, rollout scope, expected user impact and owner for unanswered questions.</li>
-  <li><strong>Risk tier triage:</strong> How much this disrupts user tasks, increases support burden, affects trust or reliability, and how broad the rollout is.</li>
-  <li><strong>Decision mapping by risk:</strong> High risk gets same cycle release notes plus docs updates. Medium risk gets release notes now plus scheduled follow up. Low risk or internal gets internal documentation unless user impact appears.</li>
-  <li><strong>Writer owned publish gate:</strong> Nothing publishes automatically. Writers validate accuracy, clarity and scope.</li>
+  <li><strong>1) Structured intake</strong></li>
+  <li><strong>2) Risk tier triage</strong></li>
+  <li><strong>3) Decision mapping by risk</strong></li>
+  <li><strong>4) Writer owned publish gate</strong></li>
 </ul>

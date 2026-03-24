@@ -6877,6 +6877,50 @@ h6,
 }
 
 /* Netomi presentation slide mode */
+.presentation-slide .presentation-layout {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.presentation-slide .presentation-sidebar {
+  position: sticky;
+  top: 6.3rem;
+}
+
+.presentation-slide .presentation-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(212, 208, 200, 0.8);
+  border-radius: 12px;
+}
+
+.presentation-slide .presentation-sidebar-nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.35;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.presentation-slide .presentation-sidebar-nav a:hover {
+  background: rgba(224, 242, 241, 0.55);
+  color: var(--primary-color);
+}
+
+.presentation-slide .presentation-sidebar-nav a.active {
+  background: rgba(224, 242, 241, 0.8);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
 .presentation-slide .presentation-shell {
   max-width: 980px;
   margin: 0 auto;
@@ -6912,6 +6956,25 @@ h6,
   margin-bottom: 1rem !important;
 }
 
+.presentation-slide .presentation-notes {
+  padding: 1rem 1.15rem !important;
+  margin-bottom: 1rem !important;
+  border-radius: 14px;
+}
+
+.presentation-slide .presentation-notes h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.presentation-slide .presentation-notes ul {
+  margin: 0;
+}
+
+.presentation-slide .presentation-notes li {
+  margin-bottom: 0.4rem;
+}
+
 .presentation-slide .presentation-nav {
   display: flex;
   justify-content: space-between;
@@ -6926,6 +6989,30 @@ h6,
 .presentation-slide .presentation-nav .is-disabled {
   opacity: 0.45;
   pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .presentation-slide .presentation-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation-slide .presentation-sidebar {
+    position: static;
+  }
+
+  .presentation-slide .presentation-sidebar-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.45rem;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .presentation-slide .presentation-sidebar-nav a {
+    border: 1px solid rgba(212, 208, 200, 0.8);
+    background: rgba(255, 255, 255, 0.9);
+    flex: 0 0 auto;
+  }
 }
 
 .work-content-creative .work-section-creative::before,

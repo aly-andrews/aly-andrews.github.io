@@ -5,16 +5,25 @@ permalink: /netomi-case-study/12-closing/
 presentation_title: Netomi technical writer case study
 slide_title: Closing
 slide_number: 12
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/11-high-leverage-improvement/
-next_url:
+next_url: /netomi-case-study/13-qa/
+speaker_notes:
+  - Reiterate the core thesis: speed with control.
+  - Emphasize automation as a support layer, not a replacement for writing judgment.
+  - Close with outcomes and confidence in a long-term contribution model.
 ---
 
-<p>My approach is designed for real world release pressure. I use a risk based documentation system and a single source workflow so teams can move quickly without losing clarity.</p>
+<!--
+Speaker notes (not shown on site):
+- Reiterate the core thesis: speed with control.
+- Emphasize automation as a support layer, not a replacement for writing judgment.
+- Close with outcomes and confidence in a long-term contribution model.
+-->
 
-<p>I use automation heavily to remove repetitive work, but technical writing stays at the core to validate structure, style and accuracy before publish.</p>
-
-<p><strong>Expected 3 to 6 month outcomes:</strong> cleaner weekly decision making, faster first drafts, fewer release day surprises and lower support debt from unclear updates.</p>
+<p><strong>Speed with control.</strong></p>
+<p><strong>Automation supports writers. Writers own accuracy.</strong></p>
+<p><strong>Outcome:</strong> cleaner weekly decisions, faster drafts and lower support debt.</p>
 
 <p>Thank you for your time and thoughtful review of this exercise.</p>
 

@@ -5,26 +5,29 @@ permalink: /netomi-case-study/09-assumptions-tradeoffs/
 presentation_title: Netomi technical writer case study
 slide_title: Assumptions, prioritized questions and tradeoffs
 slide_number: 9
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/08-ticket-3/
 next_url: /netomi-case-study/10-release-note-standard/
+speaker_notes:
+  - I make assumptions explicit so the panel can see my decision boundaries.
+  - My first questions focus on user visibility, behavior change and support impact.
+  - My tradeoff is deliberate: reliable guidance now, full detail in fast follow updates.
+  - I do not present uncertainty as certainty just to appear complete.
 ---
 
+<!--
+Speaker notes (not shown on site):
+- I make assumptions explicit so the panel can see my decision boundaries.
+- My first questions focus on user visibility, behavior change and support impact.
+- My tradeoff is deliberate: reliable guidance now, full detail in fast follow updates.
+- I do not present uncertainty as certainty just to appear complete.
+-->
+
 <h3>Assumptions</h3>
-<ul>
-  <li>Jira is the primary source of release signals</li>
-  <li>Some tickets remain incomplete at release time</li>
-  <li>PM and engineering can answer critical questions quickly</li>
-  <li>Weekly release cadence is fixed</li>
-</ul>
+<p>Jira is the primary signal source. Weekly cadence is fixed. Some tickets will stay incomplete near release.</p>
 
-<h3>Questions I prioritize first</h3>
-<ul>
-  <li>What is user visible now versus behind a feature flag</li>
-  <li>What changed in behavior, not just implementation</li>
-  <li>What could increase support volume if under documented</li>
-  <li>What unresolved details are safe to defer versus unsafe to defer</li>
-</ul>
+<h3>Prioritized questions</h3>
+<p>What is user visible now? What behavior changed? What will drive support burden?</p>
 
-<h3>Tradeoffs</h3>
-<p>I optimize for user clarity and release reliability, not perfect completeness on day one. I publish confirmed guidance first, then add complete details in fast follow updates.</p>
+<h3>Tradeoff</h3>
+<p>Reliable guidance now. Complete detail in fast follow updates.</p>

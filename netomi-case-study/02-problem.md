@@ -5,14 +5,26 @@ permalink: /netomi-case-study/02-problem/
 presentation_title: Netomi technical writer case study
 slide_title: Problem we are solving
 slide_number: 2
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/01-intro/
 next_url: /netomi-case-study/03-decision-model/
+speaker_notes:
+  - Weekly shipping with incomplete inputs creates inconsistent release communication.
+  - This is not just a writing speed issue, it is a reliability and trust issue.
+  - I frame the cost in three layers: user confusion, team fire drills and support debt.
+  - My goal in this presentation is to show a system that reduces those risks without heavy process overhead.
 ---
 
-<p>When releases ship weekly but inputs are incomplete, documentation quality becomes unpredictable. That creates user confusion, support debt and avoidable risk for the business.</p>
+<!--
+Speaker notes (not shown on site):
+- Weekly shipping with incomplete inputs creates inconsistent release communication.
+- This is not just a writing speed issue, it is a reliability and trust issue.
+- I frame the cost in three layers: user confusion, team fire drills and support debt.
+- My goal in this presentation is to show a system that reduces those risks without heavy process overhead.
+-->
 
-<p>The problem is not only writing faster. The problem is making release communication reliable under uncertainty.</p>
+<p><strong>Core challenge:</strong> weekly releases with incomplete inputs.</p>
+<p><strong>Core goal:</strong> reliable release communication under uncertainty.</p>
 
 <div class="highlights-grid">
   <article class="highlight-card">

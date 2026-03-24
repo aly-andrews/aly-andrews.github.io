@@ -5,10 +5,23 @@ permalink: /netomi-case-study/08-ticket-3/
 presentation_title: Netomi technical writer case study
 slide_title: "Applying the model: ticket 3"
 slide_number: 8
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/07-ticket-2/
 next_url: /netomi-case-study/09-assumptions-tradeoffs/
+speaker_notes:
+  - I classify this as low customer impact based on the current ticket language.
+  - I avoid customer facing release notes unless user visible behavior is confirmed.
+  - I still document internally and verify with engineering to avoid blind spots.
+  - If reliability or behavior changed, I immediately promote this to customer facing.
 ---
+
+<!--
+Speaker notes (not shown on site):
+- I classify this as low customer impact based on the current ticket language.
+- I avoid customer facing release notes unless user visible behavior is confirmed.
+- I still document internally and verify with engineering to avoid blind spots.
+- If reliability or behavior changed, I immediately promote this to customer facing.
+-->
 
 <div class="work-section-header">
   <div class="work-image-large">

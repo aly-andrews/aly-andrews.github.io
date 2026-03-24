@@ -5,10 +5,23 @@ permalink: /netomi-case-study/07-ticket-2/
 presentation_title: Netomi technical writer case study
 slide_title: "Applying the model: ticket 2"
 slide_number: 7
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/06-ticket-1/
 next_url: /netomi-case-study/08-ticket-3/
+speaker_notes:
+  - I classify this as medium risk because impact depends on rollout visibility.
+  - I publish what users need to act now: what changed and where to find it.
+  - I include explicit rollout caveat language to prevent confusion.
+  - I defer screenshots until the UI and access window are stable.
 ---
+
+<!--
+Speaker notes (not shown on site):
+- I classify this as medium risk because impact depends on rollout visibility.
+- I publish what users need to act now: what changed and where to find it.
+- I include explicit rollout caveat language to prevent confusion.
+- I defer screenshots until the UI and access window are stable.
+-->
 
 <div class="work-section-header">
   <div class="work-image-large">

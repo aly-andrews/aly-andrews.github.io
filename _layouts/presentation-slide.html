@@ -6,32 +6,67 @@ layout: default
 
 <section class="work-content-creative presentation-slide">
   <div class="container">
-    <div class="presentation-shell">
-      <header class="presentation-header">
-        <p class="presentation-kicker">{{ page.presentation_title | default: "Netomi technical writer case study" }}</p>
-        <h1>{{ page.slide_title }}</h1>
-        {% if page.slide_number and page.total_slides %}
-        <p class="presentation-progress">Slide {{ page.slide_number }} of {{ page.total_slides }}</p>
-        {% endif %}
-      </header>
+    <div class="presentation-layout">
+      <aside class="presentation-sidebar" aria-label="Slide navigation">
+        <nav class="presentation-sidebar-nav">
+          <a href="{{ '/netomi-case-study/01-intro/' | relative_url }}" {% if page.url == '/netomi-case-study/01-intro/' %}class="active"{% endif %}>01 Intro</a>
+          <a href="{{ '/netomi-case-study/02-problem/' | relative_url }}" {% if page.url == '/netomi-case-study/02-problem/' %}class="active"{% endif %}>02 Problem</a>
+          <a href="{{ '/netomi-case-study/03-decision-model/' | relative_url }}" {% if page.url == '/netomi-case-study/03-decision-model/' %}class="active"{% endif %}>03 Decision model</a>
+          <a href="{{ '/netomi-case-study/04-gradual-rollout/' | relative_url }}" {% if page.url == '/netomi-case-study/04-gradual-rollout/' %}class="active"{% endif %}>04 Gradual rollout</a>
+          <a href="{{ '/netomi-case-study/05-standardize-flexible/' | relative_url }}" {% if page.url == '/netomi-case-study/05-standardize-flexible/' %}class="active"{% endif %}>05 Standardize vs flexible</a>
+          <a href="{{ '/netomi-case-study/06-ticket-1/' | relative_url }}" {% if page.url == '/netomi-case-study/06-ticket-1/' %}class="active"{% endif %}>06 Ticket 1</a>
+          <a href="{{ '/netomi-case-study/07-ticket-2/' | relative_url }}" {% if page.url == '/netomi-case-study/07-ticket-2/' %}class="active"{% endif %}>07 Ticket 2</a>
+          <a href="{{ '/netomi-case-study/08-ticket-3/' | relative_url }}" {% if page.url == '/netomi-case-study/08-ticket-3/' %}class="active"{% endif %}>08 Ticket 3</a>
+          <a href="{{ '/netomi-case-study/09-assumptions-tradeoffs/' | relative_url }}" {% if page.url == '/netomi-case-study/09-assumptions-tradeoffs/' %}class="active"{% endif %}>09 Assumptions and tradeoffs</a>
+          <a href="{{ '/netomi-case-study/10-release-note-standard/' | relative_url }}" {% if page.url == '/netomi-case-study/10-release-note-standard/' %}class="active"{% endif %}>10 Release note standard</a>
+          <a href="{{ '/netomi-case-study/11-high-leverage-improvement/' | relative_url }}" {% if page.url == '/netomi-case-study/11-high-leverage-improvement/' %}class="active"{% endif %}>11 High leverage improvement</a>
+          <a href="{{ '/netomi-case-study/12-closing/' | relative_url }}" {% if page.url == '/netomi-case-study/12-closing/' %}class="active"{% endif %}>12 Closing</a>
+          <a href="{{ '/netomi-case-study/13-qa/' | relative_url }}" {% if page.url == '/netomi-case-study/13-qa/' %}class="active"{% endif %}>13 Q and A</a>
+        </nav>
+      </aside>
 
-      <article class="work-section-creative presentation-card">
-        {{ content }}
-      </article>
+      <div class="presentation-shell">
+        <header class="presentation-header">
+          <p class="presentation-kicker">{{ page.presentation_title | default: "Netomi technical writer case study" }}</p>
+          <h1>{{ page.slide_title }}</h1>
+          {% if page.slide_number and page.total_slides %}
+          <p class="presentation-progress">Slide {{ page.slide_number }} of {{ page.total_slides }}</p>
+          {% endif %}
+        </header>
 
-      <nav class="presentation-nav" aria-label="Presentation navigation">
-        {% if page.prev_url %}
-        <a class="btn btn-outline" href="{{ page.prev_url | relative_url }}">← Previous</a>
-        {% else %}
-        <span class="btn btn-outline is-disabled" aria-hidden="true">← Previous</span>
+        <article class="work-section-creative presentation-card">
+          {{ content }}
+        </article>
+
+        {% if page.show_speaker_notes == true %}
+          <section class="work-section-creative presentation-notes" aria-label="Speaker notes">
+            <h2>Speaker notes</h2>
+            {% if page.speaker_notes %}
+            <ul>
+              {% for note in page.speaker_notes %}
+              <li>{{ note }}</li>
+              {% endfor %}
+            </ul>
+            {% else %}
+            <p>Add slide specific notes in front matter using <code>speaker_notes</code>.</p>
+            {% endif %}
+          </section>
         {% endif %}
 
-        {% if page.next_url %}
-        <a class="btn btn-primary" href="{{ page.next_url | relative_url }}">Next →</a>
-        {% else %}
-        <span class="btn btn-primary is-disabled" aria-hidden="true">Next →</span>
-        {% endif %}
-      </nav>
+        <nav class="presentation-nav" aria-label="Presentation navigation">
+          {% if page.prev_url %}
+          <a class="btn btn-outline" href="{{ page.prev_url | relative_url }}">← Previous</a>
+          {% else %}
+          <span class="btn btn-outline is-disabled" aria-hidden="true">← Previous</span>
+          {% endif %}
+
+          {% if page.next_url %}
+          <a class="btn btn-primary" href="{{ page.next_url | relative_url }}">Next →</a>
+          {% else %}
+          <span class="btn btn-primary is-disabled" aria-hidden="true">Next →</span>
+          {% endif %}
+        </nav>
+      </div>
     </div>
   </div>
 </section>

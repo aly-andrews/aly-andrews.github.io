@@ -5,10 +5,23 @@ permalink: /netomi-case-study/06-ticket-1/
 presentation_title: Netomi technical writer case study
 slide_title: "Applying the model: ticket 1"
 slide_number: 6
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/05-standardize-flexible/
 next_url: /netomi-case-study/07-ticket-2/
+speaker_notes:
+  - I classify this as high risk because auth and error behavior can block real workflows.
+  - The release note focuses on confirmed behavior and user impact.
+  - I update core API docs immediately, then defer payload and status detail until confirmed.
+  - This is a good example of clear now, complete shortly after.
 ---
+
+<!--
+Speaker notes (not shown on site):
+- I classify this as high risk because auth and error behavior can block real workflows.
+- The release note focuses on confirmed behavior and user impact.
+- I update core API docs immediately, then defer payload and status detail until confirmed.
+- This is a good example of clear now, complete shortly after.
+-->
 
 <div class="work-section-header">
   <div class="work-image-large">

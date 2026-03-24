@@ -5,25 +5,38 @@ permalink: /netomi-case-study/05-standardize-flexible/
 presentation_title: Netomi technical writer case study
 slide_title: What gets standardized versus flexible
 slide_number: 5
-total_slides: 12
+total_slides: 13
 prev_url: /netomi-case-study/04-gradual-rollout/
 next_url: /netomi-case-study/06-ticket-1/
+speaker_notes:
+  - This is where I show judgment and avoid over-engineering.
+  - I standardize decision quality and consistency points.
+  - I keep execution depth flexible so writers can match effort to risk.
+  - I explicitly avoid over-optimizing for perfect detail on day one.
 ---
+
+<!--
+Speaker notes (not shown on site):
+- This is where I show judgment and avoid over-engineering.
+- I standardize decision quality and consistency points.
+- I keep execution depth flexible so writers can match effort to risk.
+- I explicitly avoid over-optimizing for perfect detail on day one.
+-->
 
 <h3>Standardize</h3>
 <ul>
-  <li>Ticket intake fields</li>
-  <li>Risk triage criteria</li>
-  <li>Release note structure</li>
-  <li>Review checkpoints and follow up tracking</li>
+  <li>Intake fields</li>
+  <li>Risk criteria</li>
+  <li>Release note format</li>
+  <li>Review checkpoints</li>
 </ul>
 
 <h3>Keep flexible</h3>
 <ul>
-  <li>Depth of documentation by risk tier</li>
-  <li>Language detail based on release readiness</li>
-  <li>Timing for full documentation expansion</li>
-  <li>Screenshot timing when UI is still changing</li>
+  <li>Documentation depth</li>
+  <li>Language detail</li>
+  <li>Update timing</li>
+  <li>Screenshot timing</li>
 </ul>
 
-<p><strong>Deliberate non optimization:</strong> I do not aim for full detail on day one for every item. Weekly releases need reliable clarity first, then fast follow detail.</p>
+<p><strong>Deliberate non optimization:</strong> clarity first, then fast follow detail.</p>
