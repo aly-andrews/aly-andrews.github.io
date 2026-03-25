@@ -6990,8 +6990,9 @@ h6,
 }
 
 .presentation-slide .presentation-shell {
-  max-width: 980px;
+  max-width: min(1100px, 100%);
   margin: 0 auto;
+  width: 100%;
 }
 
 .presentation-slide .presentation-header {
@@ -7022,14 +7023,55 @@ h6,
   padding: clamp(1.4rem, 2.2vw, 2.3rem) !important;
   border-radius: 20px;
   margin-bottom: 1rem !important;
-  min-height: clamp(420px, 58vh, 620px);
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  min-height: clamp(300px, 48vh, 580px);
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: none;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+/* Headline slides (1 to 2 lines): height follows copy + padding so the card feels wide, not a tall empty strip */
+.presentation-slide .presentation-card:has(.closing-headline) {
+  min-height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(2rem, 5vw, 3.25rem);
+  padding-bottom: clamp(2rem, 5vw, 3.25rem);
+}
+
+/* Body and bullet slides: height follows content, less empty space below */
+.presentation-slide .presentation-card:has(.slide-body),
+.presentation-slide .presentation-card:has(.rollout-plan),
+.presentation-slide .presentation-card:has(> h3) {
+  min-height: auto;
+  justify-content: flex-start;
+}
+
+/* Code heavy slides (ticket examples): keep comfortable vertical room */
+.presentation-slide .presentation-card:has(pre) {
+  min-height: clamp(320px, 52vh, 620px);
+}
+
+.presentation-slide .work-section-creative:nth-of-type(odd),
+.presentation-slide .work-section-creative:nth-of-type(even) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.presentation-slide .work-section-creative::before,
+.presentation-slide .work-section-creative::after {
+  display: none !important;
 }
 
 .presentation-slide .closing-headline {
-  margin: auto 0;
+  margin: 0;
   text-align: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 .presentation-slide .closing-headline p {
@@ -7054,10 +7096,50 @@ h6,
   white-space: pre-wrap;
 }
 
+.presentation-slide .slide-body,
 .presentation-slide .rollout-plan {
-  max-width: 68ch;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
   text-align: left;
+}
+
+.presentation-slide .slide-body p,
+.presentation-slide .slide-body li,
+.presentation-slide .slide-body h3,
+.presentation-slide .rollout-plan p,
+.presentation-slide .rollout-plan li,
+.presentation-slide .rollout-plan h3 {
+  text-align: left;
+}
+
+.presentation-slide .slide-body p,
+.presentation-slide .rollout-plan p {
+  line-height: 1.6;
+}
+
+.presentation-slide .slide-body h3,
+.presentation-slide .rollout-plan h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+}
+
+.presentation-slide .slide-body ul,
+.presentation-slide .rollout-plan ul {
+  margin: 0.35rem 0 0.8rem;
+}
+
+.presentation-slide .slide-body li,
+.presentation-slide .rollout-plan li {
+  margin-bottom: 0.35rem;
+}
+
+/* Undo global portfolio max-width on lists and paragraphs inside the slide card */
+.presentation-slide .presentation-card > p,
+.presentation-slide .presentation-card > ul,
+.presentation-slide .presentation-card > h3 {
+  max-width: 100%;
 }
 
 .presentation-slide .slide-headline {

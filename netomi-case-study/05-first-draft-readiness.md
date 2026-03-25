@@ -24,10 +24,10 @@ speaker_notes:
 # Release Notes: [Short, Benefit-Focused Title]
 
 **Date:** YYYY-MM-DD  
-**Version:** [e.g. 2026-04 / v3.2.1 / Shopify Flow 2026-01] (optional)
+**Version:** [e.g. 2026-04 / v3.2.1 / Netomi Flow 2026-01] (optional)
 
 ## Summary
-[1–2 sentence overview of the release’s main value. Example: “Merchants can now create advanced discount rules with conditional logic, while developers gain new API endpoints for bulk operations.”]
+[1–2 sentence overview of the release’s main value. Example: “Users can now create advanced discount rules with conditional logic, while developers gain new API endpoints for bulk operations.”]
 
 ## What’s New
 
@@ -62,7 +62,7 @@ speaker_notes:
 - Temporary limitation or known issue with workaround.
 
 ## How to Update / Get Started
-- [Clear instructions, e.g. “Update your app in the Shopify Admin” or “Run `npm update your-package`”]
+- [Clear instructions, e.g. “Update your app in the Netomi Admin” or “Run `npm update your-package`”]
 - [Link to full documentation or migration guide]
 
 ## Feedback & Questions

@@ -19,7 +19,7 @@ speaker_notes:
 
 ---
 
-<div class="rollout-plan">
+<div class="slide-body">
   <p><strong>Approach:</strong> phased rollout, low disruption, measurable gains.</p>
 
   <h3>Phase 0 (weeks 1 to 2)</h3>

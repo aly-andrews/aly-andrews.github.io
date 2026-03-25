@@ -20,7 +20,7 @@ speaker_notes:
   - Next, I will show one high leverage improvement that can be implemented with low process overhead.
 ---
 
-<div class="rollout-plan">
+<div class="slide-body">
   <ul>
     <li><strong>Assumptions:</strong> Jira is the signal source. Weekly cadence is fixed. Inputs arrive late.</li>
     <li><strong>Change case:</strong> fewer meetings and fewer DMs when the right context is on the ticket.</li>
