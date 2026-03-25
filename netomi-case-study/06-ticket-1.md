@@ -9,12 +9,12 @@ total_slides: 14
 prev_url: /netomi-case-study/05-first-draft-readiness/
 next_url: /netomi-case-study/07-ticket-2/
 speaker_notes:
-  - We will start with ticket 1 and show how the framework works in a high risk scenario.
+  - I will start with ticket 1 and show how the framework works in a high risk scenario.
   - With engineering tags for impact and behavior change, this ticket is quickly surfaced as high risk.
-  - We classify this as high risk because authentication and error behavior can block real workflows.
-  - Our release note focuses on confirmed behavior and clear user impact.
-  - We update core API documentation immediately, then defer payload and status details until they are confirmed.
-  - This is a clear example of our approach: clear guidance now and complete detail shortly after.
+  - I classify this as high risk because authentication and error behavior can block real workflows.
+  - My release note focuses on confirmed behavior and clear user impact.
+  - I update core API documentation immediately, then defer payload and status details until they are confirmed.
+  - This is a clear example of my approach: clear guidance now and complete detail shortly after.
 ---
 
 <div class="work-section-header">

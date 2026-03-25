@@ -9,12 +9,12 @@ total_slides: 14
 prev_url:
 next_url: /netomi-case-study/02-problem/
 speaker_notes:
-  - Hi everyone, Aly here. We’re excited for this opportunity.
-  - We approached this as a technical writing system for release clarity, with tooling as support rather than the core solution.
-  - Our background includes a decade’s worth of content creation at Shopify.
-  - We maintained high volume technical and educational content across the Shopify Help Center and Shopify Academy, supporting both small business merchants and enterprise partners.
-  - We’re finishing the Technical Writing program at Algonquin College and graduating with honours at the end of this summer.
-  - With the case study your team provided, we saw clear parallels to work we handle at Shopify: recurring updates, changing scope and incomplete release inputs.
+  - Hi everyone, my name is Aly, and I am excited for this opportunity.
+  - I approached this as a technical writing system for release clarity, with tooling as support rather than the core solution.
+  - My background includes a decade's worth of content creation at Shopify. 
+  - I maintained high volume technical and educational content across the Shopify Help Center and Shopify Academy, supporting both small business merchants and enterprise partners.
+  - I am finishing the Technical Writing program at Algonquin College and graduating with honours at the end of this summer.
+  - With the case study your team provided, I saw clear parallels to work I handle at Shopify: recurring updates, changing scope and incomplete release inputs.
 ---
 
 <div class="work-section-header">

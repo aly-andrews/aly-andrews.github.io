@@ -9,15 +9,15 @@ total_slides: 14
 prev_url: /netomi-case-study/09-standardize-flexible/
 next_url: /netomi-case-study/11-high-leverage-improvement/
 speaker_notes:
-  - Before we move into the improvement recommendation, we want to make our assumptions and tradeoffs explicit.
-  - We assume people can be resistant to change. For engineers we would ask to adopt new workflows, we need to show why this helps them, not only documentation.
+  - Before I move into the improvement recommendation, I want to make my assumptions and tradeoffs explicit.
+  - I assume people can be resistant to change. For engineers we would ask to adopt new workflows, I need to show why this helps them, not only documentation.
   - For engineering, the benefit is fewer meetings and fewer DMs from writers chasing missing context because the right fields and tags are already on the ticket. When we standardize what we need every time, there is less back and forth about why someone is asking for it.
-  - We make assumptions explicit so you can clearly see our decision boundaries.
-  - Our first questions focus on user visibility, behavior change and support impact.
+  - I make assumptions explicit so you can clearly see my decision boundaries.
+  - My first questions focus on user visibility, behavior change and support impact.
   - On tradeoffs, reliable guidance now and complete detail in fast follow updates still applies for end users.
   - There is more work upfront to gather data, train models and implement workflows. This is not an overnight change. It is gradual. Over time it saves time on a process that repeats every single week, so writers can spend effort on higher impact problems instead of repetitive synthesis.
-  - We do not present uncertainty as certainty to appear complete.
-  - Next, we will show one high leverage improvement that can be implemented with low process overhead.
+  - I do not present uncertainty as certainty to appear complete.
+  - Next, I will show one high leverage improvement that can be implemented with low process overhead.
 ---
 
 <h3>Assumptions</h3>

@@ -9,10 +9,10 @@ total_slides: 14
 prev_url: /netomi-case-study/12-gradual-rollout/
 next_url: /netomi-case-study/14-qa/
 speaker_notes:
-  - We close by reiterating the core thesis: speed with control.
-  - We emphasize automation as a support layer, not a replacement for writing judgment.
-  - We end with the outcomes this approach enables and how we would contribute long term.
-  - We are happy to answer questions on prioritization, tradeoffs and how we would adapt this to Netomi's real workflow.
+  - I close by reiterating the core thesis: speed with control.
+  - I emphasize automation as a support layer, not a replacement for writing judgment.
+  - I end with the outcomes this approach enables and how I would contribute long term.
+  - I am happy to answer questions on prioritization, tradeoffs and how I would adapt this to Netomi's real workflow.
 ---
 
 <p><strong>Speed with control.</strong></p>

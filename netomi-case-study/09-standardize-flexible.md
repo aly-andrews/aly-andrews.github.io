@@ -9,11 +9,11 @@ total_slides: 14
 prev_url: /netomi-case-study/08-ticket-3/
 next_url: /netomi-case-study/10-assumptions-tradeoffs/
 speaker_notes:
-  - Now that you have seen the ticket examples, this is how we protect quality without overbuilding process.
-  - We standardize the minimum inputs and automation rules so weekly drafting is consistent.
-  - We keep execution depth flexible so writers can match effort to actual risk.
-  - We deliberately do not optimize for perfect detail on day one. We prioritize clarity first, then fast follow detail.
-  - Next, we will call out assumptions and tradeoffs that keep this realistic under weekly release pressure.
+  - Now that you have seen the ticket examples, this is how I protect quality without overbuilding process.
+  - I standardize the minimum inputs and automation rules so weekly drafting is consistent.
+  - I keep execution depth flexible so writers can match effort to actual risk.
+  - I deliberately do not optimize for perfect detail on day one. I prioritize clarity first, then fast follow detail.
+  - Next, I will call out assumptions and tradeoffs that keep this realistic under weekly release pressure.
 ---
 
 <h3>Standardize</h3>
