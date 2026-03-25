@@ -5,7 +5,7 @@ permalink: /netomi-case-study/07-ticket-2/
 presentation_title: Netomi technical writer case study
 slide_title: "Applying the model: ticket 2"
 slide_number: 7
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/06-ticket-1/
 next_url: /netomi-case-study/08-ticket-3/
 speaker_notes:
@@ -17,25 +17,28 @@ speaker_notes:
   - I defer screenshots until the UI and access window are stable.
 ---
 
-<div class="work-section-header">
-  <div class="work-image-large">
-    <div class="image-placeholder">
-      <p>Settings UI placeholder</p>
-      <p class="placeholder-hint">Add screenshot placeholder for failed job email toggle</p>
-    </div>
-  </div>
-  <div class="work-section-intro">
-    <p><strong>Ticket:</strong> Notification toggle (feature flagged)</p>
-    <p>I treat this as medium risk with rollout sensitivity because visibility differs during rollout.</p>
-  </div>
-</div>
+```md
+# Release Notes: Notification Toggle for Failed Jobs
 
-<h3>Customer release note draft</h3>
-<p>A new setting lets you control email notifications for failed jobs. This feature is rolling out gradually and may not yet be visible in all accounts.</p>
+**Date:** 2026-03-25
+**Version:** Platform v2026.03
 
-<h3>Document now versus defer</h3>
-<ul>
-  <li><strong>Now:</strong> What the toggle does and rollout caveat language</li>
-  <li><strong>Now:</strong> Targeted docs update for Settings section</li>
-  <li><strong>Defer:</strong> Screenshots and edge case behavior until stable</li>
-</ul>
+## Summary
+You can now control email notifications for failed jobs directly from Settings using a simple toggle. This feature is currently available behind a feature flag.
+
+## What’s New
+
+### New Features
+- **Notification Toggle** – Added a toggle in Settings → Notifications to enable or disable email alerts when background jobs fail.
+  This gives you more control over notification preferences and helps reduce alert fatigue.
+
+## How to Update / Get Started
+- The feature is behind a feature flag. Contact your Netomi account manager or support to enable it for your workspace.
+- Once enabled, go to **Settings > Notifications** to configure the toggle.
+
+## Feedback & Questions
+Let us know how this toggle works for your team! Share feedback at support@netomi.com or in the customer portal.
+
+---
+*Previous releases are available in our [changelog archive](link).*
+```

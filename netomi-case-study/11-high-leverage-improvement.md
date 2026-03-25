@@ -5,7 +5,7 @@ permalink: /netomi-case-study/11-high-leverage-improvement/
 presentation_title: Netomi technical writer case study
 slide_title: One high leverage improvement
 slide_number: 11
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/10-assumptions-tradeoffs/
 next_url: /netomi-case-study/12-gradual-rollout/
 speaker_notes:
@@ -20,12 +20,6 @@ speaker_notes:
 ---
 
 <div class="work-section-header">
-  <div class="work-image-large">
-    <div class="image-placeholder">
-      <p>Jira + docs platform workflow placeholder</p>
-      <p class="placeholder-hint">Add 2-panel visual: ticket fields + release note template</p>
-    </div>
-  </div>
   <div class="work-section-intro">
     <p><strong>Small change, high impact:</strong> Jira docs readiness block + reusable release template in the docs platform.</p>
   </div>

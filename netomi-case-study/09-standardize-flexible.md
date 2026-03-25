@@ -5,7 +5,7 @@ permalink: /netomi-case-study/09-standardize-flexible/
 presentation_title: Netomi technical writer case study
 slide_title: What gets standardized versus flexible
 slide_number: 9
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/08-ticket-3/
 next_url: /netomi-case-study/10-assumptions-tradeoffs/
 speaker_notes:

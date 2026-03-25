@@ -5,7 +5,7 @@ permalink: /netomi-case-study/01-intro/
 presentation_title: Netomi technical writer case study
 slide_title: Documentation workflow
 slide_number: 1
-total_slides: 14
+total_slides: 13
 prev_url:
 next_url: /netomi-case-study/02-problem/
 speaker_notes:

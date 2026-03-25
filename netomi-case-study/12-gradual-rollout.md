@@ -5,7 +5,7 @@ permalink: /netomi-case-study/12-gradual-rollout/
 presentation_title: Netomi technical writer case study
 slide_title: Implementation rollout plan
 slide_number: 12
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/11-high-leverage-improvement/
 next_url: /netomi-case-study/13-closing/
 speaker_notes:
@@ -19,22 +19,24 @@ speaker_notes:
 
 ---
 
-<p><strong>Approach:</strong> phased rollout, low disruption, measurable gains.</p>
+<div class="rollout-plan">
+  <p><strong>Approach:</strong> phased rollout, low disruption, measurable gains.</p>
 
-<h3>Phase 0 (weeks 1 to 2)</h3>
-<ul>
-  <li>Review current process and capture baseline metrics</li>
-  <li>Audit ticket quality and current manual documentation effort</li>
-</ul>
+  <h3>Phase 0 (weeks 1 to 2)</h3>
+  <ul>
+    <li>Review current process and capture baseline metrics</li>
+    <li>Audit ticket quality and current manual documentation effort</li>
+  </ul>
 
-<h3>Phase 1 and 2 (weeks 3 to 8)</h3>
-<ul>
-  <li>Add lightweight Jira tagging and required documentation fields</li>
-  <li>Connect secure Jira API retrieval to weekly LLM first draft generation</li>
-  <li>Writer review remains required</li>
-</ul>
+  <h3>Phase 1 and 2 (weeks 3 to 8)</h3>
+  <ul>
+    <li>Add lightweight Jira tagging and required documentation fields</li>
+    <li>Connect secure Jira API retrieval to weekly LLM first draft generation</li>
+    <li>Writer review remains required</li>
+  </ul>
 
-<h3>Phase 3 (weeks 9 to 12)</h3>
-<ul>
-  <li>Retros, prompt tuning and scale once stable</li>
-</ul>
+  <h3>Phase 3 (weeks 9 to 12)</h3>
+  <ul>
+    <li>Retros, prompt tuning and scale once stable</li>
+  </ul>
+</div>

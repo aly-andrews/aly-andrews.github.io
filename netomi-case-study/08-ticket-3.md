@@ -5,7 +5,7 @@ permalink: /netomi-case-study/08-ticket-3/
 presentation_title: Netomi technical writer case study
 slide_title: "Applying the model: ticket 3"
 slide_number: 8
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/07-ticket-2/
 next_url: /netomi-case-study/09-standardize-flexible/
 speaker_notes:
@@ -17,25 +17,30 @@ speaker_notes:
   - If reliability or behavior changes in a user visible way, I immediately promote this to customer facing documentation.
 ---
 
-<div class="work-section-header">
-  <div class="work-image-large">
-    <div class="image-placeholder">
-      <p>Internal change placeholder</p>
-      <p class="placeholder-hint">Add internal-only callout mockup</p>
-    </div>
-  </div>
-  <div class="work-section-intro">
-    <p><strong>Ticket:</strong> Tech: Job runner refactor</p>
-    <p>I treat this as low customer impact based on current details because it is framed as internal with no functional changes.</p>
-  </div>
-</div>
+```md
+# Release Notes: Background Job Runner Refactor
 
-<h3>Customer release note draft</h3>
-<p>No customer facing release note at this time. This remains internal unless user visible reliability or behavior changes are confirmed.</p>
+**Date:** 2026-03-25
+**Version:** Platform v2026.03
 
-<h3>Document now versus defer</h3>
-<ul>
-  <li><strong>Now:</strong> Internal changelog note and support heads up</li>
-  <li><strong>Now:</strong> Engineering confirmation check for user visible impact</li>
-  <li><strong>Defer:</strong> Public docs unless user impact is confirmed</li>
-</ul>
+## Summary
+We have refactored the background job runner to improve long-term maintainability and code quality. This is an internal improvement with no impact on functionality.
+
+## What’s New
+
+### Improvements
+- **Job Runner Refactor** – Internal refactoring of the background job runner for better maintainability.
+  No changes to job behavior, performance, or APIs.
+
+## Known Issues
+None.
+
+## How to Update / Get Started
+- No action required. This change is transparent to all users and integrations.
+
+## Feedback & Questions
+This was a behind-the-scenes engineering improvement. If you notice any unexpected job behavior, please report it to support@netomi.com.
+
+---
+*Previous releases are available in our [changelog archive](link).*
+```
