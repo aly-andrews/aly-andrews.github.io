@@ -11,10 +11,10 @@ next_url: /netomi-case-study/08-ticket-3/
 speaker_notes:
   - Now on ticket 2, the key variable is rollout visibility.
   - Proposed rollout scope tags from engineering make this triage decision faster and more consistent.
-  - I classify this as medium risk because user impact depends on rollout visibility.
-  - I publish what users need to act now: what changed and where they can find it.
-  - I include explicit rollout caveat language so users are not confused if the setting is not yet visible.
-  - I defer screenshots until the UI and access window are stable.
+  - We classify this as medium risk because user impact depends on rollout visibility.
+  - We publish what users need to act now: what changed and where they can find it.
+  - We include explicit rollout caveat language so users are not confused if the setting is not yet visible.
+  - We defer screenshots until the UI and access window are stable.
 ---
 
 <div class="work-section-header">

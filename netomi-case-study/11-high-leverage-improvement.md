@@ -9,12 +9,12 @@ total_slides: 14
 prev_url: /netomi-case-study/10-assumptions-tradeoffs/
 next_url: /netomi-case-study/12-gradual-rollout/
 speaker_notes:
-  - To make this practical immediately, here is one high leverage improvement I would start with.
+  - To make this practical immediately, here is one high leverage improvement we would start with.
   - This improvement is intentionally small and practical: one workflow block in Jira and one reusable template in the docs platform.
   - The value is immediate consistency and less back and forth on release day.
   - It supports automation while preserving technical writing quality control.
-  - In practice, I would pilot this in one product area, measure outcomes and scale after results.
-  - If full adoption is not realistic at first, I start with one required ticket field, run a short weekly release readiness check and use those results to expand adoption gradually.
+  - In practice, we would pilot this in one product area, measure outcomes and scale after results.
+  - If full adoption is not realistic at first, we start with one required ticket field, run a short weekly release readiness check and use those results to expand adoption gradually.
   - Over time, once ticket fields are consistent and we have enough labeled examples, we can add an LLM-assisted triage step that suggests risk tiers. Writers still validate final labels and publish decisions.
   - If this approach is supported, the next step is a practical rollout plan for implementation.
 ---

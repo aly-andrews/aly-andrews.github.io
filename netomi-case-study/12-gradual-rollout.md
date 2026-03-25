@@ -10,12 +10,12 @@ prev_url: /netomi-case-study/11-high-leverage-improvement/
 next_url: /netomi-case-study/13-closing/
 speaker_notes:
   - If this idea is supported, here is a practical rollout plan for implementation.
-  - I want this rollout to feel adoptable, not disruptive, so I sequence it in phases.
+  - We want this rollout to feel adoptable, not disruptive, so we sequence it in phases.
   - Phase 0 establishes a baseline and identifies the current bottlenecks in ticket quality, manual review time and release day churn.
   - Phase 1 introduces minimum Jira fields and tagging so engineering can add documentation signals with low effort.
   - Phase 2 connects Jira data retrieval to the LLM draft workflow, so weekly release note first drafts are generated in a standard format that we establish.
   - Phase 3 focuses on tuning triage thresholds, prompt rules and documentation quality checks based on real release cycle data.
-  - Next, I will close with the outcomes this approach is designed to deliver.
+  - Next, we will close with the outcomes this approach is designed to deliver.
 
 ---
 
