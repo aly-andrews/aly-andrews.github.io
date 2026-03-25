@@ -3,9 +3,9 @@ layout: presentation-slide
 title: Netomi case study first draft readiness
 permalink: /netomi-case-study/05-first-draft-readiness/
 presentation_title: Netomi technical writer case study
-slide_title: First draft readiness and automation
+slide_title: First draft readiness
 slide_number: 5
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/04-triage-in-practice/
 next_url: /netomi-case-study/06-ticket-1/
 speaker_notes:
@@ -18,22 +18,56 @@ speaker_notes:
   - Next I will walk through the sample tickets as concrete examples of how triage and drafting decisions play out.
 ---
 
-<p><strong>Where we are:</strong> tags are on the ticket, writers have set acuity. Goal is a first draft ready for review and publish.</p>
+<p>Example style guide in Markdown (behind the scenes):</p>
 
-<h3>Minimum viable content for first draft readiness</h3>
-<ul>
-  <li>What changed and who is affected</li>
-  <li>Customer facing versus internal facing signal</li>
-  <li>Rollout scope or visibility caveats when relevant</li>
-  <li>Known unknowns called out, not hidden</li>
-  <li>Acuity label applied so the system knows queue order</li>
-</ul>
+```md
+# Release Notes: [Short, Benefit-Focused Title]
 
-<h3>Automation at this stage</h3>
-<ul>
-  <li><strong>High acuity first:</strong> first draft generation runs on high acuity customer facing items for the weekly release window.</li>
-  <li><strong>Other funnels:</strong> internal facing and medium acuity are queued separately so drafts stay scoped and review stays predictable.</li>
-  <li><strong>Style layer:</strong> prompts and templates enforce required fields, user impact first, plain language, no jargon and explicit pending confirmations.</li>
-</ul>
+**Date:** YYYY-MM-DD  
+**Version:** [e.g. 2026-04 / v3.2.1 / Shopify Flow 2026-01] (optional)
 
-<p><strong>Framing:</strong> not a new system from scratch. Existing process plus rules, API fed ticket data and prompt engineering so interpretation stays consistent week to week.</p>
+## Summary
+[1–2 sentence overview of the release’s main value. Example: “Merchants can now create advanced discount rules with conditional logic, while developers gain new API endpoints for bulk operations.”]
+
+## What’s New
+
+### New Features
+- **[Feature Name]** – Clear description of what it does and the customer/developer benefit.  
+  [Optional: Link to docs or screenshot]
+
+- **[Another Feature]** – Description + benefit.
+
+### Improvements
+- **[Improvement Name]** – Description of the change and how it helps users.
+- **[Another Improvement]** – Description + benefit.
+
+### Bug Fixes
+- **[Ticket/Issue ID]** – What was broken and is now fixed. (Who it affects / impact)
+- **[Another Fix]** – Description of the fix.
+
+## Breaking Changes & Deprecations
+(Only include this section if there are any)
+
+- **[Change Name]** – Exact impact on users/developers.  
+  **Action required by:** [Date or version]  
+  **Migration steps:**  
+  - Step 1  
+  - Step 2  
+  - Link to full migration guide (if available)
+
+- **[Deprecated Item]** is now deprecated and will be removed on [date]. Recommended replacement: [X].
+
+## Known Issues
+(Optional – only include if needed)
+- Temporary limitation or known issue with workaround.
+
+## How to Update / Get Started
+- [Clear instructions, e.g. “Update your app in the Shopify Admin” or “Run `npm update your-package`”]
+- [Link to full documentation or migration guide]
+
+## Feedback & Questions
+Share your thoughts in the [community forum](link) or reach out to support@yourcompany.com.
+
+---
+*Previous releases are available in our [changelog archive](link).*
+```

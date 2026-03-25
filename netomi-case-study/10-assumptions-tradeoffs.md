@@ -3,9 +3,9 @@ layout: presentation-slide
 title: Netomi case study assumptions, change and tradeoffs
 permalink: /netomi-case-study/10-assumptions-tradeoffs/
 presentation_title: Netomi technical writer case study
-slide_title: Assumptions, change resistance and tradeoffs
+slide_title: Assumptions and tradeoffs
 slide_number: 10
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/09-standardize-flexible/
 next_url: /netomi-case-study/11-high-leverage-improvement/
 speaker_notes:
@@ -20,16 +20,11 @@ speaker_notes:
   - Next, I will show one high leverage improvement that can be implemented with low process overhead.
 ---
 
-<h3>Assumptions</h3>
-<p>Jira is the primary signal source. Weekly cadence is fixed. Some tickets will stay incomplete near release.</p>
-<p>People can be resistant to change. Anyone we ask to adopt new behavior needs a clear answer to what is in it for them.</p>
-
-<h3>Change and engineering benefit</h3>
-<p>For engineers, lightweight tags and fields mean <strong>fewer meetings</strong> and <strong>fewer DMs from writers</strong> chasing information because context is already on the ticket. When we <strong>standardize what we need every time</strong>, there is less friction about why someone is asking for it.</p>
-
-<h3>Prioritized questions</h3>
-<p>What is user visible now? What behavior changed? What will drive support burden?</p>
-
-<h3>Tradeoffs</h3>
-<p><strong>Release communication:</strong> reliable guidance now, complete detail in fast follow updates.</p>
-<p><strong>Implementation:</strong> more effort upfront to gather training data and stand up workflows. Not an overnight switch — it is <strong>gradual</strong>. The payoff is less weekly toil on a repeating process, so writers can focus on higher impact work.</p>
+<div class="rollout-plan">
+  <ul>
+    <li><strong>Assumptions:</strong> Jira is the signal source. Weekly cadence is fixed. Inputs arrive late.</li>
+    <li><strong>Change case:</strong> fewer meetings and fewer DMs when the right context is on the ticket.</li>
+    <li><strong>Decision questions:</strong> user visibility, behavior change and support impact.</li>
+    <li><strong>Tradeoff:</strong> reliable guidance now, complete detail in fast follow updates.</li>
+  </ul>
+</div>

@@ -6,7 +6,7 @@ permalink: /netomi-case-study/03-decision-model/
 presentation_title: Netomi technical writer case study
 slide_title: Proposal
 slide_number: 3
-total_slides: 14
+total_slides: 13
 prev_url: /netomi-case-study/02-problem/
 next_url: /netomi-case-study/04-triage-in-practice/
 speaker_notes:
@@ -33,11 +33,3 @@ speaker_notes:
     <p>This is my intake, triage and first draft automation workflow for incoming release tickets:</p>
   </div>
 </div>
-
-<ul>
-  <li><strong>1) Structured intake and tagging</strong></li>
-  <li><strong>2) Weekly Jira data pull (API)</strong></li>
-  <li><strong>3) Risk tier triage and decision mapping</strong></li>
-  <li><strong>4) LLM generated first draft</strong></li>
-  <li><strong>5) Writer owned publish gate</strong></li>
-</ul>

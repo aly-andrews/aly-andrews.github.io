@@ -9,3 +9,9 @@ pr-preview/
 
 # Debug logs
 _preview_debug.log
+
+# Build output
+_site/
+
+# Local backup
+netomi-case-study/speaker-notes-backup.md
