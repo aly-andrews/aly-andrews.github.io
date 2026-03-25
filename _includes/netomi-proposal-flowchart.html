@@ -1,0 +1,37 @@
+<div class="proposal-flowchart-wrap" aria-label="Workflow from Jira tickets through tagging, API pull, LLM triage, acuity labels, first draft, writer review, to publish, then next weekly cycle">
+  <div class="mermaid proposal-flowchart">
+flowchart TD
+    A["Incoming Jira Release Tickets"]
+    B["Engineering Adds\nLightweight Tags & Core Fields"]
+    C["Secure Jira API Pull\n(Last Week's Segmented Data Only)"]
+    D["LLM Triage Workflow"]
+    E["Apply Acuity Label\nLow / Medium / High"]
+    F["High Acuity Tickets Pushed to Top"]
+    G["LLM Creates Structured First Draft\n(Netomi format + styleguide)"]
+    H["Technical Writers Review & Edit\n(Gatekeepers & Publishing Authority)"]
+    I["Publish Release Notes"]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+
+    I -.->|Next weekly cycle| A
+
+    classDef engineering fill:#E3F2FD,stroke:#1976D2,stroke-width:2px,color:#0A0A0A
+    classDef automation fill:#F3E5F5,stroke:#7B1FA2,stroke-width:2px,color:#0A0A0A
+    classDef writers fill:#E8F5E9,stroke:#388E3C,stroke-width:2px,color:#0A0A0A
+    classDef publish fill:#E0F2F1,stroke:#00695C,stroke-width:3px,color:#0A0A0A
+
+    class B engineering
+    class C,D,E,F,G automation
+    class H writers
+    class I publish
+
+    style A fill:#FFF3E0,stroke:#F57C00,stroke-width:2px,color:#0A0A0A
+  </div>
+</div>

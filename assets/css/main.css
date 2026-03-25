@@ -6876,6 +6876,33 @@ h6,
   }
 }
 
+/* Mermaid flowchart (proposal slide and any slide with enable_mermaid) */
+.presentation-slide .proposal-flowchart-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.35rem 0;
+  min-width: 0;
+}
+
+.presentation-slide .work-image-large.proposal-flowchart-column {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.presentation-slide .proposal-flowchart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.presentation-slide .proposal-flowchart svg {
+  display: block;
+  height: auto;
+}
+
 /* Netomi presentation slide mode */
 .presentation-slide .presentation-layout {
   display: grid;

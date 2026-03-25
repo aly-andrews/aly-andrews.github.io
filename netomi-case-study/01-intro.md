@@ -5,17 +5,16 @@ permalink: /netomi-case-study/01-intro/
 presentation_title: Netomi technical writer case study
 slide_title: Documentation workflow
 slide_number: 1
-total_slides: 13
+total_slides: 14
 prev_url:
 next_url: /netomi-case-study/02-problem/
 speaker_notes:
   - Hi everyone, my name is Aly, and I am excited for this opportunity.
-  - I approached this as a technical writing system for release clarity, not a tooling project.
-  - I bring experience from Shopify and content operations work where I supported recurring release communication, cross functional coordination and customer facing clarity.
-  - I am also finishing the Technical Writing program at Algonquin College and graduating with honours at the end of this summer.
-  - I have worked remote first for years and do my best work in async, cross functional environments where clarity matters.
-  - I am interested in Netomi because this role sits at the intersection of technical writing, product change and customer trust.
-  - I saw clear parallels to work I handled at Shopify: recurring updates, changing scope and incomplete release inputs.
+  - I approached this as a technical writing system for release clarity, with tooling as support rather than the core solution.
+  - My background includes a decade's worth of content creation at Shopify. 
+  - I maintained high volume technical and educational content across the Shopify Help Center and Shopify Academy, supporting both small business merchants and enterprise partners.
+  - I am finishing the Technical Writing program at Algonquin College and graduating with honours at the end of this summer.
+  - With the case study your team provided, I saw clear parallels to work I handle at Shopify: recurring updates, changing scope and incomplete release inputs.
 ---
 
 <div class="work-section-header">

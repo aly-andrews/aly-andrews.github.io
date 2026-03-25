@@ -12,7 +12,7 @@ permalink: /netomi-technical-writer-case-study/
       <header class="presentation-header">
         <p class="presentation-kicker">Netomi technical writer case study</p>
         <h1>Presentation mode</h1>
-        <p class="presentation-progress">13 slides · one section per page</p>
+        <p class="presentation-progress">14 slides · one section per page</p>
       </header>
 
       <article class="work-section-creative presentation-card">

@@ -1,17 +1,18 @@
 ---
 layout: presentation-slide
 title: Netomi case study closing
-permalink: /netomi-case-study/12-closing/
+permalink: /netomi-case-study/13-closing/
 presentation_title: Netomi technical writer case study
 slide_title: Closing
-slide_number: 12
-total_slides: 13
-prev_url: /netomi-case-study/11-high-leverage-improvement/
-next_url: /netomi-case-study/13-qa/
+slide_number: 13
+total_slides: 14
+prev_url: /netomi-case-study/12-gradual-rollout/
+next_url: /netomi-case-study/14-qa/
 speaker_notes:
-  - Reiterate the core thesis: speed with control.
-  - Emphasize automation as a support layer, not a replacement for writing judgment.
-  - Close with outcomes and confidence in a long-term contribution model.
+  - I close by reiterating the core thesis: speed with control.
+  - I emphasize automation as a support layer, not a replacement for writing judgment.
+  - I end with the outcomes this approach enables and how I would contribute long term.
+  - I am happy to answer questions on prioritization, tradeoffs and how I would adapt this to Netomi's real workflow.
 ---
 
 <p><strong>Speed with control.</strong></p>

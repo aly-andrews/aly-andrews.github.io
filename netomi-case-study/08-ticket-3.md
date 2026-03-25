@@ -5,14 +5,16 @@ permalink: /netomi-case-study/08-ticket-3/
 presentation_title: Netomi technical writer case study
 slide_title: "Applying the model: ticket 3"
 slide_number: 8
-total_slides: 13
+total_slides: 14
 prev_url: /netomi-case-study/07-ticket-2/
-next_url: /netomi-case-study/09-assumptions-tradeoffs/
+next_url: /netomi-case-study/09-standardize-flexible/
 speaker_notes:
+  - For ticket 3, I apply the same model to an internal engineering change.
+  - Internal change tags help this route quickly to low customer impact unless reliability signals say otherwise.
   - I classify this as low customer impact based on the current ticket language.
-  - I avoid customer facing release notes unless user visible behavior is confirmed.
-  - I still document internally and verify with engineering to avoid blind spots.
-  - If reliability or behavior changed, I immediately promote this to customer facing.
+  - I do not publish a customer facing release note unless user visible behavior is confirmed.
+  - I still document this internally and verify with engineering to avoid blind spots.
+  - If reliability or behavior changes in a user visible way, I immediately promote this to customer facing documentation.
 ---
 
 <div class="work-section-header">

@@ -5,13 +5,15 @@ permalink: /netomi-case-study/07-ticket-2/
 presentation_title: Netomi technical writer case study
 slide_title: "Applying the model: ticket 2"
 slide_number: 7
-total_slides: 13
+total_slides: 14
 prev_url: /netomi-case-study/06-ticket-1/
 next_url: /netomi-case-study/08-ticket-3/
 speaker_notes:
-  - I classify this as medium risk because impact depends on rollout visibility.
-  - I publish what users need to act now: what changed and where to find it.
-  - I include explicit rollout caveat language to prevent confusion.
+  - Now on ticket 2, the key variable is rollout visibility.
+  - Proposed rollout scope tags from engineering make this triage decision faster and more consistent.
+  - I classify this as medium risk because user impact depends on rollout visibility.
+  - I publish what users need to act now: what changed and where they can find it.
+  - I include explicit rollout caveat language so users are not confused if the setting is not yet visible.
   - I defer screenshots until the UI and access window are stable.
 ---
 
