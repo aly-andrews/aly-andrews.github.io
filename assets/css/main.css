@@ -9703,6 +9703,9 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content {
+  /* Align bullets, numbers, checkboxes and callout icons on one gutter; body text starts after mark + gap */
+  --manual-mark-gutter: 1.35rem;
+  --manual-mark-gap: 0.5rem;
   padding: clamp(1.6rem, 2.8vw, 2.4rem);
   border-radius: 34px;
   border: 2px solid var(--ink-dark);
@@ -9728,6 +9731,78 @@ body.whimsy-cursor-enabled .video-card {
   padding-bottom: 0;
 }
 
+/* Topic groups: no box; extra space before each topic, tighter rhythm inside */
+.manual-section {
+  margin-top: 3.25rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+.manual-content > .manual-section:first-of-type {
+  margin-top: 2.25rem;
+}
+
+.manual-section > h2:first-child {
+  margin-top: 0;
+}
+
+.manual-content .manual-section > h3:first-child {
+  margin-top: 0;
+}
+
+/* First subhead under an H2 sits closer than later H3s */
+.manual-section > h2 + h3 {
+  margin-top: 0.55rem;
+}
+
+.manual-content .manual-section h3 {
+  margin-top: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.manual-section > h2:first-child + p,
+.manual-section > h2:first-child + .manual-callout {
+  margin-top: 0;
+}
+
+.manual-section > p {
+  margin-bottom: 0.65rem;
+}
+
+.manual-section ul:not(.manual-checkbox-list):not(.manual-on-this-page ul),
+.manual-section ol:not(.manual-on-this-page ol) {
+  margin-bottom: 0.65rem;
+}
+
+.manual-section .manual-checkbox-list {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.manual-section .manual-callout {
+  margin: 0.65rem 0;
+}
+
+.manual-section .manual-video {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* Icon reference at end: compact callout stack */
+.manual-section.manual-section--icon-reference {
+  margin-top: 2.75rem;
+}
+
+.manual-section--icon-reference > p {
+  margin-bottom: 0.5rem;
+}
+
+.manual-section--icon-reference .manual-callout {
+  margin: 0.4rem 0;
+}
+
 /* Tighter grouping: intro content closer to H2 */
 .manual-content h2 + p {
   margin-bottom: 0.95rem;
@@ -9748,12 +9823,6 @@ body.whimsy-cursor-enabled .video-card {
   padding-bottom: 0;
 }
 
-.manual-content ul,
-.manual-content ol {
-  max-width: 74ch;
-  padding-left: 1.6rem;
-}
-
 .manual-content p,
 .manual-content li {
   line-height: 1.8;
@@ -9764,11 +9833,66 @@ body.whimsy-cursor-enabled .video-card {
   margin: 0 0 0.9rem;
 }
 
-.manual-content li {
+/* Bullets: mark sits in gutter column; text aligns with paragraphs and checkbox labels */
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) {
+  list-style: none;
+  max-width: 74ch;
+  padding-left: 0;
+  margin: 0 0 1rem;
+}
+
+/* Block + absolute marker keeps <strong>, links and text in one flow (flex would split them) */
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) > li {
+  display: block;
+  position: relative;
+  padding-left: calc(var(--manual-mark-gutter) + var(--manual-mark-gap));
   margin-bottom: 0.6rem;
 }
 
-.manual-content li:last-child {
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) > li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--manual-mark-gutter);
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) > li:last-child {
+  margin-bottom: 0;
+}
+
+/* Numbered lists (same gutter as bullets; procedure-specific ol rules stay more specific) */
+.manual-content ol:not(.manual-on-this-page ol) {
+  list-style: none;
+  max-width: 74ch;
+  padding-left: 0;
+  margin: 0 0 1rem;
+  counter-reset: manual-ordered;
+}
+
+.manual-content ol:not(.manual-on-this-page ol) > li {
+  counter-increment: manual-ordered;
+  display: block;
+  position: relative;
+  padding-left: calc(var(--manual-mark-gutter) + var(--manual-mark-gap));
+  margin-bottom: 0.6rem;
+}
+
+.manual-content ol:not(.manual-on-this-page ol) > li::before {
+  content: counter(manual-ordered) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--manual-mark-gutter);
+  text-align: right;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.manual-content ol:not(.manual-on-this-page ol) > li:last-child {
   margin-bottom: 0;
 }
 
@@ -9790,6 +9914,40 @@ body.whimsy-cursor-enabled .video-card {
   top: 0.1rem;
   font-size: 0.95rem;
   color: var(--accent-green);
+}
+
+/* Interactive checklists (real inputs; do not use with .manual-checklist pseudo checkmarks) */
+.manual-checkbox-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.manual-checkbox-list li {
+  margin-bottom: 0.5rem;
+}
+
+.manual-checkbox-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Same gutter as bullets so label text lines up with list body text */
+.manual-checkbox-list label {
+  display: grid;
+  grid-template-columns: var(--manual-mark-gutter) minmax(0, 1fr);
+  column-gap: var(--manual-mark-gap);
+  align-items: start;
+  cursor: pointer;
+}
+
+.manual-checkbox-label-text {
+  min-width: 0;
+}
+
+.manual-checkbox-list input[type="checkbox"] {
+  justify-self: center;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
 }
 
 /* Embedded video on manual overview */
@@ -9830,26 +9988,32 @@ body.whimsy-cursor-enabled .video-card {
   margin-bottom: 0.4rem;
 }
 
-/* Procedure lists: clean numbered steps, tight between steps */
-.manual-procedure + p + p + ol {
+/* Procedure lists: clean numbered steps, tight between steps (scoped under .manual-content to override generic ol rules) */
+.manual-content .manual-procedure + p + p + ol {
   list-style: decimal;
+  display: block;
   margin: 0.25rem 0 1.8rem;
   padding-left: 1.3rem;
   max-width: 76ch;
 }
 
-.manual-procedure + p + p + ol > li {
+.manual-content .manual-procedure + p + p + ol > li {
+  display: list-item;
   margin: 0 0 0.5rem;
   padding-left: 0.15rem;
   line-height: 1.6;
 }
 
-.manual-procedure + p + p + ol > li:last-child {
+.manual-content .manual-procedure + p + p + ol > li::before {
+  content: none;
+}
+
+.manual-content .manual-procedure + p + p + ol > li:last-child {
   margin-bottom: 0;
 }
 
-.manual-procedure + p + p + ol > li > ul,
-.manual-procedure + p + p + ol > li > ol {
+.manual-content .manual-procedure + p + p + ol > li > ul,
+.manual-content .manual-procedure + p + p + ol > li > ol {
   margin-top: 0.3rem;
   margin-bottom: 0.25rem;
 }
@@ -9871,7 +10035,7 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-metadata {
   margin: 1.2rem 0 1.8rem;
-  padding: 0.95rem 1rem;
+  padding: 0.95rem 0;
   border: 1px solid rgba(212, 208, 200, 0.9);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.75);
@@ -9879,13 +10043,18 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-metadata ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
 }
 
 .manual-callout {
   position: relative;
+  display: grid;
+  grid-template-columns: var(--manual-mark-gutter) minmax(0, 1fr);
+  column-gap: var(--manual-mark-gap);
+  row-gap: 0.15rem;
+  align-items: start;
   margin: 1.1rem 0;
-  padding: 0.75rem 0.9rem 0.75rem 2.75rem;
+  padding: 0.75rem 0.9rem 0.75rem 0;
   border-left: 3px solid rgba(148, 163, 184, 0.5);
   border-radius: 0 8px 8px 0;
   background: rgba(248, 250, 252, 0.7);
@@ -9897,13 +10066,22 @@ body.whimsy-cursor-enabled .video-card {
   margin: 0;
 }
 
+.manual-callout > * {
+  grid-column: 2;
+}
+
 .manual-callout::before {
   content: "";
-  position: absolute;
-  left: 0.7rem;
-  top: 0.8rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+  position: static;
+  left: auto;
+  top: auto;
   width: 1.2rem;
   height: 1.2rem;
+  margin-top: 0.12rem;
   opacity: 0.7;
   background-position: center;
   background-repeat: no-repeat;
@@ -10039,6 +10217,10 @@ body.whimsy-cursor-enabled .video-card {
   border-bottom: none;
 }
 
+.manual-section + .manual-page-nav {
+  margin-top: 2.75rem;
+}
+
 .manual-page-nav {
   margin-top: 2.3rem;
   padding-top: 1.3rem;
@@ -10086,7 +10268,19 @@ body.whimsy-cursor-enabled .video-card {
     border-radius: 20px;
   }
 
-  .manual-procedure + p + p + ol {
+  .manual-section {
+    margin-top: 2.5rem;
+  }
+
+  .manual-content > .manual-section:first-of-type {
+    margin-top: 1.75rem;
+  }
+
+  .manual-section.manual-section--icon-reference {
+    margin-top: 2.25rem;
+  }
+
+  .manual-content .manual-procedure + p + p + ol {
     padding-left: 1.15rem;
   }
 }
