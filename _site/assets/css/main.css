@@ -6817,6 +6817,407 @@ h6,
   z-index: 1;
 }
 
+/* Netomi case study presentation enhancements */
+.netomi-case-study .portfolio-content-main {
+  gap: 1.5rem;
+}
+
+.netomi-case-study .work-section-creative {
+  padding: clamp(1.5rem, 2.2vw, 2.4rem) !important;
+  border-radius: 18px;
+  margin-bottom: clamp(3.25rem, 5vw, 5rem);
+}
+
+.netomi-case-study .work-section-creative > h2 {
+  font-size: clamp(1.45rem, 2.4vw, 2rem);
+  margin-bottom: 0.85rem;
+}
+
+.netomi-case-study .work-section-creative > p,
+.netomi-case-study .work-section-creative li {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.netomi-case-study .work-section-header {
+  display: grid;
+  grid-template-columns: minmax(220px, 330px) minmax(0, 1fr);
+  gap: 1.15rem;
+  align-items: start;
+  margin-bottom: 0.6rem;
+}
+
+.netomi-case-study .work-image-large {
+  min-height: 190px;
+}
+
+.netomi-case-study .image-placeholder {
+  aspect-ratio: 16 / 10;
+  border-radius: 16px;
+  border-width: 2px;
+  background: linear-gradient(135deg, rgba(224, 242, 241, 0.7), rgba(243, 229, 245, 0.7));
+}
+
+.netomi-case-study .highlights-grid {
+  margin-top: 1rem;
+}
+
+.netomi-case-study .highlight-card {
+  min-height: 175px;
+}
+
+@media (max-width: 1024px) {
+  .netomi-case-study .work-section-header {
+    grid-template-columns: 1fr;
+  }
+
+  .netomi-case-study .work-image-large {
+    min-height: 0;
+  }
+}
+
+/* Mermaid flowchart (proposal slide and any slide with enable_mermaid) */
+.presentation-slide .proposal-flowchart-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.35rem 0;
+  min-width: 0;
+}
+
+.presentation-slide .work-image-large.proposal-flowchart-column {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
+.presentation-slide .work-image-large {
+  display: flex;
+  align-items: stretch;
+  min-height: clamp(260px, 34vh, 360px);
+}
+
+.presentation-slide .work-image-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.presentation-slide .work-section-header {
+  align-items: stretch;
+}
+
+.presentation-slide .work-section-header.presentation-visual-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  margin: 0;
+  gap: clamp(0.9rem, 2vw, 1.35rem);
+}
+
+.presentation-slide .work-section-header.presentation-visual-stack .work-image-large {
+  flex: 1 1 auto;
+  min-height: clamp(320px, 52vh, 520px);
+  background: rgba(15, 18, 26, 0.92);
+}
+
+.presentation-slide .work-section-header.presentation-visual-stack .work-section-intro {
+  flex: 0 0 auto;
+}
+
+.presentation-slide .work-section-header.presentation-visual-stack .work-section-intro ul {
+  margin: 0;
+}
+
+.presentation-slide .proposal-flowchart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.presentation-slide .proposal-flowchart svg {
+  display: block;
+  height: auto;
+}
+
+/* Netomi presentation slide mode */
+.presentation-slide .presentation-layout {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.presentation-slide .presentation-sidebar {
+  position: sticky;
+  top: 6.3rem;
+}
+
+.presentation-slide .presentation-sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(212, 208, 200, 0.8);
+  border-radius: 12px;
+}
+
+.presentation-slide .presentation-sidebar-nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.35;
+  padding: 0.4rem 0.55rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.presentation-slide .presentation-sidebar-nav a:hover {
+  background: rgba(224, 242, 241, 0.55);
+  color: var(--primary-color);
+}
+
+.presentation-slide .presentation-sidebar-nav a.active {
+  background: rgba(224, 242, 241, 0.8);
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.presentation-slide .presentation-shell {
+  max-width: min(1100px, 100%);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.presentation-slide .presentation-header {
+  margin-bottom: 1rem;
+}
+
+.presentation-slide .presentation-kicker {
+  margin: 0 0 0.35rem 0;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.presentation-slide .presentation-header h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.presentation-slide .presentation-progress {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.presentation-slide .presentation-card {
+  padding: clamp(1.4rem, 2.2vw, 2.3rem) !important;
+  border-radius: 20px;
+  margin-bottom: 1rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  min-height: clamp(300px, 48vh, 580px);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+
+/* Headline slides (1 to 2 lines): height follows copy + padding so the card feels wide, not a tall empty strip */
+.presentation-slide .presentation-card:has(.closing-headline) {
+  min-height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-top: clamp(2rem, 5vw, 3.25rem);
+  padding-bottom: clamp(2rem, 5vw, 3.25rem);
+}
+
+/* Body and bullet slides: height follows content, less empty space below */
+.presentation-slide .presentation-card:has(.slide-body),
+.presentation-slide .presentation-card:has(.rollout-plan),
+.presentation-slide .presentation-card:has(> h3) {
+  min-height: auto;
+  justify-content: flex-start;
+}
+
+/* Code heavy slides (ticket examples): keep comfortable vertical room */
+.presentation-slide .presentation-card:has(pre) {
+  min-height: clamp(320px, 52vh, 620px);
+}
+
+.presentation-slide .work-section-creative:nth-of-type(odd),
+.presentation-slide .work-section-creative:nth-of-type(even) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.presentation-slide .work-section-creative::before,
+.presentation-slide .work-section-creative::after {
+  display: none !important;
+}
+
+.presentation-slide .closing-headline {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.presentation-slide .closing-headline p {
+  margin: 0;
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  line-height: 1.15;
+  font-weight: 650;
+  color: var(--primary-color);
+}
+
+.presentation-slide .closing-headline p + p {
+  margin-top: 1.15rem;
+}
+
+.presentation-slide .presentation-card pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.presentation-slide .presentation-card code {
+  white-space: pre-wrap;
+}
+
+.presentation-slide .slide-body,
+.presentation-slide .rollout-plan {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.presentation-slide .slide-body p,
+.presentation-slide .slide-body li,
+.presentation-slide .slide-body h3,
+.presentation-slide .rollout-plan p,
+.presentation-slide .rollout-plan li,
+.presentation-slide .rollout-plan h3 {
+  text-align: left;
+}
+
+.presentation-slide .slide-body p,
+.presentation-slide .rollout-plan p {
+  line-height: 1.6;
+}
+
+.presentation-slide .slide-body h3,
+.presentation-slide .rollout-plan h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+}
+
+.presentation-slide .slide-body ul,
+.presentation-slide .rollout-plan ul {
+  margin: 0.35rem 0 0.8rem;
+}
+
+.presentation-slide .slide-body li,
+.presentation-slide .rollout-plan li {
+  margin-bottom: 0.35rem;
+}
+
+/* Undo global portfolio max-width on lists and paragraphs inside the slide card */
+.presentation-slide .presentation-card > p,
+.presentation-slide .presentation-card > ul,
+.presentation-slide .presentation-card > h3 {
+  max-width: 100%;
+}
+
+.presentation-slide .slide-headline {
+  margin: auto 0;
+  max-width: 50ch;
+}
+
+.presentation-slide .slide-headline p {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.8vw, 2.35rem);
+  line-height: 1.25;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.presentation-slide .slide-headline p + p {
+  margin-top: 0.75rem;
+}
+
+.presentation-slide .presentation-notes {
+  padding: 1rem 1.15rem !important;
+  margin-bottom: 1rem !important;
+  border-radius: 14px;
+}
+
+.presentation-slide .presentation-notes h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.presentation-slide .presentation-notes ul {
+  margin: 0;
+}
+
+.presentation-slide .presentation-notes li {
+  margin-bottom: 0.4rem;
+}
+
+.presentation-slide .presentation-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.presentation-slide .presentation-nav .btn {
+  min-width: 130px;
+  text-align: center;
+}
+
+.presentation-slide .presentation-nav .is-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .presentation-slide .presentation-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .presentation-slide .presentation-sidebar {
+    position: static;
+  }
+
+  .presentation-slide .presentation-sidebar-nav {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.45rem;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .presentation-slide .presentation-sidebar-nav a {
+    border: 1px solid rgba(212, 208, 200, 0.8);
+    background: rgba(255, 255, 255, 0.9);
+    flex: 0 0 auto;
+  }
+}
+
 .work-content-creative .work-section-creative::before,
 .work-content-creative .work-section-creative::after {
   content: "";
@@ -9217,7 +9618,21 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Shopify manual docs navigation                                              */
+/* Shopify manual (Getting started on Shopify)                                */
+/*                                                                            */
+/* Layout: .manual-layout (sidebar + .manual-main). Article pattern:          */
+/*   .manual-page-header (h1 + .manual-page-subtitle)                         */
+/*   .manual-content                                                          */
+/*     Lead copy: direct child <p> only (wider bottom margin than body copy)  */
+/*     .manual-on-this-page (TOC box)                                         */
+/*     Major topics: either                                                   */
+/*       <section class="manual-section"> with h2 first child (overview), or  */
+/*       flat h2 + body (chapter pages). Spacing matches via shared tokens.   */
+/*     .manual-document-footer (optional)                                     */
+/*     .manual-page-nav                                                       */
+/*   Utilities: .manual-spacer, .manual-checkbox-list, .manual-video,        */
+/*   blockquote.manual-callout.manual-note|tip|warning                        */
+/* Tokens live on .manual-content (--manual-*).                               */
 /* -------------------------------------------------------------------------- */
 
 .manual-layout {
@@ -9302,6 +9717,15 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content {
+  /* Align bullets, numbers, checkboxes and callout icons on one gutter; body text starts after mark + gap */
+  --manual-mark-gutter: 1.35rem;
+  --manual-mark-gap: 0.5rem;
+  /* Shared vertical rhythm (overview sections + flat chapter h2 stacks) */
+  --manual-p-margin-bottom: 0.65rem;
+  --manual-intro-direct-p-margin: 0.9rem;
+  --manual-between-topics: 3.25rem;
+  --manual-first-topic-after-toc: 2.25rem;
+  --manual-list-margin-bottom: 0.65rem;
   padding: clamp(1.6rem, 2.8vw, 2.4rem);
   border-radius: 34px;
   border: 2px solid var(--ink-dark);
@@ -9318,7 +9742,7 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content h2 {
-  margin-top: 4.8rem;
+  margin-top: var(--manual-between-topics);
   margin-bottom: 0.6rem;
   font-size: clamp(1.3rem, 1.85vw, 1.65rem);
   line-height: 1.25;
@@ -9327,14 +9751,95 @@ body.whimsy-cursor-enabled .video-card {
   padding-bottom: 0;
 }
 
+.manual-on-this-page + h2 {
+  margin-top: var(--manual-first-topic-after-toc);
+}
+
+/* Topic groups: no box; extra space before each topic, tighter rhythm inside */
+.manual-section {
+  margin-top: var(--manual-between-topics);
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+}
+
+.manual-content > .manual-section:first-of-type {
+  margin-top: var(--manual-first-topic-after-toc);
+}
+
+.manual-section > h2:first-child {
+  margin-top: 0;
+}
+
+.manual-content .manual-section > h3:first-child {
+  margin-top: 0;
+}
+
+.manual-section > h2:first-child + p {
+  margin-top: 0;
+}
+
+.manual-section ul:not(.manual-checkbox-list):not(.manual-on-this-page ul),
+.manual-section ol:not(.manual-on-this-page ol) {
+  margin-bottom: var(--manual-list-margin-bottom);
+}
+
+.manual-section .manual-checkbox-list {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.manual-content .manual-video {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* Icon reference at end: compact callout stack */
+.manual-section.manual-section--icon-reference {
+  margin-top: 2.75rem;
+}
+
+.manual-section--icon-reference > p {
+  margin-bottom: 0.5rem;
+}
+
+/* Optional vertical rhythm; HTML comments do not create space in the browser */
+.manual-spacer {
+  display: block;
+  height: var(--manual-spacer-size, 1.25rem);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.manual-spacer--sm {
+  --manual-spacer-size: 0.75rem;
+}
+
+.manual-spacer--md {
+  --manual-spacer-size: 1.25rem;
+}
+
+.manual-spacer--lg {
+  --manual-spacer-size: 2rem;
+}
+
 /* Tighter grouping: intro content closer to H2 */
 .manual-content h2 + p {
   margin-bottom: 0.95rem;
 }
 
+.manual-content h2 + h3 {
+  margin-top: 0.55rem;
+}
+
 .manual-content h3 {
-  margin-top: 1.7rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.95rem;
+  margin-bottom: 0.4rem;
   font-size: clamp(1.02rem, 1.25vw, 1.18rem);
   line-height: 1.35;
   color: var(--primary-color);
@@ -9347,12 +9852,6 @@ body.whimsy-cursor-enabled .video-card {
   padding-bottom: 0;
 }
 
-.manual-content ul,
-.manual-content ol {
-  max-width: 74ch;
-  padding-left: 1.6rem;
-}
-
 .manual-content p,
 .manual-content li {
   line-height: 1.8;
@@ -9360,14 +9859,73 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content p {
-  margin: 0 0 0.9rem;
+  margin: 0 0 var(--manual-p-margin-bottom);
 }
 
-.manual-content li {
+.manual-content > p {
+  margin-bottom: var(--manual-intro-direct-p-margin);
+}
+
+/* Bullets: mark sits in gutter column; text aligns with paragraphs and checkbox labels */
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) {
+  list-style: none;
+  max-width: 74ch;
+  padding-left: 0;
+  margin: 0 0 var(--manual-list-margin-bottom);
+}
+
+/* Block + absolute marker keeps <strong>, links and text in one flow (flex would split them) */
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) > li {
+  display: block;
+  position: relative;
+  padding-left: calc(var(--manual-mark-gutter) + var(--manual-mark-gap));
   margin-bottom: 0.6rem;
 }
 
-.manual-content li:last-child {
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) > li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--manual-mark-gutter);
+  text-align: center;
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.manual-content ul:not(.manual-checkbox-list):not(.manual-on-this-page ul) > li:last-child {
+  margin-bottom: 0;
+}
+
+/* Numbered lists (same gutter as bullets; procedure-specific ol rules stay more specific) */
+.manual-content ol:not(.manual-on-this-page ol) {
+  list-style: none;
+  max-width: 74ch;
+  padding-left: 0;
+  margin: 0 0 var(--manual-list-margin-bottom);
+  counter-reset: manual-ordered;
+}
+
+.manual-content ol:not(.manual-on-this-page ol) > li {
+  counter-increment: manual-ordered;
+  display: block;
+  position: relative;
+  padding-left: calc(var(--manual-mark-gutter) + var(--manual-mark-gap));
+  margin-bottom: 0.6rem;
+}
+
+.manual-content ol:not(.manual-on-this-page ol) > li::before {
+  content: counter(manual-ordered) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--manual-mark-gutter);
+  text-align: right;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.manual-content ol:not(.manual-on-this-page ol) > li:last-child {
   margin-bottom: 0;
 }
 
@@ -9391,7 +9949,41 @@ body.whimsy-cursor-enabled .video-card {
   color: var(--accent-green);
 }
 
-/* Embedded video on manual overview */
+/* Interactive checklists (real inputs; do not use with .manual-checklist pseudo checkmarks) */
+.manual-checkbox-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.75rem 0 1.25rem;
+}
+
+.manual-checkbox-list li {
+  margin-bottom: 0.5rem;
+}
+
+.manual-checkbox-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Same gutter as bullets so label text lines up with list body text */
+.manual-checkbox-list label {
+  display: grid;
+  grid-template-columns: var(--manual-mark-gutter) minmax(0, 1fr);
+  column-gap: var(--manual-mark-gap);
+  align-items: start;
+  cursor: pointer;
+}
+
+.manual-checkbox-label-text {
+  min-width: 0;
+}
+
+.manual-checkbox-list input[type="checkbox"] {
+  justify-self: center;
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+}
+
+/* Embedded video (spacing tuned inside .manual-content above) */
 .manual-video {
   margin: 2rem 0 0;
 }
@@ -9420,6 +10012,12 @@ body.whimsy-cursor-enabled .video-card {
   border: 0;
 }
 
+/* Callout after video: same vertical margin as other callouts, slightly extra top gap after the player */
+.manual-video > .manual-callout {
+  margin-top: calc(var(--manual-callout-margin-vertical) + 0.35rem);
+  margin-bottom: var(--manual-callout-margin-vertical);
+}
+
 /* Procedure block: H3, lead-in, Desktop, steps grouped as mini section */
 .manual-procedure + p {
   margin-bottom: 0.35rem;
@@ -9429,26 +10027,32 @@ body.whimsy-cursor-enabled .video-card {
   margin-bottom: 0.4rem;
 }
 
-/* Procedure lists: clean numbered steps, tight between steps */
-.manual-procedure + p + p + ol {
+/* Procedure lists: clean numbered steps, tight between steps (scoped under .manual-content to override generic ol rules) */
+.manual-content .manual-procedure + p + p + ol {
   list-style: decimal;
+  display: block;
   margin: 0.25rem 0 1.8rem;
   padding-left: 1.3rem;
   max-width: 76ch;
 }
 
-.manual-procedure + p + p + ol > li {
+.manual-content .manual-procedure + p + p + ol > li {
+  display: list-item;
   margin: 0 0 0.5rem;
   padding-left: 0.15rem;
   line-height: 1.6;
 }
 
-.manual-procedure + p + p + ol > li:last-child {
+.manual-content .manual-procedure + p + p + ol > li::before {
+  content: none;
+}
+
+.manual-content .manual-procedure + p + p + ol > li:last-child {
   margin-bottom: 0;
 }
 
-.manual-procedure + p + p + ol > li > ul,
-.manual-procedure + p + p + ol > li > ol {
+.manual-content .manual-procedure + p + p + ol > li > ul,
+.manual-content .manual-procedure + p + p + ol > li > ol {
   margin-top: 0.3rem;
   margin-bottom: 0.25rem;
 }
@@ -9456,21 +10060,21 @@ body.whimsy-cursor-enabled .video-card {
 /* Keep non-procedure lists clean and readable */
 .manual-content > ul,
 .manual-content > ol {
-  margin-bottom: 1rem;
+  margin-bottom: var(--manual-list-margin-bottom);
 }
 
-/* Extra breathing room between major sections */
+/* Same topic gap after blocks that precede an H2 (matches --manual-between-topics) */
 .manual-content p + h2,
 .manual-content ul + h2,
 .manual-content ol + h2,
 .manual-content .manual-callout + h2,
 .manual-content .manual-metadata + h2 {
-  margin-top: 4.8rem;
+  margin-top: var(--manual-between-topics);
 }
 
 .manual-metadata {
   margin: 1.2rem 0 1.8rem;
-  padding: 0.95rem 1rem;
+  padding: 0.95rem 0;
   border: 1px solid rgba(212, 208, 200, 0.9);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.75);
@@ -9478,16 +10082,39 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-metadata ul {
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 0;
 }
 
+/*
+ * Manual callouts (Note / Tip / Warning): always use together, e.g.
+ * <blockquote class="manual-callout manual-note"> … </blockquote>
+ * Spacing tokens apply site-wide; override on .manual-content if needed.
+ */
 .manual-callout {
+  --manual-callout-padding-block: 0.75rem;
+  --manual-callout-padding-inline-end: 0.9rem;
+  --manual-callout-margin-vertical: 1rem;
   position: relative;
-  margin: 1.1rem 0;
-  padding: 0.75rem 0.9rem 0.75rem 2.75rem;
+  display: grid;
+  grid-template-columns: var(--manual-mark-gutter, 1.35rem) minmax(0, 1fr);
+  column-gap: var(--manual-mark-gap, 0.5rem);
+  row-gap: 0.15rem;
+  align-items: start;
+  margin: var(--manual-callout-margin-vertical) 0;
+  padding: var(--manual-callout-padding-block) var(--manual-callout-padding-inline-end) var(--manual-callout-padding-block) 0;
   border-left: 3px solid rgba(148, 163, 184, 0.5);
   border-radius: 0 8px 8px 0;
   background: rgba(248, 250, 252, 0.7);
+  font-style: normal;
+  font-size: 0.95em;
+}
+
+/* Beat global blockquote padding/margin/italic so manual callouts stay consistent on every page */
+blockquote.manual-callout.manual-note,
+blockquote.manual-callout.manual-tip,
+blockquote.manual-callout.manual-warning {
+  margin: var(--manual-callout-margin-vertical) 0;
+  padding: var(--manual-callout-padding-block) var(--manual-callout-padding-inline-end) var(--manual-callout-padding-block) 0;
   font-style: normal;
   font-size: 0.95em;
 }
@@ -9496,13 +10123,22 @@ body.whimsy-cursor-enabled .video-card {
   margin: 0;
 }
 
+.manual-callout > * {
+  grid-column: 2;
+}
+
 .manual-callout::before {
   content: "";
-  position: absolute;
-  left: 0.7rem;
-  top: 0.8rem;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+  position: static;
+  left: auto;
+  top: auto;
   width: 1.2rem;
   height: 1.2rem;
+  margin-top: 0.12rem;
   opacity: 0.7;
   background-position: center;
   background-repeat: no-repeat;
@@ -9638,6 +10274,30 @@ body.whimsy-cursor-enabled .video-card {
   border-bottom: none;
 }
 
+.manual-section + .manual-page-nav {
+  margin-top: 2.75rem;
+}
+
+.manual-document-footer {
+  margin-top: 2.5rem;
+  font-size: 0.92rem;
+  color: var(--text-light);
+  max-width: 74ch;
+}
+
+.manual-document-footer p {
+  margin: 0 0 0.45rem;
+  line-height: 1.65;
+}
+
+.manual-document-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.manual-document-footer + .manual-page-nav {
+  margin-top: 2rem;
+}
+
 .manual-page-nav {
   margin-top: 2.3rem;
   padding-top: 1.3rem;
@@ -9685,7 +10345,19 @@ body.whimsy-cursor-enabled .video-card {
     border-radius: 20px;
   }
 
-  .manual-procedure + p + p + ol {
+  .manual-section {
+    margin-top: 2.5rem;
+  }
+
+  .manual-content > .manual-section:first-of-type {
+    margin-top: 1.75rem;
+  }
+
+  .manual-section.manual-section--icon-reference {
+    margin-top: 2.25rem;
+  }
+
+  .manual-content .manual-procedure + p + p + ol {
     padding-left: 1.15rem;
   }
 }

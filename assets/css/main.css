@@ -9618,7 +9618,21 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Shopify manual docs navigation                                              */
+/* Shopify manual (Getting started on Shopify)                                */
+/*                                                                            */
+/* Layout: .manual-layout (sidebar + .manual-main). Article pattern:          */
+/*   .manual-page-header (h1 + .manual-page-subtitle)                         */
+/*   .manual-content                                                          */
+/*     Lead copy: direct child <p> only (wider bottom margin than body copy)  */
+/*     .manual-on-this-page (TOC box)                                         */
+/*     Major topics: either                                                   */
+/*       <section class="manual-section"> with h2 first child (overview), or  */
+/*       flat h2 + body (chapter pages). Spacing matches via shared tokens.   */
+/*     .manual-document-footer (optional)                                     */
+/*     .manual-page-nav                                                       */
+/*   Utilities: .manual-spacer, .manual-checkbox-list, .manual-video,        */
+/*   blockquote.manual-callout.manual-note|tip|warning                        */
+/* Tokens live on .manual-content (--manual-*).                               */
 /* -------------------------------------------------------------------------- */
 
 .manual-layout {
@@ -9706,6 +9720,12 @@ body.whimsy-cursor-enabled .video-card {
   /* Align bullets, numbers, checkboxes and callout icons on one gutter; body text starts after mark + gap */
   --manual-mark-gutter: 1.35rem;
   --manual-mark-gap: 0.5rem;
+  /* Shared vertical rhythm (overview sections + flat chapter h2 stacks) */
+  --manual-p-margin-bottom: 0.65rem;
+  --manual-intro-direct-p-margin: 0.9rem;
+  --manual-between-topics: 3.25rem;
+  --manual-first-topic-after-toc: 2.25rem;
+  --manual-list-margin-bottom: 0.65rem;
   padding: clamp(1.6rem, 2.8vw, 2.4rem);
   border-radius: 34px;
   border: 2px solid var(--ink-dark);
@@ -9722,7 +9742,7 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content h2 {
-  margin-top: 4.8rem;
+  margin-top: var(--manual-between-topics);
   margin-bottom: 0.6rem;
   font-size: clamp(1.3rem, 1.85vw, 1.65rem);
   line-height: 1.25;
@@ -9731,9 +9751,13 @@ body.whimsy-cursor-enabled .video-card {
   padding-bottom: 0;
 }
 
+.manual-on-this-page + h2 {
+  margin-top: var(--manual-first-topic-after-toc);
+}
+
 /* Topic groups: no box; extra space before each topic, tighter rhythm inside */
 .manual-section {
-  margin-top: 3.25rem;
+  margin-top: var(--manual-between-topics);
   padding: 0;
   border: none;
   background: transparent;
@@ -9741,7 +9765,7 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content > .manual-section:first-of-type {
-  margin-top: 2.25rem;
+  margin-top: var(--manual-first-topic-after-toc);
 }
 
 .manual-section > h2:first-child {
@@ -9752,28 +9776,13 @@ body.whimsy-cursor-enabled .video-card {
   margin-top: 0;
 }
 
-/* First subhead under an H2 sits closer than later H3s */
-.manual-section > h2 + h3 {
-  margin-top: 0.55rem;
-}
-
-.manual-content .manual-section h3 {
-  margin-top: 0.95rem;
-  margin-bottom: 0.4rem;
-}
-
-.manual-section > h2:first-child + p,
-.manual-section > h2:first-child + .manual-callout {
+.manual-section > h2:first-child + p {
   margin-top: 0;
-}
-
-.manual-section > p {
-  margin-bottom: 0.65rem;
 }
 
 .manual-section ul:not(.manual-checkbox-list):not(.manual-on-this-page ul),
 .manual-section ol:not(.manual-on-this-page ol) {
-  margin-bottom: 0.65rem;
+  margin-bottom: var(--manual-list-margin-bottom);
 }
 
 .manual-section .manual-checkbox-list {
@@ -9781,11 +9790,7 @@ body.whimsy-cursor-enabled .video-card {
   margin-bottom: 0.75rem;
 }
 
-.manual-section .manual-callout {
-  margin: 0.65rem 0;
-}
-
-.manual-section .manual-video {
+.manual-content .manual-video {
   margin-top: 1rem;
   margin-bottom: 0;
 }
@@ -9799,8 +9804,28 @@ body.whimsy-cursor-enabled .video-card {
   margin-bottom: 0.5rem;
 }
 
-.manual-section--icon-reference .manual-callout {
-  margin: 0.4rem 0;
+/* Optional vertical rhythm; HTML comments do not create space in the browser */
+.manual-spacer {
+  display: block;
+  height: var(--manual-spacer-size, 1.25rem);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.manual-spacer--sm {
+  --manual-spacer-size: 0.75rem;
+}
+
+.manual-spacer--md {
+  --manual-spacer-size: 1.25rem;
+}
+
+.manual-spacer--lg {
+  --manual-spacer-size: 2rem;
 }
 
 /* Tighter grouping: intro content closer to H2 */
@@ -9808,9 +9833,13 @@ body.whimsy-cursor-enabled .video-card {
   margin-bottom: 0.95rem;
 }
 
+.manual-content h2 + h3 {
+  margin-top: 0.55rem;
+}
+
 .manual-content h3 {
-  margin-top: 1.7rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.95rem;
+  margin-bottom: 0.4rem;
   font-size: clamp(1.02rem, 1.25vw, 1.18rem);
   line-height: 1.35;
   color: var(--primary-color);
@@ -9830,7 +9859,11 @@ body.whimsy-cursor-enabled .video-card {
 }
 
 .manual-content p {
-  margin: 0 0 0.9rem;
+  margin: 0 0 var(--manual-p-margin-bottom);
+}
+
+.manual-content > p {
+  margin-bottom: var(--manual-intro-direct-p-margin);
 }
 
 /* Bullets: mark sits in gutter column; text aligns with paragraphs and checkbox labels */
@@ -9838,7 +9871,7 @@ body.whimsy-cursor-enabled .video-card {
   list-style: none;
   max-width: 74ch;
   padding-left: 0;
-  margin: 0 0 1rem;
+  margin: 0 0 var(--manual-list-margin-bottom);
 }
 
 /* Block + absolute marker keeps <strong>, links and text in one flow (flex would split them) */
@@ -9869,7 +9902,7 @@ body.whimsy-cursor-enabled .video-card {
   list-style: none;
   max-width: 74ch;
   padding-left: 0;
-  margin: 0 0 1rem;
+  margin: 0 0 var(--manual-list-margin-bottom);
   counter-reset: manual-ordered;
 }
 
@@ -9950,7 +9983,7 @@ body.whimsy-cursor-enabled .video-card {
   margin-bottom: 0;
 }
 
-/* Embedded video on manual overview */
+/* Embedded video (spacing tuned inside .manual-content above) */
 .manual-video {
   margin: 2rem 0 0;
 }
@@ -9977,6 +10010,12 @@ body.whimsy-cursor-enabled .video-card {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Callout after video: same vertical margin as other callouts, slightly extra top gap after the player */
+.manual-video > .manual-callout {
+  margin-top: calc(var(--manual-callout-margin-vertical) + 0.35rem);
+  margin-bottom: var(--manual-callout-margin-vertical);
 }
 
 /* Procedure block: H3, lead-in, Desktop, steps grouped as mini section */
@@ -10021,16 +10060,16 @@ body.whimsy-cursor-enabled .video-card {
 /* Keep non-procedure lists clean and readable */
 .manual-content > ul,
 .manual-content > ol {
-  margin-bottom: 1rem;
+  margin-bottom: var(--manual-list-margin-bottom);
 }
 
-/* Extra breathing room between major sections */
+/* Same topic gap after blocks that precede an H2 (matches --manual-between-topics) */
 .manual-content p + h2,
 .manual-content ul + h2,
 .manual-content ol + h2,
 .manual-content .manual-callout + h2,
 .manual-content .manual-metadata + h2 {
-  margin-top: 4.8rem;
+  margin-top: var(--manual-between-topics);
 }
 
 .manual-metadata {
@@ -10046,18 +10085,36 @@ body.whimsy-cursor-enabled .video-card {
   padding-left: 0;
 }
 
+/*
+ * Manual callouts (Note / Tip / Warning): always use together, e.g.
+ * <blockquote class="manual-callout manual-note"> … </blockquote>
+ * Spacing tokens apply site-wide; override on .manual-content if needed.
+ */
 .manual-callout {
+  --manual-callout-padding-block: 0.75rem;
+  --manual-callout-padding-inline-end: 0.9rem;
+  --manual-callout-margin-vertical: 1rem;
   position: relative;
   display: grid;
-  grid-template-columns: var(--manual-mark-gutter) minmax(0, 1fr);
-  column-gap: var(--manual-mark-gap);
+  grid-template-columns: var(--manual-mark-gutter, 1.35rem) minmax(0, 1fr);
+  column-gap: var(--manual-mark-gap, 0.5rem);
   row-gap: 0.15rem;
   align-items: start;
-  margin: 1.1rem 0;
-  padding: 0.75rem 0.9rem 0.75rem 0;
+  margin: var(--manual-callout-margin-vertical) 0;
+  padding: var(--manual-callout-padding-block) var(--manual-callout-padding-inline-end) var(--manual-callout-padding-block) 0;
   border-left: 3px solid rgba(148, 163, 184, 0.5);
   border-radius: 0 8px 8px 0;
   background: rgba(248, 250, 252, 0.7);
+  font-style: normal;
+  font-size: 0.95em;
+}
+
+/* Beat global blockquote padding/margin/italic so manual callouts stay consistent on every page */
+blockquote.manual-callout.manual-note,
+blockquote.manual-callout.manual-tip,
+blockquote.manual-callout.manual-warning {
+  margin: var(--manual-callout-margin-vertical) 0;
+  padding: var(--manual-callout-padding-block) var(--manual-callout-padding-inline-end) var(--manual-callout-padding-block) 0;
   font-style: normal;
   font-size: 0.95em;
 }
@@ -10219,6 +10276,26 @@ body.whimsy-cursor-enabled .video-card {
 
 .manual-section + .manual-page-nav {
   margin-top: 2.75rem;
+}
+
+.manual-document-footer {
+  margin-top: 2.5rem;
+  font-size: 0.92rem;
+  color: var(--text-light);
+  max-width: 74ch;
+}
+
+.manual-document-footer p {
+  margin: 0 0 0.45rem;
+  line-height: 1.65;
+}
+
+.manual-document-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.manual-document-footer + .manual-page-nav {
+  margin-top: 2rem;
 }
 
 .manual-page-nav {

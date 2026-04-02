@@ -22,6 +22,13 @@ This is a Jekyll static-site (portfolio for Aly Andrews) hosted on GitHub Pages.
 | Dev server | `bundle exec jekyll serve` (serves at `http://localhost:4000`) |
 | Dev server (detached) | `bundle exec jekyll serve --host 0.0.0.0 --port 4000 --detach` |
 
+### Shopify Getting Started manual
+
+- HTML lives under `getting-started-shopify/` (static HTML, not excluded from the build).
+- Article shell: `header.manual-page-header` → `article.manual-main.manual-content`.
+- **Overview** groups each topic in `<section class="manual-section">` with `h2` as the first child. **Chapter** pages often use a flat `h2` stack after `.manual-on-this-page`; spacing is meant to match the overview via shared CSS variables on `.manual-content` in `assets/css/main.css` (`--manual-between-topics`, `--manual-first-topic-after-toc`, `--manual-p-margin-bottom`, `--manual-intro-direct-p-margin`, `--manual-list-margin-bottom`).
+- See the comment block above `.manual-layout` in `main.css` for the full structural checklist (TOC, callouts, video, footer, page nav).
+
 ### Gotchas
 
 - The `github-pages` gem pins Jekyll to **3.10.0** (not 4.x). All plugin/theme versions are locked by this gem.
