@@ -60,7 +60,7 @@
               <h1>Payments</h1>
             
 
-            <p>Payment gateway setup is critical for your store to function. Without a configured payment provider, customers cannot complete checkout, and you cannot process orders—even on a free trial. Setting up payment processing early helps you understand costs and ensures your store can accept orders when you're ready to launch. add definition of gateway here. </p>
+            <p>A payment gateway is a service that allows you to accept payments online. It is critical for your store to function. Without a configured payment provider, customers cannot complete checkout and you cannot process orders. Setting up payment processing early helps you understand costs and ensures your store can accept orders when you're ready to launch. </p>
 
             <div class="manual-on-this-page">
               <p class="manual-on-this-page-title">On this page</p>
@@ -72,19 +72,43 @@
             </div>
 
            <h2> Why payment setup matters</h2>
-Payment gateway configuration is essential because:
 
-Customers cannot complete checkout without a payment provider - Your store cannot accept orders until payment is configured
-Payment provider availability depends on your location and what you sell - Not all providers are available in all regions, and some restrict certain products
-Understanding fees helps you price products correctly - Payment fees affect your profit margins
-Some providers require business verification - Setup can take time, so starting early prevents delays
+           
+<p>Payment gateway configuration is essential because:</p>
+
+<table border="1" cellpadding="12" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 800px; border: 1px solid #ddd;">
+  <thead>
+    <tr style="background-color: #f8f9fa;">
+      <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Consideration</th>
+      <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Checkout Requirement</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">Customers cannot complete checkout without a payment provider. Your store cannot accept orders until payment is configured, even on a free trial.</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Provider Availability</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">Payment provider availability depends on your location and what you sell. Not all providers are available in all regions, and some restrict certain products.</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Impact on Pricing</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">Understanding fees helps you price products correctly. Payment fees directly affect your profit margins.</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Business Verification</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">Some providers require business verification. Setup can take time, so starting early prevents delays.</td>
+    </tr>
+  </tbody>
+</table>
 
 
-<h3 id="shopify-payments-vs-third-party">Payment provider options</h3>
+<h2 id="shopify-payments-vs-third-party">Payment provider options</h2>
 <p>There are two main types of payment providers: Shopify Payments and third party providers.</p>
-
-  <li><strong>Shopify Payments</strong> is Shopify's built-in card processing in the admin. When it is available in your region and approved for your business, you usually pay processing fees only and you do not pay Shopify's separate transaction fee on each order.</li>
-  <li><strong>A third party provider</strong> (for example PayPal or Stripe) connects as an external gateway. Checkout still happens in your store but that provider moves the money and sets its own rates and rules. Shopify often adds a transaction fee when you use a third party instead of Shopify Payments.</li>
+<li><strong><a href="https://example.com" target="_blank" rel="noopener">Shopify Payments</a></strong>  is Shopify's built-in card processing in the admin. When it is available in your region and approved for your business, you usually pay processing fees only and you do not pay Shopify's separate transaction fee on each order.</li>
+  <br>
+  <li><strong><a href="https://help.shopify.com/en/manual/payments/third-party-providers" target="_blank" rel="noopener">A third party provider</a></strong> (for example PayPal or Stripe) connects as an external gateway. Checkout still happens in your store but that provider moves the money and sets its own rates and rules. Shopify often adds a transaction fee when you use a third party instead of Shopify Payments.</li>
 </ul>
 
 
@@ -99,7 +123,7 @@ Some providers require business verification - Setup can take time, so starting 
             <table border="1" cellpadding="12" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 800px; border: 1px solid #ddd;">
               <thead>
                 <tr style="background-color: #f8f9fa;">
-                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Aspect</th>
+                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;"></th>
                   <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Transaction Fees</th>
                   <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Credit Card Processing Fees</th>
                 </tr>
@@ -132,18 +156,18 @@ Some providers require business verification - Setup can take time, so starting 
                 </tr>
               </tbody>
             </table>
-            
+            <br>
             <p><strong>Summary Example:</strong></p>
-            <ul>
-              <li><strong>Using Shopify Payments:</strong> You only pay Credit Card Processing Fees (e.g., 2.9% + $0.30)</li>
-              <li><strong>Using PayPal:</strong> You pay <strong>both</strong> Transaction Fees (to Shopify) + Credit Card Processing Fees (to PayPal)</li>
-            </ul>
-            
-            <div style="background-color: #f0f9ff; padding: 16px; border-left: 4px solid #3b82f6; margin: 20px 0;">
-              <strong>💡 Tip:</strong> Factor payment fees into your product pricing. If you're paying 2.9% + $0.30 per transaction, make sure your profit margins account for these costs.
-            </div>
-            <h2 id="provider-details">Provider details</h2>
           
+              <li><strong>Using Shopify Payments:</strong> You only pay Credit Card Processing Fees (e.g., 2.9% + $0.30)</li> <br>
+              <li><strong>Using PayPal:</strong> You pay <strong>both</strong> Transaction Fees (to Shopify) + Credit Card Processing Fees (to PayPal)</li>
+            
+            
+            <blockquote class="manual-callout manual-tip">
+              <p class="manual-callout-title"></p>Tip</p>
+              <p>Factor payment fees into your product pricing. If you're paying 2.9% + $0.30 per transaction, make sure your profit margins account for these costs.</p>
+            </div>
+           
          
 
 
