@@ -53,122 +53,208 @@
           <article class="manual-main manual-content">
             <header class="manual-page-header">
               <h1>References</h1>
-              <p class="manual-page-subtitle">Troubleshooting, glossary and resources.</p>
-            </header>
-
-            <p>Use this page for quick fixes, key terms and links to official Shopify help while you configure your store.</p>
+              <p>This page contains useful reference materials to help you complete your Shopify setup and troubleshoot common issues.</p>
 
             <div class="manual-on-this-page">
               <p class="manual-on-this-page-title">On this page</p>
               <ul>
-                <li><a href="#troubleshooting">Troubleshooting</a></li>
+                <li><a href="#troubleshooting">Troubleshooting guide</a></li>
                 <li><a href="#glossary">Glossary</a></li>
-                <li><a href="#faqs">FAQs</a></li>
-                <li><a href="#index">Index</a></li>
-                <li><a href="#resources">Resources</a></li>
+                <li><a href="#faqs">Frequently asked questions</a></li>
+                <li><a href="#additional-resources">Additional resources</a></li>
               </ul>
             </div>
 
-            <h2 id="troubleshooting">Troubleshooting</h2>
-            <table class="manual-table">
+            <h2 id="troubleshooting">Troubleshooting guide</h2>
+            <p>Use this table to quickly solve common setup problems. For more complex issues, refer to the Shopify Help Center or contact Shopify Support.</p>
+
+            <table border="1" cellpadding="12" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 900px; border: 1px solid #ddd;">
               <thead>
-                <tr>
-                  <th>Area</th>
-                  <th>Issue</th>
-                  <th>Symptoms</th>
-                  <th>Quick fix</th>
+                <tr style="background-color: #f8f9fa;">
+                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Area</th>
+                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Issue</th>
+                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Symptoms</th>
+                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Quick fix</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Store settings</td>
-                  <td>Legal pages still show old details</td>
-                  <td>Policy pages show old address or defaults</td>
-                  <td>Update policy pages in <strong>Online Store</strong> &gt; <strong>Pages</strong> and save changes.</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;"><strong>Store settings</strong></td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Address or legal pages show old details</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">You updated store address but policies are outdated</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Update policy pages manually in Online Store → Pages</td>
                 </tr>
                 <tr>
-                  <td>Payments</td>
-                  <td>No payment option at checkout</td>
-                  <td>Customers cannot complete payment step</td>
-                  <td>In <strong>Settings</strong> &gt; <strong>Payments</strong>, confirm at least one provider is active.</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;"><strong>Payments</strong></td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">No payment options at checkout</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Customers cannot select a payment method</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Activate at least one payment provider and verify your account</td>
                 </tr>
                 <tr>
-                  <td>Products</td>
-                  <td>Products not visible on storefront</td>
-                  <td>Catalog appears empty or incomplete</td>
-                  <td>Set products to <strong>Active</strong> and confirm they are available on the <strong>Online Store</strong> channel.</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;"><strong>Products</strong></td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Products not showing on storefront</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Storefront looks empty even after adding products</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Make products Active and assign them to the Online Store sales channel</td>
                 </tr>
                 <tr>
-                  <td>Shipping</td>
-                  <td>No shipping options at checkout</td>
-                  <td>Customers cannot continue after address entry</td>
-                  <td>Set at least one shipping zone and one shipping rate.</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;"><strong>Shipping</strong></td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">No shipping options at checkout</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Error or stuck at shipping step</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Create at least one shipping zone and rate</td>
                 </tr>
                 <tr>
-                  <td>Checkout</td>
-                  <td>Checkout feels too long</td>
-                  <td>Higher abandonment during checkout flow</td>
-                  <td>Reduce required fields in <strong>Settings</strong> &gt; <strong>Checkout</strong>.</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;"><strong>Checkout</strong></td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Checkout feels too long</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">High cart abandonment at checkout</td>
+                  <td style="padding: 12px; border: 1px solid #ddd;">Reduce required fields and keep guest checkout enabled</td>
                 </tr>
               </tbody>
             </table>
 
             <h2 id="glossary">Glossary</h2>
-            <dl class="manual-glossary">
-              <dt>Admin</dt>
-              <dd>Shopify backend where you manage products, settings and orders.</dd>
-              <dt>Checkout</dt>
-              <dd>Flow where customers enter shipping and payment details.</dd>
-              <dt>Collection</dt>
-              <dd>A group of products displayed together.</dd>
-              <dt>Credit card processing fee</dt>
-              <dd>Fee charged by the payment processor for card transactions.</dd>
-              <dt>Domain</dt>
-              <dd>Public web address for your store.</dd>
-              <dt>Payment provider</dt>
-              <dd>A service that processes customer payments.</dd>
-              <dt>Sales channel</dt>
-              <dd>Place where products can be sold, such as Online Store or social channels.</dd>
-              <dt>Shipping profile</dt>
-              <dd>Shipping rules for a specific product group.</dd>
-              <dt>Shipping rate</dt>
-              <dd>The amount customers pay for shipping.</dd>
-              <dt>Shipping zone</dt>
-              <dd>A geographic area you ship to.</dd>
-              <dt>Transaction fee</dt>
-              <dd>Shopify fee applied when using a third party payment provider.</dd>
-              <dt>Variant</dt>
-              <dd>A version of a product with options such as size or color.</dd>
+            <p>Key terms used throughout this manual:</p>
+
+            <dl style="margin-top: 20px;">
+              <dt><strong>Admin (Shopify Admin)</strong></dt>
+              <dd>The backend dashboard where you manage products, orders, customers, and settings.</dd>
+              
+              <dt><strong>Online Store</strong></dt>
+              <dd>Your public website where customers browse and buy products.</dd>
+              
+              <dt><strong>Sales Channel</strong></dt>
+              <dd>A place where you sell products (Online Store, Facebook, Instagram, POS, etc.).</dd>
+              
+              <dt><strong>Collection</strong></dt>
+              <dd>A group of products displayed together (e.g. “New Arrivals” or “Sale”).</dd>
+              
+              <dt><strong>Product Variant</strong></dt>
+              <dd>Different versions of the same product (e.g. different sizes or colors).</dd>
+              
+              <dt><strong>Shipping Zone</strong></dt>
+              <dd>A geographic area you ship to (country or region).</dd>
+              
+              <dt><strong>Shipping Profile</strong></dt>
+              <dd>A set of shipping rules that can be applied to specific products.</dd>
+              
+              <dt><strong>Payment Gateway / Provider</strong></dt>
+              <dd>The service that processes customer payments (Shopify Payments, PayPal, Stripe, etc.).</dd>
+              
+              <dt><strong>Checkout</strong></dt>
+              <dd>The final process where customers enter their information and complete their order.</dd>
             </dl>
 
-            <h2 id="faqs">FAQs</h2>
-            <p><strong>How long does setup usually take?</strong><br>Most new merchants complete the five essential setup areas in 2 to 4 hours across one or more sessions.</p>
-            <p><strong>Do I need technical skills to use Shopify?</strong><br>No. This manual is designed for beginners with basic web and form-filling skills.</p>
-            <p><strong>Can I change settings after launch?</strong><br>Yes, but changes to address, currency, shipping and policies can affect active operations. Review carefully before changing.</p>
-            <p><strong>What if Shopify Payments is not available in my country?</strong><br>Use an alternative provider such as PayPal or Stripe and account for extra transaction costs.</p>
-            <p><strong>Should I require customer accounts?</strong><br>Usually no. Optional or guest checkout tends to convert better for most stores.</p>
+            <h2 id="faqs">Frequently asked questions (FAQs)</h2>
+            
+            <h3>General Questions</h3>
+            <p><strong>Q: How long does it take to set up a Shopify store?</strong><br>
+            A: Most new merchants can complete the essential setup in 2–4 hours, depending on the number of products.</p>
 
-            <h2 id="index">Index</h2>
-            <p>Topics in this manual with links to the relevant page.</p>
-            <ul class="manual-index">
-              <li><a href="/getting-started-shopify/products.html#creating-collections">Collections</a></li>
-              <li><a href="/getting-started-shopify/checkout.html#customizing-fields">Checkout fields</a></li>
-              <li><a href="/getting-started-shopify/payments.html#payment-fees">Payment fees</a></li>
-              <li><a href="/getting-started-shopify/shipping.html#default-profile">Shipping profiles</a></li>
-              <li><a href="/getting-started-shopify/store-settings.html#address">Store address</a></li>
-              <li><a href="/getting-started-shopify/products.html#adding-variants">Variants</a></li>
-            </ul>
+            <p><strong>Q: Do I need technical skills to use Shopify?</strong><br>
+            A: No. Shopify is beginner-friendly. If you can use a web browser, you can set up a store.</p>
 
-            <h2 id="resources">Resources</h2>
+            <p><strong>Q: Can I change settings after launching?</strong><br>
+            A: Yes. Most settings can be changed later, though it’s best to get core settings correct before going live.</p>
+
+            <p><strong>Q: Should I require customer accounts?</strong><br>
+            A: Generally no. Allowing guest checkout improves conversion rates.</p>
+
+            <p><strong>Q: What if Shopify Payments is not available in my country?</strong><br>
+            A: Use a third-party provider such as PayPal or Stripe. Remember you will pay both transaction fees and processing fees.</p>
+
+            <h2 id="additional-resources">Additional resources</h2>
+            <p>Here are the best places to get further help:</p>
+
             <ul>
-              <li><a href="https://help.shopify.com/" target="_blank" rel="noopener">Shopify Help Center</a></li>
-              <li><a href="https://community.shopify.com/" target="_blank" rel="noopener">Shopify Community Forums</a></li>
-              <li><a href="https://help.shopify.com/questions" target="_blank" rel="noopener">Contact Shopify Support</a></li>
+              <li><strong><a href="https://help.shopify.com" target="_blank" rel="noopener">Shopify Help Center</a></strong> – Official guides and tutorials</li>
+              <li><strong><a href="https://community.shopify.com" target="_blank" rel="noopener">Shopify Community Forums</a></strong> – Ask questions and learn from other merchants</li>
+              <li><strong>Contact Shopify Support</strong> – Available 24/7 via chat, email, or phone</li>
             </ul>
+
+            <blockquote class="manual-callout manual-tip">
+              <p class="manual-callout-title">Final Tip</p>
+              <p>This manual gives you the important concepts and recommended approach. For the most up-to-date instructions and screenshots, always check the Shopify Help Center.</p>
+            </blockquote>
+
+            <h2 id="additional-resources">Shopify Help Center links</h2>
+<p>Official Shopify Help Center links organized by topic:</p>
+
+<table border="1" cellpadding="12" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 900px; border: 1px solid #ddd;">
+  <thead>
+    <tr style="background-color: #f8f9fa;">
+      <th style="text-align: left; padding: 12px; border: 1px solid #ddd; width: 28%;">Section</th>
+      <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Helpful Resources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Store Settings</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/online-store/setting-up" target="_blank" rel="noopener">Setting up your online store</a><br>
+        <a href="https://help.shopify.com/en/manual/your-account/manage-orgs-and-stores/manage-store-details" target="_blank" rel="noopener">Managing store details</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Payment Settings</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/payments" target="_blank" rel="noopener">Payments overview</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Shopify Payments</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/payments/shopify-payments" target="_blank" rel="noopener">Shopify Payments overview</a><br>
+        <a href="https://help.shopify.com/en/manual/payments/shopify-payments/onboarding" target="_blank" rel="noopener">Setting up Shopify Payments</a><br>
+        <a href="https://help.shopify.com/en/manual/payments/shopify-payments/supported-countries" target="_blank" rel="noopener">Supported countries</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Third-Party Payment Gateways</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/payments/third-party-providers" target="_blank" rel="noopener">Third-party payment providers</a><br>
+        <a href="https://www.shopify.com/payment-gateways" target="_blank" rel="noopener">Payment gateways directory</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Adding Products</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/products" target="_blank" rel="noopener">Products overview</a><br>
+        <a href="https://help.shopify.com/en/manual/products/add-update-products" target="_blank" rel="noopener">Adding and updating products</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Adding Collections</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/products/collections" target="_blank" rel="noopener">Collections overview</a><br>
+        <a href="https://help.shopify.com/en/manual/products/collections/collection-types" target="_blank" rel="noopener">Creating collections</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Shipping</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/fulfillment/setup" target="_blank" rel="noopener">Setting up shipping and fulfillment</a><br>
+        <a href="https://help.shopify.com/en/manual/fulfillment/setup/shipping-rates" target="_blank" rel="noopener">Shipping rates and settings</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Shipping Labels</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels" target="_blank" rel="noopener">Shipping labels in Shopify</a><br>
+        <a href="https://help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/buying-labels" target="_blank" rel="noopener">Buying and printing shipping labels</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Checkout</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;">
+        <a href="https://help.shopify.com/en/manual/checkout-settings" target="_blank" rel="noopener">Checkout settings</a><br>
+        <a href="https://help.shopify.com/en/manual/payments/checkout" target="_blank" rel="noopener">Customizing checkout</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+            <p><strong>Good luck with your Shopify store!</strong> 🚀</p>
 
             <nav class="manual-page-nav" aria-label="Previous and next pages">
               <a href="/getting-started-shopify/checkout.html">Previous: Checkout</a>
-              <a href="/getting-started-shopify/">Back to overview</a>
             </nav>
           </article>
         </div>
