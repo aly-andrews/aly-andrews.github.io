@@ -61,9 +61,9 @@
               <h1>Shipping</h1>
             </header>
 
-            <p>Shopify supports a variety of shipping carriers, rate types and fulfillment approaches, and the right setup depends entirely on your business. Before configuring your rates, it is worth exploring your options to understand what suits your products, volume and workflow.</p>
+            <p>Shipping setup is one of the most important parts of launching your store. If it is not configured correctly, customers cannot complete checkout. Poor shipping decisions can also quietly destroy your profit margins.</p>
             
-            
+            <p>This page explains the key shipping terms you will see in Shopify (shipping profiles, shipping zones, and shipping rates) and shows how they connect and build on each other.</p>
 
             <div class="manual-on-this-page">
               <p class="manual-on-this-page-title">On this page</p>
@@ -75,13 +75,6 @@
                 <li><a href="#adding-weight-based-rates">Adding weight-based rates</a></li>
               </ul>
             </div>
-
-            <h2>Where to start</h2>
-            <p>If you sell one or two products and already know exactly what shipping costs with Canada Post, a manual rate where you set a flat or weight-based price and print labels yourself may be all you need.</p> 
-              
-              <p>If you have a large catalogue with items of varying sizes and weights, connecting a carrier like UPS or FedEx and using calculated rates can take the guesswork out of pricing and ensure customers are charged accurately at checkout.</p>
-
-            <p>Take some time to explore the shipping settings in Shopify and research your carrier options to find a setup that saves you time and protects your margins.</p>
 
             <h2 id="why-shipping-matters">Why shipping matters</h2>
             <p>Shipping configuration directly affects whether you can make sales and how much money you actually keep.</p>
@@ -110,26 +103,44 @@
             </table>
 
             <h2 id="key-shipping-concepts">Key shipping concepts</h2>
-            <p>These terms work together. Zones define where you ship, rates define how much it costs, and profiles let you apply different rules to different products.</p>
+            <p>These three terms work together in a hierarchy. Understanding the order makes setup much easier:</p>
+            
+            <ul>
+              <li><strong>Shipping Profile</strong> → The overall set of shipping rules for a group of products</li>
+              <li><strong>Shipping Zone</strong> → The geographic areas (countries or regions) you ship to</li>
+              <li><strong>Shipping Rate</strong> → The actual price customers pay to ship their order</li>
+            </ul>
+
+            <p><strong>Simple way to remember:</strong> Profiles organize your products → Zones define where you ship → Rates define how much it costs.</p>
 
             <h2 id="shipping-profiles">Shipping profiles</h2>
-            <p>Shipping profiles let you create different shipping rules for different types of products. Most new merchants should start with only the default shipping profile.</p>
-        
+            <p>A shipping profile is a set of shipping rules (zones and rates) that can be applied to specific products. Most new merchants only need the Default Shipping Profile.</p>
+            
+            <p><strong>Recommendation:</strong> Start with the default profile. Create additional profiles later only if you have very different types of products (e.g. lightweight items vs heavy/bulky items).</p>
+
+            <h3>How to find and view your shipping profiles</h3>
+            <ol>
+              <li>Go to <strong>Settings</strong> → <strong>Shipping and delivery</strong></li>
+              <li>Scroll down to the <strong>Shipping profiles</strong> section</li>
+              <li>You will see the <strong>Default shipping profile</strong> (this applies to all products unless you assign them elsewhere)</li>
+              <li>Click on any profile to view or edit its shipping zones and rates</li>
+            </ol>
+
             <blockquote class="manual-callout manual-tip">
               <p class="manual-callout-title">Tip</p>
-              <p> Begin with the default shipping profile. Add more profiles later only if you sell very different types of products.</p>
+              <p>Most beginners can safely use only the Default shipping profile for their entire store.</p>
             </blockquote>
 
             <h2 id="shipping-zones">Shipping zones</h2>
-            <p>A shipping zone is a group of countries or regions that share the same shipping rates. Start by setting up a domestic shipping zone.</p>
+            <p>A shipping zone is a group of countries or regions that share the same shipping rates. Most new stores start with a domestic zone.</p>
 
             <h3>How to create a domestic shipping zone</h3>
             <ol>
-              <li>Go to Settings > Shipping and delivery</li>
-              <li>In the Shipping zones section, click Add shipping zone (or edit the existing domestic one)</li>
-              <li>Enter a zone name (for example, "Domestic" or "Canada")</li>
-              <li>Click Add countries/regions and select your country</li>
-              <li>Click Done</li>
+              <li>Go to <strong>Settings</strong> → <strong>Shipping and delivery</strong></li>
+              <li>In the Shipping zones section, click <strong>Add shipping zone</strong> (or edit the existing one)</li>
+              <li>Enter a zone name (e.g. "Domestic" or "Canada")</li>
+              <li>Click <strong>Add countries/regions</strong> and select your country</li>
+              <li>Click <strong>Done</strong></li>
             </ol>
 
             <h2 id="adding-weight-based-rates">Adding weight-based rates</h2>
@@ -137,19 +148,19 @@
 
             <h3>How to add a weight-based shipping rate</h3>
             <ol>
-              <li>Go to Settings > Shipping and delivery</li>
+              <li>Go to <strong>Settings</strong> → <strong>Shipping and delivery</strong></li>
               <li>Click on your domestic shipping zone</li>
-              <li>Under Shipping rates, click Add rate</li>
-              <li>Enter a rate name (for example, "Standard shipping")</li>
-              <li>Select Weight-based under Rate type</li>
+              <li>Under Shipping rates, click <strong>Add rate</strong></li>
+              <li>Enter a rate name (e.g. "Standard Shipping")</li>
+              <li>Select <strong>Weight-based</strong> under Rate type</li>
               <li>Set the pricing:
                 <ul>
-                  <li>First weight (for example, first 1 lb = $8)</li>
-                  <li>Additional weight (for example, $2 per extra lb)</li>
+                  <li>First weight (e.g. first 1 lb = $8)</li>
+                  <li>Additional weight (e.g. $2 per extra lb)</li>
                 </ul>
               </li>
               <li>Optionally add a handling fee to cover packaging</li>
-              <li>Click Save</li>
+              <li>Click <strong>Save</strong></li>
             </ol>
 
             <blockquote class="manual-callout manual-tip">
