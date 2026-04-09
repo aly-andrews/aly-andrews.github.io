@@ -12,6 +12,7 @@ permalink: /resume/
     <div class="portfolio-layout">
       <aside class="portfolio-sidebar" aria-label="Resume section navigation">
         <nav class="portfolio-sidebar-nav">
+          <a href="#technical-writer">Technical Writer</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
           <a href="#expertise">Expertise</a>
@@ -19,6 +20,34 @@ permalink: /resume/
       </aside>
 
       <div class="portfolio-content-main">
+
+      <!-- Technical Writer -->
+      <div id="technical-writer" class="work-section-creative">
+        <article class="experience-item role-education">
+          <div class="experience-header work-section-intro">
+            <h2>Technical Writer</h2>
+            <p class="experience-company">Netomi</p>
+            <p class="experience-meta">April 2026 – Present</p>
+          </div>
+          <div class="experience-description">
+            <p>Write and maintain product documentation across multiple feature areas in an agile, weekly-release environment, partnering with engineers and product managers to deliver accurate, audience-aligned release notes, user guides and feature documentation.</p>
+          </div>
+          <div class="experience-highlights">
+            <details class="portfolio-accordion">
+              <summary class="portfolio-accordion-heading">Learn more</summary>
+              <div class="portfolio-accordion-content">
+                <ul>
+                  <li>Own the documentation lifecycle for multiple product areas, from SME interviews and planning through release and ongoing maintenance.</li>
+                  <li>Translate complex technical features and workflows into clear, audience-appropriate documentation aligned with established style and terminology standards.</li>
+                  <li>Conduct content gap analysis, identify outdated or inaccurate documentation and prioritize updates in partnership with docs leadership.</li>
+                  <li>Track documentation requirements across concurrent product changes to ensure content ships with every feature release.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+
       <!-- Senior Education Content Producer -->
       <div id="senior-education-content-producer" class="work-section-creative">
       <article class="experience-item role-education">
