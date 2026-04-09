@@ -59,9 +59,8 @@
           <article class="manual-main manual-content">
             <header class="manual-page-header">
               <h1>Payments</h1>
-            
-
-            <p>A payment gateway is a service that allows you to accept payments online. It is critical for your store to function. Without a configured payment provider, customers cannot complete checkout and you cannot process orders.</p> <p>Setting up payment processing early helps you understand costs and ensures your store can accept orders when you're ready to launch. </p>
+              <p class="manual-page-subtitle">A payment gateway is a service that allows you to accept payments online. Without a configured payment provider, customers cannot complete checkout and you cannot process orders.</p>
+            </header>
 
             <div class="manual-on-this-page">
               <p class="manual-on-this-page-title">On this page</p>
@@ -69,10 +68,11 @@
                 <li><a href="#why-payment-setup-matters">Why payment setup matters</a></li>
                 <li><a href="#payment-provider-options">Payment provider options</a></li>
                 <li><a href="#understanding-payment-fees">Understanding payment fees</a></li>
+                <li><a href="#setting-up-shopify-payments">Setting up Shopify Payments</a></li>
               </ul>
             </div>
 
-           <h2> Why payment setup matters</h2>
+            <h2 id="why-payment-setup-matters">Why payment setup matters</h2>
 
            
 <p>Payment gateway configuration is essential because:</p>
@@ -86,19 +86,19 @@
   </thead>
   <tbody>
     <tr>
-      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Checkout Requirement</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Checkout requirement</strong></td>
       <td style="padding: 12px; border: 1px solid #ddd;">Customers cannot complete checkout without a payment provider. Your store cannot accept orders until payment is configured, even on a free trial.</td>
     </tr>
     <tr>
-      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Provider Availability</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Provider availability</strong></td>
       <td style="padding: 12px; border: 1px solid #ddd;">Payment provider availability depends on your location and what you sell. Not all providers are available in all regions, and some restrict certain products.</td>
     </tr>
     <tr>
-      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Impact on Pricing</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Impact on pricing</strong></td>
       <td style="padding: 12px; border: 1px solid #ddd;">Understanding fees helps you price products correctly. Payment fees directly affect your profit margins.</td>
     </tr>
     <tr>
-      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Business Verification</strong></td>
+      <td style="padding: 12px; border: 1px solid #ddd;"><strong>Business verification</strong></td>
       <td style="padding: 12px; border: 1px solid #ddd;">Some providers require business verification. Setup can take time, so starting early prevents delays.</td>
     </tr>
   </tbody>
@@ -107,7 +107,7 @@
 
 <h2 id="shopify-payments-vs-third-party">Payment provider options</h2>
 <p>There are two main types of payment providers: Shopify Payments and third party providers.</p>
-<p><strong><a href="https://example.com" target="_blank" rel="noopener">Shopify Payments</a></strong>  is Shopify's built-in card processing in the admin. When it is available in your region and approved for your business, you usually pay processing fees only and you do not pay Shopify's separate transaction fee on each order.</p>
+<p><strong><a href="https://help.shopify.com/en/manual/payments/shopify-payments" target="_blank" rel="noopener">Shopify Payments</a></strong>  is Shopify's built-in card processing in the admin. When it is available in your region and approved for your business, you usually pay processing fees only and you do not pay Shopify's separate transaction fee on each order.</p>
 
   <p><strong><a href="https://help.shopify.com/en/manual/payments/third-party-providers" target="_blank" rel="noopener">A third party provider</a></strong> (for example PayPal or Stripe) connects as an external gateway. Checkout still happens in your store but that provider moves the money and sets its own rates and rules. Shopify often adds a transaction fee when you use a third party instead of Shopify Payments.</p>
 
@@ -116,7 +116,7 @@
   <p class="manual-callout-title">Warning</p>
   <p>Some providers (including Shopify Payments) may reject certain high risk products such as CBD, some supplements or adult content. Research provider requirements before you invest heavily in your store setup.</p>
 </blockquote>
-            <h2>Understanding Payment Fees</h2>
+            <h2 id="understanding-payment-fees">Understanding payment fees</h2>
 
             <p>New merchants often confuse two types of fees. Here's a clear breakdown:</p>
             
@@ -124,8 +124,8 @@
               <thead>
                 <tr style="background-color: #f8f9fa;">
                   <th style="text-align: left; padding: 12px; border: 1px solid #ddd;"></th>
-                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Transaction Fees</th>
-                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Credit Card Processing Fees</th>
+                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Transaction fees</th>
+                  <th style="text-align: left; padding: 12px; border: 1px solid #ddd;">Credit card processing fees</th>
                 </tr>
               </thead>
               <tbody>
@@ -140,7 +140,7 @@
                   <td style="padding: 12px; border: 1px solid #ddd;">On every transaction, regardless of provider</td>
                 </tr>
                 <tr>
-                  <td style="padding: 12px; border: 1px solid #ddd;"><strong>Typical Cost</strong></td>
+                  <td style="padding: 12px; border: 1px solid #ddd;"><strong>Typical cost</strong></td>
                   <td style="padding: 12px; border: 1px solid #ddd;">Usually 0.5% – 2% (varies by Shopify plan)</td>
                   <td style="padding: 12px; border: 1px solid #ddd;">e.g. 2.9% + $0.30 per transaction</td>
                 </tr>
@@ -156,7 +156,6 @@
                 </tr>
               </tbody>
             </table>
-            <br>
             <p><strong>Summary example:</strong></p>
           
               <p><strong>Using Shopify Payments:</strong> You only pay Credit Card Processing Fees (e.g., 2.9% + $0.30)</p> 
@@ -177,8 +176,8 @@
 
 <h3>Activating Shopify Payments</h3>
 <ol>
-  <li>Go to <strong>Settings</strong> → <strong>Payments</strong> in your Shopify admin</li>
-  <li>In the Shopify Payments section, click <strong>Complete account setup</strong> or <strong>Activate Shopify Payments</strong></li>
+  <li>In your Shopify admin, go to <strong>Settings</strong> → <strong>Payments</strong>.</li>
+  <li>In the Shopify Payments section, click <strong>Complete account setup</strong> or <strong>Activate Shopify Payments</strong>.</li>
   <li>Fill in your business information:
     <ul>
       <li>Business type (sole proprietorship, LLC, corporation, etc.)</li>
@@ -188,8 +187,8 @@
       <li>Business owner information</li>
     </ul>
   </li>
-  <li>Review and accept the terms and conditions</li>
-  <li>Click <strong>Submit for review</strong></li>
+  <li>Review and accept the terms and conditions.</li>
+  <li>Click <strong>Submit for review</strong>.</li>
 </ol>
 
 <blockquote class="manual-callout manual-note">
@@ -197,12 +196,12 @@
   <p>You can start the Shopify Payments setup while on a free trial, but you will not be able to accept real payments until you are on a paid plan.</p>
 </blockquote>
 
-<h3>Business Verification Process</h3>
+<h3>Business verification process</h3>
 <p>After submitting your application, Shopify will review your business information. This usually takes 1–3 business days.</p>
 
 <ol>
-  <li>Check your email for any requests from Shopify</li>
-  <li>Return to <strong>Settings</strong> → <strong>Payments</strong> to see the status</li>
+  <li>Check your email for any requests from Shopify.</li>
+  <li>Return to <strong>Settings</strong> → <strong>Payments</strong> to see the status.</li>
   <li>If requested, provide additional documents such as:
     <ul>
       <li>Business registration documents</li>
@@ -211,7 +210,7 @@
       <li>Proof of identity</li>
     </ul>
   </li>
-  <li>Upload the documents through the Shopify admin when prompted</li>
+  <li>Upload the documents through the Shopify admin when prompted.</li>
 </ol>
 
 <blockquote class="manual-callout manual-tip">
